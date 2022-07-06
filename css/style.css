@@ -648,10 +648,6 @@ a {
   display: none;
 }
 
-.active .item {
-  display: block;
-}
-
 .button.secondary {
   /* divider between buttons and menu links */
   border-bottom: 1px #444 solid;
@@ -799,11 +795,15 @@ a {
   }
 }
 .burger {
-  display: block;
+  display: none;
 }
 
 .closed {
   display: none;
+}
+
+.active, .item {
+  display: block;
 }
 
 .noticia {
