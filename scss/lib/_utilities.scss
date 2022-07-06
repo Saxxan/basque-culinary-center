@@ -1,0 +1,29 @@
+.display {
+    &__mobile { //.display__mobile mostrará el contenido exclusivamente en resolución "MÓVIL Y TABLET"
+        display: block;
+        @include respond-to(large) {
+            display: none;
+        }
+    }
+    &__desktop { //.display__desktop mostrará el contenido exclusivamente en resolucion "DESKTOP"
+        display: none;
+        @include respond-to(large) {
+            display: block;
+        }
+    }
+}
+
+.separator-line-list { //esto te separa por líneas "|" los distintos contenidos
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    &__item {
+        display: inline-block;
+        &:not(:last-child)::after {
+            content: "|";
+            text-decoration: none;
+            color: hsl(0deg, 0%, 46%);
+            height: auto;
+        }
+    }
+}

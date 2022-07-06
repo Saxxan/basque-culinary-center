@@ -1,0 +1,160 @@
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+
+/*Btn primary
+*/
+@mixin btn__primary ($background: color, $size : small) {
+
+    //Background
+    @if $background == color {
+        color: $c-white;
+        
+            &:link {
+                background-color: $c-button-primary;
+                border: 2px solid $c-button-primary;
+            }
+            &:visited {
+                background-color: $c-button-active;
+                border: 2px solid $c-button-active;
+            }
+            &:hover {
+                background-color: $c-button-hover;
+                border: 2px solid $c-button-hover;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                pointer-events:none;
+                background-color: $c-button-disabled;
+                //border arreglar opacidad
+                border: 2px solid rgb(179 98 6 / 0%);
+            }
+    }
+
+    @if $background == nocolor {
+        color: $c-button-primary;
+        background-color: $c-white;
+        border: 2px solid $c-button-primary;
+            
+            &:link {
+                color: $c-button-primary;
+                border: 2px solid $c-button-primary;
+            }
+            &:visited {
+                color: $c-button-active;
+                border: 2px solid $c-button-active;
+            }
+            &:hover {
+                color: $c-button-hover;
+                border: 2px solid $c-button-hover;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                pointer-events: none;
+                color: $c-button-disabled;
+                border: 2px solid $c-button-disabled;
+            }
+    }
+
+    // sizes
+    @if $size == large {
+        font-size: 18px;
+        letter-spacing: -0.3px;
+        padding: $btnprimary-paddinglarge;
+    }
+
+    @if $size == medium {
+        font-size: 15px;
+        letter-spacing: -0.3px;
+        padding: $btnprimary-paddingmedium;
+    }
+    @if $size == small {
+        font-size: 13px;
+        letter-spacing: -0.2px;
+        padding: $btnprimary-paddingsmall;
+        
+    }
+
+}
+
+/*Btn modal
+*/
+@mixin btn__modal ($background: color, $size : large) {
+
+    //BACKGROUND
+    @if $background == color {
+        color: $c-white;
+        background-color: $c-button-primary;
+        border: 2px solid $c-button-primary;
+            &:link {
+                background-color: $c-button-primary;
+                border: 2px solid $c-button-primary;
+            }
+            &:visited {
+                background-color: $c-button-active;
+                border: 2px solid $c-button-active;
+
+            }
+            &:hover {
+                background-color: $c-button-hover;
+                border: 2px solid $c-button-hover;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                pointer-events:none;
+                background-color: $c-button-disabled;
+                border: 2px solid rgba (179, 98, 6, .5);
+            }
+    }
+
+    // SIZES
+    @if $size == large {
+        font-size: 18px;
+        letter-spacing: -0.3px;
+        padding: $btnprimary-paddinglarge;
+    }
+}
+
+
+/*------------------------------------*\
+    BREAKPOINT
+\*------------------------------------*/
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+    }
+}
+@else {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+}
+
+/*------------------------------------*\
+    LINKS
+\*------------------------------------*/
+
+.link {
+    text-transform: uppercase;
+    &:link,
+    &:active {
+        // $c-monocromo-900
+        color: #26201B;
+    }
+    &:hover {
+        // $c-primary-default
+        color: #B36206;
+    }
+    &:focus {
+        // $c-primary-dark  
+        color: #83390B;
+    }
+    
+
+}
+
+
+

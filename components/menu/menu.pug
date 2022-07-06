@@ -1,0 +1,42 @@
+include ../head/head.pug
+
+        block content
+        
+            nav 
+                ul.menu 
+                    li.logo 
+                        a(href="")
+                            img(src="../../src/images/logo-bcc.png", alt="")  
+                    li.item
+                        a(href="") Inicio 
+                    li.item 
+                        a(href="") Contacto
+                    li.item.has-submenu
+                        a(href="" tabindex="0") Services
+                        ul.submenu
+                            li.subitem 
+                                a(href="") Página 
+                            li.subitem 
+                                a(href="") Página 
+                            li.subitem 
+                                a(href="") Página
+                            li.subitem 
+                                a(href="") Página
+                    li.item.has-submenu
+                        a(href="" tabindex="0") Services
+                        ul.submenu
+                            li.subitem 
+                                a(href="") Página 
+                            li.subitem 
+                                a(href="") Página 
+                            li.subitem 
+                                a(href="") Página
+                            li.subitem 
+                                a(href="") Página
+                    li.item.button 
+                        a(href="") Formación 
+                    li.toggle 
+                        img(class="burger" src="../../src/images/burger.png", alt="") 
+                        img(class="closed" src="../../src/images/closed.png", alt="")
+        script(src='../menu/menu.js')
+

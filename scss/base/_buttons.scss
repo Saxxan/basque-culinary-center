@@ -1,0 +1,105 @@
+/*------------------------------------*\
+    BOTONES
+\*------------------------------------*/
+
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: baseline;
+    appearance: button;
+    cursor: pointer;
+    &__primary {
+        @extend .btn;
+        font-size: 1rem;
+        border-radius: $btnprimary-radius;
+            &--large-color {
+                @extend .btn__primary;
+                @include btn__primary ($background: color, $size : large);
+                & h5 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    display: inline;
+                    font-family: "Helvetica";
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+            }
+            &--large-nocolor {
+                @extend .btn__primary;
+                @include btn__primary ($background: nocolor, $size : large);
+                & h5 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    display: inline;
+                    font-family: "Helvetica";
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+            }
+            &--medium-color {
+                @extend .btn__primary;
+                @include btn__primary ($background: color, $size : medium);
+                & h5 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    display: inline;
+                    font-family: "Helvetica";
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+            }
+            &--medium-nocolor {
+                @extend .btn__primary;
+                @include btn__primary ($background: nocolor, $size : medium);
+                & h5 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    display: inline;
+                    font-family: "Helvetica";
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+            }
+            &--small-color {
+                @extend .btn__primary;
+                @include btn__primary ($background: color, $size : small);
+                & h5 {
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    display: inline;
+                    font-family: "Helvetica";
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+            }
+            &--small-nocolor {
+                @extend .btn__primary;
+                @include btn__primary ($background: nocolor, $size : small);
+                & h5 {
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    display: inline;
+                    font-family: "Helvetica";
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+            }
+    }
+    &__modal {
+        @extend .btn;
+        font-size: 1rem;
+        border-radius: $btnmodal-radius;
+        align-items: baseline;
+        appearance: button;
+        @include btn__modal ($background: color, $size : large);
+        h5 {
+            font-size: 18px;
+            text-transform: uppercase;
+            display: inline;
+            font-family: "Helvetica";
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+    }
+
+}

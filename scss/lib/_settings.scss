@@ -1,0 +1,245 @@
+/*------------------------------------*\
+$BREAKPOINTS
+\*------------------------------------*/
+
+/*.div {
+color: pink;
+@include respond-to(medium) {
+color: maroon;
+}
+}
+*/
+
+
+
+/*------------------------------------*\
+$LAYOUT
+\*------------------------------------*/
+/**
+* Constant layout values, apart from these we can also declare values
+* for different blocks sizes and more.
+*/
+$baselineheight:     1.5;
+$gutterwidth:        24px;
+$padding:            $gutterwidth;
+$minigutter:         $gutterwidth / 2;
+$pagemaxwidth:       1024px;
+
+//ButtonLayout
+$btnprimary-radius:  4px;
+$btnmodal-radius: 48px;
+$btnprimary-borderwith: 2px;
+$btnprimary-borderstyle: solid;
+
+//Button size
+$btnprimary-paddinglarge: 20px 32px;
+$btnprimary-paddingmedium: 16px 24px;
+$btnprimary-paddingsmall: 9px 22px;
+
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+/**
+* Fonts definitions
+*/
+$basefont : "Spartan", Helvetica, Arial, sans-serif;
+$secondfont : "EB Garamond", Helvetica, Arial, sans-serif;
+
+$baseheadingfontweight : normal;
+$baseheadingfontcolor : inherit;
+
+$basefontsize   :   16px;
+
+
+
+
+/*------------------------------------*\
+$COLORS
+\*------------------------------------*/
+
+
+$c-white:                #ffffff;
+$c-black:                #000000;
+
+//Marcas
+$c-marcas-bcc-corporate:  #b9ac99;
+$c-marcas-bcc-innovation: #59718c;
+$c-marcas-culinary-action:#a1232f;
+$c-marcas-culinary-club:  #989a2b;
+$c-marcas-labe:           #2ed9c3;
+
+//Monocromo
+$c-monocromo-full-white: #ffffff;
+$c-monocromo-900:        #26201B;
+$c-monocromo-800:        #383126;
+$c-monocromo-700:        #52483B;
+$c-monocromo-600:        #756A5B;
+$c-monocromo-500:        #B9AC99;
+$c-monocromo-400:        #CBBDAA;
+$c-monocromo-300:        #D5CCC1;
+$c-monocromo-200:        #DFDAD3;
+$c-monocromo-100:        #F4F3EF;
+
+//Primary
+$c-primary-dark:        #83390B;
+$c-primary-default:     #B36206;
+$c-primary-darkmode:    #D5903C;
+$c-primary-light:       #EAB05A;
+$c-primary-bg:          #FFE5B4;
+
+//Azul
+$c-azul-dark:            #0B2173;
+$c-azul-default:         #1E60BF;
+$c-azul-darkmode:        #3C6EC8;
+$c-azul-light:           #CADFFF;
+$c-azul-bg:              #88ABED;
+
+//Suceso
+$c-suceso-dark:          #067306;
+$c-suceso-default:       #008A00;
+$c-suceso-darkmode:      #A6F787;
+$c-suceso-light:         #EAF9DE;
+$c-suceso-bg:            #CBFFAE;
+
+//Advertencia
+$c-advertencia-dark:     #946300;
+$c-advertencia-default:  #EAAC30;
+$c-advertencia-darkmode: #FFDF9A;
+$c-advertencia-light:    #FFF8E9;
+$c-advertencia-bg:       #FFE6B0;
+
+//Error
+$c-error-dark:           #710022;
+$c-error-default:        #9E0038;
+$c-error-darkmode:       #C84661;
+$c-error-light:          #FEE7EB;
+$c-error-bg:             #FF879D;
+
+//Rojo
+$c-rojo-100:    #fff2f1;
+$c-rojo-200:    #ffc3c0;
+$c-rojo-300:    #ff968f;
+$c-rojo-400:    #fd6150;
+$c-rojo-500:    #e61b00;
+$c-rojo-600:    #ab1400;
+$c-rojo-700:    #8b1200;
+$c-rojo-800:    #5e0c00;
+
+//Naranja
+$c-naranja-100: #fff4eb;
+$c-naranja-200: #ffdbbd;
+$c-naranja-300: #ffa65a;
+$c-naranja-400: #ff9943;
+$c-naranja-500: #ee6d00;
+$c-naranja-600: #c25700;
+$c-naranja-700: #994600;
+$c-naranja-800: #662f00;
+
+//Amarillo
+$c-amarillo-100: #fff8e9;
+$c-amarillo-200: #ffe6b0;
+$c-amarillo-300: #ffdf9a;
+$c-amarillo-400: #fdcc62;
+$c-amarillo-500: #eaac30;
+$c-amarillo-600: #946300;
+$c-amarillo-700: #6e5523;
+$c-amarillo-800: #534019;
+
+//Verde
+$c-verde-100: #eaf9de;
+$c-verde-200: #cbffae;
+$c-verde-300: #a6f787;
+$c-verde-400: #7df75a;
+$c-verde-500: #18bb0c;
+$c-verde-600: #008a00;
+$c-verde-700: #067306;
+$c-verde-800: #07540a;
+
+//Tranparent light
+$c-transparencia-dark-overlay-95:  #14142bf2;
+$c-transparencia-dark-overlay-75:  #14142bbf;
+$c-transparencia-dark-overlay-65:  #14142ba6;
+$c-transparencia-dark-overlay-40:  #14142b66;
+$c-transparencia-dark-overlay-25:  #14142b40;
+$c-transparencia-dark-overlay-10:  #14142b1a;
+$c-transparencia-light-overlay-95: #eff0f6f2;
+$c-transparencia-light-overlay-75: #eff0f6bf;
+$c-transparencia-light-overlay-65: #eff0f6a6;
+$c-transparencia-light-overlay-40: #eff0f666;
+$c-transparencia-light-overlay-25: #eff0f640;
+$c-transparencia-light-overlay-10: #eff0f61a;
+
+//Tranparent dark
+$c-transparent-dark-95: rgba(20, 20, 43, 0.95);
+$c-transparent-dark-75: rgba(20, 20, 43, 0.75);
+$c-transparent-dark-65: rgba(20, 20, 43, 0.65);
+$c-transparent-dark-40: rgba(20, 20, 43, 0.40);
+$c-transparent-dark-25: rgba(20, 20, 43, 0.25);
+$c-transparent-dark-10: rgba(20, 20, 43, 0.10);
+
+//Formación
+$c-formacion-grado:        #5D4976;
+$c-formacion-master:       #A7706C;
+$c-formacion-doctorado:    #E19F40;
+$c-formacion-profesionales:#1E60BF;
+$c-formacion-entusiastas:  #989A2B;
+
+//Links
+$c-link-normal: $c-monocromo-900;
+$c-link-hover: $c-primary-default;
+$c-link-focus: $c-primary-dark;
+$c-link-activ: $c-monocromo-900;
+
+//Buttons
+$c-button-primary: $c-primary-default;
+$c-button-hover: $c-primary-dark;
+$c-button-active: $c-monocromo-900;
+$c-button-disabled: rgba($c-primary-default, .5);
+
+//Placeholder
+$c-placeholder: $c-monocromo-200;
+$c-placeholder-active: $c-monocromo-100;
+$c-placeholder-complete: $c-monocromo-300;
+$c-placeholder-disabled:rgba($c-monocromo-400, .5);
+
+$c-placeholder-exito: $c-suceso-light;
+$c-placeholder-error: $c-error-light;
+
+//Checkbox
+$c-checkboxactive-normal: $c-primary-default;
+$c-checkboxactive-hover: $c-primary-dark;
+$c-checkboxactive-disabled: $c-primary-light;
+
+$c-checkboxinactive-normal: $c-monocromo-400;
+$c-checkboxinactive-hover: $c-monocromo-500;
+$c-checkboxinactive-disabled: rgba($c-monocromo-400, .5);
+
+$c-check: $c-monocromo-100;
+$c-check-hover: $c-monocromo-200;
+
+//Tabla
+$c-tabla-bg: $c-monocromo-200;
+$c-tabla-border: $c-monocromo-400;
+$c-tabla-text: $c-monocromo-900;
+
+
+
+/*------------------------------------*\
+$SHADOWS
+\*------------------------------------*/
+
+$drop-shadow-large: 0px 0px 72px 0px #0000000a;
+$drop-shadow-medium: 0px 0px 32px 0px #0000000a;
+$drop-shadow-small: 0px 0px 16px 0px #0000000a;
+
+
+
+/*------------------------------------*\
+$BREAKPOINTS
+\*------------------------------------*/
+$breakpoints: (
+    'small'  : 48em,
+    'medium' : 700px,
+    'large'  : 1024px,
+    'extralarge'  : 1540px,
+) !default;
