@@ -76,23 +76,26 @@ h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
 
 h1, h2, h3, h4, p {
   font-family: "League Spartan", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.2;
 }
 
 .primaryfont__bold {
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
-  font-weight: 800;
   line-height: 1.2;
+}
+.primaryfont__bold--600 {
+  font-weight: 600;
+}
+.primaryfont__bold--700 {
+  font-weight: 700;
+}
+.primaryfont__bold--800 {
+  font-weight: 800;
 }
 
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
-/*Btn primary
-*/
-/*Btn modal
-*/
 /*------------------------------------*\
     BREAKPOINT
 \*------------------------------------*/
@@ -151,7 +154,6 @@ h1, h2, h3, h4, p {
   cursor: pointer;
 }
 .btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color {
-  font-size: 1rem;
   border-radius: 4px;
 }
 .btn__primary--large-color {
@@ -159,6 +161,13 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   letter-spacing: -0.3px;
   padding: 20px 32px;
+  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__primary--large-color:link {
   background-color: #B36206;
@@ -178,14 +187,6 @@ h1, h2, h3, h4, p {
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0);
 }
-.btn__primary--large-color h5 {
-  font-size: 18px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
 .btn__primary--large-nocolor {
   color: #B36206;
   background-color: #ffffff;
@@ -193,6 +194,13 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   letter-spacing: -0.3px;
   padding: 20px 32px;
+  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__primary--large-nocolor:link {
   color: #B36206;
@@ -212,19 +220,18 @@ h1, h2, h3, h4, p {
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
-.btn__primary--large-nocolor h5 {
-  font-size: 18px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
 .btn__primary--medium-color {
   color: #ffffff;
   font-size: 15px;
   letter-spacing: -0.3px;
   padding: 16px 24px;
+  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__primary--medium-color:link {
   background-color: #B36206;
@@ -244,14 +251,6 @@ h1, h2, h3, h4, p {
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0);
 }
-.btn__primary--medium-color h5 {
-  font-size: 18px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
 .btn__primary--medium-nocolor {
   color: #B36206;
   background-color: #ffffff;
@@ -259,6 +258,13 @@ h1, h2, h3, h4, p {
   font-size: 15px;
   letter-spacing: -0.3px;
   padding: 16px 24px;
+  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__primary--medium-nocolor:link {
   color: #B36206;
@@ -278,19 +284,18 @@ h1, h2, h3, h4, p {
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
-.btn__primary--medium-nocolor h5 {
-  font-size: 18px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
 .btn__primary--small-color {
   color: #ffffff;
   font-size: 13px;
   letter-spacing: -0.2px;
   padding: 9px 22px;
+  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.2px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__primary--small-color:link {
   background-color: #B36206;
@@ -310,14 +315,6 @@ h1, h2, h3, h4, p {
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0);
 }
-.btn__primary--small-color h5 {
-  font-size: 13px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
 .btn__primary--small-nocolor {
   color: #B36206;
   background-color: #ffffff;
@@ -325,6 +322,13 @@ h1, h2, h3, h4, p {
   font-size: 13px;
   letter-spacing: -0.2px;
   padding: 9px 22px;
+  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.2px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__primary--small-nocolor:link {
   color: #B36206;
@@ -344,16 +348,7 @@ h1, h2, h3, h4, p {
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
-.btn__primary--small-nocolor h5 {
-  font-size: 13px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
 .btn__modal {
-  font-size: 1rem;
   border-radius: 48px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -367,6 +362,13 @@ h1, h2, h3, h4, p {
   font-size: 18px;
   letter-spacing: -0.3px;
   padding: 20px 32px;
+  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
 }
 .btn__modal:link {
   background-color: #B36206;
@@ -385,14 +387,6 @@ h1, h2, h3, h4, p {
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba 179, 98, 6, 0.5;
-}
-.btn__modal h5 {
-  font-size: 18px;
-  text-transform: uppercase;
-  display: inline;
-  font-family: "Helvetica";
-  font-weight: 300;
-  margin-bottom: 1rem;
 }
 
 .card {

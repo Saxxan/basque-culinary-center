@@ -237,10 +237,13 @@ $FONTS
 
 // Font Spartan
 $primary-font: "League Spartan", Helvetica, Arial, sans-serif;
+$spartan-600: 600;
+$spartan-700: 700;
 $spartan-bold: 800;
-$spartan-regular: 400;
+$spartan-regular: 100;
 //Font EB Garamond
 $eb-garamond-font:"EB Garamond", Georgia, Times, serif;
+$eb-garamond-600: 600;
 $eb-garamond-700: 700;
 $eb-garamond-bold: 800;
 $eb-garamond-regular: 400;
@@ -537,9 +540,16 @@ h1, h2, h3, h4, p {
     line-height: 1.2;
 }
 .primaryfont__bold {
-    font-family: $primary-font;
-    font-weight: 800;
     line-height: 1.2;
+    &--600{
+        font-weight: $spartan-600;
+    }
+    &--700 {
+        font-weight: $spartan-700;
+    }
+    &--800 {
+        font-weight: $spartan-bold;
+    }
 }
 
 
