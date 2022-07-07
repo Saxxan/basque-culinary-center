@@ -1,18 +1,4 @@
 /*------------------------------------*\
-$BREAKPOINTS
-\*------------------------------------*/
-
-/*.div {
-color: pink;
-@include respond-to(medium) {
-color: maroon;
-}
-}
-*/
-
-
-
-/*------------------------------------*\
 $LAYOUT
 \*------------------------------------*/
 /**
@@ -227,7 +213,6 @@ $c-tabla-text: $c-monocromo-900;
 /*------------------------------------*\
 $SHADOWS
 \*------------------------------------*/
-
 $drop-shadow-large: 0px 0px 72px 0px #0000000a;
 $drop-shadow-medium: 0px 0px 32px 0px #0000000a;
 $drop-shadow-small: 0px 0px 16px 0px #0000000a;
@@ -243,3 +228,324 @@ $breakpoints: (
     'large'  : 1024px,
     'extralarge'  : 1540px,
 ) !default;
+
+
+
+/*------------------------------------*\
+$FONTS
+\*------------------------------------*/
+
+// Font Spartan
+$primary-font: "League Spartan", Helvetica, Arial, sans-serif;
+$spartan-bold: 800;
+$spartan-regular: 400;
+//Font EB Garamond
+$eb-garamond-font:"EB Garamond", Georgia, Times, serif;
+$eb-garamond-700: 700;
+$eb-garamond-bold: 800;
+$eb-garamond-regular: 400;
+
+p {
+    font-size: 16px;
+    font-family: $primary-font;
+    // 1rem = 16px
+}
+
+
+// $size-vars: (
+//     // mobile
+//     "x-small"     : .8,
+//     "text-small"  : .94,
+//     "text-medium" : 1.1,
+//     "text-large"  : 1.25,
+//     "h-4"         : 1.25,
+//     "h-3"         : 1.5,
+//     "h-2"         : 1.75,
+//     "h-1"         : 2,
+//     // desktop
+//     "x-small__desktop"     : .8,
+//     "text-small__desktop"  : .94,
+//     "text-medium__desktop" : 1.1,
+//     "text-large__desktop"  : 1.25,
+//     "h-4__desktop"         : 1.5,
+//     "h-3__desktop"         : 2.25,
+//     "h-2-d__desktop"         : 3,
+//     "h-1-d__desktop"         : 3.5
+// )
+// @mixin h-1-text() {
+//     fontFamily : $spartan-regular;
+//     fontSize : 56px;
+//     lineHeight: 70px;
+//     letterSpacing : 0px;
+// }
+// @mixin h-2-text() {
+//     fontFamily : $spartan-regular;
+//     fontSize : 48px;
+//     lineHeight: 56px;
+//     letterSpacing : -0.20000000298023224px;
+// }
+// @mixin escritorio-h-3-text() {
+//     fontFamily : $spartan-regular;
+//     fontSize : 36px;
+//     lineHeight: 45px;
+//     letterSpacing : -0.30000001192092896px;
+// }
+// @mixin escritorio-h-4-text() {
+//   fontFamily : $spartan-regular;
+//   fontSize : 24px;
+//   lineHeight: 32px;
+//   letterSpacing : -0.4000000059604645px;
+// }
+// //bold
+// @mixin h-1-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 56px;
+//     lineHeight: 72px;
+//     letterSpacing : -1px;
+// }
+// @mixin h-2-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 48px;
+//     lineHeight: 55px;
+//     letterSpacing : -1px;
+// }
+// @mixin escritorio-h-3-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 36px;
+//     lineHeight: 48px;
+//     letterSpacing : -0.5px;
+// }
+// @mixin escritorio-h-4-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 24px;
+//     lineHeight: 32px;
+//     letterSpacing : -0.5px;
+// }
+// @mixin escritorio-paragraph-text-large() {
+//     fontFamily : $spartan-regular;
+//     fontSize : 20px;
+//     lineHeight: 32px;
+//     letterSpacing : 0px;
+// }
+// @mixin escritorio-paragraph-text-medium() {
+//     fontFamily : $spartan-regular;
+//     fontSize : 18px;
+//     lineHeight: 31px;
+//     letterSpacing : 0px;
+// }
+// @mixin escritorio-paragraph-text-small() {
+//     fontFamily : $spartan-regular;
+//     fontSize : 15px;
+//     lineHeight: 23px;
+//     letterSpacing : 0.25px;
+// }
+// @mixin escritorio-paragraph-text-x-small() {
+//     fontFamily : $primary-font;
+//     fontSize : 13px;
+//     lineHeight: 21px;
+//     letterSpacing : -0.10000000149011612px;
+// }
+// //bold
+// @mixin escritorio-paragraph-text-bold-large() {
+//     fontFamily : $primary-font;
+//     fontSize : 20px;
+//     lineHeight: 32px;
+//     letterSpacing : -0.30000001192092896px;
+// }
+// @mixin escritorio-paragraph-text-bold-medium() {
+//     fontFamily : $secondary-font;
+//     fontSize : 18px;
+//     lineHeight: 32px;
+//     letterSpacing : -0.30000001192092896px;
+// }
+// @mixin escritorio-paragraph-text-bold-small() {
+//     fontFamily : $secondary-font;
+//     fontSize : 15px;
+//     lineHeight: 24px;
+//     letterSpacing : -0.30000001192092896px;
+// }
+// //mobile
+// @mixin movil-h-1-text() {
+//     fontFamily : $primary-font;
+//     fontSize : 32px;
+//     lineHeight: 44px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-h-2-text() {
+//     fontFamily : $primary-font;
+//     fontSize : 28px;
+//     lineHeight: 38px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-h-3-text() {
+//     fontFamily : $primary-font;
+//     fontSize : 24px;
+//     lineHeight: 34px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-h-4-text() {
+//     fontFamily : $primary-font;
+//     fontSize : 20px;
+//     lineHeight: 32px;
+//     letterSpacing : 0px;
+// }
+
+// //bold
+// @mixin movil-h-1-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 32px;
+//     lineHeight: 44px;
+//     letterSpacing : -0.20000000298023224px;
+// }
+// @mixin movil-h-2-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 28px;
+//     lineHeight: 38px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-h-3-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 24px;
+//     lineHeight: 34px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-h-4-text-bold() {
+//     fontFamily : $spartan-800;
+//     fontSize : 20px;
+//     lineHeight: 32px;
+//     letterSpacing : 0px;
+// }
+
+// @mixin movil-paragraph-text-large() {
+//     fontFamily : $primary-font;
+//     fontSize : 20px;
+//     lineHeight: 32px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-paragraph-text-medium() {
+//     fontFamily : $primary-font;
+//     fontSize : 17px;
+//     lineHeight: 26px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-paragraph-text-small() {
+//     fontFamily : $primary-font;
+//     fontSize : 15px;
+//     lineHeight: 24px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-paragraph-text-x-small() {
+//     fontFamily : $primary-font;
+//     fontSize : 13px;
+//     lineHeight: 22px;
+//     letterSpacing : -0.23000000417232513px;
+// }
+// //bold
+// @mixin movil-paragraph-text-bold-large() {
+//     fontFamily : $spartan-800;
+//     fontSize : 20px;
+//     lineHeight: 32px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-paragraph-text-bold-medium() {
+//     fontFamily : $spartan-800;
+//     fontSize : 17px;
+//     lineHeight: 26px;
+//     letterSpacing : -0.10000000149011612px;
+// }
+// @mixin movil-paragraph-text-bold-small() {
+//     fontFamily : $spartan-800;
+//     fontSize : 15px;
+//     lineHeight: 24px;
+//     letterSpacing : 0px;
+// }
+// @mixin movil-paragraph-text-bold-x-small() {
+//     fontFamily : $spartan-800;
+//     fontSize : 13px;
+//     lineHeight: 22px;
+//     letterSpacing : -0.28999999165534973px;
+// }
+// @mixin serif-text-large() {
+//     fontFamily : $eb-garamond-800;
+//     fontSize : 54px;
+//     lineHeight: 58px;
+//     letterSpacing : 0px;
+// }
+// @mixin serif-text-medium() {
+//     fontFamily : $eb-garamond-800;
+//     fontSize : 35px;
+//     lineHeight: 39px;
+//     letterSpacing : 0.5px;
+// }
+// @mixin serif-text-small() {
+//     fontFamily : $eb-garamond-800;
+//     fontSize : 27px;
+//     lineHeight: 32px;
+//     letterSpacing : 0.5px;
+// }
+// @mixin serif-text-xsmall() {
+//     fontFamily : $eb-garamond-800;
+//     fontSize : 24px;
+//     lineHeight: 27px;
+//     letterSpacing : 0.10000000149011612px;
+// }
+
+// 1rem   = 360px and below
+// Scaled = 361px - 839px
+// 3.5rem = 840px and above
+
+h1 {
+    font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
+}
+h2 {
+    font-size: clamp(1.8rem, -0.875rem + 8.333vw, 3rem);
+    letter-spacing : -0.25px;
+}
+h3 {
+    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 2.25rem);
+    letter-spacing : -0.3px;
+}
+h4 {
+    font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.5rem);
+    letter-spacing : -0.4px;
+}
+
+// Size p
+.text-large {
+    font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.25rem);
+}
+.text-medium {
+    font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.1rem);
+}
+.text-small {
+    font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
+    letter-spacing: -0.25px;
+}
+.x-small {
+    font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+    letter-spacing: -0.1px;
+}
+h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
+    line-height: 1.3;
+    font-family: $primary-font;
+}
+
+// Font-weight
+h1, h2, h3, h4, p {
+    font-family: $primary-font;
+    font-weight: $spartan-regular;
+    line-height: 1.2;
+}
+.primaryfont__bold {
+    font-family: $primary-font;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+

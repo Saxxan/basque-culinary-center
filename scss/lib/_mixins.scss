@@ -107,7 +107,7 @@
             }
     }
 
-    // SIZES
+    // sizes
     @if $size == large {
         font-size: 18px;
         letter-spacing: -0.3px;
@@ -151,10 +151,283 @@
     &:focus {
         // $c-primary-dark  
         color: #83390B;
-    }
-    
+    } 
+}
 
+// Btn modal
+
+
+// $lineheight__regular: (
+//     mobile
+//     "x-small"     : 1.4,
+//     "text-small"  : 1.5,
+//     "text-medium" : 1.6,
+//     "text-large"  : 2,
+//     "h-4"         : 2,
+//     "h-3"         : 2.1,
+//     "h-2"         : 2.4,
+//     "h-1"         : 2.6,
+//     desktop
+//     "x-small__desktop"     : 1.3,
+//     "text-small__desktop"  : 1.4,
+//     "text-medium__desktop" : 1.9,
+//     "text-large__desktop"  : 2,
+//     "h-4__desktop"         : 3,
+//     "h-3__desktop"         : 2.8,
+//     "h-2-d__desktop"         : 3.5,
+//     "h-1-d__desktop"         : 4.4
+// )
+
+// $lineheight__bold (
+//     mobile
+//     "x-small"     : 1.4,
+//     "text-small"  : 1.5,
+//     "text-medium" : 1.6,
+//     "text-large"  : 2,
+//     "h-4"         : 2,
+//     "h-3"         : 2.1,
+//     "h-2"         : 2.4,
+//     "h-1"         : 2.8,
+//     desktop
+//     "text-small__desktop"  : 1.5,
+//     "text-medium__desktop" : 2,
+//     "text-large__desktop"  : 2,
+//     "h-4__desktop"         : 2,
+//     "h-3__desktop"         : 3,
+//     "h-2-d__desktop"         : 3.5,
+//     "h-1-d__desktop"         : 4.5
+// )
+
+
+@mixin h-1-text() {
+    fontFamily : $spartan-regular;
+    fontSize : 56px;
+    lineHeight: 70px;
+    letterSpacing : 0px;
+}
+@mixin h-2-text() {
+    fontFamily : $spartan-regular;
+    fontSize : 48px;
+    lineHeight: 56px;
+    letterSpacing : -0.20000000298023224px;
+}
+@mixin escritorio-h-3-text() {
+    fontFamily : $spartan-regular;
+    fontSize : 36px;
+    lineHeight: 45px;
+    letterSpacing : -0.30000001192092896px;
+}
+@mixin escritorio-h-4-text() {
+  fontFamily : $spartan-regular;
+  fontSize : 24px;
+  lineHeight: 32px;
+  letterSpacing : -0.4000000059604645px;
+}
+
+
+//bold
+@mixin h-1-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 56px;
+    lineHeight: 72px;
+    letterSpacing : -1px;
+}
+@mixin h-2-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 48px;
+    lineHeight: 55px;
+    letterSpacing : -1px;
+}
+@mixin escritorio-h-3-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 36px;
+    lineHeight: 48px;
+    letterSpacing : -0.5px;
+}
+@mixin escritorio-h-4-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 24px;
+    lineHeight: 32px;
+    letterSpacing : -0.5px;
 }
 
 
 
+
+@mixin escritorio-paragraph-text-large() {
+    fontFamily : $spartan-regular;
+    fontSize : 20px;
+    lineHeight: 32px;
+    letterSpacing : 0px;
+}
+@mixin escritorio-paragraph-text-medium() {
+    fontFamily : $spartan-regular;
+    fontSize : 18px;
+    lineHeight: 31px;
+    letterSpacing : 0px;
+}
+@mixin escritorio-paragraph-text-small() {
+    fontFamily : $spartan-regular;
+    fontSize : 15px;
+    lineHeight: 23px;
+    letterSpacing : 0.25px;
+}
+@mixin escritorio-paragraph-text-x-small() {
+    fontFamily : $primary-font;
+    fontSize : 13px;
+    lineHeight: 21px;
+    letterSpacing : -0.10000000149011612px;
+}
+
+//bold
+@mixin escritorio-paragraph-text-bold-large() {
+    fontFamily : $primary-font;
+    fontSize : 20px;
+    lineHeight: 32px;
+    letterSpacing : -0.30000001192092896px;
+}
+@mixin escritorio-paragraph-text-bold-medium() {
+    fontFamily : $secondary-font;
+    fontSize : 18px;
+    lineHeight: 32px;
+    letterSpacing : -0.30000001192092896px;
+}
+@mixin escritorio-paragraph-text-bold-small() {
+    fontFamily : $secondary-font;
+    fontSize : 15px;
+    lineHeight: 24px;
+    letterSpacing : -0.30000001192092896px;
+}
+
+
+//mobile
+@mixin movil-h-1-text() {
+    fontFamily : $primary-font;
+    fontSize : 32px;
+    lineHeight: 44px;
+    letterSpacing : 0px;
+}
+@mixin movil-h-2-text() {
+    fontFamily : $primary-font;
+    fontSize : 28px;
+    lineHeight: 38px;
+    letterSpacing : 0px;
+}
+@mixin movil-h-3-text() {
+    fontFamily : $primary-font;
+    fontSize : 24px;
+    lineHeight: 34px;
+    letterSpacing : 0px;
+}
+@mixin movil-h-4-text() {
+    fontFamily : $primary-font;
+    fontSize : 20px;
+    lineHeight: 32px;
+    letterSpacing : 0px;
+}
+
+//bold
+@mixin movil-h-1-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 32px;
+    lineHeight: 44px;
+    letterSpacing : -0.20000000298023224px;
+}
+@mixin movil-h-2-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 28px;
+    lineHeight: 38px;
+    letterSpacing : 0px;
+}
+@mixin movil-h-3-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 24px;
+    lineHeight: 34px;
+    letterSpacing : 0px;
+}
+@mixin movil-h-4-text-bold() {
+    fontFamily : $spartan-800;
+    fontSize : 20px;
+    lineHeight: 32px;
+    letterSpacing : 0px;
+}
+
+
+
+@mixin movil-paragraph-text-large() {
+  fontFamily : $primary-font;
+  fontSize : 20px;
+  lineHeight: 32px;
+  letterSpacing : 0px;
+}
+@mixin movil-paragraph-text-medium() {
+  fontFamily : $primary-font;
+  fontSize : 17px;
+  lineHeight: 26px;
+  letterSpacing : 0px;
+}
+@mixin movil-paragraph-text-small() {
+    fontFamily : $primary-font;
+    fontSize : 15px;
+    lineHeight: 24px;
+    letterSpacing : 0px;
+}
+@mixin movil-paragraph-text-x-small() {
+    fontFamily : $primary-font;
+    fontSize : 13px;
+    lineHeight: 22px;
+    letterSpacing : -0.23000000417232513px;
+}
+
+
+//bold
+@mixin movil-paragraph-text-bold-large() {
+    fontFamily : $spartan-800;
+    fontSize : 20px;
+    lineHeight: 32px;
+    letterSpacing : 0px;
+}
+@mixin movil-paragraph-text-bold-medium() {
+    fontFamily : $spartan-800;
+    fontSize : 17px;
+    lineHeight: 26px;
+    letterSpacing : -0.10000000149011612px;
+}
+@mixin movil-paragraph-text-bold-small() {
+    fontFamily : $spartan-800;
+    fontSize : 15px;
+    lineHeight: 24px;
+    letterSpacing : 0px;
+}
+@mixin movil-paragraph-text-bold-x-small() {
+    fontFamily : $spartan-800;
+    fontSize : 13px;
+    lineHeight: 22px;
+    letterSpacing : -0.28999999165534973px;
+}
+
+
+@mixin serif-text-large() {
+    fontFamily : $eb-garamond-800;
+    fontSize : 54px;
+    lineHeight: 58px;
+    letterSpacing : 0px;
+}
+@mixin serif-text-medium() {
+    fontFamily : $eb-garamond-800;
+    fontSize : 35px;
+    lineHeight: 39px;
+    letterSpacing : 0.5px;
+}
+@mixin serif-text-small() {
+    fontFamily : $eb-garamond-800;
+    fontSize : 27px;
+    lineHeight: 32px;
+    letterSpacing : 0.5px;
+}
+@mixin serif-text-xsmall() {
+    fontFamily : $eb-garamond-800;
+    fontSize : 24px;
+    lineHeight: 27px;
+    letterSpacing : 0.10000000149011612px;
+}

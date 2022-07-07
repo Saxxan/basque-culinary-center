@@ -1,4 +1,10 @@
-
+/*------------------------------------*\
+$FONTS
+\*------------------------------------*/
+// .selector { font-size: fs(x-small);}
+@function fs($font-size) {
+    @return map-get($size-vars, $font-size) * 1rem;
+}
 
 
 
