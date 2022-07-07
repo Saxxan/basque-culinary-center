@@ -21,4 +21,7 @@ img {
 }
 main {
     padding: 23.5px;
+    @include respond-to(large) {
+        padding: 11.5px;
+    }
 }
