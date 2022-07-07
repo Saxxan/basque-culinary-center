@@ -23,26 +23,8 @@ $btnprimary-paddingmedium: 16px 24px;
 $btnprimary-paddingsmall: 9px 22px;
 
 /*------------------------------------*\
-    $FONT-FACE
-\*------------------------------------*/
-/**
-* Fonts definitions
-*/
-$basefont : "Spartan", Helvetica, Arial, sans-serif;
-$secondfont : "EB Garamond", Helvetica, Arial, sans-serif;
-
-$baseheadingfontweight : normal;
-$baseheadingfontcolor : inherit;
-
-$basefontsize   :   16px;
-
-
-
-
-/*------------------------------------*\
 $COLORS
 \*------------------------------------*/
-
 
 $c-white:                #ffffff;
 $c-black:                #000000;
@@ -208,16 +190,12 @@ $c-tabla-bg: $c-monocromo-200;
 $c-tabla-border: $c-monocromo-400;
 $c-tabla-text: $c-monocromo-900;
 
-
-
 /*------------------------------------*\
 $SHADOWS
 \*------------------------------------*/
 $drop-shadow-large: 0px 0px 72px 0px #0000000a;
 $drop-shadow-medium: 0px 0px 32px 0px #0000000a;
 $drop-shadow-small: 0px 0px 16px 0px #0000000a;
-
-
 
 /*------------------------------------*\
 $BREAKPOINTS
@@ -228,8 +206,6 @@ $breakpoints: (
     'large'  : 1024px,
     'extralarge'  : 1540px,
 ) !default;
-
-
 
 /*------------------------------------*\
 $FONTS
@@ -247,13 +223,6 @@ $eb-garamond-600: 600;
 $eb-garamond-700: 700;
 $eb-garamond-bold: 800;
 $eb-garamond-regular: 400;
-
-p {
-    font-size: 16px;
-    font-family: $primary-font;
-    // 1rem = 16px
-}
-
 
 // $size-vars: (
 //     // mobile
@@ -514,6 +483,11 @@ h4 {
 }
 
 // Size p
+p {
+    font-size: 16px;
+    font-family: $primary-font;
+    // 1rem = 16px
+}
 .text-large {
     font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.25rem);
 }
@@ -532,7 +506,6 @@ h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
     line-height: 1.3;
     font-family: $primary-font;
 }
-
 // Font-weight
 h1, h2, h3, h4, p {
     font-family: $primary-font;
@@ -552,7 +525,10 @@ h1, h2, h3, h4, p {
     }
 }
 
-
+h1 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
 
 
 

@@ -12,7 +12,6 @@
         }
     }
     &__img {
-        max-width: 35%;
         height: auto;
         object-fit: cover; 
         object-position: center;
@@ -39,7 +38,6 @@
         }
         &-formacion {
             @extend .card__details;
-            font-size: 15px;
             color: $c-monocromo-100;
         }
         &-investigacion {
@@ -56,7 +54,6 @@
         h3 {
             margin-block-end: 0.09rem;
             margin-block-start: 1rem;
-            font-size: 15px;
             text-transform: uppercase;
         }
         p {

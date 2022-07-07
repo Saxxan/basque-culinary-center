@@ -54,6 +54,14 @@
     &__img {
         border-radius: 20px;
         width: 100%;
+        
+        &--bloq2 {
+            border-radius: 20px 20px 0 0;
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     &__link {
         @include respond-to(large) {
