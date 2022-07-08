@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    LINKS
+\*------------------------------------*/
+.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $c-primary-dark;
+    &:link,
+    &:active {
+        color: $c-primary-dark;
+    }
+    &:hover { 
+        color: $c-primary-default;
+    }
+    &:focus { 
+        color: $c-primary-dark ;
+    } 
+}

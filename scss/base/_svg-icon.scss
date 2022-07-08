@@ -7,11 +7,11 @@
     fill: currentColor;
     &--right {
         @extend .svg__icon;
-        margin-left: 20px;
+        margin-left:$small;
     }
     &--left {
         @extend .svg__icon;
-        margin-right: 20px;
+        margin-right: $small;
         float: left;
     }
 }

@@ -149,24 +149,3 @@
 }
 }
 
-/*------------------------------------*\
-    LINKS
-\*------------------------------------*/
-
-.link {
-    text-transform: uppercase;
-    &:link,
-    &:active {
-        // $c-monocromo-900
-        color: #26201B;
-    }
-    &:hover {
-        // $c-primary-default
-        color: #B36206;
-    }
-    &:focus {
-        // $c-primary-dark  
-        color: #83390B;
-    } 
-}
-
