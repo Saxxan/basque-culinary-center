@@ -420,6 +420,7 @@ h1 {
   }
 }
 .card__img {
+  max-width: 35%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
