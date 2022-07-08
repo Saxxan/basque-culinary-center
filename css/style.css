@@ -384,6 +384,7 @@ h1, h2, h3 {
   display: flex;
   border-radius: 4px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 @media (min-width: 700px) {
   .card {
@@ -398,7 +399,7 @@ h1, h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 29px;
+    gap: 32px;
   }
 }
 .card__img {
@@ -862,4 +863,8 @@ main {
 }
 .title__link a {
   padding-bottom: 16px;
+}
+
+h3 {
+  padding-bottom: 32px;
 }
