@@ -1,0 +1,15 @@
+//Space elements
+.title {
+
+    &__link {
+        display: flex;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: $large;   
+        a {
+            padding-bottom: $small;
+        }
+    }
+}

@@ -1,7 +1,5 @@
 .noticia {
-    padding-bottom: 20px;
     border-bottom: 1px solid $c-monocromo-900;
-    margin-bottom: 20px;
     @include respond-to(large) {
         border-bottom: 0;
     }
@@ -12,24 +10,22 @@
         }
     }
     &__principal {
-        gap: 28px;
+        @extend .noticia;
+        gap: $regular;
+
         @include respond-to(large) {
             display: flex;
+            margin-bottom: $x-large;
         }
     }
     &__title {
-        margin-top: 0.7em;
-        font-size: 17px;
+        margin-bottom: $small;
         @include respond-to(large) {
-            font-size: 24px; 
             order: 0;
         }
     }
     &__description {
-        margin-top: 0.5em;
-    }
-    &__fecha {
-        font-size: 18px;
+        margin: $small 0;
     }
     &__tag {
         position: absolute;
@@ -43,6 +39,7 @@
         }
         &--bloq2 {
             display: inline;
+            margin: $small 0;
             @include respond-to(large) {
                 position: absolute;
                 display: flex;
@@ -61,6 +58,7 @@
             width: 100%;
             object-fit: cover;
             object-position: center;
+            margin-bottom: $small;
         }
     }
     &__link {

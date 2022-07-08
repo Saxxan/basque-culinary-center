@@ -1,15 +1,6 @@
 /*------------------------------------*\
 $LAYOUT
 \*------------------------------------*/
-/**
-* Constant layout values, apart from these we can also declare values
-* for different blocks sizes and more.
-*/
-$baselineheight:     1.5;
-$gutterwidth:        24px;
-$padding:            $gutterwidth;
-$minigutter:         $gutterwidth / 2;
-$pagemaxwidth:       1024px;
 
 //ButtonLayout
 $btnprimary-radius:  4px;
@@ -189,6 +180,18 @@ $c-check-hover: $c-monocromo-200;
 $c-tabla-bg: $c-monocromo-200;
 $c-tabla-border: $c-monocromo-400;
 $c-tabla-text: $c-monocromo-900;
+
+/*------------------------------------*\
+$SPACES
+\*------------------------------------*/
+$none: 0px;
+$x-small: 8px;
+$small: 16px;
+$regular: 24px;
+$large: 32px;
+$x-large: 48px;
+$xx-large: 64px;
+$xx-small: 4px;
 
 /*------------------------------------*\
 $SHADOWS
@@ -530,9 +533,9 @@ h1, h2, h3, h4, p {
 }
 
 
-h1 {
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+h1, h2, h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 

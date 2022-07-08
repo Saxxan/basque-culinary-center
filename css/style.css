@@ -5,12 +5,11 @@ $FONTS
 /*------------------------------------*\
 $LAYOUT
 \*------------------------------------*/
-/**
-* Constant layout values, apart from these we can also declare values
-* for different blocks sizes and more.
-*/
 /*------------------------------------*\
 $COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+$SPACES
 \*------------------------------------*/
 /*------------------------------------*\
 $SHADOWS
@@ -93,11 +92,11 @@ h1, h2, h3, h4, p {
   font-weight: 800;
 }
 
-h1 {
-  -webkit-margin-before: 0.83em;
-          margin-block-start: 0.83em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
+h1, h2, h3 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 /*------------------------------------*\
@@ -857,13 +856,11 @@ a {
   display: block;
 }
 
-.noticia {
-  padding-bottom: 20px;
+.noticia, .noticia__principal {
   border-bottom: 1px solid #26201B;
-  margin-bottom: 20px;
 }
 @media (min-width: 1024px) {
-  .noticia {
+  .noticia, .noticia__principal {
     border-bottom: 0;
   }
 }
@@ -878,32 +875,28 @@ a {
   }
 }
 .noticia__principal {
-  gap: 28px;
+  gap: 24px;
 }
 @media (min-width: 1024px) {
   .noticia__principal {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 48px;
   }
 }
 .noticia__title {
-  margin-top: 0.7em;
-  font-size: 17px;
+  margin-bottom: 16px;
 }
 @media (min-width: 1024px) {
   .noticia__title {
-    font-size: 24px;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
 }
 .noticia__description {
-  margin-top: 0.5em;
-}
-.noticia__fecha {
-  font-size: 18px;
+  margin: 16px 0;
 }
 .noticia__tag {
   position: absolute;
@@ -922,6 +915,7 @@ a {
 }
 .noticia__tag--bloq2 {
   display: inline;
+  margin: 16px 0;
 }
 @media (min-width: 1024px) {
   .noticia__tag--bloq2 {
@@ -945,6 +939,7 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  margin-bottom: 16px;
 }
 @media (min-width: 1024px) {
   .noticia__link {
@@ -1085,4 +1080,22 @@ main {
   main {
     padding: 11.5px;
   }
+}
+
+.title__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 32px;
+}
+.title__link a {
+  padding-bottom: 16px;
 }
