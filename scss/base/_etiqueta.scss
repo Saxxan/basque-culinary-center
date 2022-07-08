@@ -9,22 +9,27 @@
         &__grado {
             @extend .etiqueta;
             background-color: $c-formacion-grado;
+            border: 2px solid $c-formacion-grado;
         }
         &__master {
             @extend .etiqueta;
             background-color: $c-formacion-master;
+            border: 2px solid $c-formacion-master;
         }
         &__doctorado {
             @extend .etiqueta;
             background-color: $c-formacion-doctorado;
+            border: 2px solid $c-formacion-doctorado;
         }
         &__profesionales {
             @extend .etiqueta;
             background-color: $c-formacion-profesionales;
+            border: 2px solid $c-formacion-profesionales;
         }
         &__entusiastas {
             @extend .etiqueta;
             background-color: $c-formacion-entusiastas;
+            border: 2px solid $c-formacion-entusiastas;
         }
 
         // Etiquetas card-producto

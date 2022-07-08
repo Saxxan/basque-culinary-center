@@ -42,7 +42,13 @@ h4 {
 
 p {
   font-size: 16px;
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
+}
+
+span {
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+  letter-spacing: -0.23px;
 }
 
 .text-large {
@@ -65,11 +71,11 @@ p {
 
 h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
   line-height: 1.3;
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 h1, h2, h3, h4, p {
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 100;
   line-height: 1.2;
 }
@@ -163,7 +169,7 @@ h1 {
   letter-spacing: -0.3px;
   padding: 20px 32px;
   font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.3px;
   font-weight: 100;
   text-transform: uppercase;
@@ -196,7 +202,7 @@ h1 {
   letter-spacing: -0.3px;
   padding: 20px 32px;
   font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.3px;
   font-weight: 100;
   text-transform: uppercase;
@@ -227,7 +233,7 @@ h1 {
   letter-spacing: -0.3px;
   padding: 16px 24px;
   font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.3px;
   font-weight: 100;
   text-transform: uppercase;
@@ -260,7 +266,7 @@ h1 {
   letter-spacing: -0.3px;
   padding: 16px 24px;
   font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.3px;
   font-weight: 100;
   text-transform: uppercase;
@@ -291,7 +297,7 @@ h1 {
   letter-spacing: -0.2px;
   padding: 9px 22px;
   font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.2px;
   font-weight: 100;
   text-transform: uppercase;
@@ -324,7 +330,7 @@ h1 {
   letter-spacing: -0.2px;
   padding: 9px 22px;
   font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.2px;
   font-weight: 100;
   text-transform: uppercase;
@@ -364,7 +370,7 @@ h1 {
   letter-spacing: -0.3px;
   padding: 20px 32px;
   font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: -0.3px;
   font-weight: 100;
   text-transform: uppercase;
@@ -589,18 +595,23 @@ h1 {
 }
 .etiqueta__grado {
   background-color: #5D4976;
+  border: 2px solid #5D4976;
 }
 .etiqueta__master {
   background-color: #A7706C;
+  border: 2px solid #A7706C;
 }
 .etiqueta__doctorado {
   background-color: #E19F40;
+  border: 2px solid #E19F40;
 }
 .etiqueta__profesionales {
   background-color: #1E60BF;
+  border: 2px solid #1E60BF;
 }
 .etiqueta__entusiastas {
   background-color: #989A2B;
+  border: 2px solid #989A2B;
 }
 .etiqueta__card--producto {
   color: #008A00;

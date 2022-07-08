@@ -212,13 +212,13 @@ $FONTS
 \*------------------------------------*/
 
 // Font Spartan
-$primary-font: "League Spartan", Helvetica, Arial, sans-serif;
+$primary-font: "League Spartan", sans-serif;
 $spartan-600: 600;
 $spartan-700: 700;
 $spartan-bold: 800;
 $spartan-regular: 100;
 //Font EB Garamond
-$eb-garamond-font:"EB Garamond", Georgia, Times, serif;
+$eb-garamond-font:"EB Garamond", serif;
 $eb-garamond-600: 600;
 $eb-garamond-700: 700;
 $eb-garamond-bold: 800;
@@ -461,11 +461,11 @@ $eb-garamond-regular: 400;
 //     lineHeight: 27px;
 //     letterSpacing : 0.10000000149011612px;
 // }
-
 // 1rem   = 360px and below
 // Scaled = 361px - 839px
 // 3.5rem = 840px and above
 
+//Elements
 h1 {
     font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
 }
@@ -481,12 +481,16 @@ h4 {
     font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.5rem);
     letter-spacing : -0.4px;
 }
-
 // Size p
 p {
     font-size: 16px;
     font-family: $primary-font;
     // 1rem = 16px
+}
+span {
+    font-family: $primary-font;
+    font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+    letter-spacing: -0.23px;
 }
 .text-large {
     font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.25rem);
@@ -524,6 +528,7 @@ h1, h2, h3, h4, p {
         font-weight: $spartan-bold;
     }
 }
+
 
 h1 {
     margin-block-start: 0.83em;
