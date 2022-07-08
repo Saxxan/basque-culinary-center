@@ -52,19 +52,40 @@ span {
 .text-large {
   font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.25rem);
 }
-
+.text-large__garamond {
+  font-family: "EB Garamond", serif;
+  font-size: clamp(3.4rem, -0.875rem + 8.333vw, 3.4rem);
+  font-weight: 800;
+  line-height: 3.6rem;
+}
 .text-medium {
   font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.1rem);
 }
-
+.text-medium__garamond {
+  font-family: "EB Garamond", serif;
+  font-size: clamp(2.2rem, -0.875rem + 8.333vw, 2.2rem);
+  font-weight: 800;
+  line-height: 2.5rem;
+}
 .text-small {
-  font-size: clamp(.94rem, -0.875rem + 8.333vw, 1.5rem);
+  font-size: clamp(.94rem, -0.875rem + 8.333vw, .91rem);
   letter-spacing: -0.25px;
+}
+.text-small__garamond {
+  font-family: "EB Garamond", serif;
+  font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.7rem);
+  font-weight: 800;
+  line-height: 2rem;
 }
 
 .x-small {
   font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
   letter-spacing: -0.1px;
+}
+.x-small__garamond {
+  font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.7rem;
 }
 
 h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
@@ -126,6 +147,135 @@ h1, h2, h3 {
   background-color: #83390B;
   height: 100%;
   float: left;
+}
+
+.box, .box__principal {
+  border-bottom: 1px solid #26201B;
+}
+@media (min-width: 1024px) {
+  .box, .box__principal {
+    border-bottom: 0;
+  }
+}
+.box__bloque {
+  gap: 30px;
+}
+@media (min-width: 1024px) {
+  .box__bloque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.box__principal {
+  gap: 24px;
+}
+@media (min-width: 1024px) {
+  .box__principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 48px;
+  }
+}
+.box__title {
+  margin: 16px 0;
+}
+@media (min-width: 1024px) {
+  .box__title {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+.box__title--date {
+  margin: 16px 0 8px 0;
+}
+.box__date {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.box__date--space {
+  padding-right: 16px;
+}
+.box__description {
+  margin: 16px 0;
+}
+.box__description--date {
+  margin-top: 8px;
+}
+.box__tag {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-top: -4px;
+  color: #FFE6B0;
+}
+@media (min-width: 1024px) {
+  .box__tag {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+}
+.box__tag--bloq2 {
+  display: inline;
+  margin: 16px 0;
+}
+@media (min-width: 1024px) {
+  .box__tag--bloq2 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+}
+.box__tag--space {
+  margin-right: 10px;
+}
+.box__img {
+  border-radius: 20px;
+  width: 100%;
+}
+.box__img--bloq2 {
+  border-radius: 20px 20px 0 0;
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .box__link {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .box__content {
+    width: 35%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 /*------------------------------------*\
@@ -567,42 +717,6 @@ h1, h2, h3 {
   transform: rotate(45deg);
 }
 
-.etiqueta, .etiqueta__card--producto, .etiqueta__entusiastas, .etiqueta__profesionales, .etiqueta__doctorado, .etiqueta__master, .etiqueta__grado {
-  padding: 3px 8px;
-  text-align: center;
-  color: #F4F3EF;
-  letter-spacing: -0.23px;
-  border-radius: 8px;
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-}
-.etiqueta__grado {
-  background-color: #5D4976;
-  border: 2px solid #5D4976;
-}
-.etiqueta__master {
-  background-color: #A7706C;
-  border: 2px solid #A7706C;
-}
-.etiqueta__doctorado {
-  background-color: #E19F40;
-  border: 2px solid #E19F40;
-}
-.etiqueta__profesionales {
-  background-color: #1E60BF;
-  border: 2px solid #1E60BF;
-}
-.etiqueta__entusiastas {
-  background-color: #989A2B;
-  border: 2px solid #989A2B;
-}
-.etiqueta__card--producto {
-  color: #008A00;
-  border: 2px solid #008A00;
-  background-color: #ffffff;
-}
-
 /*------------------------------------*\
     LINKS
 \*------------------------------------*/
@@ -619,117 +733,6 @@ h1, h2, h3 {
 }
 .link:focus {
   color: #83390B;
-}
-
-.noticia, .noticia__principal {
-  border-bottom: 1px solid #26201B;
-}
-@media (min-width: 1024px) {
-  .noticia, .noticia__principal {
-    border-bottom: 0;
-  }
-}
-.noticia__bloque {
-  gap: 30px;
-}
-@media (min-width: 1024px) {
-  .noticia__bloque {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-.noticia__principal {
-  gap: 24px;
-}
-@media (min-width: 1024px) {
-  .noticia__principal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 48px;
-  }
-}
-.noticia__title {
-  margin-bottom: 16px;
-}
-@media (min-width: 1024px) {
-  .noticia__title {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-}
-.noticia__description {
-  margin: 16px 0;
-}
-.noticia__tag {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -4px;
-  margin-top: -4px;
-  color: #FFE6B0;
-}
-@media (min-width: 1024px) {
-  .noticia__tag {
-    margin-left: -8px;
-    margin-top: -8px;
-  }
-}
-.noticia__tag--bloq2 {
-  display: inline;
-  margin: 16px 0;
-}
-@media (min-width: 1024px) {
-  .noticia__tag--bloq2 {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: -8px;
-    margin-top: -8px;
-  }
-}
-.noticia__img {
-  border-radius: 20px;
-  width: 100%;
-}
-.noticia__img--bloq2 {
-  border-radius: 20px 20px 0 0;
-  height: 300px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  margin-bottom: 16px;
-}
-@media (min-width: 1024px) {
-  .noticia__link {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-}
-@media (min-width: 1024px) {
-  .noticia__content {
-    width: 35%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
 }
 
 .svg__icon, .svg__icon--left, .svg__icon--right {
@@ -799,6 +802,47 @@ input:checked + .slider::before {
   -webkit-transform: translatex(30px);
           transform: translatex(30px);
   background-color: #FCFCFC;
+}
+
+.tag, .tag__card--border, .tag__card--grey, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
+  padding: 3px 8px;
+  text-align: center;
+  color: #F4F3EF;
+  letter-spacing: -0.23px;
+  border-radius: 8px;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+}
+.tag__grado {
+  background-color: #5D4976;
+  border: 2px solid #5D4976;
+}
+.tag__master {
+  background-color: #A7706C;
+  border: 2px solid #A7706C;
+}
+.tag__doctorado {
+  background-color: #E19F40;
+  border: 2px solid #E19F40;
+}
+.tag__profesionales {
+  background-color: #1E60BF;
+  border: 2px solid #1E60BF;
+}
+.tag__entusiastas {
+  background-color: #989A2B;
+  border: 2px solid #989A2B;
+}
+.tag__card--grey {
+  color: #26201B;
+  border: 2px solid #DFDAD3;
+  background-color: #DFDAD3;
+}
+.tag__card--border {
+  color: #008A00;
+  border: 2px solid #008A00;
+  background-color: #ffffff;
 }
 
 p, h4 {

@@ -222,11 +222,10 @@ $spartan-700: 700;
 $spartan-bold: 800;
 $spartan-regular: 100;
 //Font EB Garamond
-$eb-garamond-font:"EB Garamond", serif;
-$eb-garamond-600: 600;
-$eb-garamond-700: 700;
-$eb-garamond-bold: 800;
-$eb-garamond-regular: 400;
+$garamond-font:"EB Garamond", serif;
+$garamond-600: 600;
+$garamond-700: 700;
+$garamond-bold: 800;
 
 // $size-vars: (
 //     // mobile
@@ -446,6 +445,7 @@ $eb-garamond-regular: 400;
 //     fontSize : 54px;
 //     lineHeight: 58px;
 //     letterSpacing : 0px;
+
 // }
 // @mixin serif-text-medium() {
 //     fontFamily : $eb-garamond-800;
@@ -496,20 +496,47 @@ span {
     font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
     letter-spacing: -0.23px;
 }
-.text-large {
+.text{
+    &-large {
     font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.25rem);
-}
-.text-medium {
-    font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.1rem);
-}
-.text-small {
-    font-size: clamp(.94rem, -0.875rem + 8.333vw, 1.5rem);
-    letter-spacing: -0.25px;
+        &__garamond {
+            font-family: $garamond-font;
+            font-size: clamp(3.4rem, -0.875rem + 8.333vw, 3.4rem);
+            font-weight: $garamond-bold;
+            line-height: 3.6rem;
+        }
+    }
+    &-medium {
+        font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.1rem);
+        &__garamond {
+            font-family: $garamond-font;
+            font-size: clamp(2.2rem, -0.875rem + 8.333vw, 2.2rem);
+            font-weight: $garamond-bold;
+            line-height: 2.5rem;
+        }
+    }
+    &-small {
+        font-size: clamp(.94rem, -0.875rem + 8.333vw, .91rem);
+        letter-spacing: -0.25px;
+        &__garamond {
+            font-family: $garamond-font;
+            font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.7rem);
+            font-weight: $garamond-bold;
+            line-height: 2rem;
+        }
+    }
 }
 .x-small {
     font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
     letter-spacing: -0.1px;
+    &__garamond {
+        font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
+        font-weight: $garamond-bold;
+        line-height: 1.7rem;
+    }
 }
+
+
 h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
     line-height: 1.3;
     font-family: $primary-font;
@@ -532,8 +559,6 @@ h1, h2, h3, h4, p {
         font-weight: $spartan-bold;
     }
 }
-
-
 h1, h2, h3 {
     margin-block-start: 0;
     margin-block-end: 0;

@@ -1,4 +1,4 @@
-.noticia {
+.box {
     border-bottom: 1px solid $c-monocromo-900;
     @include respond-to(large) {
         border-bottom: 0;
@@ -10,7 +10,7 @@
         }
     }
     &__principal {
-        @extend .noticia;
+        @extend .box;
         gap: $regular;
 
         @include respond-to(large) {
@@ -19,13 +19,27 @@
         }
     }
     &__title {
-        margin-bottom: $small;
+        margin: $small 0;
         @include respond-to(large) {
             order: 0;
         }
+        &--date {
+            margin: $small 0 $x-small 0;
+        }
+    }
+    &__date {
+        margin-bottom: $small;
+        display: flex;
+        &--space {
+            padding-right: $small;
+        }
+
     }
     &__description {
         margin: $small 0;
+        &--date {
+            margin-top: $x-small;
+        }
     }
     &__tag {
         position: absolute;
@@ -46,6 +60,9 @@
                 margin-left: -8px;
                 margin-top: -8px;
             }
+        }
+        &--space {
+            margin-right: 10px;
         }
     }
     &__img {
