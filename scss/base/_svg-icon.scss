@@ -14,4 +14,12 @@
         margin-right: $small;
         float: left;
     }
+    &--date {
+        @extend .svg__icon;
+        width: 27px;
+    }
+    &--margin {
+        @extend .svg__icon;
+        margin-right: $x-small;
+    }
 }
