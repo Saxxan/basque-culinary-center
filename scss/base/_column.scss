@@ -1,0 +1,27 @@
+.column {
+    display: flex;
+    padding-bottom: $x-large;
+    @include respond-to(large) {
+        padding-bottom: 0;
+    }
+
+    &__icon {
+        width: 47px;
+        margin-right: $x-regular;
+    }
+    &__title {
+        padding-bottom: $xx-small;
+    }
+    &__text {
+        padding-bottom: $x-large;
+        &--icon {
+            color: $c-primary-dark;
+        }
+    }
+    &__desktop {
+        @include respond-to(large) {
+            display: flex;
+            gap: $regular;
+        }
+    }
+}

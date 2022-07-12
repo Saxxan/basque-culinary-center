@@ -21,6 +21,7 @@ $FONTS
 \*------------------------------------*/
 h1 {
   font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
+  padding-bottom: 32px;
 }
 
 h2 {
@@ -754,6 +755,39 @@ h1, h2, h3 {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 48px;
+}
+@media (min-width: 1024px) {
+  .column {
+    padding-bottom: 0;
+  }
+}
+.column__icon {
+  width: 47px;
+  margin-right: 20px;
+}
+.column__title {
+  padding-bottom: 4px;
+}
+.column__text {
+  padding-bottom: 48px;
+}
+.column__text--icon {
+  color: #83390B;
+}
+@media (min-width: 1024px) {
+  .column__desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+  }
 }
 
 /*------------------------------------*\
