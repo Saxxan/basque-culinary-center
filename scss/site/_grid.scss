@@ -1,9 +1,18 @@
 .grid {
-    &__c3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: $regular;
-    grid-auto-rows: minmax(100px, auto);
+    @include respond-to(large) {    
+        &__c3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: $regular;
+        grid-auto-rows: minmax(100px, auto);
+        }
+        &__c5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: $regular;
+            grid-auto-rows: minmax(100px, auto);
+        }
     }
 }
+
 
