@@ -40,11 +40,11 @@ h4 {
 
 p {
   font-size: 16px;
-  font-family: "League Spartan", sans-serif;
+  font-family: 100;
 }
 
 span {
-  font-family: "League Spartan", sans-serif;
+  font-family: 100;
   font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
   letter-spacing: -0.23px;
 }
@@ -94,7 +94,7 @@ h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
 }
 
 h1, h2, h3, h4, p {
-  font-family: "League Spartan", sans-serif;
+  font-family: 100;
   font-weight: 100;
   line-height: 1.2;
 }
@@ -106,10 +106,10 @@ h1, h2, h3, h4, p {
   font-weight: 600;
 }
 .primaryfont__bold--700 {
-  font-weight: 700;
+  font-weight: 600;
 }
 .primaryfont__bold--800 {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 h1, h2, h3 {
@@ -201,7 +201,7 @@ h1, h2, h3 {
   }
 }
 .box__title {
-  margin: 16px 0;
+  margin: 8px 0;
 }
 @media (min-width: 1024px) {
   .box__title {
@@ -223,7 +223,7 @@ h1, h2, h3 {
   padding-right: 16px;
 }
 .box__description {
-  margin: 16px 0;
+  margin: 8px 0;
 }
 .box__description--date {
   margin-top: 8px;

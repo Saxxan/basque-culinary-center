@@ -34,7 +34,7 @@
         }
     }
     &__title {
-        margin: $small 0;
+        margin: $x-small 0;
         @include respond-to(large) {
             order: 0;
         }
@@ -51,7 +51,7 @@
 
     }
     &__description {
-        margin: $small 0;
+        margin: $x-small 0;
         &--date {
             margin-top: $x-small;
         }
