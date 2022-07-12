@@ -425,6 +425,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   display: inline;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .btn__primary--large-nocolor:link {
   color: #B36206;
@@ -1210,6 +1211,15 @@ p, h4 {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
+}
+
+.grid__c3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 html {

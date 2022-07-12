@@ -1,4 +1,6 @@
 // Al dar clic muestra el menú
+alert('hola');
+
 $('.open').click(function(){
     $(this).css('display', 'none');
     $('.close').css('display', 'block');

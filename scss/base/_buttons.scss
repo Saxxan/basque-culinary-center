@@ -28,6 +28,7 @@
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : large);
                 @include btn__fontbig;
+                font-weight: 400;
                 
             }
             &--medium-color {

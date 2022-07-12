@@ -1,0 +1,9 @@
+.grid {
+    &__c3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: $regular;
+    grid-auto-rows: minmax(100px, auto);
+    }
+}
+
