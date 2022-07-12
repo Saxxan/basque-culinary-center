@@ -1,0 +1,29 @@
+.gradient {
+	padding: 7px 24px;
+    &__home {
+        @extend .gradient;
+        background: linear-gradient(274.9deg, #EAAC30 3.95%, #83390B 96.05%);
+        animation: gradient 5s ease infinite;
+        background-size: 400% 400%;
+    }
+    @include respond-to(large) {
+        padding: 13.5px 24px;
+    }
+    &__text {
+        color: $c-monocromo-100;
+        a {
+            color: $c-monocromo-100;
+        }
+    }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

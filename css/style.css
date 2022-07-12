@@ -153,6 +153,50 @@ h1, h2, h3 {
   float: left;
 }
 
+.gradient, .gradient__home {
+  padding: 7px 24px;
+}
+.gradient__home {
+  background: linear-gradient(274.9deg, #EAAC30 3.95%, #83390B 96.05%);
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+}
+@media (min-width: 1024px) {
+  .gradient, .gradient__home {
+    padding: 13.5px 24px;
+  }
+}
+.gradient__text {
+  color: #F4F3EF;
+}
+.gradient__text a {
+  color: #F4F3EF;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .box, .box__principal {
   border-bottom: 1px solid #26201B;
 }
