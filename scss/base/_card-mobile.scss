@@ -30,6 +30,12 @@
             background-color: $c-white;
         }
     }
+    &__description {
+        margin-block-start: 1.5rem;
+    }
+    &__title {
+        text-transform: uppercase;
+    }
     &__details {
         padding: 0 1rem 1rem;
         display: flex;
@@ -59,7 +65,7 @@
             text-transform: uppercase;
         }
         p {
-            margin-block-start: 0.5rem;
+            margin-block-start: 1rem;
         }
         
         &-producto {

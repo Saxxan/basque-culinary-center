@@ -27,10 +27,15 @@
     &__principal {
         @extend .box;
         gap: $regular;
-
         @include respond-to(large) {
             display: flex;
             margin-bottom: $x-large;
+        }
+        &--margin {
+            padding-bottom: $regular;
+            @include respond-to(large) {
+                margin-bottom: $xx-large;
+            }
         }
     }
     &__title {
