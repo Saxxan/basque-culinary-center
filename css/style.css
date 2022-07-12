@@ -1046,6 +1046,7 @@ input:checked + .slider::before {
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
+  font-family: "League Spartan", sans-serif;
 }
 .tag__grado {
   background-color: #5D4976;

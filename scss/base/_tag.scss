@@ -5,6 +5,7 @@
     letter-spacing: -0.23px;
     border-radius: 8px;
     appearance: button;
+    font-family: $primary-font;
         // Tag formación
         &__grado {
             @extend .tag;
