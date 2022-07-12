@@ -1,0 +1,94 @@
+
+.topbar__submenu--link{
+color: #000;
+text-decoration: none;
+}
+
+.topbar__submenu--list{
+list-style: none;
+}
+
+.submenu__container{
+height: 50px;
+width: 100%;
+background: #CE852A;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+position: relative;
+color: #fff;
+}
+
+.open, .close {
+display: none;
+font-size: 30px;
+cursor: pointer;
+}
+
+.topbar{
+height: 100%;
+width: 60%;
+background: #CE852A;
+}
+
+.topbar ul{
+height: 100%;
+width: 100%;
+background: #CE852A;
+display: flex;
+justify-content: space-around;
+}
+
+.topbar ul li{
+height: 100%;
+width: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+cursor: pointer;
+}
+
+.topbar ul li:hover{
+background: rgba(0,0,0,0.3);
+}
+
+.topbar ul li a{
+color: #fff;
+}
+
+.topbar__submenu{
+position: relative;
+}
+
+.topbar__submenu a{
+padding-left: 5px;
+}
+
+.topbar__submenu i{
+font-size: 1.2rem;
+}
+
+.topbar__submenu > ul{
+height: 200px;
+width: 100%;
+background: #CE852A;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+position: absolute;
+transform: translateY(125px) scale(1, 0);
+transform-origin: top;
+transition: transform 0.2s linear .5s;
+}
+
+.topbar__submenu:hover > ul{
+transform: translateY(125px) scale(1, 1);
+}
+
+.topbar__submenu > ul li{
+height: 100%;
+width: 100%;
+}
+
