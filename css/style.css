@@ -71,6 +71,7 @@ span {
 .text-small {
   font-size: clamp(.94rem, -0.875rem + 8.333vw, .91rem);
   letter-spacing: -0.25px;
+  font-weight: 400;
 }
 .text-small__garamond {
   font-family: "EB Garamond", serif;
@@ -205,6 +206,11 @@ h1, h2, h3 {
     border-bottom: 0;
   }
 }
+.box__background {
+  background-color: #F4F3EF;
+  padding: 24px;
+  margin-bottom: 24px;
+}
 .box__icon, .box__icon--date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +227,7 @@ h1, h2, h3 {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 16px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 .box__icon--date-color {
   color: #83390B;
@@ -270,7 +276,6 @@ h1, h2, h3 {
   margin: 16px 0 8px 0;
 }
 .box__date {
-  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +287,7 @@ h1, h2, h3 {
   margin: 8px 0;
 }
 .box__description--date {
-  margin-top: 8px;
+  margin: 8px 0;
 }
 .box__tag {
   position: absolute;
@@ -329,6 +334,9 @@ h1, h2, h3 {
   -o-object-position: center;
      object-position: center;
   margin-bottom: 16px;
+}
+.box__img--bloq2-border {
+  border-radius: 8px;
 }
 @media (min-width: 1024px) {
   .box__link {
@@ -521,6 +529,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   display: inline;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .btn__primary--small-color:link {
   background-color: #B36206;
@@ -554,6 +563,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   display: inline;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .btn__primary--small-nocolor:link {
   color: #B36206;
@@ -975,6 +985,7 @@ li:first-child {
 }
 .svg__icon--margin {
   margin-right: 8px;
+  margin-bottom: 0.1rem;
 }
 
 .switch {
@@ -1029,7 +1040,7 @@ input:checked + .slider::before {
   background-color: #FCFCFC;
 }
 
-.tag, .tag__card--border, .tag__card--grey, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
+.tag, .tag__card--border, .tag__card--grey, .tag__salud, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
   padding: 3px 8px;
   text-align: center;
   color: #F4F3EF;
@@ -1059,6 +1070,10 @@ input:checked + .slider::before {
 .tag__entusiastas {
   background-color: #989A2B;
   border: 2px solid #989A2B;
+}
+.tag__salud {
+  background-color: #0B2173;
+  border: 2px solid #0B2173;
 }
 .tag__card--grey {
   color: #26201B;
@@ -1250,7 +1265,7 @@ img {
 }
 
 main {
-  padding: 23.5px;
+  padding: 24px;
 }
 @media (min-width: 1024px) {
   main {

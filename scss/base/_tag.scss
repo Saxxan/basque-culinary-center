@@ -32,6 +32,11 @@
             background-color: $c-formacion-entusiastas;
             border: 2px solid $c-formacion-entusiastas;
         }
+        &__salud {
+            @extend .tag;
+            background-color: $c-azul-dark;
+            border: 2px solid $c-azul-dark;
+        }
         // Tag grey
         &__card--grey{
             @extend .tag;

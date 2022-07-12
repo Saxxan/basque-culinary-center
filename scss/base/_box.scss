@@ -3,6 +3,11 @@
     @include respond-to(large) {
         border-bottom: 0;
     }
+    &__background {
+        background-color: $c-monocromo-100;
+        padding: $regular;
+        margin-bottom: $regular;
+    }
     &__icon {
         display: flex;
         justify-content: flex-start;
@@ -11,7 +16,7 @@
             @extend .box__icon;
             align-items: center;
             padding-right: $small;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             &-color{
                 color: $c-primary-dark;
                 padding-right: $x-small;
@@ -48,7 +53,6 @@
         }
     }
     &__date {
-        margin-bottom: $small;
         display: flex;
         &--space {
             padding-right: $small;
@@ -58,7 +62,7 @@
     &__description {
         margin: $x-small 0;
         &--date {
-            margin-top: $x-small;
+            margin: $x-small 0;
         }
     }
     &__tag {
@@ -96,6 +100,9 @@
             object-fit: cover;
             object-position: center;
             margin-bottom: $small;
+            &-border {
+                border-radius: $x-small;
+            }
         }
     }
     &__link {

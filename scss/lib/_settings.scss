@@ -521,6 +521,7 @@ span {
     &-small {
         font-size: clamp(.94rem, -0.875rem + 8.333vw, .91rem);
         letter-spacing: -0.25px;
+        font-weight: $spartan-400;
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.7rem);

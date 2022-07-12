@@ -45,11 +45,13 @@
                 @extend .btn__primary;
                 @include btn__primary ($background: color, $size : small);
                 @include btn__fontsmall;
+                font-weight: 400;
             }
             &--small-nocolor {
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : small);
                 @include btn__fontsmall;
+                font-weight: 400;
             }
     }
     &__modal {

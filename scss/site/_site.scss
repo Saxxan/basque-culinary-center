@@ -20,7 +20,7 @@ img {
     max-width: 100%;
 }
 main {
-    padding: 23.5px;
+    padding: $regular;
     @include respond-to(large) {
         padding: 11.5px;
     }
