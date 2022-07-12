@@ -12,32 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,600&amp;family=League+Spartan:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
-    <nav> 
-      <ul class="menu"> 
-        <li class="logo"> <a href=""><img src="../../src/images/logo-bcc.png" alt=""></a></li>
-        <li class="item"><a href="">Inicio </a></li>
-        <li class="item"> <a href="">Contacto</a></li>
-        <li class="item has-submenu"><a href="" tabindex="0">Services</a>
-          <ul class="submenu">
-            <li class="subitem"> <a href="">Página </a></li>
-            <li class="subitem"> <a href="">Página </a></li>
-            <li class="subitem"> <a href="">Página</a></li>
-            <li class="subitem"> <a href="">Página</a></li>
-          </ul>
-        </li>
-        <li class="item has-submenu"><a href="" tabindex="0">Services</a>
-          <ul class="submenu">
-            <li class="subitem"> <a href="">Página </a></li>
-            <li class="subitem"> <a href="">Página </a></li>
-            <li class="subitem"> <a href="">Página</a></li>
-            <li class="subitem"> <a href="">Página</a></li>
-          </ul>
-        </li>
-        <li class="item button"> <a href="">Formación </a></li>
-        <li class="toggle"> <img class="burger active" src="../../src/images/burger.png" alt=""><img class="closed" src="../../src/images/closed.png" alt=""></li>
+    <nav class="menu">   
+      <input class="menu__checkbox" type="checkbox" id="menu__checkbox">
+      <label class="menu__toggle" for="menu__checkbox"> <img class="hamburger" src="../../src/images/burger.png"><img class="close" src="../../src/images/closed.png"></label>
+      <ul class="menu__menu">  
+        <li class="menu__item"> <a class="menu__menu--link" href="#"><img class="menu__logo" src="../../src/images/logo-bcc.png" alt=""></a></li>
+        <li class="menu__item">  <a class="menu__menu--link primaryfont__bold--400" href="#">Sobre BCC</a></li>
+        <li class="menu__item">  <a class="menu__menu--link" href="#">Formación</a></li>
+        <li class="menu__item">  <a class="menu__menu--link" href="#">Innovación </a></li>
+        <li class="menu__item">  <a class="menu__menu--link" href="#">Empresas </a></li>
+        <li class="menu__item">  <a class="menu__menu--link" href="#">Iniciativas </a></li>
+        <li class="menu__item">  <a class="menu__menu--link" href="#">Restaurantes </a></li>
+        <li class="menu__item">  <a class="menu__menu--link" href="#">Actualidad </a></li>
+        <li class="menu__item"> <a class="btn__primary--large-color-menu" href="#">Encuentra tu formación</a></li>
       </ul>
     </nav>
-    <div> <img class="burger active" src="../../src/images/burger.png" alt=""></div>
-    <script src="../menu/menu.js"></script>
   </body>
 </html>

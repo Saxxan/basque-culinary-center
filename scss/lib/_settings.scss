@@ -218,6 +218,7 @@ $FONTS
 
 // Font Spartan
 $primary-font: "League Spartan", sans-serif;
+$spartan-400: 400;
 $spartan-600: 600;
 $spartan-700: 700;
 $spartan-bold: 800;
@@ -539,7 +540,7 @@ span {
 }
 
 
-h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small {
+h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small, a{
     line-height: 1.3;
     font-family: $primary-font;
 }
@@ -551,6 +552,9 @@ h1, h2, h3, h4, p {
 }
 .primaryfont__bold {
     line-height: 1.2;
+    &--400{
+        font-weight: $spartan-400;
+    }
     &--600{
         font-weight: $spartan-600;
     }
