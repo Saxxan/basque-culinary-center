@@ -609,14 +609,20 @@ h1, h2, h3 {
     background-color: #ffffff;
   }
 }
+.card__line {
+  border-left: 3px solid #83390B;
+  height: 180px;
+  right: 16px;
+}
 .card__description {
   -webkit-margin-before: 1.5rem;
           margin-block-start: 1.5rem;
+  margin-bottom: 16px;
 }
 .card__title {
   text-transform: uppercase;
 }
-.card__details, .card__details-investigacion, .card__details-producto, .card__details-investigacion-title, .card__details-formacion {
+.card__details, .card__details-margin, .card__details-investigacion, .card__details-producto, .card__details-investigacion-title, .card__details-formacion {
   padding: 0 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,7 +636,7 @@ h1, h2, h3 {
           justify-content: center;
 }
 @media (min-width: 700px) {
-  .card__details, .card__details-investigacion, .card__details-producto, .card__details-investigacion-title, .card__details-formacion {
+  .card__details, .card__details-margin, .card__details-investigacion, .card__details-producto, .card__details-investigacion-title, .card__details-formacion {
     padding: 0;
   }
 }
@@ -646,14 +652,17 @@ h1, h2, h3 {
     background-color: #ffffff;
   }
 }
-.card__details h3, .card__details-formacion h3, .card__details-investigacion h3, .card__details-producto h3, .card__details-investigacion-title h3 {
+.card__details-margin {
+  margin-left: 16px;
+}
+.card__details h3, .card__details-formacion h3, .card__details-investigacion h3, .card__details-producto h3, .card__details-investigacion-title h3, .card__details-margin h3 {
   -webkit-margin-after: 0.09rem;
           margin-block-end: 0.09rem;
   -webkit-margin-before: 1rem;
           margin-block-start: 1rem;
   text-transform: uppercase;
 }
-.card__details p, .card__details-formacion p, .card__details-investigacion p, .card__details-producto p, .card__details-investigacion-title p {
+.card__details p, .card__details-formacion p, .card__details-investigacion p, .card__details-producto p, .card__details-investigacion-title p, .card__details-margin p {
   -webkit-margin-before: 1rem;
           margin-block-start: 1rem;
 }

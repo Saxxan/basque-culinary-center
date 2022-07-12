@@ -30,8 +30,14 @@
             background-color: $c-white;
         }
     }
+    &__line {
+        border-left: 3px solid $c-primary-dark;
+        height: 180px;
+        right: $small;
+    }
     &__description {
         margin-block-start: 1.5rem;
+        margin-bottom: $small;
     }
     &__title {
         text-transform: uppercase;
@@ -58,6 +64,10 @@
             &-title {
                 @extend .card__details-investigacion;
             }
+        }
+        &-margin {
+            @extend .card__details;
+            margin-left: $small;
         }
         h3 {
             margin-block-end: 0.09rem;
