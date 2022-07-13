@@ -1,0 +1,12 @@
+.filter {
+    padding: calc(24px - 8px);
+    &__text {
+        padding: $small $x-small;
+    }
+    &__tag {
+        gap: 30px;
+        &--item {
+            margin: $x-small;
+        }
+    }
+}

@@ -854,6 +854,19 @@ h1, h2, h3 {
   }
 }
 
+.filter {
+  padding: calc(24px - 8px);
+}
+.filter__text {
+  padding: 16px 8px;
+}
+.filter__tag {
+  gap: 30px;
+}
+.filter__tag--item {
+  margin: 8px;
+}
+
 /*------------------------------------*\
     LINKS
 \*------------------------------------*/
@@ -980,8 +993,13 @@ input:checked + .slider::before {
   border: 2px solid #989A2B;
 }
 .tag__salud {
-  background-color: #0B2173;
-  border: 2px solid #0B2173;
+  color: #26201B;
+  background-color: #DFDAD3;
+  border: 2px solid #DFDAD3;
+}
+.tag__salud:hover, .tag__salud:active {
+  background-color: #b9ac99;
+  border: 2px solid #b9ac99;
 }
 .tag__card--grey {
   color: #26201B;

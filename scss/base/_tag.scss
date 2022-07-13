@@ -34,8 +34,14 @@
         }
         &__salud {
             @extend .tag;
-            background-color: $c-azul-dark;
-            border: 2px solid $c-azul-dark;
+            color: $c-monocromo-900;
+            background-color: $c-monocromo-200;
+            border: 2px solid $c-monocromo-200;
+            &:hover,
+            &:active {
+                background-color: $c-marcas-bcc-corporate;
+                border: 2px solid $c-marcas-bcc-corporate;
+            }
         }
         // Tag grey
         &__card--grey{
