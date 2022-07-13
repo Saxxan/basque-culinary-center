@@ -19,9 +19,6 @@ body {
 img {
     max-width: 100%;
 }
-main {
-    padding: $regular;
-    @include respond-to(large) {
-        padding: 11.5px;
-    }
+.padding {
+    padding: 0 $regular;
 }

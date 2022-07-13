@@ -1304,13 +1304,8 @@ img {
   max-width: 100%;
 }
 
-main {
-  padding: 24px;
-}
-@media (min-width: 1024px) {
-  main {
-    padding: 11.5px;
-  }
+.padding {
+  padding: 0 24px;
 }
 
 .title__link {

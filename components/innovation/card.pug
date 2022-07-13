@@ -1,15 +1,4 @@
 include ../head/head.pug
-        div.title__link
-            div
-                p.text-large Actualidad
-                h1.primaryfont__bold--800 Conoce nuestra agenda
-            div
-                a(class="link text-small display__desktop" href="#") VER TODOS
-                    svg( 
-                        class="svg__icon", 
-                        )
-                            use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
-
         section.box__bloque.grid__c3  
             div.box__background--innovation
                 div
@@ -62,6 +51,7 @@ include ../head/head.pug
                     )
                         use(xlink:href="../../src/iconos/share-back.svg#share-back")
                     span.tag__salud.box__tag--space  Salud
+                    span.tag__salud.box__tag--space  Análisis corporal
                 h4.box__title.primaryfont__bold--800 Cita GO-ON
                 div.box__date
                     div
@@ -139,4 +129,5 @@ include ../head/head.pug
                     | aumentado de demencia y fragilidad cognitiva para la prevención del deterioro cognitivo.
                 div
                     a.btn__primary--small-nocolor-innovation(href="#") más información
-            
+            div.padding 
+                a.btn__primary--small-color(href="#") ver más   
