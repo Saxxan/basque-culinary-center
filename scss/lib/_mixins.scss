@@ -55,6 +55,31 @@
             }
     }
 
+    @if $background == salud {
+        color: $c-marcas-bcc-innovation;
+        background-color: $c-white;
+        border: 2px solid $c-marcas-bcc-innovation;
+            
+            &:link {
+                color: $c-marcas-bcc-innovation;
+                border: 2px solid $c-marcas-bcc-innovation;
+            }
+            &:visited {
+                color: $c-marcas-bcc-innovation;
+                border: 2px solid $c-marcas-bcc-innovation;
+            }
+            &:hover {
+                color: $c-marcas-bcc-innovation;
+                border: 2px solid $c-marcas-bcc-innovation;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                pointer-events: none;
+                color: $c-marcas-bcc-innovation;
+                border: 2px solid $c-marcas-bcc-innovation;
+            }
+    }
+
     // sizes
     @if $size == large {
         font-size: 18px;

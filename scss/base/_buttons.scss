@@ -53,6 +53,13 @@
                 @include btn__fontsmall;
                 font-weight: 400;
             }
+            // button innovation
+            &--small-nocolor-innovation {
+                @extend .btn__primary;
+                @include btn__primary ($background: salud, $size : small);
+                @include btn__fontsmall;
+                font-weight: 400;
+            }
     }
     &__modal {
         @extend .btn;

@@ -367,7 +367,7 @@ h1, h2, h3 {
 /*------------------------------------*\
     BOTONES
 \*------------------------------------*/
-.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color-menu, .btn__primary--large-color {
+.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color-menu, .btn__primary--large-color {
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-align: baseline;
@@ -380,7 +380,7 @@ h1, h2, h3 {
           appearance: button;
   cursor: pointer;
 }
-.btn__primary, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color-menu, .btn__primary--large-color {
+.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-color-menu, .btn__primary--large-color {
   border-radius: 4px;
 }
 .btn__primary--large-color {
@@ -582,6 +582,40 @@ h1, h2, h3 {
   pointer-events: none;
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
+}
+.btn__primary--small-nocolor-innovation {
+  color: #59718c;
+  background-color: #ffffff;
+  border: 2px solid #59718c;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  padding: 9px 22px;
+  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: -0.2px;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.btn__primary--small-nocolor-innovation:link {
+  color: #59718c;
+  border: 2px solid #59718c;
+}
+.btn__primary--small-nocolor-innovation:visited {
+  color: #59718c;
+  border: 2px solid #59718c;
+}
+.btn__primary--small-nocolor-innovation:hover {
+  color: #59718c;
+  border: 2px solid #59718c;
+}
+.btn__primary--small-nocolor-innovation:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #59718c;
+  border: 2px solid #59718c;
 }
 .btn__modal {
   border-radius: 48px;
