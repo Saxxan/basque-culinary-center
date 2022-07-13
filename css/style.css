@@ -154,7 +154,7 @@ h1, h2, h3 {
   float: left;
 }
 
-.gradient, .gradient__innovation, .gradient__home {
+.gradient, .section__innovation, .section__home, .gradient__innovation, .gradient__home {
   padding: 7px 24px;
 }
 .gradient__home {
@@ -167,7 +167,7 @@ h1, h2, h3 {
   background-color: #59718c;
 }
 @media (min-width: 1024px) {
-  .gradient, .gradient__innovation, .gradient__home {
+  .gradient, .section__innovation, .section__home, .gradient__innovation, .gradient__home {
     padding: 13.5px 24px;
   }
 }
@@ -923,8 +923,40 @@ h1, h2, h3 {
   color: #83390B;
 }
 
+.section {
+  padding: 7px 24px;
+}
+.section__innovation {
+  background-color: #59718c;
+}
+@media (min-width: 1024px) {
+  .section {
+    padding: 13.5px 24px;
+  }
+}
+.section__text {
+  color: #F4F3EF;
+}
+.section__text a {
+  color: #F4F3EF;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .menu {
+  position: fixed;
   border-bottom: 1px solid grey;
+  background-color: #ffffff;
+  width: 100%;
 }
 .menu__toggle {
   position: absolute;

@@ -1,5 +1,8 @@
 .menu {
+    position: fixed;
     border-bottom: 1px solid grey;
+    background-color: $c-white;
+    width: 100%;
     &__toggle {
         position: absolute;
         cursor: pointer;
