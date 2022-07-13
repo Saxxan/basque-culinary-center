@@ -1,73 +1,73 @@
-.menu {
-    border-bottom: 1px solid grey;
-    &__toggle {
-        position: absolute;
-        cursor: pointer;
-        margin: 0rem 1rem;
-        right: 0;
-        top: 15%;
-        @include respond-to(large) {
-            top: 30%;
-        }
-    }
-    &__menu {
-        display: flex;
-        flex-direction: column;
-        gap: $regular;
-        align-items: center;
-        margin: 1rem;
-        padding-left: 0;
-        &--link {
-            color: $c-monocromo-900;
-            text-transform: uppercase;
-        }
-        a {
-            text-decoration: none;
-            font-size: 13px;
-        }
-    }
-    &__logo {
-        max-width: 65px;
-        @include respond-to(large) {
-            max-width: 137px;
-        }
-    }
-}
-.close,
-    input[type="checkbox"] {
-    display: none;
-}
-.hamburger {
-    margin-top: 0.2rem;
-}
+// .menu {
+//     border-bottom: 1px solid grey;
+//     &__toggle {
+//         position: absolute;
+//         cursor: pointer;
+//         margin: 0rem 1rem;
+//         right: 0;
+//         top: 15%;
+//         @include respond-to(large) {
+//             top: 30%;
+//         }
+//     }
+//     &__menu {
+//         display: flex;
+//         flex-direction: column;
+//         gap: $regular;
+//         align-items: center;
+//         margin: 1rem;
+//         padding-left: 0;
+//         &--link {
+//             color: $c-monocromo-900;
+//             text-transform: uppercase;
+//         }
+//         a {
+//             text-decoration: none;
+//             font-size: 13px;
+//         }
+//     }
+//     &__logo {
+//         max-width: 65px;
+//         @include respond-to(large) {
+//             max-width: 137px;
+//         }
+//     }
+// }
+// .close,
+//     input[type="checkbox"] {
+//     display: none;
+// }
+// .hamburger {
+//     margin-top: 0.2rem;
+// }
 
-li {
-    list-style: none;
-    display: none;
-}
-li:first-child {
-    margin-right: auto;
-    display: block;
-}
-#menu__checkbox:checked ~ ul.menu__menu li {
-    display: block;
-}
-#menu__checkbox:checked ~ label.menu__toggle .hamburger {
-    display: none;
-}
-#menu__checkbox:checked ~ label.menu__toggle .close {
-    display: block;
-}
-@media only screen and (min-width: 1095px) {
-    .menu{
-        &__toggle {
-            display: none;
-        }
-        &__menu {
-            flex-direction: row;
-            li {
-                display: block;
-            }
-        }
-    }
-}
+// li {
+//     list-style: none;
+//     display: none;
+// }
+// li:first-child {
+//     margin-right: auto;
+//     display: block;
+// }
+// #menu__checkbox:checked ~ ul.menu__menu li {
+//     display: block;
+// }
+// #menu__checkbox:checked ~ label.menu__toggle .hamburger {
+//     display: none;
+// }
+// #menu__checkbox:checked ~ label.menu__toggle .close {
+//     display: block;
+// }
+// @media only screen and (min-width: 1095px) {
+//     .menu{
+//         &__toggle {
+//             display: none;
+//         }
+//         &__menu {
+//             flex-direction: row;
+//             li {
+//                 display: block;
+//             }
+//         }
+//     }
+// }
