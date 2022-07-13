@@ -6,6 +6,10 @@
         animation: gradient 5s ease infinite;
         background-size: 400% 400%;
     }
+    &__innovation {
+        @extend .gradient;
+        background-color: $c-marcas-bcc-innovation;
+    }
     @include respond-to(large) {
         padding: 13.5px 24px;
     }
