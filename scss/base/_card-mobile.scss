@@ -3,15 +3,15 @@
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: $x-regular;
-    @include respond-to(medium) {
+    @include respond-to(large) {
         flex-direction: column;        
     }
     &__img {
-        max-width: 35%;
+        max-width: 25%;
         height: auto;
         object-fit: cover; 
         object-position: center;
-        @include respond-to(medium) {
+        @include respond-to(large) {
             max-width: 100%;
             border-radius: 10px;
         }
@@ -19,15 +19,16 @@
     &__border {
         border: 1px solid $c-monocromo-600;
         background-color: $c-monocromo-200;
-        @include respond-to(medium) {
+        @include respond-to(large) {
             border: none;
             background-color: $c-white;
         }
     }
     &__line {
-        border-left: 3px solid $c-primary-dark;
-        height: 180px;
-        right: $small;
+        @include respond-to(large) {
+            border-left: 3px solid $c-primary-dark;
+            height: 200px;
+        }
     }
     &__description {
         margin-block-start: 1.5rem;
@@ -37,16 +38,16 @@
         text-transform: uppercase;
     }
     &__details {
-        padding: 0 1rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         @include respond-to(medium) {
-            padding: 0
+            padding: 0;
         }
         &-formacion {
             @extend .card__details;
             color: $c-monocromo-100;
+            margin-left: $x-regular;
         }
         &-investigacion {
             @extend .card__details;
@@ -55,13 +56,6 @@
             @include respond-to(medium) {
                 background-color: $c-white;
             }
-            &-title {
-                @extend .card__details-investigacion;
-            }
-        }
-        &-margin {
-            @extend .card__details;
-            margin-left: $small;
         }
         h3 {
             margin-block-end: 0.09rem;
@@ -69,7 +63,8 @@
             text-transform: uppercase;
         }
         p {
-            margin-block-start: 1rem;
+            margin-block-start: 0rem;
+            margin-block-end: 0rem;
         }
         
         &-producto {

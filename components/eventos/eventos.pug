@@ -1,9 +1,9 @@
 include ../head/head.pug
-    main
-        div.title__link
+        div.padding.title__link
             div
                 p.text-large Actualidad
                 h1.primaryfont__bold--800 Conoce nuestra agenda
+                h3.primaryfont__bold--800.display__mobile Próximos eventos:
             div
                 a(class="link text-small display__desktop" href="#") VER TODOS
                     svg( 
@@ -11,7 +11,7 @@ include ../head/head.pug
                         )
                             use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
 
-        section.box__bloque.grid__c3
+        section.padding.box__bloque.grid__c3
                 div.box
                     div
                         span.tag__entusiastas.box__tag  Etiqueta 01
