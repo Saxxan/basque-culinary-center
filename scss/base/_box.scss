@@ -5,10 +5,15 @@
     }
     &__background {
         &--innovation {
-        background-color: rgba($c-marcas-bcc-innovation, .1);
-        padding: $regular;
-        margin-bottom: $regular;
+            background-color: rgba($c-marcas-bcc-innovation, .1);
+            padding: $regular;
+            margin-bottom: $regular;
         }
+        &--home {
+            background-color: $c-monocromo-100;
+            padding-top: $x-large;
+        }
+
     }
     &__icon {
         display: flex;
@@ -46,7 +51,7 @@
         }
     }
     &__title {
-        margin-bottom: $x-small;
+        padding: $xx-small 0;
         @include respond-to(large) {
             order: 0;
         }
@@ -56,6 +61,7 @@
     }
     &__date {
         display: flex;
+        padding-bottom: $x-regular;
         &--space {
             padding-right: $small;
         }
@@ -79,7 +85,7 @@
         }
         &--bloq2 {
             display: inline;
-            margin: $small 0 0 0;
+            margin: $x-regular 0 0 0;
             @include respond-to(large) {
                 position: absolute;
                 display: flex;
@@ -102,7 +108,7 @@
             width: 100%;
             object-fit: cover;
             object-position: center;
-            margin-bottom: $x-small;
+            margin-bottom: $xx-small;
             &-border {
                 @extend .box__img--bloq2;
                 border-radius: $x-small;

@@ -1,5 +1,11 @@
 .grid {
     @include respond-to(large) {    
+        &__c2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: $regular;
+            grid-auto-rows: minmax(100px, auto);
+            }
         &__c3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

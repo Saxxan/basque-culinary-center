@@ -27,15 +27,22 @@
     &__line {
         @include respond-to(large) {
             border-left: 3px solid $c-primary-dark;
-            height: 200px;
+            height: 180px;
         }
     }
     &__description {
-        margin-block-start: 1.5rem;
-        margin-bottom: $small;
+        margin-bottom: $xx-small;
     }
     &__title {
-        text-transform: uppercase;
+        text-transform: none;
+        &--color {
+            color: $c-primary-dark;
+            padding: $xx-small 0 ;
+            @include respond-to(large) {
+                padding-top: 0;
+                padding-bottom: $large;
+            }
+        }
     }
     &__details {
         display: flex;
@@ -61,10 +68,6 @@
             margin-block-end: 0.09rem;
             margin-block-start: 1rem;
             text-transform: uppercase;
-        }
-        p {
-            margin-block-start: 0rem;
-            margin-block-end: 0rem;
         }
         
         &-producto {

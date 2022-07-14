@@ -5,8 +5,11 @@
         margin-right: auto;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
-        margin-bottom: $large;   
+        align-items: center;
+        margin-bottom: $large;  
+        @include respond-to(large) {
+            margin-bottom: 0; 
+        } 
         a {
             padding-bottom: $small;
         }
@@ -14,4 +17,38 @@
 }
 h3 {
     padding-bottom: $large;
+}
+
+.padding {
+    padding: 0 $regular;
+    // Bottom
+    &__bottom-regular {
+        padding-bottom: $regular;
+    }
+    &__bottom-x-regular {
+        padding-bottom: $x-regular;
+    }
+    &__bottom-gap {
+        padding-bottom: 40px;
+    }
+    &__bottom-x-large {
+        padding-bottom: $x-large;
+    }
+    // Top
+    &__top-regular {
+        padding-top: $regular;
+    }
+    &__top-x-regular {
+        padding-top: $x-regular;
+    }
+    &__top-gap {
+        padding-top: 40px;
+    }
+    &__top-x-large {
+        padding-top: $x-large;
+    }
+    // Top / Bottom
+    &__topbottom-x-large {
+        padding: $x-large 0;
+    }
 }

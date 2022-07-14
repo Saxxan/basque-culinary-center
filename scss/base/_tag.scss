@@ -32,6 +32,17 @@
             background-color: $c-formacion-entusiastas;
             border: 2px solid $c-formacion-entusiastas;
         }
+        &__innovation {
+            @extend .tag;
+            background-color: $c-marcas-bcc-innovation;
+            border: 2px solid $c-marcas-bcc-innovation;
+        }
+        &__primary {
+            @extend .tag;
+            background-color: $c-primary-darkmode;
+            border: 2px solid $c-primary-darkmode;
+            color: $c-primary-dark;
+        }
         &__salud {
             @extend .tag;
             color: $c-monocromo-900;

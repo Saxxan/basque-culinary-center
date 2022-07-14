@@ -1,40 +1,43 @@
 include ../head/head.pug
-        div.padding.title__link
-            div
-                p.text-large Actualidad
-                h1.primaryfont__bold--800 Conoce nuestra agenda
-                h3.primaryfont__bold--800.display__mobile Próximos eventos:
-            div
-                a(class="link text-small display__desktop" href="#") VER TODOS
-                    svg( 
-                        class="svg__icon", 
-                        )
-                            use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
+        section.padding.box__background--home
+            div.padding__top-x-large.title__link
+                div
+                    p.text-large Actualidad
+                    h1.primaryfont__bold--800 Conoce nuestra agenda
+                    h3.primaryfont__bold--800.display__mobile Próximos eventos:
+                div
+                    a(class="link text-small display__desktop" href="#") VER TODOS
+                        svg( 
+                            class="svg__icon", 
+                            )
+                                use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
 
-        section.padding.box__bloque.grid__c3
-                div.box
+            section.padding__bottom-x-large.box__bloque.grid__c3
+                div.padding__bottom-regular.box
                     div
-                        span.tag__entusiastas.box__tag  Etiqueta 01
+                        span.tag__innovation.box__tag  Innovación
                         img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")
                     div.box__icon
                         svg( class="svg__icon--date"
                         )
                             use(xlink:href="../../src/iconos/share-back.svg#share-back")
                         span.tag__card--grey.box__tag--space  Presencial
-                        span.tag__card--grey.box__tag--space  Presencial
+                        span.tag__card--border.box__tag--space  Incripción abierta
                     h4.box__title.primaryfont__bold--800 Nueva edición Foro Internacional de Emprendedores
                     div.box__date
                         div.box__date--space
                             p.text-large__garamond 23
                             p.text-medium__garamond FEB    
                         p.box__description--date.text-small El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
-                    div
+                    div.display__mobile
+                        a.btn__primary--small-nocolor(href="#") Quiero inscribirme
+                    div.display__desktop
                         a.btn__primary--large-nocolor(href="#") Quiero inscribirme
 
 
                 div.box
                     div
-                        span.tag__entusiastas.box__tag--bloq2  Etiqueta 01
+                        span.tag__primary.box__tag--bloq2  Etiqueta 01
                         img(class="box__img--bloq2 display__desktop" src="../../src/images/img-noticias.jpg", alt="")
                     div.box__icon
                         svg( class="svg__icon--date display__desktop"
@@ -82,7 +85,7 @@ include ../head/head.pug
                     
                 div.box
                     div
-                        span.tag__entusiastas.box__tag--bloq2  Etiqueta 01
+                        span.tag__primary.box__tag--bloq2  Etiqueta 01
                         img(class="box__img--bloq2 display__desktop" src="../../src/images/img-noticias.jpg", alt="")
                     div.box__icon
                         svg( class="svg__icon--date display__desktop"
@@ -128,15 +131,15 @@ include ../head/head.pug
                     div.display__desktop
                         a.btn__primary--large-nocolor(href="#") Quiero inscribirme
                     
-                div.display__mobile
-                    a.btn__primary--large-color(href="#") Quiero inscribirme
-                
+                div.display__mobile.padding__top-gap
+                    a.btn__primary--small-color(href="#") Ver todos los eventos
+            
 
-
-                                
-                            
 
                             
+                        
+
+                        
 
                 
 
