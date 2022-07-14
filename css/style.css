@@ -750,8 +750,8 @@ h1, h2, h3 {
           justify-content: center;
 }
 @media (min-width: 700px) {
-  .card__details, .card__details-investigacion, .card__details-producto, .card__details-formacion {
-    padding: 0;
+  .card__details--margin {
+    padding-left: 8px;
   }
 }
 .card__details-formacion {

@@ -46,8 +46,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        @include respond-to(medium) {
-            padding: 0;
+        &--margin {
+            @include respond-to(medium) {
+                padding-left: $x-small;
+            }
         }
         &-formacion {
             @extend .card__details;
