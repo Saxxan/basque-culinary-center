@@ -28,9 +28,14 @@
                 color: $c-marcas-bcc-innovation;
                 padding-right: $x-small;
             }
+            &-home{
+                color: $c-marcas-bcc-innovation;
+                padding-right: $x-small;
+            }
         }
     }
     &__bloque {
+        padding-bottom: $x-regular;
         gap: 30px;
         @include respond-to(large) {
             display: flex;

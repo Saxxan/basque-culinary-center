@@ -23,12 +23,20 @@
                     color: $c-monocromo-100;
                     background-color: $c-monocromo-600;
                 }
+                &-width {
+                    @extend .btn__primary--large-color;
+                    width: auto;
+                }
             }
             &--large-nocolor {
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : large);
                 @include btn__fontbig;
                 font-weight: 400;
+                &-width {
+                    @extend .btn__primary--large-nocolor;
+                    width: auto;
+                }
                 
             }
             &--medium-color {

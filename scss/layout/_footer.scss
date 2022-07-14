@@ -5,6 +5,12 @@
     @include respond-to(large) {
         display: flex;
     }
+    &__background {
+        &--home {
+            @extend .footer;
+            background-color: $c-monocromo-100;
+        }
+    }
     &__logo {
         max-width: 117px;
         @include respond-to(large) {

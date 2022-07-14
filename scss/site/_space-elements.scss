@@ -15,9 +15,6 @@
         }
     }
 }
-h3 {
-    padding-bottom: $large;
-}
 
 .padding {
     padding: 0 $regular;
@@ -50,5 +47,18 @@ h3 {
     // Top / Bottom
     &__topbottom-x-large {
         padding: $x-large 0;
+    }
+}
+
+h1 {
+    padding-bottom: $x-regular;
+    @include respond-to(large) {
+        padding-bottom: $large;
+    }
+}
+h3{
+    padding-bottom: $x-regular;
+    @include respond-to(large) {
+        padding-bottom: $large;
     }
 }
