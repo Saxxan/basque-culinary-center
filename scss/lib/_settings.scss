@@ -203,23 +203,18 @@ $garamond-bold: 800;
 //Elements
 h1 {
     font-size: clamp(2.5rem, -0.875rem + 8.333vw, 4.3rem);
-    letter-spacing : -0.2px;
 }
 h2 {
     font-size: clamp(2.2rem, -0.875rem + 8.333vw, 3.8rem);
-    letter-spacing : -0.2px;
 }
 h3 {
     font-size: clamp(1.9rem, -0.875rem + 8.333vw, 2.75rem);
-    letter-spacing : -0.2px;
 }
 h4 {
     font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.8rem);
-    letter-spacing : -0.2px;
 }
 span {
     font-size: 1rem;
-    letter-spacing: -0.2px;
 }
 .text{
     &-large {
@@ -242,7 +237,6 @@ span {
     }
     &-small {
         font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
-        letter-spacing: -0.25px;
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.7rem);
@@ -253,7 +247,6 @@ span {
 }
 .x-small {
     font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
-    letter-spacing: -0.1px;
     &__garamond {
         font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
         font-weight: $garamond-bold;
