@@ -215,291 +215,42 @@ $breakpoints: (
 $FONTS
 \*------------------------------------*/
 
-// Font Spartan
+//Font Spartan
 $primary-font: "League Spartan", sans-serif;
-$spartan-400: 400;
-$spartan-600: 600;
-$spartan-700: 700;
-$spartan-bold: 800;
-$spartan-regular: 100;
+$spartan-light: 300;
+$spartan-regular: 400;
+$spartan-medium: 500;
+$spartan-bold: 700;
 //Font EB Garamond
 $garamond-font:"EB Garamond", serif;
 $garamond-600: 600;
 $garamond-700: 700;
 $garamond-bold: 800;
 
-// $size-vars: (
-//     // mobile
-//     "x-small"     : .8,
-//     "text-small"  : .94,
-//     "text-medium" : 1.1,
-//     "text-large"  : 1.25,
-//     "h-4"         : 1.25,
-//     "h-3"         : 1.5,
-//     "h-2"         : 1.75,
-//     "h-1"         : 2,
-//     // desktop
-//     "x-small__desktop"     : .8,
-//     "text-small__desktop"  : .94,
-//     "text-medium__desktop" : 1.1,
-//     "text-large__desktop"  : 1.25,
-//     "h-4__desktop"         : 1.5,
-//     "h-3__desktop"         : 2.25,
-//     "h-2-d__desktop"         : 3,
-//     "h-1-d__desktop"         : 3.5
-// )
-// @mixin h-1-text() {
-//     fontFamily : $spartan-regular;
-//     fontSize : 56px;
-//     lineHeight: 70px;
-//     letterSpacing : 0px;
-// }
-// @mixin h-2-text() {
-//     fontFamily : $spartan-regular;
-//     fontSize : 48px;
-//     lineHeight: 56px;
-//     letterSpacing : -0.20000000298023224px;
-// }
-// @mixin escritorio-h-3-text() {
-//     fontFamily : $spartan-regular;
-//     fontSize : 36px;
-//     lineHeight: 45px;
-//     letterSpacing : -0.30000001192092896px;
-// }
-// @mixin escritorio-h-4-text() {
-//   fontFamily : $spartan-regular;
-//   fontSize : 24px;
-//   lineHeight: 32px;
-//   letterSpacing : -0.4000000059604645px;
-// }
-// //bold
-// @mixin h-1-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 56px;
-//     lineHeight: 72px;
-//     letterSpacing : -1px;
-// }
-// @mixin h-2-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 48px;
-//     lineHeight: 55px;
-//     letterSpacing : -1px;
-// }
-// @mixin escritorio-h-3-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 36px;
-//     lineHeight: 48px;
-//     letterSpacing : -0.5px;
-// }
-// @mixin escritorio-h-4-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 24px;
-//     lineHeight: 32px;
-//     letterSpacing : -0.5px;
-// }
-// @mixin escritorio-paragraph-text-large() {
-//     fontFamily : $spartan-regular;
-//     fontSize : 20px;
-//     lineHeight: 32px;
-//     letterSpacing : 0px;
-// }
-// @mixin escritorio-paragraph-text-medium() {
-//     fontFamily : $spartan-regular;
-//     fontSize : 18px;
-//     lineHeight: 31px;
-//     letterSpacing : 0px;
-// }
-// @mixin escritorio-paragraph-text-small() {
-//     fontFamily : $spartan-regular;
-//     fontSize : 15px;
-//     lineHeight: 23px;
-//     letterSpacing : 0.25px;
-// }
-// @mixin escritorio-paragraph-text-x-small() {
-//     fontFamily : $primary-font;
-//     fontSize : 13px;
-//     lineHeight: 21px;
-//     letterSpacing : -0.10000000149011612px;
-// }
-// //bold
-// @mixin escritorio-paragraph-text-bold-large() {
-//     fontFamily : $primary-font;
-//     fontSize : 20px;
-//     lineHeight: 32px;
-//     letterSpacing : -0.30000001192092896px;
-// }
-// @mixin escritorio-paragraph-text-bold-medium() {
-//     fontFamily : $secondary-font;
-//     fontSize : 18px;
-//     lineHeight: 32px;
-//     letterSpacing : -0.30000001192092896px;
-// }
-// @mixin escritorio-paragraph-text-bold-small() {
-//     fontFamily : $secondary-font;
-//     fontSize : 15px;
-//     lineHeight: 24px;
-//     letterSpacing : -0.30000001192092896px;
-// }
-// //mobile
-// @mixin movil-h-1-text() {
-//     fontFamily : $primary-font;
-//     fontSize : 32px;
-//     lineHeight: 44px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-h-2-text() {
-//     fontFamily : $primary-font;
-//     fontSize : 28px;
-//     lineHeight: 38px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-h-3-text() {
-//     fontFamily : $primary-font;
-//     fontSize : 24px;
-//     lineHeight: 34px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-h-4-text() {
-//     fontFamily : $primary-font;
-//     fontSize : 20px;
-//     lineHeight: 32px;
-//     letterSpacing : 0px;
-// }
-
-// //bold
-// @mixin movil-h-1-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 32px;
-//     lineHeight: 44px;
-//     letterSpacing : -0.20000000298023224px;
-// }
-// @mixin movil-h-2-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 28px;
-//     lineHeight: 38px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-h-3-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 24px;
-//     lineHeight: 34px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-h-4-text-bold() {
-//     fontFamily : $spartan-800;
-//     fontSize : 20px;
-//     lineHeight: 32px;
-//     letterSpacing : 0px;
-// }
-
-// @mixin movil-paragraph-text-large() {
-//     fontFamily : $primary-font;
-//     fontSize : 20px;
-//     lineHeight: 32px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-paragraph-text-medium() {
-//     fontFamily : $primary-font;
-//     fontSize : 17px;
-//     lineHeight: 26px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-paragraph-text-small() {
-//     fontFamily : $primary-font;
-//     fontSize : 15px;
-//     lineHeight: 24px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-paragraph-text-x-small() {
-//     fontFamily : $primary-font;
-//     fontSize : 13px;
-//     lineHeight: 22px;
-//     letterSpacing : -0.23000000417232513px;
-// }
-// //bold
-// @mixin movil-paragraph-text-bold-large() {
-//     fontFamily : $spartan-800;
-//     fontSize : 20px;
-//     lineHeight: 32px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-paragraph-text-bold-medium() {
-//     fontFamily : $spartan-800;
-//     fontSize : 17px;
-//     lineHeight: 26px;
-//     letterSpacing : -0.10000000149011612px;
-// }
-// @mixin movil-paragraph-text-bold-small() {
-//     fontFamily : $spartan-800;
-//     fontSize : 15px;
-//     lineHeight: 24px;
-//     letterSpacing : 0px;
-// }
-// @mixin movil-paragraph-text-bold-x-small() {
-//     fontFamily : $spartan-800;
-//     fontSize : 13px;
-//     lineHeight: 22px;
-//     letterSpacing : -0.28999999165534973px;
-// }
-// @mixin serif-text-large() {
-//     fontFamily : $eb-garamond-800;
-//     fontSize : 54px;
-//     lineHeight: 58px;
-//     letterSpacing : 0px;
-
-// }
-// @mixin serif-text-medium() {
-//     fontFamily : $eb-garamond-800;
-//     fontSize : 35px;
-//     lineHeight: 39px;
-//     letterSpacing : 0.5px;
-// }
-// @mixin serif-text-small() {
-//     fontFamily : $eb-garamond-800;
-//     fontSize : 27px;
-//     lineHeight: 32px;
-//     letterSpacing : 0.5px;
-// }
-// @mixin serif-text-xsmall() {
-//     fontFamily : $eb-garamond-800;
-//     fontSize : 24px;
-//     lineHeight: 27px;
-//     letterSpacing : 0.10000000149011612px;
-// }
-// 1rem   = 360px and below
-// Scaled = 361px - 839px
-// 3.5rem = 840px and above
-
 //Elements
 h1 {
-    font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
+    font-size: clamp(2.5rem, -0.875rem + 8.333vw, 4.3rem);
+    letter-spacing : -0.2px;
 }
 h2 {
-    font-size: clamp(1.8rem, -0.875rem + 8.333vw, 3rem);
-    letter-spacing : -0.25px;
+    font-size: clamp(2.2rem, -0.875rem + 8.333vw, 3.8rem);
+    letter-spacing : -0.2px;
 }
 h3 {
-    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 2.25rem);
-    letter-spacing : -0.3px;
+    font-size: clamp(1.9rem, -0.875rem + 8.333vw, 2.75rem);
+    letter-spacing : -0.2px;
 }
 h4 {
-    font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.5rem);
-    letter-spacing : -0.4px;
-}
-// Size p
-p {
-    font-size: 16px;
-    font-family: $spartan-regular;
-    // 1rem = 16px
+    font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.8rem);
+    letter-spacing : -0.2px;
 }
 span {
-    font-family: $spartan-regular;
-    font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
-    letter-spacing: -0.23px;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
 }
 .text{
     &-large {
-    font-size: clamp(1.25rem, -0.875rem + 8.333vw, 1.25rem);
+    font-size: clamp(1.6rem, -0.875rem + 8.333vw, 1.56rem);
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(3.4rem, -0.875rem + 8.333vw, 3.4rem);
@@ -508,7 +259,7 @@ span {
         }
     }
     &-medium {
-        font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.1rem);
+        font-size: clamp(1.3rem, -0.875rem + 8.333vw, 1.4rem);
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(2.2rem, -0.875rem + 8.333vw, 2.2rem);
@@ -517,9 +268,8 @@ span {
         }
     }
     &-small {
-        font-size: clamp(.94rem, -0.875rem + 8.333vw, .91rem);
+        font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
         letter-spacing: -0.25px;
-        font-weight: $spartan-400;
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.7rem);
@@ -529,7 +279,7 @@ span {
     }
 }
 .x-small {
-    font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
     letter-spacing: -0.1px;
     &__garamond {
         font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
@@ -537,32 +287,14 @@ span {
         line-height: 1.7rem;
     }
 }
-
-
-h1, h2, h3, h4, .text-large, .text-medium, .text-small, .x-small, a{
+.primaryfont__bold {
+    line-height: 1.1;
+    font-weight: $spartan-bold;
+}
+h1, h2, h3, h4, a, p{
     line-height: 1.3;
     font-family: $primary-font;
-}
-// Font-weight
-h1, h2, h3, h4, p {
-    font-family: $spartan-regular;
-    font-weight: $spartan-regular;
-    line-height: 1.2;
-}
-.primaryfont__bold {
-    line-height: 1.2;
-    &--400{
-        font-weight: $spartan-400;
-    }
-    &--600{
-        font-weight: $spartan-600;
-    }
-    &--700 {
-        font-weight: $spartan-600;
-    }
-    &--800 {
-        font-weight:  $spartan-600;
-    }
+    font-weight: $spartan-light;
 }
 h1, h2, h3 {
     margin-block-start: 0;
