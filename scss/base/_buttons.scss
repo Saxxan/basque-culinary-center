@@ -1,7 +1,6 @@
 /*------------------------------------*\
-    BOTONES
+    BUTTONS
 \*------------------------------------*/
-
 .btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -36,8 +35,7 @@
                 &-width {
                     @extend .btn__primary--large-nocolor;
                     width: auto;
-                }
-                
+                } 
             }
             &--medium-color {
                 @extend .btn__primary;

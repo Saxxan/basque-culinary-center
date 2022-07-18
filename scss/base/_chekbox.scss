@@ -1,3 +1,6 @@
+/*------------------------------------*\
+    CHECKBOX
+\*------------------------------------*/
 .container {
     display: block;
     position: relative;
@@ -10,8 +13,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-
-/* EScondemos el checkbox del navegador */
+//Escondemos el checkbox del navegador
 .container input {
     position: absolute;
     opacity: 0;
@@ -19,8 +21,7 @@
     height: 0;
     width: 0;
 }
-
-/* Custom checkbox */
+//Custom checkbox
 .checkmark {
     position: absolute;
     top: 0;
@@ -33,36 +34,31 @@
         border-radius: 200px;
     }
 }
-
-/* On mouse-over, add a grey background color */
+//Mouse background color hover 
 .container:hover input ~ .checkmark {
 background-color: $c-primary-default;
     &:hover {
         background-color: $c-primary-default;
     }
 }
-
-/* When the checkbox is checked, add a blue background */
+//Mouse color background
 .container input:checked ~ .checkmark {
 background-color: $c-primary-default;
     &:hover {
         background-color: $c-primary-default;
     }
 }
-
-/* Create the checkmark/indicator (hidden when not checked) */
+//Checkmark cuando todavía no está check
 .checkmark:after {
 content: "";
 position: absolute;
 display: none;
 }
-
-/* Show the checkmark when checked */
+//Checkmark cuando está check
 .container input:checked ~ .checkmark:after {
 display: block;
 }
-
-/* Style the checkmark/indicator */
+//Custom checkmark
 .container .checkmark:after {
     left: 9px;
     top: 5px;

@@ -1,3 +1,6 @@
+/*------------------------------------*\
+    BOX
+\*------------------------------------*/
 .box {
     border-bottom: 1px solid $c-monocromo-900;
     @include respond-to(large) {

@@ -1,13 +1,14 @@
+/*------------------------------------*\
+    SITE
+\*------------------------------------*/
 html {
     box-sizing: border-box;
 }
-
     *,
     *::before,
     *::after {
         box-sizing: inherit;
 }
-
 body {
     padding: 0px;
     margin: 0px;
@@ -15,7 +16,6 @@ body {
     height: 100%;
     position: relative;
 }
-
 img {
     max-width: 100%;
 }

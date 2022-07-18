@@ -1,23 +1,24 @@
+@charset "UTF-8";
 /*------------------------------------*\
-$FONTS
+    FUNCTION
 \*------------------------------------*/
 /*------------------------------------*\
-$LAYOUT
+    $LAYOUT
 \*------------------------------------*/
 /*------------------------------------*\
-$COLORS
+    $COLORS
 \*------------------------------------*/
 /*------------------------------------*\
-$SPACES
+    $SPACES
 \*------------------------------------*/
 /*------------------------------------*\
-$SHADOWS
+    $SHADOWS
 \*------------------------------------*/
 /*------------------------------------*\
-$BREAKPOINTS
+    $BREAKPOINTS
 \*------------------------------------*/
 /*------------------------------------*\
-$FONTS
+    $FONTS
 \*------------------------------------*/
 h1 {
   font-size: clamp(2.5rem, -0.875rem + 8.333vw, 4.3rem);
@@ -102,10 +103,13 @@ h1, h2, h3 {
 }
 
 /*------------------------------------*\
-    BUTTONS
+    MIXINS
 \*------------------------------------*/
 /*------------------------------------*\
     BREAKPOINT
+\*------------------------------------*/
+/*------------------------------------*\
+    UTILITIES
 \*------------------------------------*/
 .display__mobile {
   display: block;
@@ -131,6 +135,9 @@ h1, h2, h3 {
   float: left;
 }
 
+/*------------------------------------*\
+    COLOR GRADIENT
+\*------------------------------------*/
 .gradient, .section__innovation, .section__home, .gradient__innovation, .gradient__home {
   padding: 7px 24px;
 }
@@ -178,6 +185,9 @@ h1, h2, h3 {
     background-position: 0% 50%;
   }
 }
+/*------------------------------------*\
+    BOX
+\*------------------------------------*/
 .box, .box__principal {
   border-bottom: 1px solid #26201B;
 }
@@ -356,7 +366,7 @@ h1, h2, h3 {
 }
 
 /*------------------------------------*\
-    BOTONES
+    BUTTONS
 \*------------------------------------*/
 .btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   text-transform: uppercase;
@@ -655,6 +665,9 @@ h1, h2, h3 {
   border: 2px solid rgba 179, 98, 6, 0.5;
 }
 
+/*------------------------------------*\
+    CARD
+\*------------------------------------*/
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,6 +790,9 @@ h1, h2, h3 {
   background-color: #989A2B;
 }
 
+/*------------------------------------*\
+    CHECKBOX
+\*------------------------------------*/
 .container {
   display: block;
   position: relative;
@@ -790,7 +806,6 @@ h1, h2, h3 {
   user-select: none;
 }
 
-/* EScondemos el checkbox del navegador */
 .container input {
   position: absolute;
   opacity: 0;
@@ -799,7 +814,6 @@ h1, h2, h3 {
   width: 0;
 }
 
-/* Custom checkbox */
 .checkmark, .checkmark__radio {
   position: absolute;
   top: 0;
@@ -812,7 +826,6 @@ h1, h2, h3 {
   border-radius: 200px;
 }
 
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark, .container:hover input ~ .checkmark__radio {
   background-color: #B36206;
 }
@@ -820,7 +833,6 @@ h1, h2, h3 {
   background-color: #B36206;
 }
 
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark, .container input:checked ~ .checkmark__radio {
   background-color: #B36206;
 }
@@ -828,19 +840,16 @@ h1, h2, h3 {
   background-color: #B36206;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after, .checkmark__radio:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after, .container input:checked ~ .checkmark__radio:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .container .checkmark:after, .container .checkmark__radio:after {
   left: 9px;
   top: 5px;
@@ -852,6 +861,9 @@ h1, h2, h3 {
   transform: rotate(45deg);
 }
 
+/*------------------------------------*\
+    COLUMN
+\*------------------------------------*/
 .column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -885,6 +897,9 @@ h1, h2, h3 {
   }
 }
 
+/*------------------------------------*\
+    FILTER
+\*------------------------------------*/
 .filter {
   padding: calc(24px - 8px);
 }
@@ -959,6 +974,9 @@ input {
   color: #83390B;
 }
 
+/*------------------------------------*\
+    MENÚ SECCIÓN COLOR GRADIENT
+\*------------------------------------*/
 .section {
   padding: 7px 24px;
 }
@@ -988,6 +1006,9 @@ input {
     background-position: 0% 50%;
   }
 }
+/*------------------------------------*\
+    MENÚ PRINCIPAL
+\*------------------------------------*/
 .menu {
   border-bottom: 1px solid grey;
   background-color: #ffffff;
@@ -1080,6 +1101,9 @@ input[type=checkbox] {
   display: block;
 }
 
+/*------------------------------------*\
+    SVG ICON
+\*------------------------------------*/
 .svg__icon, .svg__icon--margin, .svg__icon--date, .svg__icon--left, .svg__icon--right {
   position: relative;
   top: 0.1rem;
@@ -1104,6 +1128,9 @@ input[type=checkbox] {
   margin-bottom: 0.1rem;
 }
 
+/*------------------------------------*\
+    SWITCH
+\*------------------------------------*/
 .switch {
   position: relative;
   display: inline-block;
@@ -1156,6 +1183,9 @@ input:checked + .slider::before {
   background-color: #FCFCFC;
 }
 
+/*------------------------------------*\
+    CARD
+\*------------------------------------*/
 .tag, .tag__card--border, .tag__card--grey, .tag__salud, .tag__primary, .tag__innovation, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
   padding: 3px 8px;
   text-align: center;
@@ -1216,6 +1246,9 @@ input:checked + .slider::before {
   background-color: #ffffff;
 }
 
+/*------------------------------------*\
+    SUBMENÚ
+\*------------------------------------*/
 .topbar__submenu--link {
   color: #000;
   text-decoration: none;
@@ -1432,6 +1465,9 @@ hr {
   background-color: #26201B;
 }
 
+/*------------------------------------*\
+    GRID
+\*------------------------------------*/
 @media (min-width: 1024px) {
   .grid__c2 {
     display: -ms-grid;
@@ -1459,6 +1495,9 @@ hr {
   }
 }
 
+/*------------------------------------*\
+    SITE
+\*------------------------------------*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1483,6 +1522,9 @@ img {
   max-width: 100%;
 }
 
+/*------------------------------------*\
+    SPACE ELEMENTS
+\*------------------------------------*/
 .title__link {
   display: -webkit-box;
   display: -ms-flexbox;

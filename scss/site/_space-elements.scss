@@ -1,4 +1,6 @@
-//Space elements
+/*------------------------------------*\
+    SPACE ELEMENTS
+\*------------------------------------*/
 .title {
     &__link {
         display: flex;
@@ -15,7 +17,6 @@
         }
     }
 }
-
 .padding {
     padding: 0 $regular;
     // Bottom
@@ -49,7 +50,6 @@
         padding: $x-large 0;
     }
 }
-
 h1 {
     padding-bottom: $x-regular;
     @include respond-to(large) {
