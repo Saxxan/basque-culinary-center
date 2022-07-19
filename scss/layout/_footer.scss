@@ -4,12 +4,16 @@
     padding: $regular;
     @include respond-to(large) {
         display: flex;
+        align-items: center
     }
     &__background {
         &--home {
             @extend .footer;
             background-color: $c-monocromo-100;
         }
+    }
+    &__info {
+        text-align: left;
     }
     &__logo {
         max-width: 117px;
@@ -43,6 +47,7 @@
     }
     &__item {
         text-decoration: none;
+        color: $c-monocromo-900;
     }
     &__copyright {
         text-align: center;

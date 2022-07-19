@@ -246,7 +246,7 @@ span {
     }
 }
 .x-small {
-    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
+    font-size: clamp(0.9rem, -0.875rem + 8.333vw, 1rem);
     &__garamond {
         font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
         font-weight: $garamond-bold;

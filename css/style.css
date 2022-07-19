@@ -69,7 +69,7 @@ span {
 }
 
 .x-small {
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
+  font-size: clamp(0.9rem, -0.875rem + 8.333vw, 1rem);
 }
 .x-small__garamond {
   font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
@@ -708,11 +708,11 @@ h1, h2, h3 {
 @media (min-width: 1024px) {
   .card__line {
     border-left: 3px solid #83390B;
-    height: 180px;
+    height: 100%;
   }
 }
 .card__description {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .card__title {
   text-transform: none;
@@ -741,7 +741,7 @@ h1, h2, h3 {
 }
 @media (min-width: 700px) {
   .card__details--margin {
-    padding-left: 8px;
+    padding-left: 16px;
   }
 }
 .card__details-formacion {
@@ -910,49 +910,6 @@ h1, h2, h3 {
 }
 .filter__tag--item {
   margin: 8px;
-}
-
-.container {
-  font-family: "Roboto";
-  width: 600px;
-  margin: 30px auto 0;
-  display: block;
-  background: #FFF;
-  padding: 10px 50px 50px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-h2 small {
-  font-weight: normal;
-  color: #888;
-  display: block;
-}
-
-.footer, .footer__background--home {
-  text-align: center;
-}
-
-.footer a, .footer__background--home a {
-  color: #53B2C8;
-}
-
-/* form starting stylings ------------------------------- */
-.group {
-  position: relative;
-  margin-bottom: 45px;
-}
-
-input {
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid #757575;
 }
 
 /*------------------------------------*\
@@ -1199,6 +1156,7 @@ input:checked + .slider::before {
 .tag__grado {
   background-color: #5D4976;
   border: 2px solid #5D4976;
+  display: inline;
 }
 .tag__master {
   background-color: #A7706C;
@@ -1393,10 +1351,16 @@ p, h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .footer__background--home {
   background-color: #F4F3EF;
+}
+.footer__info {
+  text-align: left;
 }
 .footer__logo {
   max-width: 117px;
@@ -1449,6 +1413,7 @@ p, h4 {
 }
 .footer__item {
   text-decoration: none;
+  color: #26201B;
 }
 .footer__copyright {
   text-align: center;

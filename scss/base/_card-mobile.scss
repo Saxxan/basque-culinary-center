@@ -28,11 +28,11 @@
     &__line {
         @include respond-to(large) {
             border-left: 3px solid $c-primary-dark;
-            height: 180px;
+            height: 100%;
         }
     }
     &__description {
-        margin-bottom: $xx-small;
+        margin-bottom: $small;
     }
     &__title {
         text-transform: none;
@@ -51,7 +51,7 @@
         justify-content: center;
         &--margin {
             @include respond-to(medium) {
-                padding-left: $x-small;
+                padding-left: $small;
             }
         }
         &-formacion {

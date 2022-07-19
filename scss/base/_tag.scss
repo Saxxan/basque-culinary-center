@@ -14,6 +14,7 @@
             @extend .tag;
             background-color: $c-formacion-grado;
             border: 2px solid $c-formacion-grado;
+            display: inline;
         }
         &__master {
             @extend .tag;
