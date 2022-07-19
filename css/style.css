@@ -324,6 +324,7 @@ h1, h2, h3 {
 .box__img {
   width: 100%;
   padding-bottom: 8px;
+  border-radius: 8px;
 }
 .box__img--bloq2, .box__img--bloq2-border {
   border-radius: 20px 20px 0 0;
@@ -1139,6 +1140,16 @@ input:checked + .slider::before {
   background-color: #FCFCFC;
 }
 
+.tabs__link {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 48px;
+}
+.tabs__active {
+  border-bottom: solid 2px #B36206;
+  color: #B36206;
+}
+
 /*------------------------------------*\
     CARD
 \*------------------------------------*/
@@ -1524,8 +1535,14 @@ img {
 .padding__bottom-gap {
   padding-bottom: 40px;
 }
+.padding__bottom-large {
+  padding-bottom: 32px;
+}
 .padding__bottom-x-large {
   padding-bottom: 48px;
+}
+.padding__bottom-xx-large {
+  padding-bottom: 64px;
 }
 .padding__top-regular {
   padding-top: 24px;
@@ -1538,6 +1555,9 @@ img {
 }
 .padding__top-x-large {
   padding-top: 48px;
+}
+.padding__topbottom-large {
+  padding: 32px 0;
 }
 .padding__topbottom-x-large {
   padding: 48px 0;

@@ -1,0 +1,11 @@
+.tabs {
+  &__link {
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: $x-large;
+  }
+  &__active {
+    border-bottom: solid 2px $c-primary-default;
+    color: $c-primary-default;
+  }
+}

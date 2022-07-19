@@ -29,8 +29,14 @@
     &__bottom-gap {
         padding-bottom: 40px;
     }
+    &__bottom-large {
+        padding-bottom: $large;
+    }
     &__bottom-x-large {
         padding-bottom: $x-large;
+    }
+    &__bottom-xx-large {
+        padding-bottom: $xx-large;
     }
     // Top
     &__top-regular {
@@ -46,6 +52,9 @@
         padding-top: $x-large;
     }
     // Top / Bottom
+    &__topbottom-large {
+        padding: $large 0;
+    }
     &__topbottom-x-large {
         padding: $x-large 0;
     }
