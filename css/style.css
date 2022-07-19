@@ -82,7 +82,7 @@ span {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, a, p {
+h1, h2, h3, h4, a, p, label {
   line-height: 1.3;
   font-family: "League Spartan", sans-serif;
   font-weight: 300;
@@ -913,6 +913,93 @@ h1, h2, h3 {
   margin: 8px;
 }
 
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.input, .input__background, .input__simple {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+}
+.input__simple {
+  border-bottom: 1px solid #757575;
+}
+.input__background {
+  background-color: #D5CCC1;
+  border-radius: 4px;
+}
+.input__background:hover, .input__background:active, .input__background:focus {
+  background-color: #F4F3EF;
+  border: 2px solid #26201B;
+  outline: none;
+}
+.input__background:invalid {
+  background-color: #FEE7EB;
+  border: 2px solid #9E0038;
+}
+.input__background:valid {
+  background-color: #EAF9DE;
+  border: 2px solid #008A00;
+}
+
+.input__simple:focus {
+  outline: none;
+}
+
+label {
+  color: #756A5B;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #26201B;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar:before, .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  background-color: #26201B;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width: 50%;
+}
+
 /*------------------------------------*\
     LINKS
 \*------------------------------------*/
@@ -1212,131 +1299,6 @@ input:checked + .slider::before {
   color: #008A00;
   border: 2px solid #008A00;
   background-color: #ffffff;
-}
-
-/*------------------------------------*\
-    SUBMENÚ
-\*------------------------------------*/
-.topbar__submenu--link {
-  color: #000;
-  text-decoration: none;
-}
-
-.topbar__submenu--list {
-  list-style: none;
-}
-
-.submenu__container {
-  height: 50px;
-  width: 100%;
-  background: #CE852A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  color: #fff;
-}
-
-.open, .close {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.topbar {
-  height: 100%;
-  width: 60%;
-  background: #CE852A;
-}
-
-.topbar ul {
-  height: 100%;
-  width: 100%;
-  background: #CE852A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.topbar ul li {
-  height: 100%;
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  cursor: pointer;
-}
-
-.topbar ul li:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.topbar ul li a {
-  color: #fff;
-}
-
-.topbar__submenu {
-  position: relative;
-}
-
-.topbar__submenu a {
-  padding-left: 5px;
-}
-
-.topbar__submenu i {
-  font-size: 1.2rem;
-}
-
-.topbar__submenu > ul {
-  height: 200px;
-  width: 100%;
-  background: #CE852A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  -webkit-transform: translateY(125px) scale(1, 0);
-          transform: translateY(125px) scale(1, 0);
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transition: -webkit-transform 0.2s linear 0.5s;
-  transition: -webkit-transform 0.2s linear 0.5s;
-  transition: transform 0.2s linear 0.5s;
-  transition: transform 0.2s linear 0.5s, -webkit-transform 0.2s linear 0.5s;
-}
-
-.topbar__submenu:hover > ul {
-  -webkit-transform: translateY(125px) scale(1, 1);
-          transform: translateY(125px) scale(1, 1);
-}
-
-.topbar__submenu > ul li {
-  height: 100%;
-  width: 100%;
 }
 
 p, h4 {

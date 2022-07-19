@@ -1,37 +1,34 @@
-include ../head/head.pug
+div
+    nav.menu    
+        input(type="checkbox" id="menu__checkbox" class="menu__checkbox")
+        label(for="menu__checkbox" class="menu__toggle") 
+            img(src="../../src/images/burger.png" class="hamburger")
+            img(src="../../src/images/closed.png" class="close")
+        ul.menu__menu   
+            li.menu__item 
+                a(class="menu__menu--link" href="#")
+                    img(class="menu__logo" src="../../src/images/logo-bcc.png", alt="") 
+            li.menu__item   
+                a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
+            li.menu__item   
+                a(class="menu__menu--link" href="#") Formación
+            li.menu__item   
+                a(class="menu__menu--link" href="#") Innovación 
+            li.menu__item   
+                a(class="menu__menu--link" href="#") Empresas 
+            li.menu__item   
+                a(class="menu__menu--link" href="#") Iniciativas 
+            li.menu__item   
+                a(class="menu__menu--link" href="#") Restaurantes 
+            li.menu__item   
+                a(class="menu__menu--link" href="#") Actualidad 
+            li.menu__item
+                a.btn__primary--large-color-menu.display__desktop(href="#") Encuentra tu formación
+        div.gradient__home
+            p.text-small.gradient__text Ven a disfrutar de nuestra cocina  
+                a(class="primaryfont__bold" href="#") Restaurantes 
 
-        block content
-        div
-            nav.menu    
-                input(type="checkbox" id="menu__checkbox" class="menu__checkbox")
-                label(for="menu__checkbox" class="menu__toggle") 
-                    img(src="../../src/images/burger.png" class="hamburger")
-                    img(src="../../src/images/closed.png" class="close")
-                ul.menu__menu   
-                    li.menu__item 
-                        a(class="menu__menu--link" href="#")
-                            img(class="menu__logo" src="../../src/images/logo-bcc.png", alt="") 
-                    li.menu__item   
-                        a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
-                    li.menu__item   
-                        a(class="menu__menu--link" href="#") Formación
-                    li.menu__item   
-                        a(class="menu__menu--link" href="#") Innovación 
-                    li.menu__item   
-                        a(class="menu__menu--link" href="#") Empresas 
-                    li.menu__item   
-                        a(class="menu__menu--link" href="#") Iniciativas 
-                    li.menu__item   
-                        a(class="menu__menu--link" href="#") Restaurantes 
-                    li.menu__item   
-                        a(class="menu__menu--link" href="#") Actualidad 
-                    li.menu__item
-                        a.btn__primary--large-color-menu.display__desktop(href="#") Encuentra tu formación
-                div.gradient__home
-                    p.text-small.gradient__text Ven a disfrutar de nuestra cocina  
-                        a(class="primaryfont__bold" href="#") Restaurantes
-
-                //-  div.gradient__innovation
-                //-     p.text-small.gradient__text BCC Innovation 
+        //-  div.gradient__innovation
+        //-     p.text-small.gradient__text BCC Innovation 
 
             
