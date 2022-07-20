@@ -5,11 +5,10 @@
     border-bottom: 1px solid grey;
     background-color: $c-white;
     &__toggle {
-        position: absolute;
         cursor: pointer;
+        position: absolute;
         margin: 0rem 1rem;
         right: 0;
-        top: 10px;
         @include respond-to(large) {
             top: 30%;
             display: none;

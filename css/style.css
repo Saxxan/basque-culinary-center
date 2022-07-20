@@ -1087,11 +1087,10 @@ em.error {
   background-color: #ffffff;
 }
 .menu__toggle {
-  position: absolute;
   cursor: pointer;
+  position: absolute;
   margin: 0rem 1rem;
   right: 0;
-  top: 10px;
 }
 @media (min-width: 1024px) {
   .menu__toggle {
@@ -1359,6 +1358,7 @@ input:checked + .slider::before {
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
+  font-family: "League Spartan", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
