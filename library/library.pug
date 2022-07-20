@@ -2,34 +2,50 @@ include ../components/layout/head.pug
     block content
         main
             //- menu
-            include ../components/menu/menu-section.pug
-            include ../components/menu/menu-gradient.pug
-            include ../components/menu/menu.pug
+            div.padding__bottom-x-large
+                
+                include ../components/menu/menu-section.pug
+                include ../components/menu/menu-gradient.pug
+                include ../components/menu/menu.pug
+                include ../components/menu/topbar.pug
             //- layout
-            include ../components/layout/button.pug
-            include ../components/layout/checkbox.pug
-            include ../components/layout/filtro.pug
-            include ../components/layout/input.pug
-            include ../components/layout/switch.pug
-            include ../components/layout/tag.pug
-            include ../components/layout/vertical-line-column.pug
+            .grid__c3.padding__bottom-x-large
+                div
+                    include ../components/layout/button.pug
+                div
+                    include ../components/layout/checkbox.pug
+                    include ../components/layout/switch.pug
+                div
+                    include ../components/layout/filtro.pug
+                    .padding__bottom-large
+                        include ../components/layout/tag.pug
+                    include ../components/layout/input.pug
+            .padding__bottom-x-large
+                include ../components/layout/vertical-line-column.pug
             //- tabs
-            include ../components/tabs/tabs.pug
-            //- column
-            include ../components/column/card-column.pug 
+            .padding__bottom-x-large
+                include ../components/tabs/tabs.pug
+            .grid__c3
+                //- column
+                include ../components/column/card-column.pug 
             include ../components/column/card-img-mobile.pug
             include ../components/column/card-principal.pug
             include ../components/column/column-2.pug
             include ../components/column/column-3-eventos.pug 
+            .padding__bottom-x-large
             include ../components/column/column-3-innovation.pug 
             include ../components/column/column-icon.pug 
-            include ../components/column/noticia-bloq1.pug
-            include ../components/column/noticias-bloq2.pug 
-            include ../components/column/noticias-column-2.pug 
+            .padding__bottom-x-large
+                include ../components/column/noticia-bloq1.pug
+            .padding__bottom-x-large
+                include ../components/column/noticias-bloq2.pug 
+            .padding__bottom-x-large
+                include ../components/column/noticias-column-2.pug 
             
             //- footer
             include ../components/layout/footer.pug
-            
+
+    script(src="../js/function.js")        
         
 
             

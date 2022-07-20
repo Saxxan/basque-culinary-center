@@ -1,80 +1,102 @@
-/* form starting stylings ------------------------------- */
-.group { 
-    position:relative; 
-    margin-bottom:45px; 
-  }
-.input {
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    display:block;
-    width:300px;
-    border:none;
-    &__simple {
-        @extend .input;
-        border-bottom: 1px solid #757575;
+// --------------------------------------------------------
+// >> Floating Labels
+// --------------------------------------------------------
+.form-floating {
+    position: relative;
+    margin-bottom: $small;
+    > .form-control,
+    > .form-select {
+        height: 55px;
+        padding: 1rem 1rem;
     }
-    &__background {
-        @extend .input;
-        background-color: $c-monocromo-300;
-        border-radius: $btnprimary-radius;
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $c-monocromo-100;
-            border: 2px solid $c-monocromo-900;
-            outline:none;
+
+    > label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 400;
+        height: 100%;
+        padding: 1rem 1rem;
+        pointer-events: none;
+        transform-origin: 0 0;
+        -webkit-transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+        transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+    }
+
+    > .form-control {
+        &::placeholder {
+            color: transparent;
         }
-        &:invalid {
-            background-color: $c-error-light;
-            border: 2px solid $c-error-default;
-        }
-        &:valid {
-            background-color: $c-suceso-light;
-            border: 2px solid $c-suceso-default;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+        padding-top: 1.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    &:-webkit-autofill {
+        padding-top: 1.6rem;
+        padding-bottom: 0.6rem;
+    }
+}
+
+    > .form-control:focus,
+    > .form-control:not(:placeholder-shown),
+    > .form-select {
+        ~ label {
+        opacity: 0.6;
+        transform: scale(.75) translateY(-.5rem) translateX(.15rem);
         }
     }
 
+    > .form-control:-webkit-autofill {
+        ~ label {
+        opacity: 0.6;
+        transform: scale(.75) translateY(-.5rem) translateX(.15rem);
+        }
+    }
 }
-.input__simple:focus 		{ outline:none; }
-// Label  
-label {
-    color: $c-monocromo-600; 
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-  
-// Activate state
-input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:$c-monocromo-900;
+
+// --------------------------------------------------------
+// >> Form Control
+// --------------------------------------------------------
+.form-control {
+    display: block;
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: $c-monocromo-900;
+    width: 100%;
+    padding: 0px;
+    background-color: $c-monocromo-300;
+    border: 2px solid $c-monocromo-300;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-transition: border-color .25s ease-in-out;
+    transition: border-color .25s ease-in-out;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $c-monocromo-900;
+        background-color: $c-monocromo-100;
+        border-color: 2px solid $c-monocromo-900;
+        outline: none;
+    }
+} 
+
+// --------------------------------------------------------
+// >> Form Validation
+// --------------------------------------------------------
+.is-invalid {
+    border-color: red;
 }
-// Bottom bar
-.bar 	{ position:relative; display:block; width:300px; }
-.bar:before, .bar:after 	{
-content:'';
-    height:2px; 
-    width:0;
-    position:absolute;
-    background-color:$c-monocromo-900; 
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-}
-.bar:before {
-    left:50%;
-}
-.bar:after {
-    right:50%; 
-}
-/* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-    width:50%;
+
+em { 
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+    
+    &.error { color: red; }
 }

@@ -913,91 +913,120 @@ h1, h2, h3 {
   margin: 8px;
 }
 
-/* form starting stylings ------------------------------- */
-.group {
+.form-floating {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 16px;
 }
-
-.input, .input__background, .input__simple {
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 300px;
-  border: none;
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 55px;
+  padding: 1rem 1rem;
 }
-.input__simple {
-  border-bottom: 1px solid #757575;
-}
-.input__background {
-  background-color: #D5CCC1;
-  border-radius: 4px;
-}
-.input__background:hover, .input__background:active, .input__background:focus {
-  background-color: #F4F3EF;
-  border: 2px solid #26201B;
-  outline: none;
-}
-.input__background:invalid {
-  background-color: #FEE7EB;
-  border: 2px solid #9E0038;
-}
-.input__background:valid {
-  background-color: #EAF9DE;
-  border: 2px solid #008A00;
-}
-
-.input__simple:focus {
-  outline: none;
-}
-
-label {
-  color: #756A5B;
-  font-size: 18px;
-  font-weight: normal;
+.form-floating > label {
   position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  height: 100%;
+  padding: 1rem 1rem;
   pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.form-floating > .form-control::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-floating > .form-control::-moz-placeholder {
+  color: transparent;
+}
+.form-floating > .form-control:-ms-input-placeholder {
+  color: transparent;
+}
+.form-floating > .form-control::-ms-input-placeholder {
+  color: transparent;
+}
+.form-floating > .form-control::placeholder {
+  color: transparent;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) {
+  padding-top: 1.6rem;
+  padding-bottom: 0.6rem;
+}
+.form-floating > .form-control:not(:-ms-input-placeholder) {
+  padding-top: 1.6rem;
+  padding-bottom: 0.6rem;
+}
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 1.6rem;
+  padding-bottom: 0.6rem;
+}
+.form-floating > .form-control:-webkit-autofill {
+  padding-top: 1.6rem;
+  padding-bottom: 0.6rem;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  opacity: 0.6;
+  transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-control:not(:-ms-input-placeholder) ~ label {
+  opacity: 0.6;
+  transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 0.6;
+  -webkit-transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+          transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-control:-webkit-autofill ~ label {
+  opacity: 0.6;
+  -webkit-transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
+          transform: scale(0.75) translateY(-0.5rem) translateX(0.15rem);
 }
 
-input:focus ~ label, input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #26201B;
-}
-
-.bar {
-  position: relative;
+.form-control {
   display: block;
-  width: 300px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2rem;
+  color: #26201B;
+  width: 100%;
+  padding: 0px;
+  background-color: #D5CCC1;
+  border: 2px solid #D5CCC1;
+  border-radius: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: border-color 0.25s ease-in-out;
+  transition: border-color 0.25s ease-in-out;
+}
+.form-control:hover, .form-control:active, .form-control:focus {
+  color: #26201B;
+  background-color: #F4F3EF;
+  border-color: 2px solid #26201B;
+  outline: none;
 }
 
-.bar:before, .bar:after {
-  content: "";
-  height: 2px;
-  width: 0;
-  position: absolute;
-  background-color: #26201B;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+.is-invalid {
+  border-color: red;
 }
 
-.bar:before {
-  left: 50%;
+em {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 30px;
 }
-
-.bar:after {
-  right: 50%;
-}
-
-/* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width: 50%;
+em.error {
+  color: red;
 }
 
 /*------------------------------------*\
@@ -1299,6 +1328,66 @@ input:checked + .slider::before {
   color: #008A00;
   border: 2px solid #008A00;
   background-color: #ffffff;
+}
+
+.topbar, .topbar__list, .topbar__list--item, .topbar__list--item--link {
+  background-color: #F4F3EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.topbar__list, .topbar__list--item, .topbar__list--item--link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topbar__list--item, .topbar__list--item--link {
+  position: relative;
+  float: left;
+  color: white;
+  padding: 8px 32px;
+}
+.topbar__list--item:hover > ul, .topbar__list--item--link:hover > ul {
+  display: block;
+}
+.topbar__list--item--link {
+  display: block;
+  color: #52483B;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.topbar__list--submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #52483B;
+  padding: 10px;
+}
+.topbar__list--submenu--item {
+  float: none;
+  width: 150px .topbar__list--submenu--item --link;
+  width-color: white;
+  width-line-height: 120%;
+  width-padding: 10px 15px;
+}
+.topbar__list--submenu {
+  width: 300px;
+}
+.topbar__list--submenu--item {
+  list-style: none;
+  padding: 16px 10px;
+}
+.topbar__list--submenu--item--link {
+  color: white;
+  line-height: 120%;
+  padding: 10px 15px;
 }
 
 p, h4 {

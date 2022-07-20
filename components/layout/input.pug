@@ -1,12 +1,29 @@
-div
-    form(action="" id="form")  
-        .group 
-            input(type="text" ide="name" class="input__simple" size="6" required)
-            span.highlight
-            span.bar
-            label(for="ename" class="label") Name
-        
-        .group 
-            input(type="tel" id="tel" class="input__background" size="9" required)
-            span.highlight
-            label(for="tel" class="label") Teléfono
+<!-- Simple Registration Form -->
+section.registration-form
+h3 Registrarse
+<!-- Form Wrapper -->
+    form(name="registration-form" id="registrationForm" method="POST" action="" role="form")
+        .form-floating
+            input(type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name")
+            label(for="firstName") First Name
+        .form-floating
+            input(type="week" name="lastName" class="form-control" id="lastName" placeholder="Last Name")
+            label(for="lastName") Last Name
+        .form-floating
+            input(type="email" name="selecionaOpcion" class="form-control" id="selecionaOpcion" placeholder="Selecciona una opción")
+            label(for="selecionaOpcion") Selecciona una opción
+        .form-floating
+            input(type="text" name="userName" class="form-control" id="userName" placeholder="User Name")
+            label(for="userName") User Name
+        .form-floating
+            input(type="password" name="password" class="form-control" id="password" placeholder="Password")
+            label(for="password") Password
+        .form-floating
+            input(type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password")
+            label(for="confirmPassword") Confirm Password
+        .form-floating
+            label(for="opciones")
+            select(name="hola" class="form-control") 
+                option(value="seleccionaOopcion") Selecciona una opción
+                option(value="opcion 1") Opción 1
+                option(value="opcion 2") Opción 2
