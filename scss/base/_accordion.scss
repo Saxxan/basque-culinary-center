@@ -1,0 +1,43 @@
+.accordion {
+    width: 100%;
+    border: none;
+    background-color: rgba($c-marcas-bcc-innovation, 0.1);
+    color: #444;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
+    border-radius: 10px;
+    margin: 10px 10px 0 0;
+    font-family: $primary-font;
+
+    &::after {
+        content: url("../../src/iconos/location.svg");
+        font-size: 15px;
+        float: right;
+        margin-left: 15px;
+      }
+}
+.active{
+    &.accordion {
+        border-radius: 10px 10px 0 0;
+    }
+    &::after{
+        content: url("../../src/iconos/accordion-closed.svg");
+        float: right;
+        margin-left: 15px;
+    }
+}
+.panel {
+    padding: 0 15px;
+    background-color: rgba($c-marcas-bcc-innovation, 0.1);
+    color: $c-monocromo-700;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+}

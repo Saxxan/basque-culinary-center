@@ -16,8 +16,6 @@ function showTabContent(i = 0) {
   content[i].style.display = 'grid';
   tab[i].classList.add('tabs__active');
 }
-
-
 hideTabContent();
 showTabContent();
 
@@ -38,7 +36,7 @@ const disabledCheck = document.getElementById('disabled');
 disabledCheck.disabled = true; 
 
 
-//Form
+// Form
 $(function(){
     console.log('Validation - Ready !');
     $('form[name="registration-form"]').validate({
