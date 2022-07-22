@@ -1,7 +1,8 @@
-mixin component-target-garamond(displayDesktop="display__desktop", displayNone="display__none")
+mixin component-target-garamond(displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
             div.padding__bottom-regular.box
                 div
-                    span.tag__innovation.box__tag(class= displayNone)  Innovación
+                    div(class= displayNone)
+                        span.tag__innovation.box__tag Innovación
                     img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
                 div.box__icon
                     svg( class="svg__icon--date"
@@ -14,7 +15,34 @@ mixin component-target-garamond(displayDesktop="display__desktop", displayNone="
                     div.box__date--space
                         p.text-large__garamond 23
                         p.text-medium__garamond FEB    
-                    p.box__description--date.text-small El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
+                    p.box__description--date.text-small(class= displayDesktop) El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
+                    div(class= displayMobile)(class= displayOne)
+                        div.box__icon--date
+                            svg( 
+                        class="svg__icon--margin", 
+                            )
+                                use(xlink:href="../../src/iconos/calendar.svg#calen")
+                            span.box__icon--date
+                                p.text-small Fecha de publicación: 
+                            p.text-small  04/02/2022
+
+                        div.box__icon--date
+                            svg( 
+                        class="svg__icon--margin", 
+                            )
+                                use(xlink:href="../../src/iconos/watch.svg#watch")
+                            span.box__icon--date
+                                p.text-small Horario: 
+                            p.text-small  100€
+
+                        div.box__icon--date
+                            svg( 
+                        class="svg__icon--margin", 
+                            )
+                                use(xlink:href="../../src/iconos/users.svg#users")
+                            span.box__icon--date
+                                p.text-small Autor: 
+                            p.text-small  BCC Innovation
                 div.display__mobile(class= displayNone)
                     a.btn__primary--small-nocolor(href="#") Quiero inscribirme
                 div.display__desktop

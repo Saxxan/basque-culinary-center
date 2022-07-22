@@ -130,6 +130,9 @@ h1, h2, h3 {
     display: flex;
   }
 }
+.display__one {
+  display: none;
+}
 
 .vertical-line__big {
   width: 3px;
