@@ -1,6 +1,10 @@
-mixin component-target-info-event()
-    section.padding.center__content
-        section.padding__bottom-x-large.grid__c2
+mixin component-target-info-event(backgroundBox="box__background--innovation", date="box__icon--date")
+    section.padding.center__content(class= backgroundBox)
+        div.padding__top-x-large
+            div
+                p.text-large Restaurantes
+                h1.primaryfont__bold Dos conceptos distintos
+        section.padding__bottom-x-large
             div
                 div
                     img(class="box__img--bloq2-border" src="../../src/images/img-noticias.jpg", alt="")
@@ -13,7 +17,7 @@ mixin component-target-info-event()
                         class="svg__icon--margin", 
                             )
                                 use(xlink:href="../../src/iconos/calendar.svg#calen")
-                            span.box__icon--date
+                            span.box__icon--date(class= date)
                                 p.text-small Fecha de publicación: 
                             p.text-small  04/02/2022
 
@@ -22,7 +26,7 @@ mixin component-target-info-event()
                         class="svg__icon--margin", 
                             )
                                 use(xlink:href="../../src/iconos/watch.svg#watch")
-                            span.box__icon--date
+                            span.box__icon--date(class= date)
                                 p.text-small Horario: 
                             p.text-small  100€
 
@@ -31,10 +35,9 @@ mixin component-target-info-event()
                         class="svg__icon--margin", 
                             )
                                 use(xlink:href="../../src/iconos/users.svg#users")
-                            span.box__icon--date
+                            span.box__icon--date(class= date)
                                 p.text-small Autor: 
                             p.text-small  BCC Innovation
                 p.text-small Nuestros alumnos del Máster de Perfeccionamiento en Cocina han diseñado un menú inspirados en la historia del hombre a través de la alimentación, del Homo sapiens hasta nuestros días.
                 div
                     a.btn__primary--large-color-width(href="#") Reserbar en restaurante BCC
-        

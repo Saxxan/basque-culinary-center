@@ -1,5 +1,6 @@
-include ../components/column/component-target-two-column.pug
 include ../components/column/component-target-info-event.pug
+include ../components/column/component-target-img-garamond.pug
+include ../components/column/component-target-garamond.pug
 include ../components/layout/head.pug
     block content
         main
@@ -35,13 +36,20 @@ include ../components/layout/head.pug
             include ../components/column/component-mobile-card-img.pug
             include ../components/column/component-target-principal.pug
             //- añadimos las clases que convertirán este componente
-            +component-target-two-column("box__background--innovation", "box__icon--date-innovation")
-            +component-target-two-column("", "box__icon--date-innovation")
             section.display-flex
-                +component-target-info-event()
-                +component-target-info-event()
+                +component-target-info-event("box__background--innovation", "box__icon--date-innovation")
+                +component-target-info-event("box__background--innovation", "box__icon--date-innovation")
+            section.display-flex
+                +component-target-info-event("", "")
+                +component-target-info-event("", "")
+            section.padding__bottom-x-large.center__content.display-flex
+                +component-target-img-garamond()
+                +component-target-garamond()
+                +component-target-garamond()
 
-            include ../components/column/component-events-three-column-garamond.pug 
+                
+
+            include ../components/column/component-target-img-garamond.pug 
             
             .padding__bottom-x-large
             include ../components/column/column-3-innovation.pug 
