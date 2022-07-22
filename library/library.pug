@@ -1,4 +1,5 @@
-include ../mixin/column-2.pug
+include ../components/column/component-target-two-column.pug
+include ../components/column/component-target-info-event.pug
 include ../components/layout/head.pug
     block content
         main
@@ -31,12 +32,16 @@ include ../components/layout/head.pug
             .grid__c3
                 //- column
                 include ../components/column/card-column.pug 
-            include ../components/column/card-img-mobile.pug
-            include ../components/column/card-principal.pug
-            include ../components/column/column-2.pug
+            include ../components/column/component-mobile-card-img.pug
+            include ../components/column/component-target-principal.pug
             //- añadimos las clases que convertirán este componente
-            +columna-2("box__background--innovation", "box__icon--date-innovation")
-            include ../components/column/column-3-eventos.pug 
+            +component-target-two-column("box__background--innovation", "box__icon--date-innovation")
+            +component-target-two-column("", "box__icon--date-innovation")
+            section.display-flex
+                +component-target-info-event()
+                +component-target-info-event()
+
+            include ../components/column/component-events-three-column-garamond.pug 
             
             .padding__bottom-x-large
             include ../components/column/column-3-innovation.pug 
