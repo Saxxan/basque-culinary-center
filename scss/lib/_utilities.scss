@@ -14,6 +14,14 @@
             display: block;
         }
     }
+    &__none {
+        display: none;
+    }
+    &__flex {
+        @include respond-to(large) {
+            display: flex;
+        }
+    }
 }
 
 .vertical-line { 
@@ -29,10 +37,4 @@
     max-width: 1450px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.display-flex {
-    @include respond-to(large) {
-        display: flex;
-    }
 }
