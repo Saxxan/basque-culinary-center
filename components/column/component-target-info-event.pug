@@ -1,4 +1,4 @@
-mixin component-target-info-event(backgroundBox="box__background--innovation", date="box__icon--date")
+mixin component-target-info-event(backgroundBox="box__background--innovation", colorDate="box__icon--date", displayNone="display__none")
     section.padding.center__content(class= backgroundBox)
         div.padding__top-x-large
             div
@@ -9,7 +9,14 @@ mixin component-target-info-event(backgroundBox="box__background--innovation", d
                 div
                     img(class="box__img--bloq2-border" src="../../src/images/img-noticias.jpg", alt="")
                     p.text-small Restaurante BCC
-                    h4.box__title.primaryfont__bold Cita GO-ON
+                div(class= displayNone)
+                    div.box__icon
+                        svg( class="svg__icon--date"
+                        )
+                            use(xlink:href="../../src/iconos/share-back.svg#share-back")
+                        span.tag__card--grey.box__tag--space  Presencial
+                        span.tag__card--border.box__tag--space  Incripción abierta
+                h4.box__title.primaryfont__bold Cita GO-ON
                 div.box__date
                     div
                         div.box__icon--date
@@ -17,7 +24,7 @@ mixin component-target-info-event(backgroundBox="box__background--innovation", d
                         class="svg__icon--margin", 
                             )
                                 use(xlink:href="../../src/iconos/calendar.svg#calen")
-                            span.box__icon--date(class= date)
+                            span.box__icon--date(class= colorDate)
                                 p.text-small Fecha de publicación: 
                             p.text-small  04/02/2022
 
@@ -26,7 +33,7 @@ mixin component-target-info-event(backgroundBox="box__background--innovation", d
                         class="svg__icon--margin", 
                             )
                                 use(xlink:href="../../src/iconos/watch.svg#watch")
-                            span.box__icon--date(class= date)
+                            span.box__icon--date(class= colorDate)
                                 p.text-small Horario: 
                             p.text-small  100€
 
@@ -35,7 +42,7 @@ mixin component-target-info-event(backgroundBox="box__background--innovation", d
                         class="svg__icon--margin", 
                             )
                                 use(xlink:href="../../src/iconos/users.svg#users")
-                            span.box__icon--date(class= date)
+                            span.box__icon--date(class= colorDate)
                                 p.text-small Autor: 
                             p.text-small  BCC Innovation
                 p.text-small Nuestros alumnos del Máster de Perfeccionamiento en Cocina han diseñado un menú inspirados en la historia del hombre a través de la alimentación, del Homo sapiens hasta nuestros días.

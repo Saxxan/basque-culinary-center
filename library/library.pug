@@ -36,8 +36,11 @@ include ../components/layout/head.pug
             include ../components/column/component-target-principal.pug
             //- añadimos las clases que convertirán este componente
             section.display__flex
-                +component-target-info-event("box__background--innovation", "box__icon--date-innovation")
-                +component-target-info-event("box__background--innovation", "box__icon--date-innovation")
+                +component-target-info-event("", "", "display__none")
+                +component-target-info-event("", "", "display__none")
+            section.display__flex
+                +component-target-info-event("box__background--innovation", "box__icon--date-innovation", "")
+                +component-target-info-event("box__background--innovation", "box__icon--date-innovation", "")
             section.display__flex
                 +component-target-info-event("", "")
                 +component-target-info-event("", "")
@@ -45,7 +48,6 @@ include ../components/layout/head.pug
                 +component-target-garamond("", "display__mobile", "", "display__one")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
-
 
                 
 
