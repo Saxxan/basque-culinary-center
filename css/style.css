@@ -153,6 +153,13 @@ h1, h2, h3 {
   gap: 32px;
 }
 
+hr {
+  height: 1px;
+  border: 0;
+  width: 100%;
+  background-color: #26201B;
+}
+
 /*------------------------------------*\
     COLOR GRADIENT
 \*------------------------------------*/
@@ -166,7 +173,10 @@ h1, h2, h3 {
   background-size: 400% 400%;
 }
 .gradient__innovation {
-  background-color: #59718c;
+  background: linear-gradient(274.9deg, #47596F 3.95%, #9CB5BC 96.05%);
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
 }
 @media (min-width: 1024px) {
   .gradient, .section__innovation, .section__home, .gradient__innovation, .gradient__home {
@@ -336,9 +346,13 @@ h1, h2, h3 {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
+  width: 100%;
 }
 .box__date--space {
   padding-right: 16px;
+}
+.box__date--width {
+  width: 100%;
 }
 .box__description {
   margin: 8px 0;
@@ -1541,13 +1555,6 @@ p, h4 {
 }
 .footer__copyright--text {
   padding-bottom: 24px;
-}
-
-hr {
-  height: 1px;
-  border: 0;
-  width: 100%;
-  background-color: #26201B;
 }
 
 /*------------------------------------*\

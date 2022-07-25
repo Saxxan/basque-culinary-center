@@ -64,10 +64,13 @@
     &__date {
         display: flex;
         padding-bottom: $x-regular;
+        width: 100%;
         &--space {
             padding-right: $small;
         }
-
+        &--width {
+            width: 100%;
+        }
     }
     &__description {
         margin: $x-small 0;

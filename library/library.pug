@@ -18,6 +18,7 @@ include ../components/layout/head.pug
                 include ../components/menu/menu-gradient.pug
                 include ../components/menu/menu.pug
                 include ../components/menu/topbar.pug
+                +menu-gradient("gradient__innovation")
             //- layout
             .grid__c3.padding__bottom-x-large
                 div
@@ -69,9 +70,6 @@ include ../components/layout/head.pug
             +component-mobile-card-img("", "", "", "", "card__color-entusiastas")
             +component-mobile-card-img("card__color-grado", "", "", "", "")
 
-            
-            include ../components/column/component-target-principal.pug
-
             section.display__flex.gap.content__center.content__max
                 +component-target-info-event("", "display__none", "")
                 +component-target-info-event( "", "display__none", "")  
@@ -95,7 +93,7 @@ include ../components/layout/head.pug
                 +component-target-garamond-complete("", "display__mobile", "", "display__one")
                 +component-target-garamond-complete("display__desktop", "display__mobile", "display__none", "")
                 +component-target-garamond-complete("display__desktop", "display__mobile", "display__none", "")
-
+            //- column icon
             section.content__center.content__max
                 +component-title("", "", "")
                 div.display__flex.content__center.content__max

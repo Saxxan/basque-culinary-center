@@ -1,19 +1,28 @@
+include ../components/column/component-column-icon.pug
+include ../components/column/component-title.pug
+include ../components/menu/menu-gradient.pug
 include ../components/layout/head.pug
+
+
     block content
         main
-            //- menu-gradient
-            include ../components/menu/menu.pug
-            include ../components/column/column-icon.pug
-            include ../components/column/column-3-eventos.pug
-            include ../components/column/noticias-column-2.pug
-            include ../components/tabs/tabs.pug
-            include ../components/layout/vertical-line-column.pug
-            include ../components/column/card-principal.pug
-            include ../components/column/card-principal.pug
-            include ../components/layout/vertical-line-column.pug
-            include ../components/column/noticia-bloq1.pug
-            include ../components/column/column-2.pug
-            include ../components/layout/footer.pug
+            header
+                //- menu
+                div.padding__bottom-x-large
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/menu.pug
+                    include ../components/menu/topbar.pug
+                //- column icon
+                section.content__center.content__max
+                    +component-title("", "", "")
+                    div.display__flex.content__center.content__max
+                        +component-column-icon()
+                        +component-column-icon()
+                        +component-column-icon()
+                        
+
+            
+                
 
     script(src="../js/function.js")  
 
