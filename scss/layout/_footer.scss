@@ -6,12 +6,7 @@
         display: flex;
         align-items: center
     }
-    &__background {
-        &--home {
-            @extend .footer;
-            background-color: $c-monocromo-100;
-        }
-    }
+
     &__info {
         text-align: left;
     }

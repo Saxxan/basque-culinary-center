@@ -1,5 +1,13 @@
 include ../components/column/component-target-info-event.pug
 include ../components/column/component-target-garamond.pug
+include ../components/column/component-target-garamond-complete.pug
+include ../components/column/component-vertical-line.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/column/component-noticia-target.pug
+include ../components/column/component-title-link.pug
+include ../components/column/component-title.pug
+include ../components/column/component-mobile-card-img.pug
+include ../components/column/component-column-icon.pug
 include ../components/layout/head.pug
     block content
         main
@@ -22,43 +30,80 @@ include ../components/layout/head.pug
                     .padding__bottom-large
                         include ../components/layout/tag.pug
                     include ../components/layout/input.pug
-            .padding__bottom-x-large
-                include ../components/layout/accordion.pug
-            .padding__bottom-x-large
-                include ../components/layout/vertical-line-column.pug
+            include ../components/layout/accordion.pug
+            section.content__center.content__max.display__flex.padding__bottom-x-large
+                +component-vertical-line("", "")
+                +component-vertical-line("", "")
+                +component-vertical-line("", "")
+                +component-vertical-line("", "")
+                +component-vertical-line("", "")
+            section.content__center.content__max.grid__c5.padding__bottom-x-large
+                +component-vertical-line("display__none", "display__one")
+                +component-vertical-line("display__none", "display__one")
+                +component-vertical-line("display__none", "display__one")
+                +component-vertical-line("display__none", "display__one")
+                +component-vertical-line("display__none", "display__one")
+            section.content__center.content__max.grid__c5.padding__bottom-x-large
+                +component-vertical-line("display__none", "")
+                +component-vertical-line("display__none", "")
+                +component-vertical-line("display__none", "")
+                +component-vertical-line("display__none", "")
+                +component-vertical-line("display__none", "")
+            
+            +component-title("", "", "")
+            +component-noticia-principal("", "", "display__none", "")
+            +component-noticia-principal("", "", "", "display__one")
+            section.box__background--innovation
+                div.display__flex.content__max.content__center
+                    +component-noticia-target("box__tag", "", "", "", "")
+                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
+                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
+                
             //- tabs
             .padding__bottom-x-large
                 include ../components/tabs/tabs.pug
             .grid__c3
                 //- column
                 include ../components/column/card-column.pug 
-            include ../components/column/component-mobile-card-img.pug
+            
+            //- mobile cambio color grado, máster...
+            +component-mobile-card-img("", "", "", "", "card__color-entusiastas")
+            +component-mobile-card-img("card__color-grado", "", "", "", "")
+
+            
             include ../components/column/component-target-principal.pug
-            //- añadimos las clases que convertirán este componente
-            section.display__flex
-                +component-target-info-event("", "", "display__none")
-                +component-target-info-event("", "", "display__none")
-            section.display__flex
-                +component-target-info-event("box__background--innovation", "box__icon--date-innovation", "")
-                +component-target-info-event("box__background--innovation", "box__icon--date-innovation", "")
-            section.display__flex
-                +component-target-info-event("", "")
-                +component-target-info-event("", "")
-            section.padding__bottom-x-large.center__content.display__flex
+
+            section.display__flex.content__center.content__max
+                +component-target-info-event("", "display__none", "")
+                +component-target-info-event( "", "display__none", "")  
+            //- innovation
+            section.box__background--innovation
+                div.content__max.content__center
+                    +component-title-link("box__background--innovation", "", "", "")
+                    +component-title-link("", "", "", "")
+                    +component-title("", "", "")
+                div.display__flex.content__max.content__center
+                        +component-target-info-event("box__icon--date-innovation", "", "display__one")
+                        +component-target-info-event("box__icon--date-innovation", "", "display__one")
+                        +component-target-info-event("box__icon--date-innovation", "", "display__one")
+                        div.padding.display__mobile
+                            a.btn__primary--small-color(href="#") ver más   
+            section.padding__bottom-x-large.content__center.content__max.display__flex
                 +component-target-garamond("", "display__mobile", "", "display__one")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
+            section.padding__bottom-x-large.content__center.content__max.display__flex
+                +component-target-garamond-complete("", "display__mobile", "", "display__one")
+                +component-target-garamond-complete("display__desktop", "display__mobile", "display__none", "")
+                +component-target-garamond-complete("display__desktop", "display__mobile", "display__none", "")
 
-                
-
+            section.content__center.content__max
+                +component-title("", "", "")
+                div.display__flex.content__center.content__max
+                    +component-column-icon()
+                    +component-column-icon()
+                    +component-column-icon()
             
-            .padding__bottom-x-large
-            include ../components/column/column-3-innovation.pug 
-            include ../components/column/column-icon.pug 
-            .padding__bottom-x-large
-                include ../components/column/noticia-bloq1.pug
-            .padding__bottom-x-large
-                include ../components/column/noticias-bloq2.pug 
             .padding__bottom-x-large
                 include ../components/column/noticias-column-2.pug 
             

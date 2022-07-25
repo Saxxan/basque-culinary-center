@@ -81,20 +81,22 @@
             padding-top: 0.7rem;
         }
     }
-    &__color-grado {
-        background-color: $c-formacion-grado;
-    }
-    &__color-master {
-        background-color: $c-formacion-master;
-    }
-    &__color-doctorado {
-        background-color: $c-formacion-doctorado;
-    }
-    &__color-cursos {
-        background-color: $c-formacion-profesionales;
-    }
-    &__color-entusiastas {
-        background-color: $c-formacion-entusiastas;
+    &__color {
+        &-grado {
+            background-color: $c-formacion-grado;
+        }
+        &-master {
+            background-color: $c-formacion-master;
+        }
+        &-doctorado {
+            background-color: $c-formacion-doctorado;
+        }
+        &-cursos {
+            background-color: $c-formacion-profesionales;
+        }
+        &-entusiastas {
+            background-color: $c-formacion-entusiastas;
+        }
     }
 }
 

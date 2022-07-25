@@ -1,9 +1,9 @@
-mixin component-target-garamond(displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
+mixin component-target-garamond-complete(displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
     div.padding.padding__bottom-regular.box
         div
-            div(class= displayDesktop)
+            div
                 span.tag__innovation.box__tag Innovación
-            img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
+            img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")
         div.box__icon
             svg( class="svg__icon--date"
             )
@@ -15,8 +15,7 @@ mixin component-target-garamond(displayDesktop="display__desktop", displayMobile
             div.box__date--space
                 p.text-large__garamond 23
                 p.text-medium__garamond FEB    
-            p.box__description--date.text-small(class= displayDesktop) El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
-            div(class= displayMobile)(class= displayOne)
+            div
                 div.box__icon--date
                     svg( 
                 class="svg__icon--margin", 
@@ -43,6 +42,8 @@ mixin component-target-garamond(displayDesktop="display__desktop", displayMobile
                     span.box__icon--date
                         p.text-small Autor: 
                     p.text-small  BCC Innovation
+        div                   
+            p.text-small El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
 
         div.display__mobile(class= displayNone)
             a.btn__primary--small-nocolor(href="#") Quiero inscribirme

@@ -1,10 +1,5 @@
-mixin component-target-info-event(backgroundBox="box__background--innovation", colorDate="box__icon--date", displayNone="display__none")
-    section.padding.center__content(class= backgroundBox)
-        div.padding__top-x-large
-            div
-                p.text-large Restaurantes
-                h1.primaryfont__bold Dos conceptos distintos
-        section.padding__bottom-x-large
+mixin component-target-info-event(colorDate="box__icon--date", displayNone="display__none", displayOne="display__one")
+    section.padding.padding__bottom-x-large
             div
                 div
                     img(class="box__img--bloq2-border" src="../../src/images/img-noticias.jpg", alt="")
@@ -46,5 +41,8 @@ mixin component-target-info-event(backgroundBox="box__background--innovation", c
                                 p.text-small Autor: 
                             p.text-small  BCC Innovation
                 p.text-small Nuestros alumnos del Máster de Perfeccionamiento en Cocina han diseñado un menú inspirados en la historia del hombre a través de la alimentación, del Homo sapiens hasta nuestros días.
-                div
+                div(class= displayOne)
                     a.btn__primary--large-color-width(href="#") Reserbar en restaurante BCC
+                    //- Button 'más información' innovación
+                div(class= displayNone)
+                    a.btn__primary--small-nocolor-innovation(href="#") más información

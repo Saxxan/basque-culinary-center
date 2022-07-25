@@ -1,0 +1,20 @@
+mixin component-noticia-principal(backgroundInnovation="box__background--innovation", backgroundHome="box__background", displayNone="display_none", displayOne="display__one")
+    section(class= backgroundInnovation)
+        div.box__principal.content__center.content__max
+            div
+                h3.box__title.display__mobile.primaryfont__bold(class= displayOne)  Toni Segarra: «No es momento para el marketing».
+            div
+                span.tag__primary.box__tag(class= displayOne) Etiqueta 01
+                img(class="box__img" src="../../src/images/img-noticias.jpg", alt="")
+            div.box__content
+                h3.box__title.display__desktop.primaryfont__bold(class= displayOne) Toni Segarra: «No es momento para el marketing».
+                p.display__desktop.text-medium.primaryfont__bold(class= displayOne) 01/01/2022
+                p.box__description.text-medium Es momento de hacer. De pasar del dicho al hecho. De rehuir del márketing y las falsas promesas para más bien actuar oportunamente y no oportunistamente como sugiere Toni Segarra, el gurú de la publicidad y uno de los mejores creativos españoles del siglo XX, , convencido de que “lo peor de la crisis todavía está por llegar y algunos términos como confianza y actitud empezarán a sonar pasado el verano”. 
+                a(class="link text-small box__link display__desktop" href="#")(class= displayOne) Leer más 
+                    svg( 
+                        class="svg__icon", 
+                        )
+                        use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
+                div.display__desktop(class= displayNone)
+                        a.btn__primary--large-color(href="#")
+                            p.text-small Acceder a innovaciónbb

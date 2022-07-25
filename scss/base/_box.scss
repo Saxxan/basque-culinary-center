@@ -7,14 +7,9 @@
         border-bottom: 0;
     }
     &__background {
+        background-color: $c-monocromo-100;
         &--innovation {
             background-color: rgba($c-marcas-bcc-innovation, .1);
-            padding: $regular;
-            margin-bottom: $regular;
-        }
-        &--home {
-            background-color: $c-monocromo-100;
-            padding-top: $x-large;
         }
     }
     &__icon {
