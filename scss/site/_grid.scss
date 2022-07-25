@@ -6,19 +6,19 @@
         &__c2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: $regular;
+            grid-gap: $large;
             grid-auto-rows: minmax(100px, auto);
             }
         &__c3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: $regular;
+        grid-gap: $large;
         grid-auto-rows: minmax(100px, auto);
         }
         &__c5 {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            grid-gap: $regular;
+            grid-gap: $large;
             grid-auto-rows: minmax(100px, auto);
         }
     }

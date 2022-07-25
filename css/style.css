@@ -149,6 +149,10 @@ h1, h2, h3 {
   margin-right: auto;
 }
 
+.gap {
+  gap: 32px;
+}
+
 /*------------------------------------*\
     COLOR GRADIENT
 \*------------------------------------*/
@@ -1553,25 +1557,25 @@ hr {
   .grid__c2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 24px 1fr;
+    -ms-grid-columns: 1fr 32px 1fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
+    grid-gap: 32px;
     grid-auto-rows: minmax(100px, auto);
   }
   .grid__c3 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
+    grid-gap: 32px;
     grid-auto-rows: minmax(100px, auto);
   }
   .grid__c5 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 24px;
+    grid-gap: 32px;
     grid-auto-rows: minmax(100px, auto);
   }
 }

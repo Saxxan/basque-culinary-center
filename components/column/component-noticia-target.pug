@@ -1,5 +1,5 @@
 mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", displayDesktop="display__desktop", displayNone="display__none")
-    div
+    div.gap
         div
             span.tag__entusiastas(class= tag)(class= tagBloq2) Etiqueta 01
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
@@ -12,3 +12,4 @@ mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", displ
                     class="svg__icon", 
                     )
                         use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
+        hr.display__mobile

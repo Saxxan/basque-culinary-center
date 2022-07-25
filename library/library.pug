@@ -31,19 +31,13 @@ include ../components/layout/head.pug
                         include ../components/layout/tag.pug
                     include ../components/layout/input.pug
             include ../components/layout/accordion.pug
-            section.content__center.content__max.display__flex.padding__bottom-x-large
-                +component-vertical-line("", "")
-                +component-vertical-line("", "")
-                +component-vertical-line("", "")
-                +component-vertical-line("", "")
-                +component-vertical-line("", "")
-            section.content__center.content__max.grid__c5.padding__bottom-x-large
-                +component-vertical-line("display__none", "display__one")
-                +component-vertical-line("display__none", "display__one")
-                +component-vertical-line("display__none", "display__one")
-                +component-vertical-line("display__none", "display__one")
-                +component-vertical-line("display__none", "display__one")
-            section.content__center.content__max.grid__c5.padding__bottom-x-large
+            section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+            section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
                 +component-vertical-line("display__none", "")
                 +component-vertical-line("display__none", "")
                 +component-vertical-line("display__none", "")
@@ -53,14 +47,19 @@ include ../components/layout/head.pug
             +component-title("", "", "")
             +component-noticia-principal("", "", "display__none", "")
             +component-noticia-principal("", "", "", "display__one")
-            section.box__background--innovation
-                div.display__flex.content__max.content__center
+            section.padding.box__background--innovation
+                div.display__flex.gap.content__max.content__center
                     +component-noticia-target("box__tag", "", "", "", "")
                     +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
                     +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
+            //- Últimas noticias, columna de 2
+            section.padding.box__background--innovation
+                div.display__flex.gap.content__max.content__center
+                    +component-noticia-target("box__tag", "", "", "", "")
+                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
                 
             //- tabs
-            .padding__bottom-x-large
+            .padding__bottom-x-large.content__center.content__max
                 include ../components/tabs/tabs.pug
             .grid__c3
                 //- column
@@ -73,22 +72,22 @@ include ../components/layout/head.pug
             
             include ../components/column/component-target-principal.pug
 
-            section.display__flex.content__center.content__max
+            section.display__flex.gap.content__center.content__max
                 +component-target-info-event("", "display__none", "")
                 +component-target-info-event( "", "display__none", "")  
             //- innovation
-            section.box__background--innovation
+            section.padding.box__background--innovation
                 div.content__max.content__center
                     +component-title-link("box__background--innovation", "", "", "")
                     +component-title-link("", "", "", "")
                     +component-title("", "", "")
-                div.display__flex.content__max.content__center
+                div.display__flex.gap.content__max.content__center
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
                         div.padding.display__mobile
                             a.btn__primary--small-color(href="#") ver más   
-            section.padding__bottom-x-large.content__center.content__max.display__flex
+            section.gap.padding__bottom-x-large.content__center.content__max.display__flex
                 +component-target-garamond("", "display__mobile", "", "display__one")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
@@ -103,9 +102,6 @@ include ../components/layout/head.pug
                     +component-column-icon()
                     +component-column-icon()
                     +component-column-icon()
-            
-            .padding__bottom-x-large
-                include ../components/column/noticias-column-2.pug 
             
             //- footer
             include ../components/layout/footer.pug
