@@ -1,3 +1,5 @@
+include ../components/layout/footer.pug
+include ../components/column/component-target-info-event.pug
 include ../components/column/component-img-left.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/column/component-mobile-card-img.pug
@@ -28,7 +30,7 @@ include ../components/layout/head.pug
                     +component-column-icon()
             //- nuestra agenda
             section.padding.padding__bottom-xx-large.box__background
-                +component-title-link("", "", "", "")
+                +component-title-link("", "")
                 div.gap.display__flex.content__center.content__max
                     +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
                     +component-target-garamond-complete("box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
@@ -37,8 +39,8 @@ include ../components/layout/head.pug
             section.padding.padding__bottom-x-large.box__background
                 +component-subtitle-link("", "")
                 div.display__flex.gap.content__max.content__center
-                    +component-noticia-target("box__tag", "", "", "", "display__none")
-                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "display__mobile", "")
+                    +component-noticia-target("", "box__tag", "", "", "", "", "display__none")
+                    +component-noticia-target("", "", "box__tag--bloq2", "", "display__desktop", "display__mobile", "")
             //- tabs .display__desktop
             .content__center.content__max
                 include ../components/tabs/tabs.pug
@@ -61,7 +63,7 @@ include ../components/layout/head.pug
                 +component-vertical-line("", "display__one")
             //- un motor de cambio
             +component-title("box__background", "", "")
-            +component-noticia-principal("box__background", "", "display__one")
+            +component-noticia-principal("box__background", "", "", "", "display__one")
             //--------------------------FALTA SLIDER
             //- colabora con BCC
             +component-title("", "", "")
@@ -74,9 +76,22 @@ include ../components/layout/head.pug
                 +component-vertical-line("", "display__one")
                 +component-vertical-line("", "display__one")
                 +component-vertical-line("", "display__one")
-
+            //- conoce nuestra agenda
+            section.box__background
+                +component-title-link("", "")
+            +component-noticia-principal("box__background", "text__content", "box__img--border", "display__none", "")
+            section.padding.box__background
+                div.display__flex.gap.content__max.content__centerpadding.padding__bottom-x-large
+                    +component-noticia-target("content__text", "box__tag", "", "box__img--border", "", "", "display__none")
+                    +component-noticia-target("content__text", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                    +component-noticia-target("content__text", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+            //- dos conceptos distintos
+            +component-title("", "", "")
+            div.padding.padding__bottom-xx-large.display__flex.gap.content__max.content__center
+                +component-target-info-event("box__icon--date-home", "display__none", "display__one")
+                +component-target-info-event("box__icon--date-home", "display__none", "display__one")   
         //- footer
-        include ../components/layout/footer.pug
+        +footer("box__background")
     
     script(src="../js/function.js")  
 

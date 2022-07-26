@@ -68,7 +68,6 @@
     }
     &__date {
         display: flex;
-        padding-bottom: $x-regular;
         width: 100%;
         &--space {
             padding-right: $small;
@@ -111,20 +110,21 @@
     &__img {
         width: 100%;
         padding-bottom: $x-small;
-        border-radius: $x-small;
+        border-radius: $small;
         object-fit: cover;
         object-position: center;
         &--bloq2 {
-            border-radius: 20px 20px 0 0;
+            border-radius: $small $small 0 0;
             height: 300px;
             width: 100%;
             object-fit: cover;
             object-position: center;
-            &-border {
-                @extend .box__img--bloq2;
-                border-radius: $x-small;
-                
-            }
+        }
+        &--border {
+            @extend .box__img;
+            border-radius: $small $small 0 0;
+            padding-bottom: 0;
+            border-bottom: 5px solid $c-primary-darkmode;
         }
     }
     &__link {

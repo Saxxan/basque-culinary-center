@@ -46,18 +46,18 @@ include ../components/layout/head.pug
                 +component-vertical-line("display__none", "")
             
             +component-title("", "", "")
-            +component-noticia-principal("", "display__none", "")
-            +component-noticia-principal("", "", "display__one")
+            +component-noticia-principal("", "", "", "display__none", "")
+            +component-noticia-principal("", "", "", "", "display__one")
             section.padding.box__background--innovation
                 div.display__flex.gap.content__max.content__center
-                    +component-noticia-target("box__tag", "", "", "", "")
-                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
-                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
+                    +component-noticia-target("", "box__tag", "", "", "", "", "display__none")
+                    +component-noticia-target("", "", "box__tag--bloq2", "", "display__desktop", "", "display__none")
+                    +component-noticia-target("", "", "box__tag--bloq2", "", "display__desktop", "", "display__none")
             //- Últimas noticias, columna de 2
             section.padding.box__background--innovation
                 div.display__flex.gap.content__max.content__center
-                    +component-noticia-target("box__tag", "", "", "", "")
-                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "", "")
+                    +component-noticia-target("", "box__tag", "", "", "", "", "display__none")
+                    +component-noticia-target("", "box__tag", "", "", "", "", "display__none")
                 
             //- tabs
             .padding__bottom-x-large.content__center.content__max
@@ -77,8 +77,8 @@ include ../components/layout/head.pug
             //- innovation
             section.padding.box__background--innovation
                 div.content__max.content__center
-                    +component-title-link("box__background--innovation", "", "")
-                    +component-title-link("", "", "")
+                    +component-title-link("", "")
+                    +component-title-link("", "")
                     +component-title("", "")
                 div.display__flex.gap.content__max.content__center
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
