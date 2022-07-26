@@ -23,9 +23,7 @@
         }
         &--date {
             @extend .box__icon;
-            align-items: center;
             padding-right: $small;
-            margin-bottom: 0.3rem;
             &-innovation{
                 color: $c-marcas-bcc-innovation;
                 padding-right: $x-small;
@@ -69,6 +67,7 @@
     &__date {
         display: flex;
         width: 100%;
+        // padding-bottom: $small;
         &--space {
             padding-right: $small;
         }

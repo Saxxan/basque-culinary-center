@@ -290,11 +290,7 @@ hr {
   margin-top: 24px;
 }
 .box__icon--date {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-right: 16px;
-  margin-bottom: 0.3rem;
 }
 .box__icon--date-innovation {
   color: #59718c;
