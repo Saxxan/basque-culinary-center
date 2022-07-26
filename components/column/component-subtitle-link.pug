@@ -1,0 +1,10 @@
+mixin component-subtitle-link(backgroundColor="box__background", displayNone="display__none")
+            div.padding__top-xx-large.title__link.content__center.content__max(class= backgroundColor)
+                div
+                    h3.primaryfont__bold  Últimas noticias:
+                div(class= displayNone)
+                    a(class="link text-small display__desktop" href="#") VER TODOS
+                        svg( 
+                            class="svg__icon", 
+                            )
+                                use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")

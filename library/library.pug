@@ -67,8 +67,9 @@ include ../components/layout/head.pug
                 include ../components/column/card-column.pug 
             
             //- mobile cambio color grado, máster...
-            +component-mobile-card-img("", "", "", "", "card__color-entusiastas")
-            +component-mobile-card-img("card__color-grado", "", "", "", "")
+            +component-mobile-card-img("card__color-entusiastas")
+            +component-mobile-card-img("card__color-grado")
+            +component-mobile-card-img("card__color-master")
 
             section.display__flex.gap.content__center.content__max
                 +component-target-info-event("", "display__none", "")
@@ -76,9 +77,9 @@ include ../components/layout/head.pug
             //- innovation
             section.padding.box__background--innovation
                 div.content__max.content__center
-                    +component-title-link("box__background--innovation", "", "", "")
-                    +component-title-link("", "", "", "")
-                    +component-title("", "", "")
+                    +component-title-link("box__background--innovation", "", "")
+                    +component-title-link("", "", "")
+                    +component-title("", "")
                 div.display__flex.gap.content__max.content__center
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
@@ -90,9 +91,9 @@ include ../components/layout/head.pug
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
                 +component-target-garamond("display__desktop", "display__mobile", "display__none", "")
             section.padding__bottom-x-large.content__center.content__max.display__flex
-                +component-target-garamond-complete("", "display__mobile", "", "display__one")
-                +component-target-garamond-complete("display__desktop", "display__mobile", "display__none", "")
-                +component-target-garamond-complete("display__desktop", "display__mobile", "display__none", "")
+                +component-target-garamond-complete("", "", "display__mobile", "", "display__one")
+                +component-target-garamond-complete("", "display__desktop", "display__mobile", "display__none", "")
+                +component-target-garamond-complete("", "display__desktop", "display__mobile", "display__none", "")
             //- column icon
             section.content__center.content__max
                 +component-title("", "", "")

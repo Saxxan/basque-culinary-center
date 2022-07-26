@@ -35,20 +35,24 @@
         border: 2px solid $c-button-primary;
             
             &:link {
+                background-color: $c-white;
                 color: $c-button-primary;
                 border: 2px solid $c-button-primary;
             }
             &:visited {
+                background-color: $c-white;
                 color: $c-button-active;
                 border: 2px solid $c-button-active;
             }
             &:hover {
+                background-color: $c-white;
                 color: $c-button-hover;
                 border: 2px solid $c-button-hover;
             }
             &:disabled {
                 cursor: not-allowed;
                 pointer-events: none;
+                background-color: $c-white;
                 color: $c-button-disabled;
                 border: 2px solid $c-button-disabled;
             }

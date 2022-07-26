@@ -1,12 +1,12 @@
-mixin component-target-garamond-complete(displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
-    div.padding.padding__bottom-regular.box
+mixin component-target-garamond-complete(colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
+    div.box
         div
             div(class= displayDesktop) 
                 span.tag__innovation.box__tag Innovación
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
-        div.box__icon
+        div.box__icon--tag
             svg( class="svg__icon--date"
-            )
+            )(class= displayDesktop)
                 use(xlink:href="../../src/iconos/share-back.svg#share-back")
             span.tag__card--grey.box__tag--space  Presencial
             span.tag__card--border.box__tag--space  Incripción abierta
@@ -22,8 +22,8 @@ mixin component-target-garamond-complete(displayDesktop="display__desktop", disp
                 class="svg__icon--margin", 
                     )
                         use(xlink:href="../../src/iconos/calendar.svg#calen")
-                    span.box__icon--date
-                        p.text-small Fecha de publicación: 
+                    span.box__icon--date(class= colorDate) 
+                        p.text-small.box__icon--date-home Fecha de publicación: 
                     p.text-small  04/02/2022
 
                 div.box__icon--date
@@ -31,7 +31,7 @@ mixin component-target-garamond-complete(displayDesktop="display__desktop", disp
                 class="svg__icon--margin", 
                     )
                         use(xlink:href="../../src/iconos/watch.svg#watch")
-                    span.box__icon--date
+                    span.box__icon--date(class= colorDate) 
                         p.text-small Horario: 
                     p.text-small  100€
 
@@ -40,14 +40,16 @@ mixin component-target-garamond-complete(displayDesktop="display__desktop", disp
                 class="svg__icon--margin", 
                     )
                         use(xlink:href="../../src/iconos/users.svg#users")
-                    span.box__icon--date
+                    span.box__icon--date(class= colorDate) 
                         p.text-small Autor: 
                     p.text-small  BCC Innovation
                 hr
-        div                   
+        div.box__description                  
             p.text-small El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
 
         div.display__mobile(class= displayNone)
-            a.btn__primary--small-nocolor(href="#") Quiero inscribirme
+            a.btn__primary--small-nocolor(href="www.hola.com") Quiero inscribirme
         div.display__desktop
-            a.btn__primary--large-nocolor(href="#") Quiero inscribirme
+            a.btn__primary--large-nocolor(href="que tal") Quiero inscribirme
+    div.padding__top-regular(class= displayMobile)(class= displayNone)
+        a.btn__primary--small-color(href="que tal") Ver todos los eventos

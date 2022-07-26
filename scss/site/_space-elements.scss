@@ -8,7 +8,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: $large;  
         @include respond-to(large) {
             margin-bottom: 0; 
         } 
@@ -50,6 +49,9 @@
     }
     &__top-x-large {
         padding-top: $x-large;
+    }
+    &__top-xx-large {
+        padding-top: $xx-large;
     }
     // Top / Bottom
     &__topbottom-large {

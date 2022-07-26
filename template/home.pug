@@ -1,9 +1,13 @@
+include ../components/column/component-vertical-line.pug
+include ../components/column/component-subtitle.pug
+include ../components/column/component-subtitle-link.pug
+include ../components/column/component-noticia-target.pug
+include ../components/column/component-title-link.pug
+include ../components/column/component-target-garamond-complete.pug
 include ../components/column/component-column-icon.pug
 include ../components/column/component-title.pug
 include ../components/menu/menu-gradient.pug
 include ../components/layout/head.pug
-
-
     block content
         main
             header
@@ -12,18 +16,43 @@ include ../components/layout/head.pug
                     +menu-gradient("gradient__innovation")
                     include ../components/menu/menu.pug
                     include ../components/menu/topbar.pug
-                //- column icon
-                section.content__center.content__max
-                    +component-title("", "", "")
-                    div.display__flex.content__center.content__max
-                        +component-column-icon()
-                        +component-column-icon()
-                        +component-column-icon()
-                        
-
+            //- column icon
+            section.content__center.content__max
+                +component-title("", "", "")
+                div.display__flex
+                    +component-column-icon()
+                    +component-column-icon()
+                    +component-column-icon()
+            //- nuestra agenda
+            section.padding.box__background.padding__bottom-x-large
+                +component-title-link("", "", "", "")
+                div.gap.display__flex.content__center.content__max
+                    +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                    +component-target-garamond-complete("box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                    +component-target-garamond-complete("box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
+            //- últimas noticias, dos columnas
+            section.padding.padding__bottom-x-large.box__background
+                +component-subtitle-link("", "")
+                div.display__flex.gap.content__max.content__center
+                    +component-noticia-target("box__tag", "", "", "", "display__none")
+                    +component-noticia-target("", "box__tag--bloq2", "display__desktop", "display__mobile", "")
+            //- tabs .display__desktop
+            .content__center.content__max.display__desktop
+                include ../components/tabs/tabs.pug
+            //- tabs .display__mobile
+            //- vertical line
+            section.padding 
+                +component-subtitle("")
+                div.content__center.content__max.grid__c5.padding__bottom-x-large
+                    +component-vertical-line("", "display__one")
+                    +component-vertical-line("", "display__one")
+                    +component-vertical-line("", "display__one")
+                    +component-vertical-line("", "display__one")
+                    +component-vertical-line("", "display__one")
             
-                
-
+        //- footer
+        include ../components/layout/footer.pug
+    
     script(src="../js/function.js")  
 
 

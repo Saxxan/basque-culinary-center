@@ -1,136 +1,119 @@
-doctype html
-html(lang="es")
-    block config
-        include ../../config/var/var.pug
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{page[0]}
-        each link in css
-            link(rel="stylesheet" href='../../css/' + link)
-        link(link rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,600&family=League+Spartan:wght@300;400;500;700;800&display=swap" rel="stylesheet")
+section.padding.padding__top-x-large.tabs.center__content
+    div.tabs__container 
+        div.padding__bottom-regular.tabs__slider
+            a.tabs__link.primaryfont__bold Grado 
+            a.tabs__link.primaryfont__bold Máster
+            a.tabs__link.primaryfont__bold Cursos
+            a.tabs__link.primaryfont__bold Doctorado
+            a.tabs__link.primaryfont__bold Cursos para entusiastas
+            a.tabs__link.primaryfont__bold Formación a medida
 
-    body 
-        block content
-            section.padding.tabs.center__content
-                div.tabs__container 
-                    div.padding__bottom-regular.tabs__slider
-                        a.tabs__link.primaryfont__bold Grado 
-                        a.tabs__link.primaryfont__bold Máster
-                        a.tabs__link.primaryfont__bold Cursos
-                        a.tabs__link.primaryfont__bold Doctorado
-                        a.tabs__link.primaryfont__bold Cursos para entusiastas
-                        a.tabs__link.primaryfont__bold Formación a medida
+        //- Grado
+        div.tabs__content
+            div
+                p.text-large Formación
+                h1.primaryfont__bold Impulsa tu futuro
 
-                    //- Grado
-                    div.tabs__content
-                        div
-                            p.text-large Formación
-                            h1.primaryfont__bold Impulsa tu futuro
+            div.padding__bottom-x-regular.grid__c2
+                div
+                    img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
+                div
+                    span.tag__grado.display__desktop Grado en Gastronomía y Artes Culinarias
+                    h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
+                    p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
+                    p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
+                    div.display__desktop
+                        a.btn__primary--large-nocolor-width(href="#")
+                            p.text-small Acceder a innovación
+        //- Máster
+        div.tabs__content
+            div
+                p.text-large Formación
+                h1.primaryfont__bold Impulsa tu futuro
 
-                        div.padding__bottom-x-regular.grid__c2
-                            div
-                                img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
-                            div
-                                span.tag__grado.display__desktop Grado en Gastronomía y Artes Culinarias
-                                h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
-                                p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
-                                p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
-                                div.display__desktop
-                                    a.btn__primary--large-nocolor-width(href="#")
-                                        p.text-small Acceder a innovación
-                    //- Máster
-                    div.tabs__content
-                        div
-                            p.text-large Formación
-                            h1.primaryfont__bold Impulsa tu futuro
+            div.padding__bottom-x-regular.grid__c2
+                div
+                    img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
+                div
+                    span.tag__master.display__desktop Máster
+                    h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
+                    p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
+                    p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
+                    div.display__desktop
+                        a.btn__primary--large-nocolor-width(href="#")
+                            p.text-small Acceder a innovación
+        //- Cursos
+        div.tabs__content
+            div
+                p.text-large Formación
+                h1.primaryfont__bold Impulsa tu futuro
 
-                        div.padding__bottom-x-regular.grid__c2
-                            div
-                                img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
-                            div
-                                span.tag__master.display__desktop Máster
-                                h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
-                                p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
-                                p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
-                                div.display__desktop
-                                    a.btn__primary--large-nocolor-width(href="#")
-                                        p.text-small Acceder a innovación
-                    //- Cursos
-                    div.tabs__content
-                        div
-                            p.text-large Formación
-                            h1.primaryfont__bold Impulsa tu futuro
+            div.padding__bottom-x-regular.grid__c2
+                div
+                    img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
+                div
+                    span.tag__grado.display__desktop Cursos
+                    h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
+                    p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
+                    p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
+                    div.display__desktop
+                        a.btn__primary--large-nocolor-width(href="#")
+                            p.text-small Acceder a innovación
+        
+        //- Doctorado
+        div.tabs__content
+            div
+                p.text-large Formación
+                h1.primaryfont__bold Impulsa tu futuro
 
-                        div.padding__bottom-x-regular.grid__c2
-                            div
-                                img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
-                            div
-                                span.tag__grado.display__desktop Cursos
-                                h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
-                                p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
-                                p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
-                                div.display__desktop
-                                    a.btn__primary--large-nocolor-width(href="#")
-                                        p.text-small Acceder a innovación
-                    
-                    //- Doctorado
-                    div.tabs__content
-                        div
-                            p.text-large Formación
-                            h1.primaryfont__bold Impulsa tu futuro
+            div.padding__bottom-x-regular.grid__c2
+                div
+                    img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
+                div
+                    span.tag__doctorado.display__desktop Doctorado
+                    h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
+                    p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
+                    p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
+                    div.display__desktop
+                        a.btn__primary--large-nocolor-width(href="#")
+                            p.text-small Acceder a innovación
 
-                        div.padding__bottom-x-regular.grid__c2
-                            div
-                                img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
-                            div
-                                span.tag__doctorado.display__desktop Doctorado
-                                h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
-                                p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
-                                p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
-                                div.display__desktop
-                                    a.btn__primary--large-nocolor-width(href="#")
-                                        p.text-small Acceder a innovación
+        //- Cursos para entusiastas
+        div.tabs__content
+            div
+                p.text-large Formación
+                h1.primaryfont__bold Impulsa tu futuro
 
-                    //- Cursos para entusiastas
-                    div.tabs__content
-                        div
-                            p.text-large Formación
-                            h1.primaryfont__bold Impulsa tu futuro
+            div.padding__bottom-x-regular.grid__c2
+                div
+                    img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
+                div
+                    span.tag__entusiastas.display__desktop Cursos para entusiastas
+                    h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
+                    p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
+                    p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
+                    div.display__desktop
+                        a.btn__primary--large-nocolor-width(href="#")
+                            p.text-small Acceder a innovación
+        
+        //- Formación a medida
+        div.tabs__content
+            div
+                p.text-large Formación
+                h1.primaryfont__bold Impulsa tu futuro
 
-                        div.padding__bottom-x-regular.grid__c2
-                            div
-                                img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
-                            div
-                                span.tag__entusiastas.display__desktop Cursos para entusiastas
-                                h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
-                                p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
-                                p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
-                                div.display__desktop
-                                    a.btn__primary--large-nocolor-width(href="#")
-                                        p.text-small Acceder a innovación
-                    
-                    //- Formación a medida
-                    div.tabs__content
-                        div
-                            p.text-large Formación
-                            h1.primaryfont__bold Impulsa tu futuro
+            div.grid__c2
+                div
+                    img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
+                div
+                    span.tag__grado.display__desktop Formación a medida
+                    h3.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
+                    p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
+                    p.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
+                    div.display__desktop
+                        a.btn__primary--large-nocolor-width(href="#")
+                            p.text-small Acceder a innovación
 
-                        div.padding__bottom-x-regular.grid__c2
-                            div
-                                img(class="box__img display__desktop" src="../../src/images/foto.jpg", alt="")
-                            div
-                                span.tag__grado.display__desktop Formación a medida
-                                h3.padding__topbottom-large.primaryfont__bold.display__desktop Tus primeros pasos en el mundo de la gastronomía y la restauración.
-                                p.padding__bottom-x-regular.text-medium Fórmate con los mejores profesionales en nuestra Facultad de Gastronomía pionera a nivel internacional.
-                                p.padding__bottom-xx-large.text-medium El modelo educativo de Basque Culinary Center te ayudará a desarrollar las capacidades que te ayuden a dar respuesta a los retos del futuro de un sector estratégico y en constante evolución, a través de talleres, proyectos reales y prácticas en empresas.
-                                div.display__desktop
-                                    a.btn__primary--large-nocolor-width(href="#")
-                                        p.text-small Acceder a innovación
-            
             
             
             //- div

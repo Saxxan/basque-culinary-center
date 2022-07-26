@@ -1,10 +1,11 @@
-mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", displayDesktop="display__desktop", displayNone="display__none")
+mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none")
     div.gap
         div
             span.tag__entusiastas(class= tag)(class= tagBloq2) Etiqueta 01
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
         h4.box__title.primaryfont__bold Pablo Rivero: una ganadería que imite a la naturaleza
         p.box__fecha.display__desktop.text-medium 01/01/2022
+        p.display__mobile.text-small.box__color-home Redacción BCC
         p.box__description.text-small El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
         div.box__link.display__desktop
             a(class="link x-small" href="#") Leer más
@@ -13,3 +14,5 @@ mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", displ
                     )
                         use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
         hr.display__mobile
+    div.padding__top-regular(class= displayMobile)(class= displayNone)
+        a.btn__primary--small-color(href="que tal") Ver todos los eventos
