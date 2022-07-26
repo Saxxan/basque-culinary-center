@@ -1,7 +1,5 @@
-mixin component-mobile-card-img(colorBackground="card__color-grado")
-    div.padding.display__mobile.center__content
-        div.card.card__color(class= colorBackground)
-                    img(class="card__img" src="https://unsplash.it/800/600?image=59", alt="")
-                    .card__details-formacion 
-                        p.text-small.primaryfont__bold Grado: Gastronomía y Artes Culinarias
-    
+mixin component-mobile-card-img(colorLine="card__img--border-grado")
+        div.card.card__color
+            img(class="card__img--border" src="https://unsplash.it/800/600?image=59", alt="")(class= colorLine)
+            .card__details-formacion 
+                p.text-small.primaryfont__bold Grado: Gastronomía y Artes Culinarias

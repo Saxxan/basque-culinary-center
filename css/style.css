@@ -777,7 +777,7 @@ hr {
             flex-direction: column;
   }
 }
-.card__img {
+.card__img, .card__img--border {
   max-width: 25%;
   height: auto;
   -o-object-fit: cover;
@@ -785,11 +785,30 @@ hr {
   -o-object-position: center;
      object-position: center;
 }
-@media (min-width: 1024px) {
-  .card__img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
+.card__img--border {
+  border-right: 5px solid #83390B;
+  height: 100%;
+}
+.card__img--border-grado {
+  border-right: 5px solid #5D4976;
+}
+.card__img--border-master {
+  border-right: 5px solid #A7706C;
+}
+.card__img--border-doctorado {
+  border-right: 5px solid #E19F40;
+}
+.card__img--border-cursos {
+  border-right: 5px solid #1E60BF;
+}
+.card__img--border-entusiastas {
+  border-right: 5px solid #989A2B;
+}
+.card__img--border-formacion {
+  border-right: 5px solid #b9ac99;
+}
+.card__color {
+  background-color: #F4F3EF;
 }
 .card__border {
   border: 1px solid #756A5B;
@@ -839,7 +858,7 @@ hr {
   }
 }
 .card__details-formacion {
-  color: #F4F3EF;
+  color: #26201B;
   margin-left: 20px;
 }
 .card__details-investigacion, .card__details-producto {
@@ -866,21 +885,6 @@ hr {
 }
 .card__details-producto h3 {
   padding: 0;
-}
-.card__color-grado {
-  background-color: #5D4976;
-}
-.card__color-master {
-  background-color: #A7706C;
-}
-.card__color-doctorado {
-  background-color: #E19F40;
-}
-.card__color-cursos {
-  background-color: #1E60BF;
-}
-.card__color-entusiastas {
-  background-color: #989A2B;
 }
 
 /*------------------------------------*\

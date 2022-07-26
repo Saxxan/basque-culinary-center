@@ -1,3 +1,4 @@
+include ../components/column/component-mobile-card-img.pug
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-subtitle.pug
 include ../components/column/component-subtitle-link.pug
@@ -37,11 +38,20 @@ include ../components/layout/head.pug
                     +component-noticia-target("box__tag", "", "", "", "display__none")
                     +component-noticia-target("", "box__tag--bloq2", "display__desktop", "display__mobile", "")
             //- tabs .display__desktop
-            .content__center.content__max.display__desktop
+            .content__center.content__max
                 include ../components/tabs/tabs.pug
             //- tabs .display__mobile
+            section.disply__mobile 
+                +component-title("", "", "")
+                div.padding
+                    +component-mobile-card-img("card__img--border-grado")
+                    +component-mobile-card-img("card__img--border-master")
+                    +component-mobile-card-img("card__img--border-doctorado")
+                    +component-mobile-card-img("card__img--border-cursos")
+                    +component-mobile-card-img("card__img--border-entusiastas")
+                    +component-mobile-card-img("card__img--border-formacion")
             //- vertical line
-            section.padding 
+            section.padding
                 +component-subtitle("")
                 div.content__center.content__max.grid__c5.padding__bottom-x-large
                     +component-vertical-line("", "display__one")
