@@ -1,3 +1,5 @@
+include ../components/column/component-img-left.pug
+include ../components/column/component-noticia-principal.pug
 include ../components/column/component-mobile-card-img.pug
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-subtitle.pug
@@ -25,7 +27,7 @@ include ../components/layout/head.pug
                     +component-column-icon()
                     +component-column-icon()
             //- nuestra agenda
-            section.padding.box__background.padding__bottom-x-large
+            section.padding.padding__bottom-xx-large.box__background
                 +component-title-link("", "", "", "")
                 div.gap.display__flex.content__center.content__max
                     +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
@@ -41,25 +43,38 @@ include ../components/layout/head.pug
             .content__center.content__max
                 include ../components/tabs/tabs.pug
             //- tabs .display__mobile
-            section.disply__mobile 
-                +component-title("", "", "")
-                div.padding
-                    +component-mobile-card-img("card__img--border-grado")
-                    +component-mobile-card-img("card__img--border-master")
-                    +component-mobile-card-img("card__img--border-doctorado")
-                    +component-mobile-card-img("card__img--border-cursos")
-                    +component-mobile-card-img("card__img--border-entusiastas")
-                    +component-mobile-card-img("card__img--border-formacion")
+            +component-title("", "display__mobile", "")
+            div.padding.display__mobile
+                +component-mobile-card-img("card__img--border-grado")
+                +component-mobile-card-img("card__img--border-master")
+                +component-mobile-card-img("card__img--border-doctorado")
+                +component-mobile-card-img("card__img--border-cursos")
+                +component-mobile-card-img("card__img--border-entusiastas")
+                +component-mobile-card-img("card__img--border-formacion")
             //- vertical line
-            section.padding
-                +component-subtitle("")
-                div.content__center.content__max.grid__c5.padding__bottom-x-large
-                    +component-vertical-line("", "display__one")
-                    +component-vertical-line("", "display__one")
-                    +component-vertical-line("", "display__one")
-                    +component-vertical-line("", "display__one")
-                    +component-vertical-line("", "display__one")
-            
+            +component-subtitle("")
+            section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+            //- un motor de cambio
+            +component-title("box__background", "", "")
+            +component-noticia-principal("box__background", "", "display__one")
+            //--------------------------FALTA SLIDER
+            //- colabora con BCC
+            +component-title("", "", "")
+            section
+            +component-img-left
+            +component-subtitle("")
+            section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__one")
+
         //- footer
         include ../components/layout/footer.pug
     
