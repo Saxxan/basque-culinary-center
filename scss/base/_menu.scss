@@ -26,10 +26,13 @@
             color: $c-monocromo-900;
             text-transform: uppercase;
             display: flex;
+            padding: $small;
             &:hover {
+                background-color: $c-monocromo-200;
                 color: $c-primary-default;
                 @include respond-to(large) {
                     color: $c-monocromo-900;
+                    background-color: transparent;
                     font-weight: 600;
                 }
             }
@@ -48,7 +51,6 @@
     }
     &__logo {
         max-width: 80px;
-        padding: $small $x-small 0 $x-small;
         @include respond-to(large) {
             max-width: 137px;
             padding: 0;
@@ -60,14 +62,8 @@
         }
         list-style: none;
         display: none;
-        padding: $small $small;
+        padding: 0 $small;
         background-color: $c-monocromo-100;
-        &:hover {
-            background-color: $c-monocromo-200;
-            @include respond-to(large) {
-                background-color: transparent;
-            }
-        }
         @include respond-to(large) {
             display: block;
             background-color: transparent;

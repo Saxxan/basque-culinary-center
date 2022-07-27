@@ -1230,13 +1230,16 @@ em.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 16px;
 }
 .menu__menu--link:hover {
+  background-color: #DFDAD3;
   color: #B36206;
 }
 @media (min-width: 1024px) {
   .menu__menu--link:hover {
     color: #26201B;
+    background-color: transparent;
     font-weight: 600;
   }
 }
@@ -1260,7 +1263,6 @@ em.error {
 }
 .menu__logo {
   max-width: 80px;
-  padding: 16px 8px 0 8px;
 }
 @media (min-width: 1024px) {
   .menu__logo {
@@ -1271,19 +1273,11 @@ em.error {
 .menu__item {
   list-style: none;
   display: none;
-  padding: 16px 16px;
+  padding: 0 16px;
   background-color: #F4F3EF;
 }
 .menu__item:nth-child(1) {
   margin-top: 16px;
-}
-.menu__item:hover {
-  background-color: #DFDAD3;
-}
-@media (min-width: 1024px) {
-  .menu__item:hover {
-    background-color: transparent;
-  }
 }
 @media (min-width: 1024px) {
   .menu__item {
