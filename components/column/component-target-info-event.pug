@@ -5,9 +5,7 @@ mixin component-target-info-event(colorDate="box__icon--date", displayNone="disp
             p.text-small Restaurante BCC
         div(class= displayNone)
             div.box__icon
-                svg( class="svg__icon--date"
-                )
-                    use(xlink:href="../../src/iconos/share-back.svg#share-back")
+                img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")
                 span.tag__card--grey.box__tag--space  Presencial
                 span.tag__card--border.box__tag--space  Incripción abierta
         h4.box__title.primaryfont__bold Cita GO-ON
@@ -15,28 +13,19 @@ mixin component-target-info-event(colorDate="box__icon--date", displayNone="disp
         div.box__date
             div
                 div.box__icon--date
-                    svg( 
-                class="svg__icon--margin", 
-                    )
-                        use(xlink:href="../../src/iconos/calendar.svg#calen")
+                    img(class="svg__icon--margin" src="../src/iconos/calendar.svg#calen" type="img/svg")
                     span.box__icon--date(class= colorDate)
                         p.text-small Fecha de publicación: 
                     p.text-small  04/02/2022
 
                 div.box__icon--date
-                    svg( 
-                class="svg__icon--margin", 
-                    )
-                        use(xlink:href="../../src/iconos/watch.svg#watch")
+                    img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
                     span.box__icon--date(class= colorDate)
                         p.text-small Horario: 
                     p.text-small  100€
 
                 div.box__icon--date
-                    svg( 
-                class="svg__icon--margin", 
-                    )
-                        use(xlink:href="../../src/iconos/users.svg#users")
+                    img(class="svg__icon--margin" src="../src/iconos/users.svg#users" type="img/svg")
                     span.box__icon--date(class= colorDate)
                         p.text-small Autor: 
                     p.text-small  BCC Innovation

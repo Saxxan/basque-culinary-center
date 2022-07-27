@@ -10,10 +10,7 @@ mixin component-noticia-target(textCenter="content__text", tag="box__tag", tagBl
             p.box__description.text-small El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
             div.box__link.display__desktop
         a(class="link x-small" href="#") Leer más
-            svg( 
-                class="svg__icon", 
-                )
-                    use(xlink:href="../../src/iconos/arrow-link.svg#arrow-link")
+            img(class="svg__icon" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
             hr.display__mobile
     div.padding__top-regular(class= displayMobile)(class= displayNone)
         a.btn__primary--small-color(href="que tal") Ver todos los eventos 

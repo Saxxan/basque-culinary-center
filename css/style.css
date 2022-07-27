@@ -822,6 +822,7 @@ hr {
   .card__line {
     border-left: 3px solid #83390B;
     height: 100%;
+    padding: 0;
   }
 }
 .card__description {
@@ -1295,6 +1296,11 @@ input[type=checkbox] {
 .svg__icon--margin {
   margin-right: 8px;
   margin-bottom: 0.1rem;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
 /*------------------------------------*\

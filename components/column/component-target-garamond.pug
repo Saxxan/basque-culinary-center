@@ -5,9 +5,7 @@ mixin component-target-garamond(displayDesktop="display__desktop", displayMobile
                 span.tag__innovation.box__tag Innovación
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
         div.box__icon
-            svg( class="svg__icon--date"
-            )
-                use(xlink:href="../../src/iconos/share-back.svg#share-back")
+            img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")
             span.tag__card--grey.box__tag--space  Presencial
             span.tag__card--border.box__tag--space  Incripción abierta
         h4.box__title.primaryfont__bold Nueva edición Foro Internacional de Emprendedores
@@ -18,28 +16,19 @@ mixin component-target-garamond(displayDesktop="display__desktop", displayMobile
             p.box__description--date.text-small(class= displayDesktop) El chef de la parrilla Don Julio de Buenos Aires desgranó en el encuentro Haragi los potenciales beneficios de la ganadería regenerativa y defendió la nobleza de un producto que hoy está en el punto de mira: la carne.
             div(class= displayMobile)(class= displayOne)
                 div.box__icon--date
-                    svg( 
-                class="svg__icon--margin", 
-                    )
-                        use(xlink:href="../../src/iconos/calendar.svg#calen")
+                    img(class="svg__icon--margin" src="../src/iconos/calendar.svg#calen" type="img/svg")
                     span.box__icon--date
                         p.text-small Fecha de publicación: 
                     p.text-small  04/02/2022
 
                 div.box__icon--date
-                    svg( 
-                class="svg__icon--margin", 
-                    )
-                        use(xlink:href="../../src/iconos/watch.svg#watch")
+                    img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
                     span.box__icon--date
                         p.text-small Horario: 
                     p.text-small  100€
 
                 div.box__icon--date
-                    svg( 
-                class="svg__icon--margin", 
-                    )
-                        use(xlink:href="../../src/iconos/users.svg#users")
+                    img(class="svg__icon--margin" src="../src/iconos/users.svg#users" type="img/svg")
                     span.box__icon--date
                         p.text-small Autor: 
                     p.text-small  BCC Innovation
