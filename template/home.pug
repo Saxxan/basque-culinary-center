@@ -1,3 +1,4 @@
+include ../components/menu/menu.pug
 include ../components/layout/footer.pug
 include ../components/column/component-target-info-event.pug
 include ../components/column/component-img-left.pug
@@ -19,6 +20,7 @@ include ../components/layout/head.pug
                 //- menu
                 div.padding__bottom-x-large
                     +menu-gradient("gradient__innovation")
+                    +menu("display__desktop", "display__mobile")
                     include ../components/menu/menu.pug
                     include ../components/menu/topbar.pug
             //- column icon

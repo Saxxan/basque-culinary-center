@@ -2,62 +2,67 @@
     background-color: $c-monocromo-100;
     display: flex;
     justify-content: right;
+    display: none;
+    @include respond-to(large) {
+        display: flex;        
+    }
     &__list {
-    @extend .topbar;
-    list-style:none;
-    margin:0;
-    padding:0;
-        &--item {
-            @extend .topbar__list;
-            position:relative;
-            float:left;
-            color: white;
-            padding: $x-small $large;
-            &:hover {
-                > ul {
+        @extend .topbar;
+        list-style:none;
+        margin:0;
+        padding:0;
+            &--item {
+                @extend .topbar__list;
+                position:relative;
+                float:left;
+                color: white;
+                padding: $x-small $large;
+                &:hover {
+                    > ul {
+                        display:block;
+                    }
+                }
+                &--link {
+                    @extend .topbar__list--item;
                     display:block;
+                    color: $c-monocromo-700;
+                    text-decoration:none;
+                    padding: 10px;
+                    font-family: $primary-font;
+                    font-size: 13px;
+                    letter-spacing: 0.4px;
+                    font-weight: 400;
+                    text-transform:uppercase;
                 }
             }
-            &--link {
-                @extend .topbar__list--item;
-                display:block;
-                color: $c-monocromo-700;
-                text-decoration:none;
-                padding: 10px;
-                font-weight: 600;
-                font-family: $primary-font;
-                font-size: 12px;
-                text-transform:uppercase;
-            }
-        }
-        &--submenu {
-            display:none;
-            position:absolute;
-            top:100%;
-            left:0;
-            background-color: $c-monocromo-700;
-            padding:10px;
-            &--item {
-                float:none;
-                width:150px
-                &--link {
-                    color: white;
-                    line-height:120%;
-                    padding:10px 15px;
+            &--submenu {
+                display:none;
+                position:absolute;
+                top:100%;
+                left:0;
+                background-color: $c-monocromo-700;
+                padding:10px;
+                &--item {
+                    float:none;
+                    width:150px
+                    &--link {
+                        color: white;
+                        line-height:120%;
+                        padding:10px 15px;
+                    }
                 }
             }
-        }
-        &--submenu {
-            width: 300px;
-            &--item {
-                list-style:none;
-                padding: 16px 10px;
-                &--link {
-                    color: white;
-                    line-height:120%;
-                    padding:10px 15px;
+            &--submenu {
+                width: 300px;
+                &--item {
+                    list-style:none;
+                    padding: 16px 10px;
+                    &--link {
+                        color: white;
+                        line-height:120%;
+                        padding:10px 15px;
+                    }
                 }
             }
-        }
     }
 }

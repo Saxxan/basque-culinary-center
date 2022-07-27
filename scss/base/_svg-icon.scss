@@ -26,4 +26,9 @@
         margin-right: $x-small;
         margin-bottom: 0.1rem;
     }
+    &--menu {
+        @extend .svg__icon;
+        margin-left: auto;
+        top: 0;
+    }
 }

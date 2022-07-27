@@ -1,36 +1,44 @@
-div
-    nav.menu    
-        input(type="checkbox" id="menu__checkbox" class="menu__checkbox")
-        label(for="menu__checkbox" class="menu__toggle") 
-            img(src="../../src/images/burger.png" class="hamburger")
-            img(src="../../src/images/closed.png" class="close")
-        
-        ul.menu__menu
-            
-            li.menu__item 
+mixin menu()   
+    div
+        nav.menu
+            //- icono burger/close
+            input(type="checkbox" id="menu__checkbox" class="menu__checkbox")
+            label(for="menu__checkbox" class="menu__toggle") 
+                img(src="../../src/images/burger.png" class="hamburger")
+                img(src="../../src/images/closed.png" class="close")
+            //- logo
+            .menu__item--logo
                 a(class="menu__menu--link" href="#")
                     img(class="menu__logo" src="../../src/images/logo-bcc.png", alt="") 
-            li.menu__item   
-                a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
-            li.menu__item   
-                a(class="menu__menu--link" href="#") Formación
-            li.menu__item   
-                a(class="menu__menu--link" href="#") Innovación 
-            li.menu__item   
-                a(class="menu__menu--link" href="#") Empresas 
-            li.menu__item   
-                a(class="menu__menu--link" href="#") Iniciativas 
-            li.menu__item   
-                a(class="menu__menu--link" href="#") Restaurantes 
-            li.menu__item   
-                a(class="menu__menu--link" href="#") Actualidad 
-            li.menu__item
-                a.btn__primary--large-color-menu.display__desktop(href="#") Encuentra tu formación
-        //- div.gradient__home
-        //-     p.text-small.gradient__text Ven a disfrutar de nuestra cocina  
-        //-         a(class="primaryfont__bold" href="#") Restaurantes 
-
-        //-  div.gradient__innovation
-        //-     p.text-small.gradient__text BCC Innovation 
+            //- enlaces
+            ul.menu__menu
+                li.menu__item   
+                    a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                li.menu__item   
+                    a(class="menu__menu--link" href="#") Formación 
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                li.menu__item   
+                    a(class="menu__menu--link" href="#") Innovación 
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                li.menu__item   
+                    a(class="menu__menu--link" href="#") Empresas 
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                li.menu__item   
+                    a(class="menu__menu--link" href="#") Iniciativas 
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                li.menu__item   
+                    a(class="menu__menu--link" href="#") Restaurantes 
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                li.menu__item   
+                    a(class="menu__menu--link" href="#") Actualidad 
+                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+            //- button desktop
+            .menu__item.display__desktop
+                a.btn__primary--large-color-menu.display__desktop(href="asdsadsad") Encuentra tu formación
+    //- button mobile
+    div.padding.padding__top-regular.display__mobile
+        a.btn__primary--small-color-menu(href="asdsadsad") Encuentra tu formación
+        
 
             

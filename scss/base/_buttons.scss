@@ -20,7 +20,10 @@
                     @extend .btn__primary;
                     padding: 20.5px 35.5px;
                     color: $c-monocromo-100;
-                    background-color: $c-monocromo-600;
+                    background-color: $c-primary-default;
+                    &:hover {
+                        background-color: $c-button-primary;
+                    }
                 }
                 &-width {
                     @extend .btn__primary--large-color;
@@ -52,6 +55,14 @@
                 @include btn__primary ($background: color, $size : small);
                 @include btn__fontsmall;
                 font-weight: 400;
+                &-menu {
+                    @extend .btn__primary--small-color;
+                    color: $c-monocromo-100;
+                    background-color: $c-primary-default;
+                    &:hover {
+                        background-color: $c-button-primary;
+                    }
+                }
             }
             &--small-nocolor {
                 @extend .btn__primary;
