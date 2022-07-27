@@ -1,5 +1,5 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+var swiper2 = new Swiper(".swiper2", {
+    slidesPerView: 5,
     spaceBetween: 15,
     slidesPerGroup: 1,
     loop: true,
@@ -9,20 +9,20 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next--primary",
+        prevEl: ".swiper-button-prev--primary",
     },
     breakpoints: {
     280: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-    },
-    500: {
         slidesPerView: 2,
         spaceBetween: 15,
     },
-    1081: {
+    768: {
         slidesPerView: 3,
+        spaceBetween: 15,
+    },
+    1280: {
+        slidesPerView: 5,
         spaceBetween: 15,
     },
     },
