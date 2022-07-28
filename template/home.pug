@@ -31,11 +31,12 @@ include ../components/layout/head.pug
                     +component-column-icon()
                     +component-column-icon()
             //- nuestra agenda slider desktop
-            section.padding.padding__bottom-xx-large.box__background
+            section.padding.padding__bottom-xx-large.box__background.display__desktop
                     +component-title-link("", "")
-                    //- div.gap.display__flex.content__center.content__max   
-                    div.swiper.mySwiper.display__desktop.box__swiper
+                    div.swiper.mySwiper.box__swiper
                         div.swiper-wrapper
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
                                 +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide

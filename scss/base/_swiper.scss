@@ -1,21 +1,35 @@
 .swiper {
     width: 1420px;
     height: 100%;
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
   }
 
-  .swiper-slide {
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px;
+  height: 24px;
+  background: $c-primary-default;
+}
+span.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  border: 1px solid $c-primary-default;
+  opacity: 1;
+  background: $c-white;
+
+}
