@@ -53,7 +53,6 @@ include ../components/layout/head.pug
                                 +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
                                 +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
-                            
                         div.swiper-pagination
             
             //- nuestra agenda mobile
@@ -84,26 +83,50 @@ include ../components/layout/head.pug
             //- vertical line
             +component-subtitle("")
             section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "display__mobile", "", "", "display__one")
+                +component-vertical-line("", "display__mobile", "", "", "display__one")
+                +component-vertical-line("", "display__mobile", "", "", "display__one")
+                +component-vertical-line("", "display__mobile", "", "", "display__one")
+                +component-vertical-line("", "display__mobile", "", "", "display__one")
             //- un motor de cambio
             +component-title("box__background", "", "")
             +component-noticia-principal("box__background", "", "", "", "display__one")
-            //--------------------------FALTA SLIDER
+            //- un motor de cambio - slider areas de trabajo
+            section.padding__bottom-xx-large.box__background
+                    +component-subtitle("")
+                    div.swiper.mySwiper.box__swiper
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                        div.swiper-pagination
+                    a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- colabora con BCC
             +component-title("", "", "")
             section
             +component-img-left
             +component-subtitle("")
             section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
+                +component-vertical-line("", "", "display__one")
+                +component-vertical-line("", "", "display__one")
+                +component-vertical-line("", "", "display__one")
+                +component-vertical-line("", "", "display__one")
+                +component-vertical-line("", "", "display__one")
             //- una visión integral
             section.padding.box__background
                 +component-title-link("", "")

@@ -33,17 +33,17 @@ include ../components/layout/head.pug
                     include ../components/layout/input.pug
             include ../components/layout/accordion.pug
             section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
-                +component-vertical-line("", "display__one")
+                +component-vertical-line("card__line--none", "display__mobile", "", "display__none", "")
+                +component-vertical-line("card__line--none", "display__mobile", "", "display__none", "")
+                +component-vertical-line("card__line--none", "display__mobile", "", "display__none", "")
+                +component-vertical-line("card__line--none", "display__mobile", "", "display__none", "")
+                +component-vertical-line("card__line--none", "display__mobile", "", "display__none", "")
             section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
-                +component-vertical-line("display__none", "")
-                +component-vertical-line("display__none", "")
-                +component-vertical-line("display__none", "")
-                +component-vertical-line("display__none", "")
-                +component-vertical-line("display__none", "")
+                +component-vertical-line("", "display__mobile", "", "display__none", "")
+                +component-vertical-line("", "display__mobile", "", "display__none", "")
+                +component-vertical-line("", "display__mobile", "", "display__none", "")
+                +component-vertical-line("", "display__mobile", "", "display__none", "")
+                +component-vertical-line("", "display__mobile", "", "display__none", "")
             
             +component-title("", "", "")
             +component-noticia-principal("", "", "", "display__none", "")
@@ -62,9 +62,7 @@ include ../components/layout/head.pug
             //- tabs
             .padding__bottom-x-large.content__center.content__max
                 include ../components/tabs/tabs.pug
-            .grid__c3
-                //- column
-                include ../components/column/card-column.pug 
+            
             
             //- mobile cambio color grado, máster...
             +component-mobile-card-img("card__color-entusiastas")

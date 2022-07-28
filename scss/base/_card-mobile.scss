@@ -37,6 +37,13 @@
                 border-right: 5px solid $c-marcas-bcc-corporate;
             }
         }
+        &--mobile {
+            height: 190px;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover; 
+            object-position: center;
+        }
     }
     &__color {
         background-color: $c-monocromo-100;
@@ -53,20 +60,22 @@
             height: 100%;
             padding: 0;
         }
+        &--none {
+            @include respond-to(large) {
+                border-left: 0;
+            }
+        }
     }
     &__description {
         margin-bottom: $small;
     }
     &__title {
-        text-transform: none;
-        &--color {
-            color: $c-primary-dark;
-            padding: $xx-small 0 ;
+        text-transform: uppercase;
+        padding: $xx-small 0 ;
             @include respond-to(large) {
                 padding-top: 0;
                 padding-bottom: $large;
             }
-        }
     }
     &__details {
         display: flex;
