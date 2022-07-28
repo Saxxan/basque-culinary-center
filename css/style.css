@@ -248,14 +248,19 @@ hr {
 
 .panel {
   padding: 0 16px;
+  display: none;
+  height: auto;
   background-color: rgba(89, 113, 140, 0.1);
   color: #52483B;
-  max-height: 0;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   border-radius: 0 0 4px 4px;
   text-align: justify;
+}
+
+.visible {
+  display: block;
 }
 
 /*------------------------------------*\

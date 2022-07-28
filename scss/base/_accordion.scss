@@ -31,11 +31,16 @@
 }
 .panel {
     padding: 0 $small;
+    display: none;
+    height: auto;
     background-color: rgba($c-marcas-bcc-innovation, 0.1);
     color: $c-monocromo-700;
-    max-height: 0;
     overflow: hidden;
     transition: all 0.2s ease-out;
     border-radius: 0 0 $btnprimary-radius $btnprimary-radius;
     text-align: justify;
+}
+
+.visible {
+    display: block;
 }
