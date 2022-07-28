@@ -34,6 +34,7 @@
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : large);
                 @include btn__fontbig;
+                width: -webkit-fill-available;
                 font-weight: 400;
                 &-width {
                     @extend .btn__primary--large-nocolor;

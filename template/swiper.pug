@@ -1,40 +1,30 @@
-doctype html
-html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css")
-        link(rel="stylesheet", href="../css/style.css")
-        link(link rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,600&family=League+Spartan:wght@300;400;500;700;800&display=swap" rel="stylesheet")
-        
-    body 
+include ../components/column/component-target-garamond-complete.pug
+include ../components/column/component-title-link.pug
+include ../components/layout/head.pug
         block content
-            div(class="swiper mySwiper")
-                div.swiper-wrapper
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    div.swiper-slide
-                        img(src="../src/images/img-noticias.jpg", alt="")
-                    
-                div.swiper-pagination
+                section.padding.padding__bottom-xx-large.box__background
+                    +component-title-link("", "")
+                    //- div.gap.display__flex.content__center.content__max   
+                    div.swiper.mySwiper.display__desktop.box__swiper
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            
+                        div.swiper-pagination
             
         script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
         script(src="../js/swiper.js")

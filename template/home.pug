@@ -30,8 +30,33 @@ include ../components/layout/head.pug
                     +component-column-icon()
                     +component-column-icon()
                     +component-column-icon()
-            //- nuestra agenda
+            //- nuestra agenda slider desktop
             section.padding.padding__bottom-xx-large.box__background
+                    +component-title-link("", "")
+                    //- div.gap.display__flex.content__center.content__max   
+                    div.swiper.mySwiper.display__desktop.box__swiper
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                            
+                        div.swiper-pagination
+            
+            //- nuestra agenda mobile
+            section.padding.padding__bottom-xx-large.box__background.display__mobile
                 +component-title-link("", "")
                 div.gap.display__flex.content__center.content__max
                     +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
@@ -95,6 +120,8 @@ include ../components/layout/head.pug
         //- footer
         +footer("box__background")
     
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")
     script(src="../js/function.js") 
 
 
