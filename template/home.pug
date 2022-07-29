@@ -82,7 +82,8 @@ include ../components/layout/head.pug
                     div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- tabs .display__desktop
-            +component-title("", "", "")
+            div.display__desktop
+                +component-title("", "", "")
             .content__center.content__max
                 include ../components/tabs/tabs.pug
             //- tabs .display__mobile
@@ -102,8 +103,8 @@ include ../components/layout/head.pug
                 +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
                 +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
                 +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
-                hr.display__mobile
-                div.padding__top-x-large.display__mobile
+                hr.padding.display__mobile
+                div.padding.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- un motor de cambio
             +component-title("box__background", "", "")
@@ -190,7 +191,7 @@ include ../components/layout/head.pug
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             //- dos conceptos distintos
             +component-title("", "", "")
-            div.padding__bottom-xx-large.display__flex.gap.content__max.content__center
+            div.padding.padding__bottom-xx-large.display__flex.gap.content__max.content__center
                 +component-target-info-event("box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                 +component-target-info-event("box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")   
         //- footer
