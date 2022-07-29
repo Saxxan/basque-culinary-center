@@ -1,4 +1,4 @@
-mixin component-noticia-principal(colorBackground="box__background--innovation", textCenter="text__content", borderBottom= "box__img--border", displayNone="display_none", displayOne="display__one")
+mixin component-noticia-principal(colorBackground="box__background--innovation", borderBottom= "box__img--border", displayNone="display_none", displayOne="display__one")
     section.padding.padding__bottom-large(class= colorBackground)
         div.box__principal.content__center.content__max
             div
@@ -6,10 +6,10 @@ mixin component-noticia-principal(colorBackground="box__background--innovation",
                 img(class="box__img" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
             div.box__content
                 h3.box__title.primaryfont__bold(class= displayOne) Toni Segarra: «No es momento para el marketing».
-                p.display__desktop.text-medium.primaryfont__bold(class= displayOne)(class= textCenter) 01/01/2022
-                p.box__description.text-medium(class= textCenter) Es momento de hacer. De pasar del dicho al hecho. De rehuir del márketing y las falsas promesas para más bien actuar oportunamente y no oportunistamente como sugiere Toni Segarra, el gurú de la publicidad y uno de los mejores creativos españoles del siglo XX, , convencido de que “lo peor de la crisis”. 
+                p.display__desktop.text-small(class= displayOne) 01/01/2022
+                p.box__description.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat
                 a(class="link text-small box__link display__desktop" href="#")(class= displayOne) Leer más 
                     img(class="svg__icon" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
                 div.display__desktop(class= displayNone)
-                        a.btn__primary--large-color(href="#")
-                            p.text-small Acceder a innovaciónbb
+                        a.btn__primary--large-color(href="www")
+                            p.text-small Acceder a la sección

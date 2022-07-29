@@ -830,7 +830,7 @@ hr {
   height: 190px;
   width: 100%;
   border-radius: 8px;
-  padding: 0 0 8px 0;
+  padding: 0 0 16px 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -846,6 +846,9 @@ hr {
   .card__border {
     border: none;
   }
+}
+.card__line {
+  padding: 0 24px;
 }
 @media (min-width: 1024px) {
   .card__line {
@@ -883,7 +886,7 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .card__details--margin {
     padding-left: 16px;
   }
@@ -1382,6 +1385,7 @@ input[type=checkbox] {
 @media (min-width: 1024px) {
   .swiper {
     width: 1420px;
+    padding: 10px 0 40px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1869,6 +1873,9 @@ img {
 }
 .padding__top-gap {
   padding-top: 40px;
+}
+.padding__top-large {
+  padding-top: 32px;
 }
 .padding__top-x-large {
   padding-top: 48px;

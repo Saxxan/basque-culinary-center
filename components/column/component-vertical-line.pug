@@ -1,11 +1,11 @@
-mixin component-vertical-line(lineNone= "card__line--none", displayMobile="display__mobile", displayDesktop="display__desktop",  displayNone="display__none", displayOne="display__one")
+mixin component-vertical-line(cardDetails= "card__details", lineNone= "card__line--none", displayMobile="display__mobile", displayDesktop="display__desktop",  displayNone="display__none", displayOne="display__one")
     div.card__line(class = lineNone)
         hr(class= displayMobile)(class= displayDesktop)(class= displayNone)
-        div.card__details--margin(class= displayOne)
+        div(class= displayOne)(class= cardDetails)
             img(class="card__img--mobile" src="https://unsplash.it/800/600?image=59", alt="")
-        div.card__details--margin
-            p.text-small.card__title.primaryfont__bold Cocina
-            p.text-small.card__description  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        div(class= cardDetails)
+            p.text-small.card__title.primaryfont__bold Sección
+            p.text-small.card__description  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non.
             div.box__link(class= displayNone)
                 a(class="link x-small" href="#") Saber más
                     img(class="svg__icon" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")

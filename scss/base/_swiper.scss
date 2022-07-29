@@ -4,6 +4,7 @@
     padding: 10px 10px 40px 10px;
     @include respond-to(large) {
         width: 1420px;
+        padding: 10px 0 40px 0;
     }
     &__fullwidth {
         @include respond-to(large) {
