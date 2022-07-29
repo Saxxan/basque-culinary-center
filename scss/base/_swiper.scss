@@ -5,8 +5,12 @@
     @include respond-to(large) {
         width: 1420px;
     }
+    &__fullwidth {
+        @include respond-to(large) {
+            width: 100%;
+        }
+    }
 }
-
 .swiper-slide {
     /* Center slide text vertically */
     display: -webkit-box;
@@ -21,6 +25,14 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    &-board {
+        @extend .swiper-slide;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &-background {
+        background-image: url(../src/images/img-cabecera.jpg);
+    }
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -42,5 +54,23 @@ span.swiper-pagination-bullet {
     border: 1px solid $c-primary-default;
     opacity: 1;
     background: $c-white;
-
+}
+.swiper-button-next, 
+.swiper-button-prev {
+    position: relative;
+    top:50%;
+    width: var(--swiper-navigation-size);
+    height: var(--swiper-navigation-size);
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $c-white;
+    background-color: $c-primary-darkmode;
+    padding: 20px;
+    border-radius: 50%;
+}
+:root {
+    --swiper-navigation-size: 24px;
 }

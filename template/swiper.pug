@@ -3,6 +3,8 @@ include ../components/column/component-target-garamond-complete.pug
 include ../components/column/component-title-link.pug
 include ../components/layout/head.pug
         block content
+            
+            //- HOME conoce nuestra agenda (escritorio)
             //- div.swiper.mySwiper.display__desktop.box__swiper
             //-     div.swiper-wrapper
             //-         div.swiper-slide
@@ -23,28 +25,44 @@ include ../components/layout/head.pug
             //-             +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
                     
         //-     div.swiper-pagination
-        div.swiper.mySwiper.box__swiper
-            div.swiper-wrapper
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
-                div.swiper-slide
-                    +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        
+        //- HOME un motor de cambio (desktop/mobile)
+        //- div.swiper.mySwiper.box__swiper
+        //-     div.swiper-wrapper
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
+        //-         div.swiper-slide
+        //-             +component-vertical-line("card__line--none", "", "display__desktop", "display__none", "")
             
-        div.swiper-pagination
+        //- div.swiper-pagination
+
+        //- HOME cabecera (desktop/mobile)
+        div.swiper__fullwidth.swiper2
+            div.swiper-wrapper
+                .swiper-slide.swiper-slide-board.swiper-slide-background
+                    h1 1/02
+                    h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+                    h4 Inscripción abierta para el nuevo curso 2022-2023
+                    a.btn__primary--large-nocolor-width(href="#") más información
+            
+            .swiper-button-next
+            .swiper-button-prev
+
             
         script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
         script(src="../js/swiper.js")
+        script(src="../js/swiper2.js")

@@ -830,6 +830,7 @@ hr {
   height: 190px;
   width: 100%;
   border-radius: 8px;
+  padding: 0 0 8px 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -867,8 +868,7 @@ hr {
 }
 @media (min-width: 1024px) {
   .card__title {
-    padding-top: 0;
-    padding-bottom: 32px;
+    padding: 0 0 16px 0;
   }
 }
 .card__details, .card__details-investigacion, .card__details-producto, .card__details-formacion {
@@ -1384,8 +1384,13 @@ input[type=checkbox] {
     width: 1420px;
   }
 }
+@media (min-width: 1024px) {
+  .swiper__fullwidth {
+    width: 100%;
+  }
+}
 
-.swiper-slide {
+.swiper-slide, .swiper-slide-board {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1396,6 +1401,18 @@ input[type=checkbox] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.swiper-slide-board {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.swiper-slide-background {
+  background-image: url(../src/images/img-cabecera.jpg);
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -1422,6 +1439,33 @@ span.swiper-pagination-bullet {
     width: 24px;
     height: 24px;
   }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative;
+  top: 50%;
+  width: var(--swiper-navigation-size);
+  height: var(--swiper-navigation-size);
+  z-index: 1;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  background-color: #D5903C;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+:root {
+  --swiper-navigation-size: 24px;
 }
 
 /*------------------------------------*\

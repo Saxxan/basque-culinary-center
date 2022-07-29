@@ -18,11 +18,22 @@ include ../components/layout/head.pug
         main
             header
                 //- menu
-                div.padding__bottom-x-large
+                div
                     +menu-gradient("gradient__innovation")
-                    +menu("display__desktop", "display__mobile")
-                    include ../components/menu/menu.pug
                     include ../components/menu/topbar.pug
+                    +menu("display__desktop", "display__mobile")
+                    
+            //- slide cabecera
+            //- div.swiper__fullwidth.swiper2
+            //-     div.swiper-wrapper
+            //-         .swiper-slide.swiper-slide-board.swiper-slide-background
+            //-             h1 1/02
+            //-             h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+            //-             h4 Inscripción abierta para el nuevo curso 2022-2023
+            //-             a.btn__primary--large-nocolor-width(href="#") más información
+                
+            //-     .swiper-button-next
+            //-     .swiper-button-prev
             //- column icon
             section.content__center.content__max
                 +component-title("", "", "")
@@ -68,6 +79,8 @@ include ../components/layout/head.pug
                 div.display__flex.gap.content__max.content__center
                     +component-noticia-target("", "box__tag", "", "", "", "", "display__none")
                     +component-noticia-target("", "", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
+                    div.padding__top-x-large.display__mobile
+                        a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- tabs .display__desktop
             .content__center.content__max
                 include ../components/tabs/tabs.pug
@@ -88,9 +101,13 @@ include ../components/layout/head.pug
                 +component-vertical-line("", "display__mobile", "", "", "display__one")
                 +component-vertical-line("", "display__mobile", "", "", "display__one")
                 +component-vertical-line("", "display__mobile", "", "", "display__one")
+                hr.display__mobile
+                div.padding__top-x-large.display__mobile
+                        a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- un motor de cambio
             +component-title("box__background", "", "")
             +component-noticia-principal("box__background", "", "", "", "display__one")
+
             //- un motor de cambio - slider areas de trabajo
             section.padding__bottom-xx-large.box__background
                     +component-subtitle("")
@@ -115,27 +132,61 @@ include ../components/layout/head.pug
                             div.swiper-slide
                                 +component-vertical-line("card__line--none", "", "", "display__none", "")
                         div.swiper-pagination
-                    a.btn__primary--small-color(href="que tal") Acceder a innovación
+                    div.padding.padding__top-x-large.display__mobile
+                        a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- colabora con BCC
             +component-title("", "", "")
             section
             +component-img-left
-            +component-subtitle("")
-            section.padding.content__center.content__max.grid__c5.padding__bottom-x-large
-                +component-vertical-line("", "", "display__one")
-                +component-vertical-line("", "", "display__one")
-                +component-vertical-line("", "", "display__one")
-                +component-vertical-line("", "", "display__one")
-                +component-vertical-line("", "", "display__one")
+            section.padding__bottom-xx-large
+                    +component-subtitle("")
+                    div.swiper.mySwiper.box__swiper
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                +component-vertical-line("card__line--none", "", "", "display__none", "")
+                        div.swiper-pagination
+                    div.padding.padding__top-x-large.display__mobile
+                        a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- una visión integral
             section.padding.box__background
                 +component-title-link("", "")
             +component-noticia-principal("box__background", "text__content", "box__img--border", "display__none", "")
-            section.padding.box__background
-                div.display__flex.display__desktop.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
+            //- noticias target desktop
+            section.padding.box__background.display__desktop
+                div.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
                     +component-noticia-target("content__text", "box__tag", "", "box__img--border", "", "", "display__none")
                     +component-noticia-target("content__text", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                     +component-noticia-target("content__text", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+            //- noticias target mobile
+            section.padding__bottom-xx-large.box__background.display__mobile
+                    div.swiper.mySwiper.box__swiper
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-noticia-target("", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                            div.swiper-slide
+                                +component-noticia-target("", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                            div.swiper-slide
+                                +component-noticia-target("", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                            
+                        div.swiper-pagination
+                    div.padding.padding__top-x-large.display__mobile
+                        a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             //- dos conceptos distintos
             +component-title("", "", "")
             div.padding.padding__bottom-xx-large.display__flex.gap.content__max.content__center
@@ -146,6 +197,7 @@ include ../components/layout/head.pug
     
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
+    script(src="../js/swiper2.js")
     script(src="../js/function.js") 
 
 
