@@ -87,17 +87,20 @@
     @if $size == large {
         font-size: 18px;
         letter-spacing: -0.3px;
+        font-weight: 600;
         padding: $btnprimary-paddinglarge;
     }
 
     @if $size == medium {
-        font-size: 15px;
-        letter-spacing: -0.3px;
+        font-size: 19px;
+        letter-spacing: -0.1px;
+        font-weight: 400;
         padding: $btnprimary-paddingmedium;
     }
     @if $size == small {
         font-size: 13px;
         letter-spacing: -0.2px;
+        font-weight: 500;
         padding: $btnprimary-paddingsmall;
         
     }

@@ -457,7 +457,7 @@ hr {
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
-.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-color-menu, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color-width, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-align: baseline;
@@ -470,21 +470,15 @@ hr {
           appearance: button;
   cursor: pointer;
 }
-.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-color-menu, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color-width, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   border-radius: 4px;
 }
 .btn__primary--large-color, .btn__primary--large-color-width {
   color: #ffffff;
   font-size: 18px;
   letter-spacing: -0.3px;
+  font-weight: 600;
   padding: 20px 32px;
-  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.3px;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
 }
 .btn__primary--large-color:link, .btn__primary--large-color-width:link {
   background-color: #B36206;
@@ -515,39 +509,33 @@ hr {
 .btn__primary--large-color-width {
   width: auto;
 }
-.btn__primary--large-nocolor, .btn__primary--large-nocolor-width {
+.btn__primary--large-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color-width, .btn__primary--large-nocolor-width {
   color: #B36206;
   background-color: #ffffff;
   border: 2px solid #B36206;
   font-size: 18px;
   letter-spacing: -0.3px;
+  font-weight: 600;
   padding: 20px 32px;
-  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.3px;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
   width: -webkit-fill-available;
   font-weight: 400;
 }
-.btn__primary--large-nocolor:link, .btn__primary--large-nocolor-width:link {
+.btn__primary--large-nocolor:link, .btn__primary--medium-nocolor-width:link, .btn__primary--medium-color-width:link, .btn__primary--large-nocolor-width:link {
   background-color: #ffffff;
   color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--large-nocolor:visited, .btn__primary--large-nocolor-width:visited {
+.btn__primary--large-nocolor:visited, .btn__primary--medium-nocolor-width:visited, .btn__primary--medium-color-width:visited, .btn__primary--large-nocolor-width:visited {
   background-color: #ffffff;
   color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--large-nocolor:hover, .btn__primary--large-nocolor-width:hover {
+.btn__primary--large-nocolor:hover, .btn__primary--medium-nocolor-width:hover, .btn__primary--medium-color-width:hover, .btn__primary--large-nocolor-width:hover {
   background-color: #ffffff;
   color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--large-nocolor:disabled, .btn__primary--large-nocolor-width:disabled {
+.btn__primary--large-nocolor:disabled, .btn__primary--medium-nocolor-width:disabled, .btn__primary--medium-color-width:disabled, .btn__primary--large-nocolor-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: #ffffff;
@@ -559,16 +547,10 @@ hr {
 }
 .btn__primary--medium-color {
   color: #ffffff;
-  font-size: 15px;
-  letter-spacing: -0.3px;
-  padding: 16px 24px;
-  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.3px;
+  font-size: 19px;
+  letter-spacing: -0.1px;
   font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
+  padding: 16px 24px;
 }
 .btn__primary--medium-color:link {
   background-color: #B36206;
@@ -588,20 +570,24 @@ hr {
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0);
 }
+.btn__primary--medium-color-width {
+  width: auto;
+}
+.btn__primary--medium-color-menu {
+  color: #F4F3EF;
+  background-color: #B36206;
+}
+.btn__primary--medium-color-menu:hover {
+  background-color: #B36206;
+}
 .btn__primary--medium-nocolor {
   color: #B36206;
   background-color: #ffffff;
   border: 2px solid #B36206;
-  font-size: 15px;
-  letter-spacing: -0.3px;
-  padding: 16px 24px;
-  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.3px;
+  font-size: 19px;
+  letter-spacing: -0.1px;
   font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
+  padding: 16px 24px;
 }
 .btn__primary--medium-nocolor:link {
   background-color: #ffffff;
@@ -625,33 +611,30 @@ hr {
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
-.btn__primary--small-color, .btn__primary--small-color-menu {
+.btn__primary--medium-nocolor-width {
+  width: auto;
+}
+.btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-color-menu {
   color: #ffffff;
   font-size: 13px;
   letter-spacing: -0.2px;
+  font-weight: 500;
   padding: 9px 22px;
-  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
   font-weight: 400;
 }
-.btn__primary--small-color:link, .btn__primary--small-color-menu:link {
+.btn__primary--small-color:link, .btn__primary--small-color-menu:link, .btn__primary--medium-color-menu:link {
   background-color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--small-color:visited, .btn__primary--small-color-menu:visited {
+.btn__primary--small-color:visited, .btn__primary--small-color-menu:visited, .btn__primary--medium-color-menu:visited {
   background-color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--small-color:hover, .btn__primary--small-color-menu:hover {
+.btn__primary--small-color:hover, .btn__primary--small-color-menu:hover, .btn__primary--medium-color-menu:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--small-color:disabled, .btn__primary--small-color-menu:disabled {
+.btn__primary--small-color:disabled, .btn__primary--small-color-menu:disabled, .btn__primary--medium-color-menu:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
@@ -670,14 +653,8 @@ hr {
   border: 2px solid #B36206;
   font-size: 13px;
   letter-spacing: -0.2px;
+  font-weight: 500;
   padding: 9px 22px;
-  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
   font-weight: 400;
 }
 .btn__primary--small-nocolor:link {
@@ -708,14 +685,8 @@ hr {
   border: 2px solid #59718c;
   font-size: 13px;
   letter-spacing: -0.2px;
+  font-weight: 500;
   padding: 9px 22px;
-  font-size: clamp(.8rem, -0.875rem + 8.333vw, .8rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.2px;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
   font-weight: 400;
 }
 .btn__primary--small-nocolor-innovation:link {
@@ -750,13 +721,6 @@ hr {
   font-size: 18px;
   letter-spacing: -0.3px;
   padding: 20px 32px;
-  font-size: clamp(.94rem, -0.875rem + 8.333vw, .94rem);
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: -0.3px;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline;
-  margin-bottom: 1rem;
 }
 .btn__modal:link {
   background-color: #B36206;
@@ -1544,7 +1508,6 @@ input:checked + .slider::before {
   padding: 3px 8px;
   text-align: center;
   color: #F4F3EF;
-  letter-spacing: -0.23px;
   border-radius: 8px;
   -webkit-appearance: button;
      -moz-appearance: button;

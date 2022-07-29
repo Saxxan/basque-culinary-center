@@ -1,14 +1,15 @@
 mixin component-target-info-event(colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
     div
         div
-            img(class="box__img--bloq2-border" src="../../src/images/img-noticias.jpg", alt="")
+            span.tag__entusiastas.box__tag--bloq2   Etiqueta 01
+            img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)(class= borderBottom)
         div(class= displayNone)
             div.box__icon
                 img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")
                 span.tag__card--grey.box__tag--space  Presencial
                 span.tag__card--border.box__tag--space  Incripción abierta
         div
-            p.text-small Restaurante BCC
+            p.padding__top-regular.text-small Restaurante BCC
             h4.box__title.primaryfont__bold Cita GO-ON
         hr
         div.box__date
