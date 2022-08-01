@@ -32,8 +32,6 @@
             &--large-nocolor {
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : large);
-                width: -webkit-fill-available;
-                font-weight: 400;
                 &-width {
                     @extend .btn__primary--large-nocolor;
                     width: auto;
@@ -43,11 +41,11 @@
                 @extend .btn__primary;
                 @include btn__primary ($background: color, $size : medium);
                 &-width {
-                    @extend .btn__primary--large-nocolor;
+                    @extend .btn__primary--medium-color;
                     width: auto;
                 }
                 &-menu {
-                    @extend .btn__primary--small-color;
+                    @extend .btn__primary--medium-color;
                     color: $c-monocromo-100;
                     background-color: $c-primary-default;
                     &:hover {
@@ -59,14 +57,17 @@
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : medium);
                 &-width {
-                    @extend .btn__primary--large-nocolor;
+                    @extend .btn__primary--medium-nocolor;
                     width: auto;
                 } 
             }
             &--small-color {
                 @extend .btn__primary;
                 @include btn__primary ($background: color, $size : small);
-                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-color;
+                    width: auto;
+                }
                 &-menu {
                     @extend .btn__primary--small-color;
                     color: $c-monocromo-100;
@@ -79,13 +80,20 @@
             &--small-nocolor {
                 @extend .btn__primary;
                 @include btn__primary ($background: nocolor, $size : small);
-                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-nocolor;
+                    width: auto;
+                }
             }
             // button innovation
             &--small-nocolor-innovation {
                 @extend .btn__primary;
                 @include btn__primary ($background: salud, $size : small);
                 font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-nocolor-innovation;
+                    width: auto;
+                }
             }
     }
     &__modal {

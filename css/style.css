@@ -41,7 +41,7 @@ span {
 }
 
 .text-large {
-  font-size: clamp(1.6rem, -0.875rem + 8.333vw, 1.56rem);
+  font-size: clamp(1.6rem, -0.875rem + 8.333vw, 1.6rem);
 }
 .text-large__garamond {
   font-family: "EB Garamond", serif;
@@ -50,7 +50,7 @@ span {
   line-height: 3.6rem;
 }
 .text-medium {
-  font-size: clamp(1.3rem, -0.875rem + 8.333vw, 1.4rem);
+  font-size: clamp(1.3rem, -0.875rem + 8.333vw, 1.5rem);
 }
 .text-medium__garamond {
   font-family: "EB Garamond", serif;
@@ -59,7 +59,7 @@ span {
   line-height: 2.5rem;
 }
 .text-small {
-  font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
+  font-size: clamp(1.2rem, -0.875rem + 8.333vw, 1.2rem);
 }
 .text-small__garamond {
   font-family: "EB Garamond", serif;
@@ -69,7 +69,7 @@ span {
 }
 
 .x-small {
-  font-size: clamp(0.9rem, -0.875rem + 8.333vw, 1rem);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
 }
 .x-small__garamond {
   font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
@@ -324,7 +324,6 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 48px;
   }
 }
 .box__principal--margin {
@@ -450,14 +449,11 @@ hr {
 .box__color-home {
   color: #B36206;
 }
-.box__swiper {
-  width: 500px;
-}
 
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
-.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-color-menu, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color-width, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-align: baseline;
@@ -470,13 +466,13 @@ hr {
           appearance: button;
   cursor: pointer;
 }
-.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-color-menu, .btn__primary--medium-nocolor, .btn__primary--medium-color, .btn__primary--large-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color-width, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   border-radius: 4px;
 }
 .btn__primary--large-color, .btn__primary--large-color-width {
   color: #ffffff;
   font-size: 18px;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.3px;
   font-weight: 600;
   padding: 20px 32px;
 }
@@ -509,33 +505,31 @@ hr {
 .btn__primary--large-color-width {
   width: auto;
 }
-.btn__primary--large-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color-width, .btn__primary--large-nocolor-width {
+.btn__primary--large-nocolor, .btn__primary--large-nocolor-width {
   color: #B36206;
   background-color: #ffffff;
   border: 2px solid #B36206;
   font-size: 18px;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.3px;
   font-weight: 600;
   padding: 20px 32px;
-  width: -webkit-fill-available;
-  font-weight: 400;
 }
-.btn__primary--large-nocolor:link, .btn__primary--medium-nocolor-width:link, .btn__primary--medium-color-width:link, .btn__primary--large-nocolor-width:link {
+.btn__primary--large-nocolor:link, .btn__primary--large-nocolor-width:link {
   background-color: #ffffff;
   color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--large-nocolor:visited, .btn__primary--medium-nocolor-width:visited, .btn__primary--medium-color-width:visited, .btn__primary--large-nocolor-width:visited {
+.btn__primary--large-nocolor:visited, .btn__primary--large-nocolor-width:visited {
   background-color: #ffffff;
   color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--large-nocolor:hover, .btn__primary--medium-nocolor-width:hover, .btn__primary--medium-color-width:hover, .btn__primary--large-nocolor-width:hover {
+.btn__primary--large-nocolor:hover, .btn__primary--large-nocolor-width:hover {
   background-color: #ffffff;
   color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--large-nocolor:disabled, .btn__primary--medium-nocolor-width:disabled, .btn__primary--medium-color-width:disabled, .btn__primary--large-nocolor-width:disabled {
+.btn__primary--large-nocolor:disabled, .btn__primary--large-nocolor-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: #ffffff;
@@ -545,26 +539,26 @@ hr {
 .btn__primary--large-nocolor-width {
   width: auto;
 }
-.btn__primary--medium-color {
+.btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width {
   color: #ffffff;
   font-size: 19px;
-  letter-spacing: -0.1px;
-  font-weight: 400;
+  letter-spacing: 0.1px;
+  font-weight: 500;
   padding: 16px 24px;
 }
-.btn__primary--medium-color:link {
+.btn__primary--medium-color:link, .btn__primary--medium-color-menu:link, .btn__primary--medium-color-width:link {
   background-color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--medium-color:visited {
+.btn__primary--medium-color:visited, .btn__primary--medium-color-menu:visited, .btn__primary--medium-color-width:visited {
   background-color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--medium-color:hover {
+.btn__primary--medium-color:hover, .btn__primary--medium-color-menu:hover, .btn__primary--medium-color-width:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--medium-color:disabled {
+.btn__primary--medium-color:disabled, .btn__primary--medium-color-menu:disabled, .btn__primary--medium-color-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
@@ -580,31 +574,31 @@ hr {
 .btn__primary--medium-color-menu:hover {
   background-color: #B36206;
 }
-.btn__primary--medium-nocolor {
+.btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width {
   color: #B36206;
   background-color: #ffffff;
   border: 2px solid #B36206;
   font-size: 19px;
-  letter-spacing: -0.1px;
-  font-weight: 400;
+  letter-spacing: 0.1px;
+  font-weight: 500;
   padding: 16px 24px;
 }
-.btn__primary--medium-nocolor:link {
+.btn__primary--medium-nocolor:link, .btn__primary--medium-nocolor-width:link {
   background-color: #ffffff;
   color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--medium-nocolor:visited {
+.btn__primary--medium-nocolor:visited, .btn__primary--medium-nocolor-width:visited {
   background-color: #ffffff;
   color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--medium-nocolor:hover {
+.btn__primary--medium-nocolor:hover, .btn__primary--medium-nocolor-width:hover {
   background-color: #ffffff;
   color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--medium-nocolor:disabled {
+.btn__primary--medium-nocolor:disabled, .btn__primary--medium-nocolor-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: #ffffff;
@@ -614,31 +608,33 @@ hr {
 .btn__primary--medium-nocolor-width {
   width: auto;
 }
-.btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--medium-color-menu {
+.btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width {
   color: #ffffff;
   font-size: 13px;
-  letter-spacing: -0.2px;
-  font-weight: 500;
-  padding: 9px 22px;
+  letter-spacing: 0.2px;
   font-weight: 400;
+  padding: 9px 22px;
 }
-.btn__primary--small-color:link, .btn__primary--small-color-menu:link, .btn__primary--medium-color-menu:link {
+.btn__primary--small-color:link, .btn__primary--small-color-menu:link, .btn__primary--small-color-width:link {
   background-color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--small-color:visited, .btn__primary--small-color-menu:visited, .btn__primary--medium-color-menu:visited {
+.btn__primary--small-color:visited, .btn__primary--small-color-menu:visited, .btn__primary--small-color-width:visited {
   background-color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--small-color:hover, .btn__primary--small-color-menu:hover, .btn__primary--medium-color-menu:hover {
+.btn__primary--small-color:hover, .btn__primary--small-color-menu:hover, .btn__primary--small-color-width:hover {
   background-color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--small-color:disabled, .btn__primary--small-color-menu:disabled, .btn__primary--medium-color-menu:disabled {
+.btn__primary--small-color:disabled, .btn__primary--small-color-menu:disabled, .btn__primary--small-color-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0);
+}
+.btn__primary--small-color-width {
+  width: auto;
 }
 .btn__primary--small-color-menu {
   color: #F4F3EF;
@@ -647,65 +643,70 @@ hr {
 .btn__primary--small-color-menu:hover {
   background-color: #B36206;
 }
-.btn__primary--small-nocolor {
+.btn__primary--small-nocolor, .btn__primary--small-nocolor-width {
   color: #B36206;
   background-color: #ffffff;
   border: 2px solid #B36206;
   font-size: 13px;
-  letter-spacing: -0.2px;
-  font-weight: 500;
-  padding: 9px 22px;
+  letter-spacing: 0.2px;
   font-weight: 400;
+  padding: 9px 22px;
 }
-.btn__primary--small-nocolor:link {
+.btn__primary--small-nocolor:link, .btn__primary--small-nocolor-width:link {
   background-color: #ffffff;
   color: #B36206;
   border: 2px solid #B36206;
 }
-.btn__primary--small-nocolor:visited {
+.btn__primary--small-nocolor:visited, .btn__primary--small-nocolor-width:visited {
   background-color: #ffffff;
   color: #26201B;
   border: 2px solid #26201B;
 }
-.btn__primary--small-nocolor:hover {
+.btn__primary--small-nocolor:hover, .btn__primary--small-nocolor-width:hover {
   background-color: #ffffff;
   color: #83390B;
   border: 2px solid #83390B;
 }
-.btn__primary--small-nocolor:disabled {
+.btn__primary--small-nocolor:disabled, .btn__primary--small-nocolor-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: #ffffff;
   color: rgba(179, 98, 6, 0.5);
   border: 2px solid rgba(179, 98, 6, 0.5);
 }
-.btn__primary--small-nocolor-innovation {
+.btn__primary--small-nocolor-width {
+  width: auto;
+}
+.btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width {
   color: #59718c;
   background-color: #ffffff;
   border: 2px solid #59718c;
   font-size: 13px;
-  letter-spacing: -0.2px;
-  font-weight: 500;
+  letter-spacing: 0.2px;
+  font-weight: 400;
   padding: 9px 22px;
   font-weight: 400;
 }
-.btn__primary--small-nocolor-innovation:link {
+.btn__primary--small-nocolor-innovation:link, .btn__primary--small-nocolor-innovation-width:link {
   color: #59718c;
   border: 2px solid #59718c;
 }
-.btn__primary--small-nocolor-innovation:visited {
+.btn__primary--small-nocolor-innovation:visited, .btn__primary--small-nocolor-innovation-width:visited {
   color: #59718c;
   border: 2px solid #59718c;
 }
-.btn__primary--small-nocolor-innovation:hover {
+.btn__primary--small-nocolor-innovation:hover, .btn__primary--small-nocolor-innovation-width:hover {
   color: #59718c;
   border: 2px solid #59718c;
 }
-.btn__primary--small-nocolor-innovation:disabled {
+.btn__primary--small-nocolor-innovation:disabled, .btn__primary--small-nocolor-innovation-width:disabled {
   cursor: not-allowed;
   pointer-events: none;
   color: #59718c;
   border: 2px solid #59718c;
+}
+.btn__primary--small-nocolor-innovation-width {
+  width: auto;
 }
 .btn__modal {
   border-radius: 48px;
@@ -971,8 +972,8 @@ hr {
   }
 }
 .column__icon {
-  width: 47px;
-  margin-right: 20px;
+  width: 250px;
+  margin-right: 16px;
 }
 .column__title {
   padding-bottom: 10px;
@@ -1131,6 +1132,7 @@ em.error {
   text-transform: uppercase;
   text-decoration: none;
   color: #83390B;
+  font-weight: 500;
 }
 .link:link, .link:active {
   color: #83390B;
@@ -1232,7 +1234,7 @@ em.error {
 }
 .menu__menu a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 17px;
   letter-spacing: 0.4px;
   font-weight: 500;
 }
@@ -1260,7 +1262,6 @@ em.error {
 .menu__item {
   list-style: none;
   display: none;
-  padding: 0 16px;
   background-color: #F4F3EF;
 }
 .menu__item:nth-child(1) {
@@ -1348,7 +1349,6 @@ input[type=checkbox] {
 }
 @media (min-width: 1024px) {
   .swiper {
-    width: 1420px;
     padding: 10px 0 40px 0;
   }
 }
@@ -1495,10 +1495,12 @@ input:checked + .slider::before {
   text-transform: uppercase;
   cursor: pointer;
   margin-right: 48px;
+  font-size: 25px;
 }
 .tabs__active {
   border-bottom: solid 2px #B36206;
   color: #B36206;
+  font-weight: 600;
 }
 
 /*------------------------------------*\
@@ -1601,8 +1603,7 @@ input:checked + .slider::before {
   text-decoration: none;
   padding: 10px;
   font-family: "League Spartan", sans-serif;
-  font-size: 13px;
-  letter-spacing: 0.4px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -1810,6 +1811,9 @@ img {
 .padding {
   padding: 0 24px;
 }
+.padding__bottom-small {
+  padding-bottom: 16px;
+}
 .padding__bottom-regular {
   padding-bottom: 24px;
 }
@@ -1827,6 +1831,9 @@ img {
 }
 .padding__bottom-xx-large {
   padding-bottom: 64px;
+}
+.padding__top-small {
+  padding-top: 16px;
 }
 .padding__top-regular {
   padding-top: 24px;
@@ -1851,6 +1858,9 @@ img {
 }
 .padding__topbottom-x-large {
   padding: 48px 0;
+}
+.padding__topbottom-xx-large {
+  padding: 64px 0;
 }
 
 h1 {

@@ -19,6 +19,9 @@
 .padding {
     padding: 0 $regular;
     // Bottom
+    &__bottom-small {
+        padding-bottom: $small;
+    }
     &__bottom-regular {
         padding-bottom: $regular;
     }
@@ -38,6 +41,9 @@
         padding-bottom: $xx-large;
     }
     // Top
+    &__top-small {
+        padding-top: $small;
+    }
     &__top-regular {
         padding-top: $regular;
     }
@@ -62,6 +68,9 @@
     }
     &__topbottom-x-large {
         padding: $x-large 0;
+    }
+    &__topbottom-xx-large {
+        padding: $xx-large 0;
     }
 }
 h1 {

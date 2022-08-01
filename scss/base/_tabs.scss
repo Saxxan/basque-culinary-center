@@ -3,9 +3,11 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-right: $x-large;
+    font-size: 25px;
   }
   &__active {
     border-bottom: solid 2px $c-primary-default;
     color: $c-primary-default;
+    font-weight: 600;
   }
 }

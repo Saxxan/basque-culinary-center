@@ -46,7 +46,6 @@
         gap: $regular;
         @include respond-to(large) {
             display: flex;
-            margin-bottom: $x-large;
         }
         &--margin {
             padding-bottom: $regular;
@@ -144,8 +143,5 @@
         &-home {
             color: $c-primary-default;
         }
-    }
-    &__swiper {
-        width: 500px;
     }
 }

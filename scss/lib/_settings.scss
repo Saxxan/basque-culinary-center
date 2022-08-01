@@ -218,7 +218,7 @@ span {
 }
 .text{
     &-large {
-    font-size: clamp(1.6rem, -0.875rem + 8.333vw, 1.56rem);
+    font-size: clamp(1.6rem, -0.875rem + 8.333vw, 1.6rem);
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(3.4rem, -0.875rem + 8.333vw, 3.4rem);
@@ -227,7 +227,7 @@ span {
         }
     }
     &-medium {
-        font-size: clamp(1.3rem, -0.875rem + 8.333vw, 1.4rem);
+        font-size: clamp(1.3rem, -0.875rem + 8.333vw, 1.5rem);
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(2.2rem, -0.875rem + 8.333vw, 2.2rem);
@@ -236,7 +236,7 @@ span {
         }
     }
     &-small {
-        font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
+        font-size: clamp(1.2rem, -0.875rem + 8.333vw, 1.2rem);
         &__garamond {
             font-family: $garamond-font;
             font-size: clamp(1.7rem, -0.875rem + 8.333vw, 1.7rem);
@@ -246,7 +246,7 @@ span {
     }
 }
 .x-small {
-    font-size: clamp(0.9rem, -0.875rem + 8.333vw, 1rem);
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.1rem);
     &__garamond {
         font-size: clamp(1.5rem, -0.875rem + 8.333vw, 1.5rem);
         font-weight: $garamond-bold;
