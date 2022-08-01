@@ -3,6 +3,7 @@ include ../components/column/component-icon-logo.pug
 include ../components/column/component-img-left.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
 include ../components/layout/head.pug
     block content
         //- menu
@@ -10,6 +11,7 @@ include ../components/layout/head.pug
             +menu-gradient("gradient__innovation")
             include ../components/menu/topbar.pug
             +menu("display__desktop", "display__mobile")
+            +menu-index()
         //- noticias target mobile
         section.padding.padding__topbottom-xx-large.box__background
             +component-img-left("", "display__one")
@@ -63,6 +65,7 @@ include ../components/layout/head.pug
         //-             a.btn__primary--small-nocolor(href="www")  Ir a la página
             
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/accordion.js")
     script(src="../js/swiper.js")
     script(src="../js/swiper3.js")
     script(src="../js/function.js")
