@@ -1,0 +1,68 @@
+include ../components/column/component-slide-img.pug
+include ../components/column/component-icon-logo.pug
+include ../components/column/component-img-left.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu.pug
+include ../components/layout/head.pug
+    block content
+        //- menu
+        div
+            +menu-gradient("gradient__innovation")
+            include ../components/menu/topbar.pug
+            +menu("display__desktop", "display__mobile")
+        //- noticias target mobile
+        section.padding.padding__topbottom-xx-large.box__background
+            +component-img-left("", "display__one")
+        section.content__center.content__max.padding__topbottom-xx-large.display__flex
+            +component-icon-logo("display__mobile", "display__desktop")
+            +component-icon-logo("display__mobile", "display__desktop")
+        
+        //- slider imágenes LABe
+        section.box__background.padding__top-large
+            div.padding.display__flex.content__center.content__max.gap
+                div.box__content
+                    h4.padding__bottom-regular Lorem ipsum 
+                    p.padding__bottom-regular.text-small
+                        strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel sed neque repellendus.
+                        |  Eligendi eos voluptate fugit, odit, maxime tempora expedita dolorem tenetur omnis laboriosam sunt delectus, dolor earum officiis.
+                    div.display__desktop
+                        a.btn__primary--medium-nocolor(href="www") Ir a la página
+                +component-slide-img
+                //- Button mobile
+                div.display__mobile
+                        a.btn__primary--small-nocolor(href="www")  Ir a la página
+
+        //- slider imágenes LABe
+        section.box__background.padding__bottom-large
+            div.padding.display__flex.content__center.content__max.gap
+                +component-slide-img
+                div.box__content
+                    h4.padding__bottom-regular Lorem ipsum 
+                    p.padding__bottom-regular.text-small
+                        strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel sed neque repellendus.
+                        |  Eligendi eos voluptate fugit, odit, maxime tempora expedita dolorem tenetur omnis laboriosam sunt delectus, dolor earum officiis.
+                    div.display__desktop
+                        a.btn__primary--medium-nocolor(href="www") Ir a la página
+                //- Button mobile
+                div.display__mobile
+                        a.btn__primary--small-nocolor(href="www")  Ir a la página
+        
+        //- slider imágenes GOE
+        //- section.padding__topbottom-large.display__flex.content__center.content__max.gap
+        //-     +component-slide-img
+        //-     div.box__content
+        //-         h4.padding__bottom-regular Lorem ipsum 
+        //-         p.padding__bottom-regular.text-small
+        //-             strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel sed neque repellendus.
+        //-             |  Eligendi eos voluptate fugit, odit, maxime tempora expedita dolorem tenetur omnis laboriosam sunt delectus, dolor earum officiis.
+        //-         //- Button desktop
+        //-         div.display__desktop
+        //-             a.btn__primary--medium-nocolor(href="www") Ir a la página
+        //-     //- Button mobile
+        //-     div.display__mobile
+        //-             a.btn__primary--small-nocolor(href="www")  Ir a la página
+            
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")
+    script(src="../js/swiper3.js")
+    script(src="../js/function.js")

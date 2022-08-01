@@ -194,7 +194,7 @@ $primary-font: "League Spartan", sans-serif;
 $spartan-light: 300;
 $spartan-regular: 400;
 $spartan-medium: 500;
-$spartan-bold: 700;
+$spartan-bold: 600;
 //Font EB Garamond
 $garamond-font:"EB Garamond", serif;
 $garamond-600: 600;
@@ -256,6 +256,10 @@ span {
 .primaryfont__bold {
     line-height: 1.1;
     font-weight: $spartan-bold;
+}
+.primaryfont__medium {
+    line-height: 1.1;
+    font-weight: $spartan-medium;
 }
 h1, h2, h3, h4, a, p, label {
     line-height: 1.3;

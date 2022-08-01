@@ -1,14 +1,23 @@
 .swiper {
     width: 100%;
     height: 100%;
-    padding: 10px 10px 40px 10px;
+    padding: 0 0 24px 0;
     @include respond-to(large) {
-        padding: 10px 0 40px 0;
+        padding: 10px 0 40px 0px;
     }
     &__fullwidth {
         @include respond-to(large) {
             width: 100%;
         }
+    }
+}
+.swiper3 {
+    overflow: hidden;
+    width: 100%;
+    z-index: 0;
+    padding: 32px 32px 24px 24px;
+    @include respond-to(large) {
+        padding: 32px 32px 24px 0;
     }
 }
 .swiper-slide {
@@ -33,6 +42,16 @@
     &-background {
         background-image: url(../src/images/img-cabecera.jpg);
     }
+    // &-img3{
+    //     @extend .swiper-slide;
+    //     width: 40%;
+    //     img {
+    //         display: block;
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;
+    //     }
+    // }
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {

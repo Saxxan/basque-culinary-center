@@ -63,8 +63,14 @@
         padding-top: $xx-large;
     }
     // Top / Bottom
+    &__topbottom-x-regular {
+        padding: $x-regular 0;
+    }
+    &__topbottom-regular {
+        padding: $regular;
+    }
     &__topbottom-large {
-        padding: $large 0;
+        padding: $large $large $regular $regular;
     }
     &__topbottom-x-large {
         padding: $x-large 0;

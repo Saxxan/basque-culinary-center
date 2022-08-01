@@ -51,18 +51,37 @@ include ../components/layout/head.pug
         //- div.swiper-pagination
 
         //- HOME cabecera (desktop/mobile)
-        div.swiper__fullwidth.swiper2
-            div.swiper-wrapper
-                .swiper-slide.swiper-slide-board.swiper-slide-background
-                    h1 1/02
-                    h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
-                    h4 Inscripción abierta para el nuevo curso 2022-2023
-                    a.btn__primary--large-nocolor-width(href="#") más información
+        //- div.swiper__fullwidth.swiper2
+        //-     div.swiper-wrapper
+        //-         .swiper-slide.swiper-slide-board.swiper-slide-background
+        //-             h1 1/02
+        //-             h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+        //-             h4 Inscripción abierta para el nuevo curso 2022-2023
+        //-             a.btn__primary--large-nocolor-width(href="#") más información
             
-            .swiper-button-next
-            .swiper-button-prev
+        //-     .swiper-button-next
+        //-     .swiper-button-prev
+
+        //- INNOVATION Home, slider imágenes
+        div.swiper.mySwiper
+            div.swiper-wrapper
+                //- cambiando por la clase .swiper-slide-img3 tendría que salirse la imagen
+                div.swiper-slide
+                    img(src="../src/images/img-noticias.jpg", alt="")
+                div.swiper-slide
+                    img(src="../src/images/img-noticias.jpg", alt="")
+                div.swiper-slide
+                    img(src="../src/images/img-noticias.jpg", alt="")
+                div.swiper-slide
+                    img(src="../src/images/img-noticias.jpg", alt="")
+                div.swiper-slide
+                    img(src="../src/images/img-noticias.jpg", alt="")
+            
+            div.swiper-pagination
 
             
         script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
-        script(src="../js/swiper.js")
-        script(src="../js/swiper2.js")
+        script(src="../js/swiper3.js")
+        //- script(src="../js/swiper2.js")
+        //- script(src="../js/swiper.js")
+        

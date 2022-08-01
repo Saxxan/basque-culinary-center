@@ -19,6 +19,9 @@
         &--icon {
             color: $c-primary-dark;
         }
+        &--action {
+            color: $c-marcas-culinary-action;
+        }
     }
     &__desktop {
         @include respond-to(large) {
