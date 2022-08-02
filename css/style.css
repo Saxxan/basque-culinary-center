@@ -138,6 +138,12 @@ h1, h2, h3 {
 .display__one {
   display: none;
 }
+.display__button {
+  display: none;
+}
+.display__innovation {
+  display: none;
+}
 
 .vertical-line__big {
   width: 3px;
@@ -591,6 +597,7 @@ hr {
 .btn__primary--medium-color-width {
   width: auto;
   background-color: #B36206;
+  border: 1px solid #B36206;
 }
 .btn__primary--medium-color-menu {
   color: #F4F3EF;
