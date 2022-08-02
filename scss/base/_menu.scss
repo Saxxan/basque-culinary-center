@@ -2,10 +2,12 @@
     MENÚ PRINCIPAL
 \*------------------------------------*/
 .menu {
+    height: 70px;
     border-bottom: 1px solid grey;
     @include respond-to(large) {
         display: flex;
         padding: $regular $small;
+        height: 146px;
     }
     &__toggle {
         cursor: pointer;
@@ -50,6 +52,8 @@
         }
     }
     &__logo {
+        margin-top: 10px;
+        margin-left: 5px;
         max-width: 80px;
         @include respond-to(large) {
             max-width: 137px;
@@ -74,6 +78,25 @@
             list-style: none;
             display: flex;
             align-items: center;
+        }
+    }
+    &__index {
+        text-transform: none;
+        background-color: $c-monocromo-100;
+        &--panel {
+            background-color: $c-monocromo-100;
+        }
+        &--list {
+            list-style: none;
+        }
+        &--item {
+            padding-bottom: $small;
+        }
+        &--link {
+            color: $c-monocromo-900;
+            font-size: 20px;
+            line-height: 20px;
+            text-decoration-line: underline;
         }
     }
 }

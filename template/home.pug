@@ -21,7 +21,7 @@ include ../components/layout/head.pug
                 div
                     +menu-gradient("gradient__innovation")
                     include ../components/menu/topbar.pug
-                    +menu("display__desktop", "display__mobile")
+                    +menu("")
                     
             //- slide cabecera
             //- div.swiper__fullwidth.swiper2
@@ -109,7 +109,7 @@ include ../components/layout/head.pug
             //- un motor de cambio
             div.padding__top-x-large
                 +component-title("box__background", "", "")
-            +component-noticia-principal("box__background", "", "", "display__one")
+                +component-noticia-principal("box__background", "", "", "display__one")
             //- un motor de cambio - slider areas de trabajo
             section.padding__bottom-x-large.box__background
                     +component-subtitle("")
@@ -140,7 +140,7 @@ include ../components/layout/head.pug
             div.padding__top-xx-large
                 +component-title("", "", "")
             section.padding
-                +component-img-left("display__none", "")
+                +component-img-left("grid__c2", "", "display__none", "")
             section.padding__top-x-large.padding__bottom-xx-large
                     +component-subtitle("")
                     div.swiper.mySwiper.box__swiper.content__max
@@ -167,9 +167,9 @@ include ../components/layout/head.pug
                     div.padding.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- una visión integral
-            section.padding.box__background.padding__top-x-large 
+            section.padding__regular-xx-large.box__background
                 +component-title-link("", "")
-            +component-noticia-principal("box__background", "box__img--border", "display__none", "")
+                +component-noticia-principal("box__background", "box__img--border", "display__none", "")
             //- noticias target desktop
             section.padding.padding__top-x-large.box__background.display__desktop
                 div.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large

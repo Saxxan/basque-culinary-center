@@ -1,17 +1,18 @@
-mixin component-img-left(displayNone="display__none", displayOne="display__one")
-    div.grid__c2.content__center.content__max
-        div  
+mixin component-img-left(grid=".grid__c2", justifyContent="box__content", displayNone="display__none", displayOne="display__one")
+    div.display__flex.content__center.content__max.gap(class= grid)
+        div(class= justifyContent)
             div(class= displayNone)
                 span.tag__card--grey.display__desktop Etiqueta 01 
             h3.padding__topbottom-x-regular.primaryfont__bold(class= displayNone) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             p.padding__bottom-x-regular.x-small.box__color-home(class= displayNone) Redacción BCC
-            p.padding__bottom-x-regular.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
-            p.padding__bottom-x-large.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequatLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat
+            p.padding__bottom-x-regular.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla.
+            p.padding__bottom-large.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequatLorem ipsum dolor sit amet.
             div.padding__bottom-x-regular.display__desktop(class= displayOne)
                 a.btn__primary--medium-color-width(href="www") Acceder a empresas
-            div.padding__bottom-x-regular.display__desktop(class= displayOne) 
+            div.padding__bottom-x-regular.display__desktop 
                 a.btn__primary--medium-nocolor-width(href="www") Formas de colaboración
 
         div
-            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+            img(class="box__img" src="../../src/images/img-noticias.jpg", alt="")
+        
         

@@ -138,6 +138,12 @@
             justify-content: space-evenly;
             align-items: flex-start;
         }
+        &--right {
+            @extend .box__content;
+            @include respond-to(large) {
+            order: 2;
+            }
+        }
     }
     &__color{
         &-home {

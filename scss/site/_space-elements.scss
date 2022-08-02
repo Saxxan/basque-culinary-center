@@ -67,9 +67,12 @@
         padding: $x-regular 0;
     }
     &__topbottom-regular {
-        padding: $regular;
+        padding: $regular 0;
     }
     &__topbottom-large {
+        padding: $large 0;
+    }
+    &__regular-large {
         padding: $large $large $regular $regular;
     }
     &__topbottom-x-large {
@@ -77,6 +80,9 @@
     }
     &__topbottom-xx-large {
         padding: $xx-large 0;
+    }
+    &__regular-xx-large {
+        padding: $xx-large $regular;
     }
 }
 h1 {

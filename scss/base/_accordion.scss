@@ -12,7 +12,7 @@
     border-radius: $btnprimary-radius;
     font-family: $primary-font;
     &::after {
-        content: url("../../src/iconos/location.svg");
+        content: url("../../src/iconos/accordion-open.svg");
         float: right;
     }
     &__item {
@@ -20,7 +20,10 @@
     }
 
 }
-.active{
+.order {
+    order: 1;
+}
+.active {
     &.accordion {
         border-radius: $btnprimary-radius $btnprimary-radius 0 0;
     }

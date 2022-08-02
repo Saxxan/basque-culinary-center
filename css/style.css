@@ -236,11 +236,17 @@ hr {
   font-family: "League Spartan", sans-serif;
 }
 .accordion::after {
-  content: url("../../src/iconos/location.svg");
+  content: url("../../src/iconos/accordion-open.svg");
   float: right;
 }
 .accordion__item {
   margin-bottom: 24px;
+}
+
+.order {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .active.accordion {
@@ -434,7 +440,7 @@ hr {
   }
 }
 @media (min-width: 1024px) {
-  .box__content {
+  .box__content, .box__content--right {
     width: 35%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -449,6 +455,13 @@ hr {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .box__content--right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 .box__color-home {
@@ -1188,6 +1201,7 @@ em.error {
     MENÚ PRINCIPAL
 \*------------------------------------*/
 .menu {
+  height: 70px;
   border-bottom: 1px solid grey;
 }
 @media (min-width: 1024px) {
@@ -1196,6 +1210,7 @@ em.error {
     display: -ms-flexbox;
     display: flex;
     padding: 24px 16px;
+    height: 146px;
   }
 }
 .menu__toggle {
@@ -1259,6 +1274,8 @@ em.error {
   }
 }
 .menu__logo {
+  margin-top: 10px;
+  margin-left: 5px;
   max-width: 80px;
 }
 @media (min-width: 1024px) {
@@ -1292,6 +1309,26 @@ em.error {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.menu__index {
+  text-transform: none;
+  background-color: #F4F3EF;
+}
+.menu__index--panel {
+  background-color: #F4F3EF;
+}
+.menu__index--list {
+  list-style: none;
+}
+.menu__index--item {
+  padding-bottom: 16px;
+}
+.menu__index--link {
+  color: #26201B;
+  font-size: 20px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .close,
@@ -1877,9 +1914,12 @@ img {
   padding: 20px 0;
 }
 .padding__topbottom-regular {
-  padding: 24px;
+  padding: 24px 0;
 }
 .padding__topbottom-large {
+  padding: 32px 0;
+}
+.padding__regular-large {
   padding: 32px 32px 24px 24px;
 }
 .padding__topbottom-x-large {
@@ -1887,6 +1927,9 @@ img {
 }
 .padding__topbottom-xx-large {
   padding: 64px 0;
+}
+.padding__regular-xx-large {
+  padding: 64px 24px;
 }
 
 h1 {
