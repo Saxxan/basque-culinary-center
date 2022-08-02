@@ -2,12 +2,13 @@
 // >> Floating Labels
 // --------------------------------------------------------
 .form-floating {
+    width: 100%;
     position: relative;
-    margin-bottom: $small;
+    margin-bottom: $regular;
     > .form-control,
     > .form-select {
         height: 55px;
-        padding: 1rem 1rem;
+        padding: 1rem;
     }
     > label {
         position: absolute;
@@ -15,7 +16,7 @@
         left: 0;
         font-weight: 400;
         height: 100%;
-        padding: 1rem 1rem;
+        padding: 1rem;
         pointer-events: none;
         transform-origin: 0 0;
         -webkit-transition: opacity .1s ease-in-out, transform .1s ease-in-out;
@@ -78,7 +79,22 @@
         outline: none;
     }
 } 
-
+textarea {
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 220px;
+    @include respond-to(medium) {
+        max-height: 220px;
+        max-width: 100%;
+    }
+    @include respond-to(large) {
+        max-height: 220px;
+        max-width: 100%;
+    }
+    &::placeholder {
+        padding: 1rem;
+    }
+}
 // --------------------------------------------------------
 // >> Form Validation
 // --------------------------------------------------------

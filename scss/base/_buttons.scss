@@ -43,6 +43,7 @@
                 &-width {
                     @extend .btn__primary--medium-color;
                     width: auto;
+                    background-color: $c-primary-default;
                 }
                 &-menu {
                     @extend .btn__primary--medium-color;

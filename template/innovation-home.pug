@@ -3,54 +3,104 @@ include ../components/column/component-noticia-principal.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu.pug
 include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
 include ../components/layout/head.pug
     block content
-        //- menu
-        div
-            +menu-gradient("gradient__innovation")
-            include ../components/menu/topbar.pug
-            +menu("display__none")
-            +menu-index()
-        //- noticias principal
-        section.padding__regular-xx-large.box__background
-            +component-noticia-principal("box__background", "", "display__none", "")
-        //- section bcc innovation
-        section.padding__regular-large.content__center.content__max
-            div.padding__topbottom-large
-                img(src="../src/images/cabecera-innovation.png", alt="")
-            +component-img-left("", "box__content", "display__none", "display__one")
-            div.display__mobile.padding__top-large
-                a.btn__primary--small-nocolor(href="www") Ir a la página
-        //- section bcc action - order 2
-        section.padding__regular-large.content__center.content__max
-            div.padding__topbottom-large
-                img(src="../src/images/cabecera-action.png", alt="")
-            +component-img-left("", "box__content--right", "display__none", "display__one")
-            div.display__mobile.padding__top-large
-                a.btn__primary--small-nocolor(href="www") Ir a la página
-        //- section lab
-        section.padding__regular-large.content__center.content__max
-            div.padding__topbottom-large
-                img(src="../src/images/logo-LABe.png", alt="")
-            +component-img-left("", "box__content", "display__none", "display__one")
-            div.display__mobile.padding__top-large
-                a.btn__primary--small-nocolor(href="www") Ir a la página
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-index()
+            //- noticias principal
+            section.padding__regular-xx-large.box__background
+                +component-noticia-principal("box__background", "", "display__none", "")
+            //- section bcc innovation
+            section.padding__regular-xx-large.content__center.content__max
+                div.padding__topbottom-large
+                    img(src="../src/images/cabecera-innovation.png", alt="")
+                +component-img-left("", "box__content", "display__none", "display__one")
+                div.display__mobile.padding__top-large
+                    a.btn__primary--small-nocolor(href="www") Ir a la página
+            //- section bcc action - order 2
+            section.padding__p-bottom-large.content__center.content__max
+                div.padding__topbottom-large
+                    img(src="../src/images/cabecera-action.png", alt="")
+                +component-img-left("", "box__content--right", "display__none", "display__one")
+                div.display__mobile.padding__top-large
+                    a.btn__primary--small-nocolor(href="www") Ir a la página
+            //- section lab
+            section.padding__p-bottom-xx-large.content__center.content__max
+                div.padding__topbottom-large
+                    img(src="../src/images/logo-LABe.png", alt="")
+                +component-img-left("", "box__content", "display__none", "display__one")
+                div.display__mobile.padding__top-large
+                    a.btn__primary--small-nocolor(href="www") Ir a la página
+            //- section form
+            section.box__background.padding 
+                div.content__max.content__center.padding__top-xx-large 
+                    h4.primaryfont__bold.padding__bottom-regular Contacto con Innovación
+                    h4.primaryfont__bold.padding__bottom-regular BASQUE CULINARY CENTER INNOVACIÓN
+                    p.text-small Paseo Juan Avellino Barriola, 101 
+                    p.text-small.padding__bottom-regular 20009 Donostia · San Sebastián. Ver en 
+                        a.primaryfont__bold(href="www") Google Maps  
+                    div.box__icon
+                        img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                        span.box__icon--date
+                            p.text-small 943 574 500
+                    div.box__icon
+                        img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                        span.box__icon--date
+                            p.text-small ndelafuente@bculibary.com
+                //- form
+                form(class="form padding__topbottom-x-large" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                    section.content__max.content__center
+                        h4.primaryfont__bold.padding__bottom-regular Formulario
+                        .form__inputs.gap__form.content__center
+                            .form-floating
+                                input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                                label(for="nombre") * Nombre
+                            .form-floating
+                                input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                                label(for="apellidos") * Apellidos
+                        .form__inputs.gap__form.content__center
+                            .form-floating
+                                input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
+                                label(for="pais") *País
+                            .form-floating
+                                label(for="opciones")
+                                select(name="opciones" class="form-control") 
+                                    option(selected disabled) Selecciona una opción
+                                    option(value="opcion 1") Opción 1
+                                    option(value="opcion 2") Opción 2
+                        div
+                            label(for="mensaje")
+                            textarea(name="mensaje" class="content__center form-control" id="mensaje" placeholder="Mensaje") Mensaje
+                            //- checkmarck
+                        div.form__policity.text-small.content__center
+                            label.container
+                                input(type='checkbox')
+                                span.checkmark__radio
+                            p.text-small.form__policity-text He leído y acepto la 
+                                a(href="www") política de privacidad 
+                            
+                            .submit.padding__top-regular
+                                button.btn__primary--medium-color-width Enviar datos   
+
+                        
+                    
+
+                        
+                    
+                
         
         
-        //- slider imágenes GOE
-        //- section.padding__topbottom-large.display__flex.content__center.content__max.gap
-        //-     +component-slide-img
-        //-     div.box__content
-        //-         h4.padding__bottom-regular Lorem ipsum 
-        //-         p.padding__bottom-regular.text-small
-        //-             strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel sed neque repellendus.
-        //-             |  Eligendi eos voluptate fugit, odit, maxime tempora expedita dolorem tenetur omnis laboriosam sunt delectus, dolor earum officiis.
-        //-         //- Button desktop
-        //-         div.display__desktop
-        //-             a.btn__primary--medium-nocolor(href="www") Ir a la página
-        //-     //- Button mobile
-        //-     div.display__mobile
-        //-             a.btn__primary--small-nocolor(href="www")  Ir a la página
+        //- footer
+        +footer("box__background--white")    
+            
+        
             
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/accordion.js")

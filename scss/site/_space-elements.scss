@@ -34,12 +34,23 @@
     &__bottom-large {
         padding-bottom: $large;
     }
+    &__p-bottom-large {
+        padding-bottom: $large;
+        padding-left: $regular;
+        padding-right: $regular;
+    }
     &__bottom-x-large {
         padding-bottom: $x-large;
     }
     &__bottom-xx-large {
         padding-bottom: $xx-large;
     }
+    &__p-bottom-xx-large {
+        padding-bottom: $xx-large;
+        padding-left: $regular;
+        padding-right: $regular;
+    }
+    
     // Top
     &__top-small {
         padding-top: $small;

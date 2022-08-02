@@ -50,6 +50,9 @@
 }
 .gap {
     gap: $large;
+    &__form {
+        gap: $regular;
+    }
 }
 hr {
     height: 1px;

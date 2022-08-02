@@ -11,6 +11,9 @@
         &--innovation {
             background-color: rgba($c-marcas-bcc-innovation, .1);
         }
+        &--white {
+            background-color: $c-white;
+        }
     }
     &__icon {
         display: flex;
