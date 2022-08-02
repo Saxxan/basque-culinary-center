@@ -57,29 +57,61 @@
                 border: 2px solid $c-button-disabled;
             }
     }
-
-    @if $background == salud {
-        color: $c-marcas-bcc-innovation;
-        background-color: $c-white;
-        border: 2px solid $c-marcas-bcc-innovation;
+    // innovation color
+    @if $background == innovationColor {
+        color: $c-white;
+        background-color: $c-button-primary-innovation;
+        border: 2px solid $c-button-primary-innovation;
             
             &:link {
-                color: $c-marcas-bcc-innovation;
-                border: 2px solid $c-marcas-bcc-innovation;
+                color: $c-white;
+                background-color: $c-button-primary-innovation;
+                border: 2px solid $c-button-primary-innovation;
             }
             &:visited {
-                color: $c-marcas-bcc-innovation;
-                border: 2px solid $c-marcas-bcc-innovation;
+                color: $c-white;
+                background-color: $c-button-hover-innnovation;
+                border: 2px solid $c-button-hover-innnovation;
             }
             &:hover {
-                color: $c-marcas-bcc-innovation;
-                border: 2px solid $c-marcas-bcc-innovation;
+                color: $c-white;
+                background-color: $c-button-hover-innnovation;
+                border: 2px solid $c-button-hover-innnovation;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                color: $c-white;
+                background-color: $c-button-primary-innovation;
+                border: 2px solid $c-button-primary-innovation;
+            }
+    }
+    // innovation nocolor
+    @if $background == innovationNoColor {
+        color: $c-button-primary-innovation;
+        background-color: $c-white;
+        border: 2px solid $c-button-primary-innovation;
+            
+            &:link {
+                color: $c-button-primary-innovation;
+                background-color: $c-white;
+                border: 2px solid $c-button-primary-innovation;
+            }
+            &:visited {
+                color: $c-button-hover-innnovation;
+                background-color: $c-white;
+                border: 2px solid $c-button-hover-innnovation;
+            }
+            &:hover {
+                color: $c-button-hover-innnovation;
+                background-color: $c-white;
+                border: 2px solid $c-button-hover-innnovation;
             }
             &:disabled {
                 cursor: not-allowed;
                 pointer-events: none;
-                color: $c-marcas-bcc-innovation;
-                border: 2px solid $c-marcas-bcc-innovation;
+                color: $c-button-primary-innovation;
+                background-color: $c-white;
+                border: 2px solid $c-button-primary-innovation;
             }
     }
 

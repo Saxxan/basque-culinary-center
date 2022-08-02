@@ -53,11 +53,18 @@
     &__text {
         text-align: center;
     }
+    &__right {
+        justify-content: right;
+    }
 }
 .gap {
     gap: $large;
     &__form {
         gap: $regular;
+    }
+    &__logos {
+        gap: 50px;
+        justify-content: center;
     }
 }
 hr {

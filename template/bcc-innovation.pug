@@ -1,0 +1,125 @@
+include ../components/layout/footer.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-index()
+            //- cabecera
+            section.padding__regular-xx-large.content__center.content__max
+                div.padding__topbottom-large
+                    img(src="../src/images/cabecera-innovation.png", alt="")
+                div 
+                    p.text-medium.padding__bottom-large Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    p.text-medium.padding__bottom-large Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                div.display__desktop.display__flex.gap.content__right 
+                    a.btn__primary--medium-nocolor-innovation-width(href="www") Proyectos
+                    a.btn__primary--medium-color-innovation-width(href="www") Líneas de investigación
+                div.display__mobile.padding__bottom-large
+                    a.btn__primary--medium-nocolor-innovation(href="www") Proyectos
+                div.display__mobile
+                    a.btn__primary--medium-color-innovation(href="www") Líneas de investigación
+            //- noticias principal
+            section.padding__regular-xx-large.box__background--innovation
+                +component-noticia-principal("tag__card--grey", "", "", "display__innovation", "display__button", "", "")
+            //- sección texto
+            section.padding__regular-xx-large.content__center.content__max
+                div
+                    h3.primaryfont__bold Qué hacemos
+                div.padding__bottom-large 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                div.padding__bottom-large 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                div 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+            section.padding__p-bottom-large.content__center.content__max
+                div
+                    h3.primaryfont__bold Quienes somos
+                div
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                div 
+                    ul 
+                        li.padding__bottom-large
+                            p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu
+                        li.padding__bottom-large 
+                            p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu
+                        li 
+                            p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu
+            
+            section.padding.padding__p-bottom-large.content__center.content__max
+                div
+                    h3.primaryfont__bold Empresas colaboradoras
+                div
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            //- sección logos
+            section.display__flex.padding__regular-xx-large.content__center.gap__logos
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-resort-marriot.jpg", alt="")
+                    img(src="../src/images/logo-nh-hoteles.jpg", alt="")
+                    img(src="../src/images/logo-hoteles-restaurantes-paradores.jpg", alt="")
+                    a.display__mobile.btn__primary--medium-nocolor-innovation(href="www") Servicios para empresas
+            //- section form
+            section.box__background.padding 
+                div.content__max.content__center.padding__top-xx-large 
+                    h4.primaryfont__bold.padding__bottom-regular Contacto con Innovación
+                    h4.primaryfont__bold.padding__bottom-regular BASQUE CULINARY CENTER INNOVACIÓN
+                    p.text-small Paseo Juan Avellino Barriola, 101 
+                    p.text-small.padding__bottom-regular 20009 Donostia · San Sebastián. Ver en 
+                        a.primaryfont__bold(href="www") Google Maps  
+                    div.box__icon
+                        img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                        span.box__icon--date
+                            p.text-small 943 574 500
+                    div.box__icon
+                        img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                        span.box__icon--date
+                            p.text-small ndelafuente@bculibary.com
+                //- form
+                form(class="form padding__topbottom-x-large" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                    section.content__max.content__center
+                        h4.primaryfont__bold.padding__bottom-regular Formulario
+                        .form__inputs.gap__form.content__center
+                            .form-floating
+                                input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                                label(for="nombre") * Nombre
+                            .form-floating
+                                input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                                label(for="apellidos") * Apellidos
+                        .form__inputs.gap__form.content__center
+                            .form-floating
+                                input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
+                                label(for="pais") *País
+                            .form-floating
+                                label(for="opciones")
+                                select(name="opciones" class="form-control") 
+                                    option(selected disabled) Selecciona una opción
+                                    option(value="opcion 1") Opción 1
+                                    option(value="opcion 2") Opción 2
+                        div
+                            label(for="mensaje")
+                            textarea(name="mensaje" class="content__center form-control" id="mensaje" placeholder="Mensaje") Mensaje
+                            //- checkmarck
+                        div.form__policity.text-small.content__center
+                            label.container
+                                input(type='checkbox')
+                                span.checkmark__radio
+                            p.text-small.form__policity-text He leído y acepto la 
+                                a(href="www") política de privacidad 
+                            
+                            .submit.padding__top-regular
+                                button.btn__primary--medium-color-width Enviar datos       
+        //- footer
+        +footer("box__background--white")  

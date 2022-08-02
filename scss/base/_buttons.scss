@@ -88,9 +88,27 @@
                 }
             }
             // button innovation
+            &--medium-color-innovation {
+                @extend .btn__primary;
+                @include btn__primary ($background: innovationColor, $size : medium);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--medium-color-innovation;
+                    width: auto;
+                }
+            }
+            &--medium-nocolor-innovation {
+                @extend .btn__primary;
+                @include btn__primary ($background: innovationNoColor, $size : medium);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--medium-nocolor-innovation;
+                    width: auto;
+                }
+            }
             &--small-nocolor-innovation {
                 @extend .btn__primary;
-                @include btn__primary ($background: salud, $size : small);
+                @include btn__primary ($background: innovationColor, $size : small);
                 font-weight: 400;
                 &-width {
                     @extend .btn__primary--small-nocolor-innovation;
