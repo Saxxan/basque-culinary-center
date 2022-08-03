@@ -4,16 +4,33 @@
 .link {
     text-transform: uppercase;
     text-decoration: none;
-    color: $c-primary-dark;
     font-weight: 500;
-    &:link,
-    &:active {
-        color: $c-primary-dark;
-    }
-    &:hover { 
+    &__color-home {
+        @extend .link;
         color: $c-primary-default;
+        &:link,
+        &:active {
+            color: $c-primary-dark;
+        }
+        &:hover { 
+            color: $c-primary-default;
+        }
+        &:focus { 
+            color: $c-primary-dark ;
+        } 
     }
-    &:focus { 
-        color: $c-primary-dark ;
-    } 
+    &__color-innovation {
+        @extend .link;
+        color: $c-marcas-bcc-innovation;
+        &:link,
+        &:active {
+            color: $c-marcas-bcc-innovation;
+        }
+        &:hover { 
+            color: $c-marcas-bcc-innovation;
+        }
+        &:focus { 
+            color: $c-marcas-bcc-innovation;
+        } 
+    }
 }

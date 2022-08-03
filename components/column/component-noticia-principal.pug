@@ -1,16 +1,17 @@
-mixin component-noticia-principal(tagColor= "tag__grado", colorBackground="box__background--innovation", borderBottom= "box__img--border", displayInnovation="display__innovation", displayButton= "display__button", displayNone="display_none", displayOne="display__one")
-    section(class= colorBackground)
-        div.box__principal.content__center.content__max
+mixin component-noticia-principal(linkColor= "link__color-innovation", textColor= "color__text-innovation", classButton= "btn__primary--medium-color", tagColor= "tag__grado", colorBackground="box__background--innovation", borderBottom= "box__img--border", displayInnovation="display__innovation", displayButton= "display__button", displayNone="display__none", displayOne="display__one")
+    section.padding(class= colorBackground)
+        div.box__principal.content__center.content__max.gap
+            div(class= displayOne)
+                span.box__tag(class= tagColor) Etiqueta 01
             div
-                span.box__tag(class= displayOne)(class= tagColor) Etiqueta 01
                 img(class="box__img" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
             div.box__content
                 h3.box__title.primaryfont__bold(class= displayOne) Toni Segarra: «No es momento para el marketing».
                 p.display__desktop.x-small(class= displayOne)(class= displayInnovation) 01/01/2022
-                p.x-small.box__color-home(class= displayNone)(class= displayOne) Redacción BCC
+                p.x-small(class= displayNone)(class= displayOne)(class= textColor) Redacción BCC
                 p.box__description.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non.
-                a(class="link text-small box__link display__desktop" href="#")(class= displayOne) Leer más 
+                a(class="text-small display__desktop" href="www")(class= displayOne)(class= linkColor) Leer más 
                     img(class="svg__icon" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
                 div.display__desktop(class= displayButton)
-                    a.btn__primary--medium-color(href="www") Acceder a la sección
+                    a(href="www")(class= classButton) Acceder a la sección
             

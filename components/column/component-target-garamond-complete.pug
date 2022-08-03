@@ -1,8 +1,8 @@
-mixin component-target-garamond-complete(colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
+mixin component-target-garamond-complete(colorTag= "tag__primary", colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
     div.box
         div
             div(class= displayDesktop) 
-                span.tag__innovation.box__tag Innovación
+                span.box__tag(class= colorTag) Innovación
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
         div.box__icon--tag
             img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")(class= displayDesktop)

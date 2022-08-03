@@ -73,3 +73,16 @@ hr {
     width: 100%;
     background-color: $c-monocromo-900;
 }
+.color {
+    &__text {
+        &-innovation {
+            color: $c-marcas-bcc-innovation;
+        }
+        &-home {
+            color: $c-primary-default;
+        }
+    }
+}
+a {
+    color: $c-monocromo-900;
+}

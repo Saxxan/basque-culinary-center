@@ -47,38 +47,38 @@ include ../components/layout/head.pug
                     div.swiper.mySwiper.display__flex.content__max
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
-                                +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                         div.swiper-pagination
             
             //- nuestra agenda mobile
             section.padding.padding__topbottom-x-large.box__background.display__mobile
                 +component-title-link("", "")
                 div.padding.gap.display__flex.content__center.content__max
-                    +component-target-garamond-complete("box__icon--date-home", "", "display__mobile", "display__none", "")
-                    +component-target-garamond-complete("box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
-                    +component-target-garamond-complete("box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
+                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                    +component-target-garamond-complete("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
             //- últimas noticias, dos columnas
             section.padding.padding__bottom-x-large.box__background
                 +component-subtitle-link("", "")
                 div.display__flex.gap.content__max.content__center
-                    +component-noticia-target("box__tag", "", "", "", "", "display__none")
-                    +component-noticia-target("", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
+                    +component-noticia-target("link__color-home", "box__tag", "", "", "", "", "display__none")
+                    +component-noticia-target("link__color-home", "", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
                     div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- tabs .display__desktop
@@ -98,41 +98,41 @@ include ../components/layout/head.pug
             //- vertical line
             +component-subtitle("")
             section.content__center.content__max.display__flex.padding__bottom-xx-large
-                +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
-                +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
-                +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
-                +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
-                +component-vertical-line("card__details--margin", "", "display__mobile", "", "", "display__one")
+                +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                     hr.padding.display__mobile
                 div.padding.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- un motor de cambio
             div.padding__top-x-large
                 +component-title("box__background", "", "")
-                +component-noticia-principal("", "box__background", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
             //- un motor de cambio - slider areas de trabajo
             section.padding__bottom-x-large.box__background
                     +component-subtitle("")
                     div.swiper.mySwiper.box__swiper.content__max
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                         div.swiper-pagination
                     div.padding.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
@@ -146,46 +146,46 @@ include ../components/layout/head.pug
                     div.swiper.mySwiper.box__swiper.content__max
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-slide
-                                +component-vertical-line("card__details", "card__line--none", "", "", "display__none", "")
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                         div.swiper-pagination
                     div.padding.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- una visión integral
             section.padding__regular-xx-large.box__background
                 +component-title-link("", "")
-                +component-noticia-principal("tag__card--grey", "box__background", "box__img--border", "", "display__button", "display__none", "")
+                +component-noticia-principal("link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border", "", "display__button", "display__none", "")
             //- noticias target desktop
             section.padding.padding__top-x-large.box__background.display__desktop
                 div.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
-                    +component-noticia-target("box__tag", "", "box__img--border", "", "", "display__none")
-                    +component-noticia-target("", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
-                    +component-noticia-target("", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                    +component-noticia-target("link__color-home", "box__tag", "", "box__img--border", "", "", "display__none")
+                    +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                    +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
             //- noticias target mobile
             section.box__background.display__mobile
                     div.swiper.mySwiper.box__swiper
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-noticia-target( "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                                +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
-                                +component-noticia-target( "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                                +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
-                                +component-noticia-target( "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                                +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             
                         div.swiper-pagination
                     div.padding.padding__top-small.padding__bottom-x-large.display__mobile
@@ -194,8 +194,10 @@ include ../components/layout/head.pug
             div.padding__top-xx-large 
                 +component-title("", "", "")
             div.padding.padding__bottom-xx-large.display__flex.gap.content__max.content__center
-                +component-target-info-event("padding__bottom-large", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
-                +component-target-info-event("", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")   
+                +component-target-info-event("", "padding__bottom-large", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                +component-target-info-event("", "", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+            div.padding.padding__bottom-xx-large.content__max.content__center
+                +component-target-info-event("display__flex", "padding__bottom-large", "box__icon--date-home", "display__desktop", "display__mobile", "", "display__one")
         //- footer
         +footer("box__background")
     

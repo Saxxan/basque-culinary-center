@@ -46,7 +46,6 @@
     }
     &__principal {
         @extend .box;
-        gap: $regular;
         @include respond-to(large) {
             display: flex;
         }
@@ -126,11 +125,6 @@
             border-radius: $small $small 0 0;
             padding-bottom: 0;
             border-bottom: 5px solid $c-primary-darkmode;
-        }
-    }
-    &__link {
-        @include respond-to(large) {
-            order: 1;
         }
     }
     &__content {

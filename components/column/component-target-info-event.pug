@@ -1,41 +1,42 @@
-mixin component-target-info-event(paddingBottom= "padding__bottom-large", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
-    div
+mixin component-target-info-event(displayFlex= "display__flex", paddingBottom= "padding__bottom-large", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
+    div(class= displayFlex)
         div
             span.tag__entusiastas.box__tag Etiqueta 01
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
-        div(class= displayNone)
-            div.box__icon
-                img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")
-                span.tag__card--grey.box__tag--space  Presencial
-                span.tag__card--border.box__tag--space  Incripción abierta
-        div
-            p.text-small.padding__top-small Restaurante BCC
-            h4.box__title.primaryfont__bold Cita GO-ON
-        hr
-        div.box__date
+        div 
+            div(class= displayNone)
+                div.box__icon
+                    img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")
+                    span.tag__card--grey.box__tag--space  Presencial
+                    span.tag__card--border.box__tag--space  Incripción abierta
             div
-                div.box__icon--date
-                    img(class="svg__icon--margin" src="../src/iconos/calendar.svg#calen" type="img/svg")
-                    span.box__icon--date(class= colorDate)
-                        p.x-small Fecha de publicación: 
-                    p.x-small  04/02/2022
+                p.text-small.padding__top-small Restaurante BCC
+                h4.box__title.primaryfont__bold Cita GO-ON
+            hr
+            div.box__date
+                div
+                    div.box__icon--date
+                        img(class="svg__icon--margin" src="../src/iconos/calendar.svg#calen" type="img/svg")
+                        span.box__icon--date(class= colorDate)
+                            p.x-small Fecha de publicación: 
+                        p.x-small  04/02/2022
 
-                div.box__icon--date
-                    img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
-                    span.box__icon--date(class= colorDate)
-                        p.x-small Horario: 
-                    p.x-small  100€
+                    div.box__icon--date
+                        img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                        span.box__icon--date(class= colorDate)
+                            p.x-small Horario: 
+                        p.x-small  100€
 
-                div.box__icon--date
-                    img(class="svg__icon--margin" src="../src/iconos/users.svg#users" type="img/svg")
-                    span.box__icon--date(class= colorDate)
-                        p.x-small Autor: 
-                    p.x-small  BCC Innovation
-        hr              
-        p.text-medium.box__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
-        div(class= displayMobile)(class= paddingBottom)
-            a.btn__primary--small-color(href="www") Reservar en restaurante BCC
-            //- Button 'más información' innovación
-        div(class= displayDesktop)
-            a.btn__primary--medium-color-width(href="www") Reservar en restaurante BCC
-            //- Button 'más información' innovación
+                    div.box__icon--date
+                        img(class="svg__icon--margin" src="../src/iconos/users.svg#users" type="img/svg")
+                        span.box__icon--date(class= colorDate)
+                            p.x-small Autor: 
+                        p.x-small  BCC Innovation
+            hr              
+            p.text-medium.box__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
+            div(class= displayMobile)(class= paddingBottom)
+                a.btn__primary--small-color(href="www") Reservar en restaurante BCC
+                //- Button 'más información' innovación
+            div(class= displayDesktop)
+                a.btn__primary--medium-color-width(href="www") Reservar en restaurante BCC
+                //- Button 'más información' innovación

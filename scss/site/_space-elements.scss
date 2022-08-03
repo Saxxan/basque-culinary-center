@@ -16,6 +16,14 @@
         }
     }
 }
+.margin {
+    &__bottom-large{
+        margin-bottom: $large;
+    }
+    &__bottom-xx-large{
+        margin-bottom: $xx-large;
+    }
+}
 .padding {
     padding: 0 $regular;
     // Bottom
@@ -52,6 +60,15 @@
     }
     
     // Top
+    &__top-tiny {
+        padding-top: $tiny;
+    }
+    &__top-xx-small {
+        padding-top: $xx-small;
+    }
+    &__top-x-small {
+        padding-top: $x-small;
+    }
     &__top-small {
         padding-top: $small;
     }

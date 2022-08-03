@@ -1,4 +1,4 @@
-mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", borderBottom="box__img--border", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none")
+mixin component-noticia-target(linkColor= "link__color-home", tag="box__tag", tagBloq2="box__tag--bloq2", borderBottom="box__img--border", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none")
     div.gap
         div
             span.tag__entusiastas(class= tag)(class= tagBloq2) Etiqueta 01
@@ -9,7 +9,7 @@ mixin component-noticia-target(tag="box__tag", tagBloq2="box__tag--bloq2", borde
             p.display__mobile.x-small.box__color-home Redacción BCC
             p.box__description.text-small Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat, nisi dui pharetra nibh, eu porttitor dolor odio sit amet felis. 
             div.box__link.display__desktop
-        a(class="link x-small" href="#") Leer más
+        a(class="x-small" href="#")(class= linkColor) Leer más
             img(class="svg__icon" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
             hr.display__mobile
     div.padding__top-regular(class= displayMobile)(class= displayNone)

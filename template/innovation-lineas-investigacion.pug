@@ -1,0 +1,123 @@
+include ../components/column/component-vertical-line.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/layout/footer.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-index()
+            //- cabecera
+            section.padding__regular-xx-large.content__center.content__max
+                div 
+                    h1.primaryfont__bold Líneas de investigación
+                    p.text-medium.padding__bottom-regular Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    ul 
+                        li.padding__bottom-regular 
+                            p.text-medium.primaryfont__bold ECONOMÍA CIRCULAR      
+                        li.padding__bottom-regular 
+                            p.text-medium.primaryfont__bold SOSTENIBILIDAD Y SALUD      
+                    p.text-medium.padding__bottom-large Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            
+            //- DISPLAY__DESKTOP
+            
+            //- salud .display__desktop
+            section.padding__top-x-large.margin__bottom-xx-large.box__background--innovation.display__desktop
+                div.content__center.content__max
+                    h3.primaryfont__bold Salud
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding__top-large.padding__bottom-xx-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
+            //- análisis sensorial .display__desktop
+            section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
+                div.content__center.content__max
+                    h3.primaryfont__bold Análisis sensorial
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+            //- asostenibilidad .display__desktop
+            section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
+                div.content__center.content__max
+                    h3.primaryfont__bold Sostenibilidad
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+            //- desarrollo de producto .display__desktop
+            section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
+                div.content__center.content__max
+                    h3.primaryfont__bold Desarrollo de producto
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+            //- digitalización .display__desktop
+            section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
+                div.content__center.content__max
+                    h3.primaryfont__bold Digitalización
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+            
+            //- DISPLAY__MOBILE
+            include ../components/layout/accordion.pug
+            
+            //- section form
+            section.padding__topbottom-xx-large.box__background
+                div.content__center.content__max.display__flex 
+                    div
+                        h4.primaryfont__bold.padding__bottom-regular Contacto con Innovación
+                        h4.primaryfont__bold.padding__bottom-regular BASQUE CULINARY CENTER INNOVACIÓN
+                        p.text-small Paseo Juan Avellino Barriola, 101 
+                        p.text-small.padding__bottom-regular 20009 Donostia · San Sebastián. Ver en 
+                            a.primaryfont__bold(href="www") Google Maps  
+                        div.box__icon
+                            img(class="svg__icon--margin" src="../src/iconos/telefono.svg#telefono" type="img/svg")
+                            span.box__icon--date
+                                p.text-small 943 574 500
+                        div.box__icon
+                            img(class="svg__icon--margin" src="../src/iconos/e-mail.svg#e-mail" type="img/svg")
+                            span.box__icon--date
+                                p.text-small 
+                                    a(href="mailto:ndelafuente@bculibary.com") ndelafuente@bculibary.com
+                    //- form
+                    form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                        section
+                            h4.primaryfont__bold.padding__bottom-regular Formulario
+                            .form__inputs.gap__form
+                                .form-floating
+                                    input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                                    label(for="nombre") * Nombre
+                                .form-floating
+                                    input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                                    label(for="apellidos") * Apellidos
+                            .form__inputs.gap__form
+                                .form-floating
+                                    input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
+                                    label(for="pais") *País
+                                .form-floating
+                                    label(for="opciones")
+                                    select(name="opciones" class="form-control") 
+                                        option(selected disabled) Selecciona una opción
+                                        option(value="opcion 1") Opción 1
+                                        option(value="opcion 2") Opción 2
+                            div
+                                label(for="mensaje")
+                                textarea(name="mensaje" class="content__center form-control" id="mensaje" placeholder="Mensaje") Mensaje
+                                //- checkmarck
+                            div.form__policity.text-small
+                                label.container
+                                    input(type='checkbox')
+                                    span.checkmark__radio
+                                p.padding__top-tiny.x-small.form__policity-text.primaryfont__bold He leído y acepto la 
+                                    a.primaryfont__bold(href="www") política de privacidad 
+                                
+                                .submit.padding__top-regular
+                                    button.btn__primary--medium-color-width Enviar datos       
+        //- footer
+        +footer("box__background--white")
+
+    script(src="../js/accordion.js")
