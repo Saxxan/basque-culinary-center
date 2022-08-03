@@ -2,26 +2,29 @@
     GRID
 \*------------------------------------*/
 .grid {
-    @include respond-to(large) {    
+    @include respond-to(large) {  
         &__c2 {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 2fr 2fr;
             grid-gap: $large;
-            grid-auto-rows: minmax(100px, auto);
-            }
-        &__c3 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: $large;
-        grid-auto-rows: minmax(100px, auto);
         }
         &__c5 {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 5fr;
             grid-gap: $large;
-            grid-auto-rows: minmax(100px, auto);
         }
+        &__c7-c5 {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            grid-gap: $large;
+
+        }
+        &__c8-c4 {
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            grid-gap: $large;
+        }
+        
     }
 }
-
 
