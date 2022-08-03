@@ -1,4 +1,4 @@
-mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", classButton="btn__primary--medium-color", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
+mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", classButtonMobile="btn__primary--small-color", classButton="btn__primary--medium-color", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
     div.content__max.content__center(class= displayGrid)
         div
             span.tag__entusiastas.box__tag Etiqueta 01
@@ -36,7 +36,7 @@ mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "pa
             hr              
             p.text-medium.box__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
             div(class= displayMobile)(class= paddingBottom)
-                a.btn__primary--small-color(href="www") Reservar en restaurante BCC
+                a(href="www")(class= classButtonMobile) Reservar en restaurante BCC
                 //- Button 'más información' innovación
             div(class= displayDesktop)
                 a(href="www")(class= classButton) Reservar en restaurante BCC

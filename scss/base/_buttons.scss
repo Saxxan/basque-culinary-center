@@ -106,9 +106,19 @@
                     width: auto;
                 }
             }
-            &--small-nocolor-innovation {
+            &--small-color-innovation {
                 @extend .btn__primary;
                 @include btn__primary ($background: innovationColor, $size : small);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-nocolor-innovation;
+                    width: auto;
+                }
+            }
+
+            &--small-nocolor-innovation {
+                @extend .btn__primary;
+                @include btn__primary ($background: innovationNoColor, $size : small);
                 font-weight: 400;
                 &-width {
                     @extend .btn__primary--small-nocolor-innovation;

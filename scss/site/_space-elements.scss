@@ -27,6 +27,9 @@
 .padding {
     padding: 0 $regular;
     // Bottom
+    &__bottom-xx-small {
+        padding-bottom: $xx-small;
+    }
     &__bottom-small {
         padding-bottom: $small;
     }

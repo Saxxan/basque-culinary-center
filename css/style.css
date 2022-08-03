@@ -298,7 +298,6 @@ a {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   border-radius: 0 0 4px 4px;
-  text-align: justify;
 }
 
 .visible {
@@ -493,7 +492,7 @@ a {
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
-.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width, .btn__primary--small-color-innovation, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-align: baseline;
@@ -506,7 +505,7 @@ a {
           appearance: button;
   cursor: pointer;
 }
-.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width, .btn__primary--small-color-innovation, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   border-radius: 4px;
 }
 .btn__primary--large-color, .btn__primary--large-color-width {
@@ -788,7 +787,7 @@ a {
 .btn__primary--medium-nocolor-innovation-width {
   width: auto;
 }
-.btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width {
+.btn__primary--small-color-innovation {
   color: #ffffff;
   background-color: #59718c;
   border: 2px solid #59718c;
@@ -798,25 +797,60 @@ a {
   padding: 9px 22px;
   font-weight: 400;
 }
-.btn__primary--small-nocolor-innovation:link, .btn__primary--small-nocolor-innovation-width:link {
+.btn__primary--small-color-innovation:link {
   color: #ffffff;
   background-color: #59718c;
   border: 2px solid #59718c;
 }
-.btn__primary--small-nocolor-innovation:visited, .btn__primary--small-nocolor-innovation-width:visited {
+.btn__primary--small-color-innovation:visited {
   color: #ffffff;
   background-color: #0B2173;
   border: 2px solid #0B2173;
 }
-.btn__primary--small-nocolor-innovation:hover, .btn__primary--small-nocolor-innovation-width:hover {
+.btn__primary--small-color-innovation:hover {
   color: #ffffff;
   background-color: #0B2173;
   border: 2px solid #0B2173;
 }
-.btn__primary--small-nocolor-innovation:disabled, .btn__primary--small-nocolor-innovation-width:disabled {
+.btn__primary--small-color-innovation:disabled {
   cursor: not-allowed;
   color: #ffffff;
   background-color: #59718c;
+  border: 2px solid #59718c;
+}
+.btn__primary--small-color-innovation-width {
+  width: auto;
+}
+.btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width {
+  color: #59718c;
+  background-color: #ffffff;
+  border: 2px solid #59718c;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding: 9px 22px;
+  font-weight: 400;
+}
+.btn__primary--small-nocolor-innovation:link, .btn__primary--small-nocolor-innovation-width:link, .btn__primary--small-color-innovation-width:link {
+  color: #59718c;
+  background-color: #ffffff;
+  border: 2px solid #59718c;
+}
+.btn__primary--small-nocolor-innovation:visited, .btn__primary--small-nocolor-innovation-width:visited, .btn__primary--small-color-innovation-width:visited {
+  color: #0B2173;
+  background-color: #ffffff;
+  border: 2px solid #0B2173;
+}
+.btn__primary--small-nocolor-innovation:hover, .btn__primary--small-nocolor-innovation-width:hover, .btn__primary--small-color-innovation-width:hover {
+  color: #0B2173;
+  background-color: #ffffff;
+  border: 2px solid #0B2173;
+}
+.btn__primary--small-nocolor-innovation:disabled, .btn__primary--small-nocolor-innovation-width:disabled, .btn__primary--small-color-innovation-width:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #59718c;
+  background-color: #ffffff;
   border: 2px solid #59718c;
 }
 .btn__primary--small-nocolor-innovation-width {
@@ -2063,6 +2097,9 @@ img {
 
 .padding {
   padding: 0 24px;
+}
+.padding__bottom-xx-small {
+  padding-bottom: 10px;
 }
 .padding__bottom-small {
   padding-bottom: 16px;
