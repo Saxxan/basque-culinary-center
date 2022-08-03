@@ -1,5 +1,5 @@
-mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
-    div(class= displayGrid)
+mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", classButton="btn__primary--medium-color", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
+    div.content__max.content__center(class= displayGrid)
         div
             span.tag__entusiastas.box__tag Etiqueta 01
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
@@ -9,8 +9,9 @@ mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "pa
                     img(class="svg__icon--date" src="../src/iconos/share-back.svg#share-back" type="img/svg")
                     span.tag__card--grey.box__tag--space  Presencial
                     span.tag__card--border.box__tag--space  Incripción abierta
-            div
+            div(class= displayOne)
                 p.text-small.padding__top-small Restaurante BCC
+            div
                 h4.box__title.primaryfont__bold Cita GO-ON
             hr
             div.box__date
@@ -38,5 +39,5 @@ mixin component-target-info-event(displayGrid= "grid__c7-c5", paddingBottom= "pa
                 a.btn__primary--small-color(href="www") Reservar en restaurante BCC
                 //- Button 'más información' innovación
             div(class= displayDesktop)
-                a.btn__primary--medium-color-width(href="www") Reservar en restaurante BCC
+                a(href="www")(class= classButton) Reservar en restaurante BCC
                 //- Button 'más información' innovación
