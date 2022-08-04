@@ -33,4 +33,12 @@
             color: $c-marcas-bcc-innovation;
         } 
     }
+    &__color-action {
+        @extend .link;
+        color: $c-marcas-culinary-action;
+        &:link,
+        &:active {
+            color: $c-marcas-culinary-action;
+        }
+    }
 }

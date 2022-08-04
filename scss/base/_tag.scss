@@ -43,11 +43,11 @@
         &__innovation {
             @extend .tag;
             color: $c-monocromo-900;
-            background-color: $c-marcas-bcc-innocation-light;
-            border: 2px solid $c-marcas-bcc-innocation-light;
+            background-color: $c-marcas-bcc-innovation-light;
+            border: 2px solid $c-marcas-bcc-innovation-light;
             &:link {
-                background-color: $c-marcas-bcc-innocation-light;
-                border: 2px solid $c-marcas-bcc-innocation-light;
+                background-color: $c-marcas-bcc-innovation-light;
+                border: 2px solid $c-marcas-bcc-innovation-light;
             }
             &:active {
                 color: $c-monocromo-100;

@@ -14,14 +14,21 @@
     }
     &__innovation {
         background-color: $c-marcas-bcc-innovation;
+        
+    }
+    &__neutral {
+        background-color: $c-white;
     }
     &__text {
         line-height: 20px;
-        color: $c-monocromo-100;
         text-decoration: none;
-        a {
-            
-            color: $c-monocromo-100;
+        &-innovation {
+            @extend .migas__text;
+            color: $c-white;
+        }
+        &-neutral {
+            @extend .migas__text;
+            color: $c-monocromo-900;
         }
     }
 }

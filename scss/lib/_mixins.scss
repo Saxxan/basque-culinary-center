@@ -114,6 +114,63 @@
                 border: 2px solid $c-button-primary-innovation;
             }
     }
+    // action color
+    @if $background == actionColor {
+        color: $c-white;
+        background-color: $c-marcas-culinary-action;
+        border: 2px solid $c-marcas-culinary-action;
+            
+            &:link {
+                color: $c-white;
+                background-color: $c-marcas-culinary-action;
+                border: 2px solid $c-marcas-culinary-action;
+            }
+            &:visited {
+                color: $c-white;
+                background-color: $c-rojo-700;
+                border: 2px solid $c-rojo-700;
+            }
+            &:hover {
+                color: $c-white;
+                background-color: $c-rojo-700;
+                border: 2px solid $c-rojo-700;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                color: $c-white;
+                background-color: $c-marcas-culinary-action-light;
+                border: 2px solid $c-marcas-culinary-action-light;
+            }
+    }
+    // action nocolor
+    @if $background == actionNoColor {
+        color: $c-marcas-culinary-action;
+        background-color: $c-white;
+        border: 2px solid $c-marcas-culinary-action;
+            
+            &:link {
+                color: $c-marcas-culinary-action;
+                background-color: $c-white;
+                border: 2px solid $c-marcas-culinary-action;
+            }
+            &:visited {
+                color: $c-rojo-700;
+                background-color: $c-white;
+                border: 2px solid $c-rojo-700;
+            }
+            &:hover {
+                color: $c-rojo-700;
+                background-color: $c-white;
+                border: 2px solid $c-rojo-700;
+            }
+            &:disabled {
+                cursor: not-allowed;
+                pointer-events: none;
+                color: $c-marcas-culinary-action-light;
+                background-color: $c-white;
+                border: 2px solid $c-marcas-culinary-action-light;
+            }
+    }
 
     // sizes
     @if $size == large {

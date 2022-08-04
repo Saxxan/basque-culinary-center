@@ -2,6 +2,7 @@ include ../components/layout/innovation-form.pug
 include ../components/layout/footer.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
 include ../components/menu/menu.pug
 include ../components/menu/menu-index.pug
 include ../components/layout/footer.pug
@@ -14,6 +15,7 @@ include ../components/layout/head.pug
                     +menu-gradient("gradient__innovation")
                     include ../components/menu/topbar.pug
                     +menu("display__none")
+                    +menu-section("migas__innovation", "migas__text-innovation")
                     +menu-index()
             //- cabecera
             section.padding__regular-xx-large.content__center.content__max
@@ -26,11 +28,11 @@ include ../components/layout/head.pug
                     a.btn__primary--medium-nocolor-innovation-width(href="www") Proyectos
                     a.btn__primary--medium-color-innovation-width(href="www") Líneas de investigación
                 div.display__mobile.padding__bottom-large
-                    a.btn__primary--medium-nocolor-innovation(href="www") Proyectos
+                    a.btn__primary--small-nocolor-innovation(href="www") Proyectos
                 div.display__mobile
-                    a.btn__primary--medium-color-innovation(href="www") Líneas de investigación
+                    a.btn__primary--small-color-innovation(href="www") Líneas de investigación
             //- noticias principal
-            section.padding__regular-xx-large.box__background--innovation
+            section.padding__topbottom-large.box__background--innovation
                 +component-noticia-principal("link__color-innovation", "color__text-innovation", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
             //- sección texto
             section.padding__regular-xx-large.content__center.content__max
@@ -76,3 +78,5 @@ include ../components/layout/head.pug
             +innovation-form()  
         //- footer
         +footer("box__background--white")  
+    script(src="../js/migas.js")  
+    script(src="../js/accordion.js") 

@@ -185,7 +185,17 @@ hr {
   height: 1px;
   border: 0;
   width: 100%;
+  margin: 0;
   background-color: #26201B;
+}
+
+.hr__footer {
+  height: 1px;
+  border: 0;
+  width: 100%;
+  background-color: #26201B;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .color__text-innovation {
@@ -193,6 +203,9 @@ hr {
 }
 .color__text-home {
   color: #B36206;
+}
+.color__text-action {
+  color: #a1232f;
 }
 
 a {
@@ -321,6 +334,9 @@ a {
 }
 .box__background--innovation {
   background-color: rgba(89, 113, 140, 0.1);
+}
+.box__background--action {
+  background-color: #FFF3F5;
 }
 .box__background--white {
   background-color: #ffffff;
@@ -493,7 +509,7 @@ a {
 /*------------------------------------*\
     BUTTONS
 \*------------------------------------*/
-.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width, .btn__primary--small-color-innovation, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn, .btn__modal, .btn__primary, .btn__primary--small-nocolor-action, .btn__primary--small-nocolor-action-width, .btn__primary--small-color-action-width, .btn__primary--small-color-action, .btn__primary--medium-nocolor-action, .btn__primary--medium-nocolor-action-width, .btn__primary--medium-color-action, .btn__primary--medium-color-action-width, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width, .btn__primary--small-color-innovation, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-align: baseline;
@@ -506,7 +522,7 @@ a {
           appearance: button;
   cursor: pointer;
 }
-.btn__primary, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width, .btn__primary--small-color-innovation, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
+.btn__primary, .btn__primary--small-nocolor-action, .btn__primary--small-nocolor-action-width, .btn__primary--small-color-action-width, .btn__primary--small-color-action, .btn__primary--medium-nocolor-action, .btn__primary--medium-nocolor-action-width, .btn__primary--medium-color-action, .btn__primary--medium-color-action-width, .btn__primary--small-nocolor-innovation, .btn__primary--small-nocolor-innovation-width, .btn__primary--small-color-innovation-width, .btn__primary--small-color-innovation, .btn__primary--medium-nocolor-innovation, .btn__primary--medium-nocolor-innovation-width, .btn__primary--medium-color-innovation, .btn__primary--medium-color-innovation-width, .btn__primary--small-nocolor, .btn__primary--small-nocolor-width, .btn__primary--small-color, .btn__primary--small-color-menu, .btn__primary--small-color-width, .btn__primary--medium-nocolor, .btn__primary--medium-nocolor-width, .btn__primary--medium-color, .btn__primary--medium-color-menu, .btn__primary--medium-color-width, .btn__primary--large-nocolor, .btn__primary--large-nocolor-width, .btn__primary--large-color-menu, .btn__primary--large-color, .btn__primary--large-color-width {
   border-radius: 4px;
 }
 .btn__primary--large-color, .btn__primary--large-color-width {
@@ -855,6 +871,144 @@ a {
   border: 2px solid #59718c;
 }
 .btn__primary--small-nocolor-innovation-width {
+  width: auto;
+}
+.btn__primary--medium-color-action, .btn__primary--medium-color-action-width {
+  color: #ffffff;
+  background-color: #a1232f;
+  border: 2px solid #a1232f;
+  font-size: 19px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  padding: 16px 24px;
+  font-weight: 400;
+}
+.btn__primary--medium-color-action:link, .btn__primary--medium-color-action-width:link {
+  color: #ffffff;
+  background-color: #a1232f;
+  border: 2px solid #a1232f;
+}
+.btn__primary--medium-color-action:visited, .btn__primary--medium-color-action-width:visited {
+  color: #ffffff;
+  background-color: #8b1200;
+  border: 2px solid #8b1200;
+}
+.btn__primary--medium-color-action:hover, .btn__primary--medium-color-action-width:hover {
+  color: #ffffff;
+  background-color: #8b1200;
+  border: 2px solid #8b1200;
+}
+.btn__primary--medium-color-action:disabled, .btn__primary--medium-color-action-width:disabled {
+  cursor: not-allowed;
+  color: #ffffff;
+  background-color: #FFF3F5;
+  border: 2px solid #FFF3F5;
+}
+.btn__primary--medium-color-action-width {
+  width: auto;
+}
+.btn__primary--medium-nocolor-action, .btn__primary--medium-nocolor-action-width {
+  color: #a1232f;
+  background-color: #ffffff;
+  border: 2px solid #a1232f;
+  font-size: 19px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  padding: 16px 24px;
+  font-weight: 400;
+}
+.btn__primary--medium-nocolor-action:link, .btn__primary--medium-nocolor-action-width:link {
+  color: #a1232f;
+  background-color: #ffffff;
+  border: 2px solid #a1232f;
+}
+.btn__primary--medium-nocolor-action:visited, .btn__primary--medium-nocolor-action-width:visited {
+  color: #8b1200;
+  background-color: #ffffff;
+  border: 2px solid #8b1200;
+}
+.btn__primary--medium-nocolor-action:hover, .btn__primary--medium-nocolor-action-width:hover {
+  color: #8b1200;
+  background-color: #ffffff;
+  border: 2px solid #8b1200;
+}
+.btn__primary--medium-nocolor-action:disabled, .btn__primary--medium-nocolor-action-width:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #FFF3F5;
+  background-color: #ffffff;
+  border: 2px solid #FFF3F5;
+}
+.btn__primary--medium-nocolor-action-width {
+  width: auto;
+}
+.btn__primary--small-color-action {
+  color: #ffffff;
+  background-color: #a1232f;
+  border: 2px solid #a1232f;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding: 9px 22px;
+  font-weight: 400;
+}
+.btn__primary--small-color-action:link {
+  color: #ffffff;
+  background-color: #a1232f;
+  border: 2px solid #a1232f;
+}
+.btn__primary--small-color-action:visited {
+  color: #ffffff;
+  background-color: #8b1200;
+  border: 2px solid #8b1200;
+}
+.btn__primary--small-color-action:hover {
+  color: #ffffff;
+  background-color: #8b1200;
+  border: 2px solid #8b1200;
+}
+.btn__primary--small-color-action:disabled {
+  cursor: not-allowed;
+  color: #ffffff;
+  background-color: #FFF3F5;
+  border: 2px solid #FFF3F5;
+}
+.btn__primary--small-color-action-width {
+  width: auto;
+}
+.btn__primary--small-nocolor-action, .btn__primary--small-nocolor-action-width, .btn__primary--small-color-action-width {
+  color: #a1232f;
+  background-color: #ffffff;
+  border: 2px solid #a1232f;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  padding: 9px 22px;
+  font-weight: 400;
+}
+.btn__primary--small-nocolor-action:link, .btn__primary--small-nocolor-action-width:link, .btn__primary--small-color-action-width:link {
+  color: #a1232f;
+  background-color: #ffffff;
+  border: 2px solid #a1232f;
+}
+.btn__primary--small-nocolor-action:visited, .btn__primary--small-nocolor-action-width:visited, .btn__primary--small-color-action-width:visited {
+  color: #8b1200;
+  background-color: #ffffff;
+  border: 2px solid #8b1200;
+}
+.btn__primary--small-nocolor-action:hover, .btn__primary--small-nocolor-action-width:hover, .btn__primary--small-color-action-width:hover {
+  color: #8b1200;
+  background-color: #ffffff;
+  border: 2px solid #8b1200;
+}
+.btn__primary--small-nocolor-action:disabled, .btn__primary--small-nocolor-action-width:disabled, .btn__primary--small-color-action-width:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #FFF3F5;
+  background-color: #ffffff;
+  border: 2px solid #FFF3F5;
+}
+.btn__primary--small-nocolor-action-width {
   width: auto;
 }
 .btn__modal {
@@ -1340,7 +1494,7 @@ em.error {
 /*------------------------------------*\
     LINKS
 \*------------------------------------*/
-.link, .link__color-innovation, .link__color-home {
+.link, .link__color-action, .link__color-innovation, .link__color-home {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
@@ -1369,6 +1523,12 @@ em.error {
 .link__color-innovation:focus {
   color: #59718c;
 }
+.link__color-action {
+  color: #a1232f;
+}
+.link__color-action:link, .link__color-action:active {
+  color: #a1232f;
+}
 
 /*------------------------------------*\
     MENÚ SECCIÓN COLOR GRADIENT
@@ -1388,13 +1548,18 @@ em.error {
 .migas__innovation {
   background-color: #59718c;
 }
-.migas__text {
+.migas__neutral {
+  background-color: #ffffff;
+}
+.migas__text, .migas__text-neutral, .migas__text-innovation {
   line-height: 20px;
-  color: #F4F3EF;
   text-decoration: none;
 }
-.migas__text a {
-  color: #F4F3EF;
+.migas__text-innovation {
+  color: #ffffff;
+}
+.migas__text-neutral {
+  color: #26201B;
 }
 
 /*------------------------------------*\
@@ -2174,6 +2339,9 @@ img {
 }
 .padding__topbottom-regular {
   padding: 24px 0;
+}
+.padding__regular-regular {
+  padding: 24px;
 }
 .padding__topbottom-large {
   padding: 32px 0;

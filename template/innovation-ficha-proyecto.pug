@@ -1,5 +1,6 @@
 include ../components/column/component-info-event.pug
 include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
 include ../components/menu/menu.pug
 include ../components/menu/menu-index.pug
 include ../components/layout/footer.pug
@@ -12,14 +13,20 @@ include ../components/layout/head.pug
                     +menu-gradient("gradient__innovation")
                     include ../components/menu/topbar.pug
                     +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
                     +menu-index()
             //- cabecera
             section.padding.padding__top-xx-large.padding__bottom-regular.content__center.content__max
+                //- div 
+                //-     a(class="text-small link__color-innovation" href="www") Leer más
+                //-         img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
                 div 
                     h2.primaryfont__bold Cita Go-ON
             //- info datos proyecto
-            section.padding__topbottom-regular.box__background--innovation
+            section.box__background--innovation
+                hr
                 +component-info-event("tag__innovation-dark", "box__icon--date-innovation")
+                hr
             //- texto
             section.padding__top-regular.padding__bottom-xx-large.content__center.content__max
                 div.padding
@@ -52,3 +59,5 @@ include ../components/layout/head.pug
                             span.text-small.color__text-innovation Ver más
         //- footer
         +footer("box__background--white")
+    script(src="../js/migas.js")  
+    script(src="../js/accordion.js")  

@@ -1,0 +1,63 @@
+include ../components/layout/footer.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    +menu-index()
+            //- cabecera
+            section.padding__regular-xx-large.content__center.content__max
+                div.padding__topbottom-large
+                    img(src="../src/images/cabecera-action.png", alt="")
+                div
+                    h3.padding__bottom-large.primaryfont__bold Qué hacemos
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.
+            //- noticias principal
+            section.padding__topbottom-large.box__background--action
+                +component-noticia-principal("link__color-action", "color__text-action", "", "tag__card--grey", "box__background--action", "", "display__innovation", "display__button", "", "")
+            //- sección texto
+            section.padding__regular-xx-large.content__center.content__max
+                div
+                    h3.primaryfont__bold Lorem ipsum is simply dummy text of the printing
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                div.padding__bottom-large 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                div.padding__bottom-large 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                div 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            //- slider Foro de emprendedores
+            section.padding__top-x-large.padding__bottom-large.margin__bottom-large
+                div.content__center.content__max
+                    h3.primaryfont__bold Foro de emprendedores
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-action", "", "", "", "display__innovation", "", "", "display__one")
+            //- slider On the Road
+            section.padding__bottom-large.margin__bottom-large
+                div.content__center.content__max
+                    h3.primaryfont__bold On the Road
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-action", "", "", "", "display__innovation", "", "", "display__one")
+            //- slider Aceleradora
+            section.padding__bottom-large.margin__bottom-large
+                div.content__center.content__max
+                    h3.primaryfont__bold Aceleradora
+                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-action", "", "", "", "", "", "", "display__one")
+            
+        //- footer
+        +footer("box__background--white")  
+    script(src="../js/migas.js")  
+    script(src="../js/accordion.js") 

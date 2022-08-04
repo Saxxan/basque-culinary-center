@@ -60,17 +60,36 @@
             </nav>
           </div>
           <div class="padding padding__top-regular display__mobile display__none"><a class="btn__primary--small-color-menu" href="www" displayNone="display__none">Encuentra tu formación</a></div>
-          <div class="migas migas__innovation">
+          <div class="display__desktop migas migas__innovation">
             <ul> 
-              <li><a class="text-small migas__text" href="www">Home
+              <li><a class="text-small migas__text-innovation" href="www">Home
                   <ul> 
-                    <li> <a class="text-small migas__text" href="www">Innovación
+                    <li> <a class="text-small migas__text-innovation" href="www">Innovación
                         <ul> 
-                          <li> <a class="text-small migas__text" href="www">Líneas de investigación</a></li>
+                          <li> <a class="text-small migas__text-innovation" href="www">Líneas de investigación</a></li>
                         </ul></a></li>
                   </ul></a></li>
             </ul>
           </div>
+          <section class="display__mobile">
+            <div class="accordion__item"></div>
+            <button class="menu__index accordion">ÍNDICE Innovación</button>
+            <div class="panel menu__index--panel"> 
+              <div>
+                <nav> 
+                  <ul class="menu__index--list">
+                    <li class="menu__index--item">  <a class="menu__index--link" href="#">Sobre BCC</a></li>
+                    <li class="menu__index--item">     <a class="menu__index--link" href="#">Formación </a></li>
+                    <li class="menu__index--item">     <a class="menu__index--link" href="#">Innovación </a></li>
+                    <li class="menu__index--item">     <a class="menu__index--link" href="#">Empresas </a></li>
+                    <li class="menu__index--item">     <a class="menu__index--link" href="#">Iniciativas </a></li>
+                    <li class="menu__index--item">     <a class="menu__index--link" href="#">Restaurantes </a></li>
+                    <li class="menu__index--item">     <a class="menu__index--link" href="#">Actualidad</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
         </div>
       </header>
       <section class="padding__regular-large content__center content__max">
@@ -270,7 +289,7 @@
         </div>
       </div>
       <section class="padding__regular-xx-large box__background">
-        <div class="content__center content__max display__flex"> 
+        <div class="content__center content__max display__flex gap">
           <div>
             <h4 class="primaryfont__bold padding__bottom-regular">Contacto con Innovación</h4>
             <h4 class="primaryfont__bold padding__bottom-regular">BASQUE CULINARY CENTER INNOVACIÓN</h4>
@@ -283,7 +302,7 @@
           </div>
           <form class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form">
             <section>
-              <h4 class="primaryfont__bold padding__topbottom-regular">Formulario</h4>
+              <h4 class="primaryfont__bold padding__bottom-regular">Formulario</h4>
               <div class="form__inputs gap__form">
                 <div class="form-floating">
                   <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required="required"/>
@@ -337,17 +356,17 @@
         <nav class="footer__menu">
           <ul class="footer__list"> 
             <li>
-              <hr class="display__mobile"/><a class="footer__item text-small primaryfont__bold" href="#">Área de prensa</a>
-              <hr class="display__mobile"/>
+              <hr class="hr__footer display__mobile"/><a class="footer__item text-small primaryfont__bold" href="#">Área de prensa</a>
+              <hr class="hr__footer display__mobile"/>
             </li>
             <li><a class="footer__item text-small primaryfont__bold" href="#">Trabaja con nosotros</a>
-              <hr class="display__mobile"/>
+              <hr class="hr__footer display__mobile"/>
             </li>
             <li><a class="footer__item text-small primaryfont__bold" href="#">Contacto</a>
-              <hr class="display__mobile"/>
+              <hr class="hr__footer display__mobile"/>
             </li>
             <li><a class="footer__item text-small primaryfont__bold" href="#">Perfil del contratante</a>
-              <hr class="display__mobile"/>
+              <hr class="hr__footer display__mobile"/>
             </li>
           </ul>
         </nav>
@@ -357,6 +376,7 @@
         </div>
       </div>
     </footer>
-    <script src="../js/migas.js">      </script>
+    <script src="../js/migas.js"> </script>
+    <script src="../js/accordion.js">       </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 mixin innovation-form()
     section.padding__regular-xx-large.box__background
-        div.content__center.content__max.display__flex 
+        div.content__center.content__max.display__flex.gap
             div
                 h4.primaryfont__bold.padding__bottom-regular Contacto con Innovación
                 h4.primaryfont__bold.padding__bottom-regular BASQUE CULINARY CENTER INNOVACIÓN
@@ -19,7 +19,7 @@ mixin innovation-form()
             //- form
             form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
                 section
-                    h4.primaryfont__bold.padding__topbottom-regular Formulario
+                    h4.primaryfont__bold.padding__bottom-regular Formulario
                     .form__inputs.gap__form
                         .form-floating
                             input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)

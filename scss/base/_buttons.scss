@@ -115,13 +115,49 @@
                     width: auto;
                 }
             }
-
             &--small-nocolor-innovation {
                 @extend .btn__primary;
                 @include btn__primary ($background: innovationNoColor, $size : small);
                 font-weight: 400;
                 &-width {
                     @extend .btn__primary--small-nocolor-innovation;
+                    width: auto;
+                }
+            }
+            // button action
+            &--medium-color-action {
+                @extend .btn__primary;
+                @include btn__primary ($background: actionColor, $size : medium);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--medium-color-action;
+                    width: auto;
+                }
+            }
+            &--medium-nocolor-action {
+                @extend .btn__primary;
+                @include btn__primary ($background: actionNoColor, $size : medium);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--medium-nocolor-action;
+                    width: auto;
+                }
+            }
+            &--small-color-action {
+                @extend .btn__primary;
+                @include btn__primary ($background: actionColor, $size : small);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-nocolor-action;
+                    width: auto;
+                }
+            }
+            &--small-nocolor-action {
+                @extend .btn__primary;
+                @include btn__primary ($background: actionNoColor, $size : small);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-nocolor-action;
                     width: auto;
                 }
             }

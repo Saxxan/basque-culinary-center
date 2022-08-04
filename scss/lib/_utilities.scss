@@ -71,7 +71,16 @@ hr {
     height: 1px;
     border: 0;
     width: 100%;
+    margin: 0;
     background-color: $c-monocromo-900;
+}
+.hr__footer {
+    height: 1px;
+    border: 0;
+    width: 100%;
+    background-color: $c-monocromo-900;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .color {
     &__text {
@@ -80,6 +89,9 @@ hr {
         }
         &-home {
             color: $c-primary-default;
+        }
+        &-action {
+            color: $c-marcas-culinary-action;
         }
     }
 }

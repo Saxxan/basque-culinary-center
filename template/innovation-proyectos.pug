@@ -16,8 +16,8 @@ include ../components/layout/head.pug
                     +menu-gradient("gradient__innovation")
                     include ../components/menu/topbar.pug
                     +menu("display__none")
-                    +menu-section()
-                    //- +menu-index()
+                    +menu-section("migas__innovation", "migas__text-innovation")
+                    +menu-index()
             //- cabecera
             section.padding__regular-large.content__center.content__max
                 div.padding__top-large 
@@ -45,4 +45,5 @@ include ../components/layout/head.pug
             +innovation-form()
         //- footer
         +footer("box__background--white")
-    script(src="../js/migas.js")       
+    script(src="../js/migas.js")  
+    script(src="../js/accordion.js")        
