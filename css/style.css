@@ -202,8 +202,8 @@ a {
 /*------------------------------------*\
     COLOR GRADIENT
 \*------------------------------------*/
-.gradient, .section__innovation, .section__home, .gradient__innovation, .gradient__home {
-  padding: 7px 24px;
+.gradient, .gradient__innovation, .gradient__home {
+  padding: 13.5px 24px;
 }
 .gradient__home {
   background: linear-gradient(274.9deg, #EAAC30 3.95%, #83390B 96.05%);
@@ -218,11 +218,12 @@ a {
   background-size: 400% 400%;
 }
 @media (min-width: 1024px) {
-  .gradient, .section__innovation, .section__home, .gradient__innovation, .gradient__home {
+  .gradient, .gradient__innovation, .gradient__home {
     padding: 13.5px 24px;
   }
 }
 .gradient__text {
+  line-height: 20px;
   color: #F4F3EF;
 }
 .gradient__text a {
@@ -1372,35 +1373,30 @@ em.error {
 /*------------------------------------*\
     MENÚ SECCIÓN COLOR GRADIENT
 \*------------------------------------*/
-.section {
-  padding: 7px 24px;
+.migas {
+  padding: 13px 24px;
 }
-.section__innovation {
+.migas ul {
+  margin: 0;
+  padding: 0;
+}
+.migas ul,
+.migas li {
+  list-style: none;
+  display: inline;
+}
+.migas__innovation {
   background-color: #59718c;
 }
-@media (min-width: 1024px) {
-  .section {
-    padding: 13.5px 24px;
-  }
-}
-.section__text {
+.migas__text {
+  line-height: 20px;
   color: #F4F3EF;
+  text-decoration: none;
 }
-.section__text a {
+.migas__text a {
   color: #F4F3EF;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 /*------------------------------------*\
     MENÚ PRINCIPAL
 \*------------------------------------*/

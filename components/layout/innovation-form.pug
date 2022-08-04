@@ -1,0 +1,52 @@
+mixin innovation-form()
+    section.padding__regular-xx-large.box__background
+        div.content__center.content__max.display__flex 
+            div
+                h4.primaryfont__bold.padding__bottom-regular Contacto con Innovación
+                h4.primaryfont__bold.padding__bottom-regular BASQUE CULINARY CENTER INNOVACIÓN
+                p.text-small Paseo Juan Avellino Barriola, 101 
+                p.text-small.padding__bottom-regular 20009 Donostia · San Sebastián. Ver en 
+                    a.primaryfont__bold(href="www") Google Maps  
+                div.padding__bottom-xx-small.box__icon
+                    img(class="svg__icon--margin" src="../src/iconos/telefono.svg#telefono" type="img/svg")
+                    span.box__icon--date
+                        p.text-small 943 574 500
+                div.box__icon
+                    img(class="svg__icon--margin" src="../src/iconos/e-mail.svg#e-mail" type="img/svg")
+                    span.box__icon--date
+                        p.text-small 
+                            a(href="mailto:ndelafuente@bculibary.com") ndelafuente@bculibary.com
+            //- form
+            form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                section
+                    h4.primaryfont__bold.padding__topbottom-regular Formulario
+                    .form__inputs.gap__form
+                        .form-floating
+                            input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                            label(for="nombre") * Nombre
+                        .form-floating
+                            input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                            label(for="apellidos") * Apellidos
+                    .form__inputs.gap__form
+                        .form-floating
+                            input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
+                            label(for="pais") *País
+                        .form-floating
+                            label(for="opciones")
+                            select(name="opciones" class="form-control") 
+                                option(selected disabled) Selecciona una opción
+                                option(value="opcion 1") Opción 1
+                                option(value="opcion 2") Opción 2
+                    div
+                        label(for="mensaje")
+                        textarea(name="mensaje" class="content__center form-control" id="mensaje" placeholder="Mensaje") Mensaje
+                        //- checkmarck
+                    div.form__policity.text-small
+                        label.container
+                            input(type='checkbox')
+                            span.checkmark__radio
+                        p.padding__top-tiny.x-small.form__policity-text.primaryfont__bold He leído y acepto la 
+                            a.primaryfont__bold(href="www") política de privacidad 
+                        
+                        .submit.padding__top-regular
+                            button.btn__primary--medium-color-width Enviar datos       

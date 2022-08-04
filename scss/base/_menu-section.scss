@@ -1,33 +1,29 @@
 /*------------------------------------*\
     MENÚ SECCIÓN COLOR GRADIENT
 \*------------------------------------*/
-.section {
-	padding: 7px 24px;
-    &__home {
-        @extend .gradient;
+.migas {
+    padding: 13px 24px;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    ul,
+    li {
+        list-style: none;
+        display: inline;
     }
     &__innovation {
-        @extend .gradient;
         background-color: $c-marcas-bcc-innovation;
     }
-    @include respond-to(large) {
-        padding: 13.5px 24px;
-    }
     &__text {
+        line-height: 20px;
         color: $c-monocromo-100;
+        text-decoration: none;
         a {
+            
             color: $c-monocromo-100;
         }
     }
 }
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+    
+    

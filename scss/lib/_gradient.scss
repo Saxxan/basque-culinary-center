@@ -2,7 +2,7 @@
     COLOR GRADIENT
 \*------------------------------------*/
 .gradient {
-	padding: 7px 24px;
+    padding: 13.5px 24px;
     &__home {
         @extend .gradient;
         background: linear-gradient(274.9deg, #EAAC30 3.95%, #83390B 96.05%);
@@ -19,6 +19,7 @@
         padding: 13.5px 24px;
     }
     &__text {
+        line-height: 20px;
         color: $c-monocromo-100;
         a {
             color: $c-monocromo-100;
