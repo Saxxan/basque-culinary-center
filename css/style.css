@@ -1563,13 +1563,11 @@ input[type=checkbox] {
 /*------------------------------------*\
     SVG ICON
 \*------------------------------------*/
-.svg__icon, .svg__icon--menu, .svg__icon--margin, .svg__icon--date, .svg__icon--left, .svg__icon--right {
+.svg__icon, .svg__icon--menu, .svg__icon--margin, .svg__icon--margin-top, .svg__icon--date, .svg__icon--left, .svg__icon--right {
   position: relative;
   top: 0.1rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 1rem;
-  width: 1rem;
   fill: currentColor;
 }
 .svg__icon--right {
@@ -1579,12 +1577,18 @@ input[type=checkbox] {
   margin-right: 16px;
   float: left;
 }
+.svg__icon--link {
+  vertical-align: middle;
+  margin-bottom: 0.2rem;
+}
 .svg__icon--date {
   width: 27px;
 }
-.svg__icon--margin {
+.svg__icon--margin, .svg__icon--margin-top {
   margin-right: 8px;
-  margin-bottom: 0.1rem;
+}
+.svg__icon--margin-top {
+  margin-top: -0.2rem;
 }
 .svg__icon--menu {
   margin-left: auto;
@@ -1767,7 +1771,7 @@ input:checked + .slider::before {
 /*------------------------------------*\
     CARD
 \*------------------------------------*/
-.tag, .tag__card--border, .tag__card--grey, .tag__salud, .tag__primary, .tag__innovation, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
+.tag, .tag__card--border, .tag__card--grey, .tag__salud, .tag__primary, .tag__innovation, .tag__innovation-dark, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
   padding: 3px 8px;
   text-align: center;
   color: #F4F3EF;
@@ -1797,6 +1801,10 @@ input:checked + .slider::before {
 .tag__entusiastas {
   background-color: #989A2B;
   border: 2px solid #989A2B;
+}
+.tag__innovation-dark {
+  background-color: #59718c;
+  border: 2px solid #59718c;
 }
 .tag__innovation {
   color: #26201B;
@@ -2097,6 +2105,9 @@ img {
 
 .padding {
   padding: 0 24px;
+}
+.padding__bottom-tiny {
+  padding-bottom: 5px;
 }
 .padding__bottom-xx-small {
   padding-bottom: 10px;

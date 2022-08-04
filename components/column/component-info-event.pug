@@ -1,0 +1,25 @@
+mixin component-info-event(tagCardColor= "tag__card--grey", colorDate="box__icon--date")
+    div.padding.content__max.content__center
+        div.box__icon
+            img(class="svg__icon--margin-top" src="../src/iconos/compartir.svg#compartir" type="img/svg")
+            span.box__tag--space(class= tagCardColor)  Presencial
+            span.box__tag--space(class= tagCardColor)  Incripción abierta
+        div.box__date
+            div
+                div.padding__top-tiny.box__icon--date
+                    img(class="svg__icon--margin" src="../src/iconos/calendar.svg#calen" type="img/svg")
+                    span.box__icon--date(class= colorDate)
+                        p.x-small Fecha de publicación: 
+                    p.x-small  04/02/2022
+
+                div.padding__top-tiny.box__icon--date
+                    img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                    span.box__icon--date(class= colorDate)
+                        p.x-small Horario: 
+                    p.x-small  100€
+
+                div.padding__top-tiny.box__icon--date
+                    img(class="svg__icon--margin" src="../src/iconos/users.svg#users" type="img/svg")
+                    span.box__icon--date(class= colorDate)
+                        p.x-small Autor: 
+                    p.x-small  BCC Innovation

@@ -5,8 +5,6 @@
     position: relative;
     top: .1rem;
     flex-shrink: 0;
-    height: 1rem;
-    width: 1rem;
     fill: currentColor;
     &--right {
         @extend .svg__icon;
@@ -17,6 +15,10 @@
         margin-right: $small;
         float: left;
     }
+    &--link {
+        vertical-align: middle;
+        margin-bottom: 0.2rem;
+    }
     &--date {
         @extend .svg__icon;
         width: 27px;
@@ -24,7 +26,10 @@
     &--margin {
         @extend .svg__icon;
         margin-right: $x-small;
-        margin-bottom: 0.1rem;
+        &-top {
+            @extend .svg__icon--margin;
+            margin-top: -0.2rem;
+        }
     }
     &--menu {
         @extend .svg__icon;

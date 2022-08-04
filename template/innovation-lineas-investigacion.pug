@@ -1,6 +1,5 @@
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-noticia-principal.pug
-include ../components/layout/footer.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu.pug
 include ../components/menu/menu-index.pug
@@ -16,7 +15,7 @@ include ../components/layout/head.pug
                     +menu("display__none")
                     +menu-index()
             //- cabecera
-            section.padding__regular-xx-large.content__center.content__max
+            section.padding.padding__top-xx-large.content__center.content__max
                 div 
                     h1.primaryfont__bold Líneas de investigación
                     p.text-medium.padding__bottom-regular Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -30,7 +29,7 @@ include ../components/layout/head.pug
             //- DISPLAY__DESKTOP
             
             //- salud .display__desktop
-            section.padding__top-x-large.margin__bottom-xx-large.box__background--innovation.display__desktop
+            section.padding__top-xx-large.margin__bottom-xx-large.box__background--innovation.display__desktop
                 div.content__center.content__max
                     h3.primaryfont__bold Salud
                 +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")

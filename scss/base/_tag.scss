@@ -35,6 +35,11 @@
             background-color: $c-formacion-entusiastas;
             border: 2px solid $c-formacion-entusiastas;
         }
+        &__innovation-dark {
+            @extend .tag;
+            background-color: $c-marcas-bcc-innovation;
+            border: 2px solid $c-marcas-bcc-innovation;
+        }
         &__innovation {
             @extend .tag;
             color: $c-monocromo-900;
