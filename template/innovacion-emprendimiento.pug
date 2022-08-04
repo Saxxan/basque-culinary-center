@@ -1,3 +1,5 @@
+include ../components/column/component-slider-two-column.pug
+include ../components/column/component-target-garamond-complete.pug
 include ../components/layout/footer.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/menu/menu-gradient.pug
@@ -42,22 +44,21 @@ include ../components/layout/head.pug
                     h4.primaryfont__bold Vanguardia culinaria
                     p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             //- slider Foro de emprendedores
-            section.padding__top-x-large.padding__bottom-large.margin__bottom-large
-                div.content__center.content__max
-                    h3.primaryfont__bold Foro de emprendedores
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-action", "", "", "", "display__innovation", "", "", "display__one")
+            section.padding__bottom-large.content__center.content__max
+                h3.padding.primaryfont__bold Foro de emprendedores
+                +component-slider-two-column("btn__primary--medium-nocolor-action", "btn__primary--small-nocolor-action")
             //- slider On the Road
-            section.padding__bottom-large.margin__bottom-large
-                div.content__center.content__max
-                    h3.primaryfont__bold On the Road
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-action", "", "", "", "display__innovation", "", "", "display__one")
+            section.padding__bottom-large.content__center.content__max
+                h3.padding.primaryfont__bold On the Road
+                +component-slider-two-column("btn__primary--medium-nocolor-action", "btn__primary--small-nocolor-action")
             //- slider Aceleradora
-            section.padding__bottom-large.margin__bottom-large
-                div.content__center.content__max
-                    h3.primaryfont__bold Aceleradora
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-action", "", "", "", "", "", "", "display__one")
+            section.padding__bottom-large.content__center.content__max
+                h3.padding.primaryfont__bold Aceleradora
+                +component-slider-two-column("btn__primary--medium-nocolor-action", "btn__primary--small-nocolor-action")
             
         //- footer
         +footer("box__background--white")  
     script(src="../js/migas.js")  
-    script(src="../js/accordion.js") 
+    script(src="../js/accordion.js")
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper3.js") 

@@ -17,9 +17,10 @@
     z-index: 0;
     padding: 32px 32px 24px 24px;
     @include respond-to(large) {
-        padding: 32px 32px 24px 0;
+        padding: 0 0 40px 0;
     }
 }
+
 .swiper-slide {
     /* Center slide text vertically */
     display: -webkit-box;
@@ -53,7 +54,17 @@
     //     }
     // }
 }
+.swiper-pagination{
 
+    &__two-column {
+    position: relative;
+    padding-top: $small;
+    bottom: 10px;
+    @include respond-to(large) {
+        bottom: 20px;
+    }
+    }
+}
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 16px;
     height: 16px;
