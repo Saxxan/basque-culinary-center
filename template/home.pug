@@ -37,10 +37,10 @@ include ../components/layout/head.pug
             //- column icon
             section.content__center.content__max.padding__topbottom-xx-large
                 +component-title("", "", "")
-                div.display__flex
-                    +component-column-icon()
-                    +component-column-icon()
-                    +component-column-icon()
+                div.display__flex.gap
+                    +component-column-icon("", "color__text-home")
+                    +component-column-icon("", "color__text-home")
+                    +component-column-icon("", "color__text-home")
             //- nuestra agenda slider desktop
             section.padding.padding__topbottom-x-large.box__background.display__desktop
                     +component-title-link("", "")
@@ -167,12 +167,12 @@ include ../components/layout/head.pug
                     div.padding.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- una visión integral
-            section.padding__regular-xx-large.box__background
+            section.padding__topbottom-xx-large.box__background
                 +component-title-link("", "")
                 +component-noticia-principal("link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border", "", "display__button", "display__none", "")
             //- noticias target desktop
-            section.padding.padding__top-x-large.box__background.display__desktop
-                div.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
+            section.padding__top-x-large.box__background.display__desktop
+                div.padding.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
                     +component-noticia-target("link__color-home", "box__tag", "", "box__img--border", "", "", "display__none")
                     +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                     +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")

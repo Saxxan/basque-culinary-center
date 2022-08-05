@@ -1,10 +1,10 @@
-mixin component-column-icon()
-    div.padding.column__desktop   
+mixin component-column-icon(colorTitle="color__text-labe", colorText="color__text-labe")
+    div.column__desktop   
         div.column
             div.column__icon.display__mobile
                 img(src="../src/iconos/icon-column-icon.svg#icon-column" type="img/svg")
             div
-                h3.primaryfont__bold.column__title Lorem ipsum dolor sit amet consectetur
+                h3.primaryfont__bold.column__title(class= colorTitle) Lorem ipsum dolor sit amet consectetur
                 p.text-medium 
-                    span.column__text--icon.text-medium  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. 
+                    span.text-medium(class= colorText)  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. 
                     | Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.

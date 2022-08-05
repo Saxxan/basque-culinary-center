@@ -1,7 +1,7 @@
 mixin innovation-form()
     section.padding__regular-xx-large.box__background
         div.content__center.content__max.display__flex.gap
-            div
+            div.margin__left.padding__bottom-regular
                 h4.primaryfont__bold.padding__bottom-regular Contacto con Innovación
                 h4.primaryfont__bold.padding__bottom-regular BASQUE CULINARY CENTER INNOVACIÓN
                 p.text-small Paseo Juan Avellino Barriola, 101 
@@ -32,9 +32,13 @@ mixin innovation-form()
                             input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
                             label(for="pais") *País
                         .form-floating
+                            input(type="text" name="email" class="form-control" id="email" placeholder="País" required)
+                            label(for="email") *Email
+                    form__inputs.gap__form
+                        .form-floating
                             label(for="opciones")
                             select(name="opciones" class="form-control") 
-                                option(selected disabled) Selecciona una opción
+                                option(selected disabled) Intereses
                                 option(value="opcion 1") Opción 1
                                 option(value="opcion 2") Opción 2
                     div

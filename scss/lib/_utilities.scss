@@ -74,13 +74,19 @@ hr {
     margin: 0;
     background-color: $c-monocromo-900;
 }
-.hr__footer {
+.hr__margin {
     height: 1px;
     border: 0;
     width: 100%;
     background-color: $c-monocromo-900;
     margin-top: 10px;
     margin-bottom: 10px;
+    &-top {
+        margin-top: 10px;
+    }
+    &-bottom {
+        margin-bottom: 10px;
+    }
 }
 .color {
     &__text {
@@ -93,8 +99,14 @@ hr {
         &-action {
             color: $c-marcas-culinary-action;
         }
+        &-labe {
+            color: $c-marcas-labe;
+        }
     }
 }
 a {
     color: $c-monocromo-900;
+}
+strong {
+    font-weight: 500;
 }

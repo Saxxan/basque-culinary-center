@@ -1,6 +1,6 @@
 mixin component-vertical-line(linkColor= "link__color-home", cardDetails= "card__details", lineStyle= "card__line--none", displayMobile="display__mobile", displayDesktop="display__desktop",  displayNone="display__none", displayOne="display__one")
     div(class = lineStyle)
-        hr(class= displayMobile)(class= displayDesktop)(class= displayNone)
+        hr.hr__margin(class= displayMobile)(class= displayDesktop)(class= displayNone)
         div(class= displayOne)(class= cardDetails)
             img(class="card__img--mobile" src="https://unsplash.it/800/600?image=59", alt="")
         div(class= cardDetails)

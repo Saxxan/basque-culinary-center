@@ -1,7 +1,7 @@
-mixin filter(colorTag= "tag__innovation")
+mixin filter(colorTag= "tag__innovation", colorTagActive= "tag__innovation-dark")
     div.padding__bottom-xx-large.filter.content__center.content__max
         h4.filter__text.primaryfont__bold Filtrar por:
-        span.filter__tag--item(class= colorTag) Todas
+        span.filter__tag--item(class= colorTagActive) Todas
         span.filter__tag--item(class= colorTag) Salud
         span.filter__tag--item(class= colorTag) Análisis sensorial
         span.filter__tag--item(class= colorTag) Sostenibilidad

@@ -161,6 +161,26 @@
                     width: auto;
                 }
             }
+            // button labe
+            &--medium-color-labe {
+                @extend .btn__primary;
+                @include btn__primary ($background: labeColor, $size : medium);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--medium-color-labe;
+                    width: auto;
+                }
+            }
+
+            &--small-color-labe {
+                @extend .btn__primary;
+                @include btn__primary ($background: labeColor, $size : small);
+                font-weight: 400;
+                &-width {
+                    @extend .btn__primary--small-nocolor-action;
+                    width: auto;
+                }
+            }
     }
     &__modal {
         @extend .btn;

@@ -100,11 +100,11 @@
       </section>
       <section class="padding__topbottom-large box__background">
         <section class="padding box__background">
-          <div class="box__principal content__center content__max grid__c8-c4">
+          <div class="box__principal content__center content__max grid__c8-c4 gap">
             <div>
-              <div><span class="box__tag tag__card--grey">Etiqueta 01</span></div><img class="box__img" src="../../src/images/img-noticias.jpg" alt=""/>
+              <div><span class="box__tag--margin tag__card--grey">Etiqueta 01</span></div><img class="margin__left box__img" src="../../src/images/img-noticias.jpg" alt=""/>
             </div>
-            <div class="box__content">
+            <div class="margin__left box__content">
               <h3 class="box__title primaryfont__bold">Toni Segarra: «No es momento para el marketing».</h3>
               <p class="display__desktop x-small display__innovation">01/01/2022</p>
               <p class="x-small color__text-innovation">Redacción BCC</p>
@@ -147,7 +147,7 @@
         <div class="display__mobile padding__top-large"><a class="btn__primary--small-nocolor" href="www">Ir a la página</a></div>
       </section>
       <section class="padding__p-bottom-xx-large content__center content__max">
-        <div class="padding__topbottom-large"><img src="../src/images/logo-LABe.png" alt=""></div>
+        <div class="padding__topbottom-large"><img src="../src/images/cabecera-labe.png" alt=""></div>
         <div class="content__center content__max grid__c2">
           <div class="box__content">
             <div class="display__none"><span class="tag__card--grey display__desktop">Etiqueta 01 </span></div>
@@ -164,7 +164,7 @@
       </section>
       <section class="padding__regular-xx-large box__background">
         <div class="content__center content__max display__flex gap">
-          <div>
+          <div class="margin__left padding__bottom-regular">
             <h4 class="primaryfont__bold padding__bottom-regular">Contacto con Innovación</h4>
             <h4 class="primaryfont__bold padding__bottom-regular">BASQUE CULINARY CENTER INNOVACIÓN</h4>
             <p class="text-small">Paseo Juan Avellino Barriola, 101 </p>
@@ -193,14 +193,20 @@
                   <label for="pais">*País</label>
                 </div>
                 <div class="form-floating">
+                  <input class="form-control" type="text" name="email" id="email" placeholder="País" required="required"/>
+                  <label for="email">*Email</label>
+                </div>
+              </div>
+              <form__inputs class="gap__form">
+                <div class="form-floating">
                   <label for="opciones"></label>
                   <select class="form-control" name="opciones"> 
-                    <option selected="selected" disabled="disabled">Selecciona una opción</option>
+                    <option selected="selected" disabled="disabled">Intereses</option>
                     <option value="opcion 1">Opción 1</option>
                     <option value="opcion 2">Opción 2</option>
                   </select>
                 </div>
-              </div>
+              </form__inputs>
               <div>
                 <label for="mensaje"></label>
                 <textarea class="content__center form-control" name="mensaje" id="mensaje" placeholder="Mensaje">Mensaje</textarea>
@@ -230,17 +236,17 @@
         <nav class="footer__menu">
           <ul class="footer__list"> 
             <li>
-              <hr class="hr__footer display__mobile"/><a class="footer__item text-small primaryfont__bold" href="#">Área de prensa</a>
-              <hr class="hr__footer display__mobile"/>
+              <hr class="hr__margin display__mobile"/><a class="footer__item text-small primaryfont__bold" href="#">Área de prensa</a>
+              <hr class="hr__margin display__mobile"/>
             </li>
             <li><a class="footer__item text-small primaryfont__bold" href="#">Trabaja con nosotros</a>
-              <hr class="hr__footer display__mobile"/>
+              <hr class="hr__margin display__mobile"/>
             </li>
             <li><a class="footer__item text-small primaryfont__bold" href="#">Contacto</a>
-              <hr class="hr__footer display__mobile"/>
+              <hr class="hr__margin display__mobile"/>
             </li>
             <li><a class="footer__item text-small primaryfont__bold" href="#">Perfil del contratante</a>
-              <hr class="hr__footer display__mobile"/>
+              <hr class="hr__margin display__mobile"/>
             </li>
           </ul>
         </nav>

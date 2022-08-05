@@ -23,9 +23,20 @@
     &__bottom-xx-large{
         margin-bottom: $xx-large;
     }
+    &__left {
+        @include respond-to(large) {
+            margin-left: $regular;
+        }
+    }
 }
 .padding {
     padding: 0 $regular;
+    &__mobile {
+        padding: 0 $regular;
+        @include respond-to(large) {
+            padding: 0;
+        }
+    }
     // Bottom
     &__bottom-tiny {
         padding-bottom: $tiny;
