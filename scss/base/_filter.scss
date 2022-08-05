@@ -10,6 +10,10 @@
         gap: 30px;
         &--item {
             margin: $x-small;
+            text-decoration: none;
+            a {
+                line-height: 0;
+            }
         }
     }
 }

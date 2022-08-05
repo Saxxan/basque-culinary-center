@@ -1,10 +1,11 @@
-mixin component-column-icon(colorTitle="color__text-labe", colorText="color__text-labe")
+mixin component-column-icon(colorTitle="color__text-labe", colorText="color__text-labe", displayNone= "display__none", displayOne= "display__one")
     div.column__desktop   
         div.column
             div.column__icon.display__mobile
                 img(src="../src/iconos/icon-column-icon.svg#icon-column" type="img/svg")
             div
-                h3.primaryfont__bold.column__title(class= colorTitle) Lorem ipsum dolor sit amet consectetur
+                h3.primaryfont__bold.column__title(class= colorTitle)(class= displayOne) Lorem ipsum dolor sit amet consectetur
+                h4.primaryfont__bold.column__title(class= colorTitle)(class= displayNone) Lorem ipsum dolor sit amet consectetur
                 p.text-medium 
                     span.text-medium(class= colorText)  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. 
                     | Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.

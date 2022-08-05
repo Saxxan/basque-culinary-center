@@ -110,3 +110,17 @@ a {
 strong {
     font-weight: 500;
 }
+.logo {
+    &__size {
+        width: 139px;
+        @include respond-to(large) {
+            width: 295px;
+        }
+        &-home {
+            width: 139px;
+            @include respond-to(large) {
+                width: 200px;
+        }
+        }
+    }
+}

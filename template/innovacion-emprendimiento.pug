@@ -17,18 +17,18 @@ include ../components/layout/head.pug
                     include ../components/menu/topbar.pug
                     +menu("display__none")
                     +menu-section("migas__neutral", "migas__text-neutral")
-                    +menu-index()
+                    //- +menu-index()
             //- cabecera
             section.padding__regular-xx-large.content__center.content__max
                 div.padding__topbottom-large
-                    img(src="../src/images/cabecera-action.png", alt="")
+                    img(class="logo__size" src="../src/images/cabecera-action.svg", type="img/svg", alt="")
                 div
                     h3.padding__bottom-large.primaryfont__bold Qué hacemos
                     p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like.
             //- noticias principal
             section.padding-left.padding__topbottom-large.box__background--action
-                +component-noticia-principal("link__color-action", "color__text-action", "", "tag__card--grey", "box__background--action", "", "display__innovation", "display__button", "", "")
+                +component-noticia-principal("box__content--justify", "link__color-action", "color__text-action", "", "tag__card--grey", "box__background--action", "", "display__innovation", "display__button", "", "")
             //- sección texto
             section.padding__regular-xx-large.content__center.content__max
                 div

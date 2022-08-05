@@ -174,23 +174,23 @@
     // labe color
     @if $background == labeColor {
         color: $c-monocromo-100;
-        background-color: $c-marcas-labe;
-        border: 2px solid $c-marcas-labe;
+        background-color: $c-black;
+        border: 2px solid $c-black;
             
             &:link {
                 color: $c-white;
-                background-color: $c-marcas-labe;
-                border: 2px solid $c-marcas-labe;
+                background-color: $c-black;
+                border: 2px solid $c-black;
             }
             &:visited {
                 color: $c-white;
-                background-color: $c-button-hover-innnovation;
-                border: 2px solid $c-button-hover-innnovation;
+                background-color: $c-black;
+                border: 2px solid $c-black;
             }
             &:hover {
                 color: $c-white;
-                background-color: $c-button-hover-innnovation;
-                border: 2px solid $c-button-hover-innnovation;
+                background-color: $c-black;
+                border: 2px solid $c-black;
             }
             &:disabled {
                 cursor: not-allowed;
@@ -215,11 +215,10 @@
         padding: $btnprimary-paddingmedium;
     }
     @if $size == small {
-        font-size: 13px;
-        letter-spacing: 0.2px;
+        font-size: 19px;
+        letter-spacing: 0.1px;
         font-weight: 400;
         padding: $btnprimary-paddingsmall;
-        
     }
 
 }

@@ -37,6 +37,11 @@
             padding: 0;
         }
     }
+    &__desktop {
+        @include respond-to(large) {
+            padding: 0 $regular;
+        }
+    }
     // Bottom
     &__bottom-tiny {
         padding-bottom: $tiny;

@@ -1,4 +1,3 @@
-include ../components/column/component-img-left.pug
 include ../components/column/component-column-icon.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu-section.pug
@@ -15,7 +14,7 @@ include ../components/layout/head.pug
                     include ../components/menu/topbar.pug
                     +menu("display__none")
                     +menu-section("migas__neutral", "migas__text-neutral")
-                    +menu-index()
+                    //- +menu-index()
             //- cabecera
             section.padding__regular-xx-large.content__center.content__max
                 div.padding__topbottom-large
@@ -26,10 +25,10 @@ include ../components/layout/head.pug
             //- column icon
             section.padding__bottom-xx-large.content__center.content__max
                 div.padding.display__flex.gap
-                    +component-column-icon("color__text-labe", "")
-                    +component-column-icon("color__text-labe", "")
-                    +component-column-icon("color__text-labe", "")
-                    +component-column-icon("color__text-labe", "")
+                    +component-column-icon("color__text-labe", "", "", "display__one")
+                    +component-column-icon("color__text-labe", "", "", "display__one")
+                    +component-column-icon("color__text-labe", "", "", "display__one")
+                    +component-column-icon("color__text-labe", "", "", "display__one")
                 div.padding.display__mobile.padding__top-regular
                         a.btn__primary--small-color-labe(href="www") Ir a LABE
             //- nuestros espacios

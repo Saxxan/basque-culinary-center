@@ -16,11 +16,11 @@ include ../components/layout/head.pug
                     include ../components/menu/topbar.pug
                     +menu("display__none")
                     +menu-section("migas__innovation", "migas__text-innovation")
-                    +menu-index()
+                    //- +menu-index()
             //- cabecera
             section.padding__regular-xx-large.content__center.content__max
                 div.padding__topbottom-large
-                    img(src="../src/images/cabecera-innovation.png", alt="")
+                    img(class="logo__size" src="../src/images/cabecera-innovation.svg", type="img/svg", alt="")
                 div 
                     p.text-medium.padding__bottom-large Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     p.text-medium.padding__bottom-large <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </strong>a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -33,7 +33,7 @@ include ../components/layout/head.pug
                     a.btn__primary--small-color-innovation(href="www") Líneas de investigación
             //- noticias principal
             section.padding__topbottom-large.box__background--innovation
-                +component-noticia-principal("link__color-innovation", "color__text-innovation", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
+                +component-noticia-principal("box__content--justify", "link__color-innovation", "color__text-innovation", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
             //- sección texto
             section.padding__regular-xx-large.content__center.content__max
                 div

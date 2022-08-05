@@ -2,7 +2,7 @@
     CARD
 \*------------------------------------*/
 .tag {
-    padding: 3px 8px;
+    padding: 5px 8px;
     text-align: center;
     color: $c-monocromo-100;
     border-radius: 8px;
@@ -42,7 +42,7 @@
         }
         &__innovation {
             @extend .tag;
-            color: $c-monocromo-900;
+            color: $c-monocromo-100;
             background-color: $c-marcas-bcc-innovation-light;
             border: 2px solid $c-marcas-bcc-innovation-light;
             &:link {

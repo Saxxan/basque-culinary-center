@@ -1,5 +1,5 @@
 mixin component-target-info-event(tagCardColor= "tag__card--grey", displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", classButtonMobile="btn__primary--small-color", classButton="btn__primary--medium-color", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
-    div.content__max.content__center(class= displayGrid)
+    div.padding__desktop.content__max.content__center(class= displayGrid)
         div(class= displayOne)
             span.box__tag Etiqueta 01
         div    
@@ -7,7 +7,7 @@ mixin component-target-info-event(tagCardColor= "tag__card--grey", displayGrid= 
         div 
             div(class= displayNone)
                 div.padding__top-small.box__icon
-                    img(class="svg__icon--margin-top" src="../src/iconos/share-back.svg#share-back" type="img/svg")
+                    img(class="svg__icon--margin-top" src="../src/iconos/compartir.svg#compartir" type="img/svg")
                     span.box__tag--space(class= tagCardColor)  Presencial
                     span.box__tag--space(class= tagCardColor)  Incripción abierta
             div(class= displayOne)
@@ -35,7 +35,7 @@ mixin component-target-info-event(tagCardColor= "tag__card--grey", displayGrid= 
                             p.x-small Autor: 
                         p.x-small  BCC Innovation
             hr.hr__margin-top              
-            p.text-medium.box__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
+            p.padding__top-x-small.text-medium.box__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
             div(class= displayMobile)(class= paddingBottom)
                 a(href="www")(class= classButtonMobile) Reservar en restaurante BCC
                 //- Button 'más información' innovación

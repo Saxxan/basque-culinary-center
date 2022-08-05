@@ -16,7 +16,7 @@ include ../components/layout/head.pug
                     include ../components/menu/topbar.pug
                     +menu("display__none")
                     +menu-section("migas__innovation", "migas__text-innovation")
-                    +menu-index()
+                    //- +menu-index()
             //- cabecera
             section.padding.padding__top-xx-large.content__center.content__max
                 div 
@@ -33,11 +33,11 @@ include ../components/layout/head.pug
             
             //- salud .display__desktop
             section.padding__top-xx-large.margin__bottom-xx-large.box__background--innovation.display__desktop
-                div.content__center.content__max
+                div.padding.content__center.content__max
                     h3.primaryfont__bold Salud
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
                 //- vertical lines .display__desktop
-                div.padding__top-large.padding__bottom-xx-large.content__center.content__max.display__flex
+                div.padding.padding__top-large.padding__bottom-xx-large.content__center.content__max.display__flex
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
@@ -47,22 +47,22 @@ include ../components/layout/head.pug
             section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
                 div.content__center.content__max
                     h3.primaryfont__bold Análisis sensorial
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             //- asostenibilidad .display__desktop
             section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
-                div.content__center.content__max
+                div.padding.content__center.content__max
                     h3.primaryfont__bold Sostenibilidad
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             //- desarrollo de producto .display__desktop
             section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
-                div.content__center.content__max
+                div.padding.content__center.content__max
                     h3.primaryfont__bold Desarrollo de producto
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             //- digitalización .display__desktop
             section.padding__top-x-large.padding__bottom-xx-large.margin__bottom-large.box__background--innovation.display__desktop
-                div.content__center.content__max
+                div.padding.content__center.content__max
                     h3.primaryfont__bold Digitalización
-                +component-noticia-principal("link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             
             //- DISPLAY__MOBILE ACCORDION
             //- salud
@@ -99,7 +99,7 @@ include ../components/layout/head.pug
                     .panel
                         div.padding__bottom-small
                             img(class="box__img" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-small.x-small<strong> Desarrollo de proyectos para el impulso de una gastronomía más sostenible</strong> que promueve la economía circular, el ecodiseño, el fomento de la biodiversidad, el desperdicio cero, sin olvidar la sostenibilidad económica y social.
+                            p.padding__bottom-small.x-small <strong> Desarrollo de proyectos para el impulso de una gastronomía más sostenible</strong> que promueve la economía circular, el ecodiseño, el fomento de la biodiversidad, el desperdicio cero, sin olvidar la sostenibilidad económica y social.
                             a.btn__primary--small-nocolor-innovation(href="www") Proyectos sostenibilidad
             //- desarrollo de producto
             section.padding.accordion__section.display__mobile

@@ -38,9 +38,9 @@ include ../components/layout/head.pug
             section.content__center.content__max.padding__topbottom-xx-large
                 +component-title("", "", "")
                 div.display__flex.gap
-                    +component-column-icon("", "color__text-home")
-                    +component-column-icon("", "color__text-home")
-                    +component-column-icon("", "color__text-home")
+                    +component-column-icon("", "color__text-home", "display__none", "")
+                    +component-column-icon("", "color__text-home", "display__none", "")
+                    +component-column-icon("", "color__text-home", "display__none", "")
             //- nuestra agenda slider desktop
             section.padding.padding__topbottom-x-large.box__background.display__desktop
                     +component-title-link("", "")
@@ -109,7 +109,7 @@ include ../components/layout/head.pug
             //- un motor de cambio
             div.padding__top-x-large
                 +component-title("box__background", "", "")
-                +component-noticia-principal("link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
+                +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
             //- un motor de cambio - slider areas de trabajo
             section.padding__bottom-x-large.box__background
                     +component-subtitle("")
@@ -140,7 +140,7 @@ include ../components/layout/head.pug
             div.padding__top-xx-large
                 +component-title("", "", "")
             section.padding
-                +component-img-left("", "display__none", "")
+                +component-img-left("box__content", "display__none", "")
             section.padding__top-x-large.padding__bottom-xx-large
                     +component-subtitle("")
                     div.swiper.mySwiper.box__swiper.content__max
@@ -169,7 +169,7 @@ include ../components/layout/head.pug
             //- una visión integral
             section.padding__topbottom-xx-large.box__background
                 +component-title-link("", "")
-                +component-noticia-principal("link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border", "", "display__button", "display__none", "")
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border", "", "display__button", "display__none", "")
             //- noticias target desktop
             section.padding__top-x-large.box__background.display__desktop
                 div.padding.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
@@ -191,9 +191,9 @@ include ../components/layout/head.pug
                     div.padding.padding__top-small.padding__bottom-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             //- dos conceptos distintos
-            div.padding__top-xx-large 
+            div.padding.padding__top-xx-large 
                 +component-title("", "", "")
-            div.padding.padding__bottom-xx-large.display__flex.gap.content__max.content__center
+            div.padding__bottom-xx-large.display__flex.content__max.content__center
                 +component-target-info-event("", "", "padding__bottom-large", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                 +component-target-info-event("", "", "", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
         //- footer
