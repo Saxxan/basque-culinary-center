@@ -16,29 +16,29 @@ include ../components/layout/head.pug
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
             //- cabecera
-            section.padding.padding__top-xx-large.padding__bottom-regular.content__center.content__max
+            //- section.padding.padding__top-xx-large.padding__bottom-regular.content__center.content__max
                 //- div 
                 //-     a(class="text-small link__color-innovation" href="www") Leer más
                 //-         img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                div 
-                    h2.primaryfont__bold Cita Go-ON
+            section.padding__regular.content__center.content__max
+                    h2.padding__bottom-regular.primaryfont__bold Cita Go-ON
             //- info datos proyecto
             section.box__background--innovation
                 hr
                 +component-info-event("tag__innovation-dark", "box__icon--date-innovation")
                 hr
             //- texto
-            section.padding__top-regular.padding__bottom-xx-large.content__center.content__max
+            section.padding__top-large.padding__bottom-xx-large.content__center.content__max
                 div.padding
-                    p.padding__bottom-regular.text-medium.primaryfont__medium Estudio de la eficacia de una intervención multimodal sobre factores de riesgo y estilos de vida en personas con riesgo aumentado de demencia y fragilidad cognitiva para la prevención del deterioro cognitivo.
-                    img(class="box__img padding__bottom-regular" src="../../src/images/img-noticias.jpg", alt="")
-                    p.padding__bottom-regular.text-medium Cumplir años y envejecer es uno de los principales factores de riesgo cognitivo, siendo este un condicionante para poder disponer y disfrutar de un envejecimiento saludable. <strong>La evidencia científica actual indica que uno de cada tres casos de demencia podría prevenirse mediante una intervención multimodal apropiada.</strong> Por ello, es importante conocer cómo podemos cuidar nuestra salud cerebral, para mejorar nuestra calidad de vida y, como sociedad, disminuir la prevalencia de demencia. 
-                    p.padding__bottom-regular.text-medium <strong>El estudio CITA GO-ON investiga el modo de prevenir el deterioro cognitivo a través del cuidado de los hábitos y estilos de vida y de la salud cardiovascular.</strong> Para ello, se seleccionarán a más de 1000 adultos mayores de entre 60 y 85 susceptibles o en situación de riesgo de que su memoria pueda empeorar en los próximos años. La duración de la intervención del estudio es de dos años, periodo durante el cual se realizará un control periódico estrecho de los factores de riesgo, así como programas de estimulación y entrenamiento cognitivo, actividad física, inteligencia emocional, salud psicosocial y alimentación saludable. 
-                    p.padding__bottom-regular.text-medium<strong> Desde BCC Innovation se llevará a cabo una intervención nutricional-culinaria con talleres grupales</strong> para mejorar la adquisición de hábitos de alimentación saludables integrando aspectos relacionados con la educación nutricional y habilidades culinarias. 
+                    p.padding__bottom-large.text-medium.primaryfont__medium Estudio de la eficacia de una intervención multimodal sobre factores de riesgo y estilos de vida en personas con riesgo aumentado de demencia y fragilidad cognitiva para la prevención del deterioro cognitivo.
+                    img(class="box__img padding__bottom-large" src="../../src/images/img-noticias.jpg", alt="")
+                    p.padding__bottom-large.text-medium Cumplir años y envejecer es uno de los principales factores de riesgo cognitivo, siendo este un condicionante para poder disponer y disfrutar de un envejecimiento saludable. <strong>La evidencia científica actual indica que uno de cada tres casos de demencia podría prevenirse mediante una intervención multimodal apropiada.</strong> Por ello, es importante conocer cómo podemos cuidar nuestra salud cerebral, para mejorar nuestra calidad de vida y, como sociedad, disminuir la prevalencia de demencia. 
+                    p.padding__bottom-large.text-medium <strong>El estudio CITA GO-ON investiga el modo de prevenir el deterioro cognitivo a través del cuidado de los hábitos y estilos de vida y de la salud cardiovascular.</strong> Para ello, se seleccionarán a más de 1000 adultos mayores de entre 60 y 85 susceptibles o en situación de riesgo de que su memoria pueda empeorar en los próximos años. La duración de la intervención del estudio es de dos años, periodo durante el cual se realizará un control periódico estrecho de los factores de riesgo, así como programas de estimulación y entrenamiento cognitivo, actividad física, inteligencia emocional, salud psicosocial y alimentación saludable. 
+                    p.padding__bottom-large.text-medium <strong> Desde BCC Innovation se llevará a cabo una intervención nutricional-culinaria con talleres grupales</strong> para mejorar la adquisición de hábitos de alimentación saludables integrando aspectos relacionados con la educación nutricional y habilidades culinarias. 
                     p.text-medium El proyecto está liderado por la Fundación CITA Alzheimer, en colaboración con diferentes instituciones: BCC Innovation, Instituto de Investigación Sanitaria Biodonostia, Universidad del País Vasco, Instituto de Neurociencias Achucarro y la Universidad Pública de Navarra. También cuenta con el apoyo de instituciones de renombre internacional como el Instituto Karolinska de Suecia y la asociación americana de Alzheimer (Alzheimer’s Association). La iniciativa está financiada por Gobierno Vasco, la Fundación HNA y la Agencia Estatal de Investigación del Ministerio de Ciencia e Innovación del Gobierno de España.
-            section.padding.padding__bottom-x-large.content__center.content__max
-                h3.primaryfont__bold Otros proyectos
-                .display__flex.gap
+            section.padding.content__center.content__max
+                h3.padding__bottom-large.primaryfont__bold Otros proyectos
+                .padding__bottom-xtra-large.display__flex.gap
                     div.padding__bottom-large
                         hr
                         div.padding__top-small.box__icon
@@ -47,7 +47,7 @@ include ../components/layout/head.pug
                         div
                             h4.box__title.primaryfont__bold Cita GO-ON
                         p.text-small Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, minus ipsum accusamus perspiciatis nulla in sunt necessitatibus? Labore, laboriosam cumque? Vitae provident exercitationem est explicabo, voluptatibus reiciendis doloremque repellat voluptatem. Labore, laboriosam cumque? Vitae provident exercitationem est explicabo, voluptatibus reiciendis doloremque repellat voluptatem.
-                            span.text-small.color__text-innovation Ver más
+                            a.text-small.color__text-innovation(href="www") Ver más
                     div.padding__bottom-large
                         hr
                         div.padding__top-small.box__icon
@@ -56,7 +56,7 @@ include ../components/layout/head.pug
                         div
                             h4.box__title.primaryfont__bold Cita GO-ON
                         p.text-small Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>Est, minus ipsum accusamus perspiciatis nulla in sunt necessitatibus? Labore, laboriosam cumque? Vitae provident<strong> exercitationem est explicabo, voluptatibus reiciendis doloremque repellat voluptatem.Labore, laboriosam cumque? Vitae provident exercitationem est explicabo, voluptatibus reiciendis doloremque repellat voluptatem.
-                            span.text-small.color__text-innovation Ver más
+                            a.text-small.color__text-innovation(href="www") Ver más
         //- footer
         +footer("box__background--white")
     script(src="../js/migas.js")  

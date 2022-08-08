@@ -35,60 +35,61 @@ include ../components/layout/head.pug
             //-     .swiper-button-next
             //-     .swiper-button-prev
             //- column icon
-            section.content__center.content__max.padding__topbottom-xx-large
+            section.padding__bottom-xtra-large.content__center.content__max
                 +component-title("", "", "")
-                div.display__flex.gap
+                div.padding.display__flex.gap
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
             //- nuestra agenda slider desktop
-            section.padding.padding__topbottom-x-large.box__background.display__desktop
+            section.padding__bottom-xx-large.box__background.display__desktop
                     +component-title-link("", "")
-                    div.swiper.mySwiper.display__flex.content__max
-                        div.swiper-wrapper
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-slide
-                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                        div.swiper-pagination
+                    div.padding
+                        div.swiper.mySwiper.display__flex.content__max
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                div.swiper-slide
+                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-pagination
             
             //- nuestra agenda mobile
-            section.padding.padding__topbottom-x-large.box__background.display__mobile
+            section.padding__bottom-xx-large.box__background.display__mobile
                 +component-title-link("", "")
                 div.padding.gap.display__flex.content__center.content__max
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
             //- últimas noticias, dos columnas
-            section.padding.padding__bottom-x-large.box__background
+            section.padding__bottom-xtra-large.box__background
                 +component-subtitle-link("", "")
-                div.display__flex.gap.content__max.content__center
+                div.padding.display__flex.gap.content__max.content__center
                     +component-noticia-target("link__color-home", "box__tag", "", "", "", "", "display__none")
                     +component-noticia-target("link__color-home", "", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
                     div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- tabs .display__desktop
-            div.display__desktop.padding__top-xx-large
+            div.display__desktop
                 +component-title("", "", "")
-            .content__center.content__max.padding__bottom-x-large
+            .padding.padding__bottom-xx-large.content__max.display__desktop
                 include ../components/tabs/tabs.pug
             //- tabs .display__mobile
             +component-title("", "display__mobile", "")
-            div.padding.display__mobile.padding__bottom-x-large
+            div.padding.padding__bottom-xx-large.display__mobile
                 +component-mobile-card-img("card__img--border-grado")
                 +component-mobile-card-img("card__img--border-master")
                 +component-mobile-card-img("card__img--border-doctorado")
@@ -97,87 +98,87 @@ include ../components/layout/head.pug
                 +component-mobile-card-img("card__img--border-formacion")
             //- vertical line
             +component-subtitle("")
-            section.content__center.content__max.display__flex.padding__bottom-xx-large
+            section.padding.padding__bottom-xtra-large.content__center.content__max.display__flex
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                     hr.padding.display__mobile
-                div.padding.padding__top-x-large.display__mobile
+                div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- un motor de cambio
-            div.padding__top-x-large
-                +component-title("box__background", "", "")
-                +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
+            +component-title("box__background", "", "")
+            +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
             //- un motor de cambio - slider areas de trabajo
-            section.padding__bottom-x-large.box__background
+            section.padding__top-x-large.padding__bottom-xtra-large.box__background
                     +component-subtitle("")
-                    div.swiper.mySwiper.box__swiper.content__max
-                        div.swiper-wrapper
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                        div.swiper-pagination
-                    div.padding.padding__top-small.display__mobile
-                        a.btn__primary--small-color(href="que tal") Acceder a innovación
+                    div.padding
+                        div.swiper.mySwiper.box__swiper.content__max
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-pagination
+                        div.padding__top-small.display__mobile
+                            a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- colabora con BCC
-            div.padding__top-xx-large
-                +component-title("", "", "")
-            section.padding
+            +component-title("", "", "")
+            section.padding.padding__bottom-xx-large
                 +component-img-left("box__content", "display__none", "")
-            section.padding__top-x-large.padding__bottom-xx-large
+            section.padding__bottom-xtra-large
                     +component-subtitle("")
-                    div.swiper.mySwiper.box__swiper.content__max
-                        div.swiper-wrapper
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-slide
-                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                        div.swiper-pagination
-                    div.padding.padding__top-small.display__mobile
-                        a.btn__primary--small-color(href="que tal") Acceder a innovación
+                    div.padding
+                        div.swiper.mySwiper.box__swiper.content__max
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                                div.swiper-slide
+                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-pagination
+                        div.padding__top-small.display__mobile
+                            a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- una visión integral
-            section.padding__topbottom-xx-large.box__background
+            section.padding__bottom-xx-large.box__background
                 +component-title-link("", "")
                 +component-noticia-principal("box__content--justify", "link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border", "", "display__button", "display__none", "")
             //- noticias target desktop
-            section.padding__top-x-large.box__background.display__desktop
-                div.padding.display__flex.gap.content__center.content__max.content__centerpadding.padding__bottom-x-large
+            section.box__background.display__desktop
+                div.padding__regular-xtra-large.content__center.content__max.display__flex.gap
                     +component-noticia-target("link__color-home", "box__tag", "", "box__img--border", "", "", "display__none")
                     +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                     +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
             //- noticias target mobile
-            section.box__background.display__mobile
+            section.padding.padding__bottom-xtra-large.box__background.display__mobile
                     div.swiper.mySwiper.box__swiper
                         div.swiper-wrapper
                             div.swiper-slide
@@ -188,12 +189,11 @@ include ../components/layout/head.pug
                                 +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             
                         div.swiper-pagination
-                    div.padding.padding__top-small.padding__bottom-x-large.display__mobile
+                    div.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             //- dos conceptos distintos
-            div.padding.padding__top-xx-large 
-                +component-title("", "", "")
-            div.padding__bottom-xx-large.display__flex.content__max.content__center
+            +component-title("", "", "")
+            div.padding__mobile.padding__bottom-xtra-large.content__max.content__center.display__flex
                 +component-target-info-event("", "", "padding__bottom-large", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                 +component-target-info-event("", "", "", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
         //- footer

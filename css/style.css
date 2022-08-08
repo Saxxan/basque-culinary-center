@@ -1243,9 +1243,6 @@ strong {
     border: none;
   }
 }
-.card__line, .card__line--innovation {
-  padding: 0 24px;
-}
 @media (min-width: 1024px) {
   .card__line, .card__line--innovation {
     border-left: 3px solid #83390B;
@@ -1895,7 +1892,7 @@ input[type=checkbox] {
 }
 @media (min-width: 1024px) {
   .swiper {
-    padding: 10px 0 40px 0px;
+    padding: 0 0 40px 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -2415,6 +2412,9 @@ img {
 .padding {
   padding: 0 24px;
 }
+.padding__regular {
+  padding: 24px;
+}
 .padding__mobile {
   padding: 0 24px;
 }
@@ -2429,7 +2429,7 @@ img {
   }
 }
 .padding__bottom-tiny {
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 .padding__bottom-xx-small {
   padding-bottom: 10px;
@@ -2460,13 +2460,16 @@ img {
 .padding__bottom-xx-large {
   padding-bottom: 64px;
 }
+.padding__bottom-xtra-large {
+  padding-bottom: 96px;
+}
 .padding__p-bottom-xx-large {
   padding-bottom: 64px;
   padding-left: 24px;
   padding-right: 24px;
 }
 .padding__top-tiny {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 .padding__top-xx-small {
   padding-top: 10px;
@@ -2495,6 +2498,9 @@ img {
 .padding__top-xx-large {
   padding-top: 64px;
 }
+.padding__top-xtra-large {
+  padding-top: 96px;
+}
 .padding__topbottom-x-regular {
   padding: 20px 0;
 }
@@ -2508,7 +2514,7 @@ img {
   padding: 32px 0;
 }
 .padding__regular-large {
-  padding: 32px 32px 24px 24px;
+  padding: 32px 24px 32px 24px;
 }
 .padding__topbottom-x-large {
   padding: 48px 0;
@@ -2519,21 +2525,10 @@ img {
 .padding__regular-xx-large {
   padding: 64px 24px;
 }
-
-h1 {
-  padding-bottom: 20px;
+.padding__topbottom-xtra-large {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-@media (min-width: 1024px) {
-  h1 {
-    padding-bottom: 32px;
-  }
-}
-
-h3 {
-  padding-bottom: 20px;
-}
-@media (min-width: 1024px) {
-  h3 {
-    padding-bottom: 32px;
-  }
+.padding__regular-xtra-large {
+  padding: 0 24px 96px 24px;
 }

@@ -3,7 +3,7 @@
     height: 100%;
     padding: 0 0 24px 0;
     @include respond-to(large) {
-        padding: 10px 0 40px 0px;
+        padding: 0 0 40px 0px;
     }
     &__fullwidth {
         @include respond-to(large) {

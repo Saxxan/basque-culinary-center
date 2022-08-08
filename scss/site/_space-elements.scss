@@ -31,6 +31,9 @@
 }
 .padding {
     padding: 0 $regular;
+    &__regular {
+        padding: $regular;
+    }
     &__mobile {
         padding: 0 $regular;
         @include respond-to(large) {
@@ -75,6 +78,9 @@
     &__bottom-xx-large {
         padding-bottom: $xx-large;
     }
+    &__bottom-xtra-large {
+        padding-bottom: $xtra-large;
+    }
     &__p-bottom-xx-large {
         padding-bottom: $xx-large;
         padding-left: $regular;
@@ -112,6 +118,9 @@
     &__top-xx-large {
         padding-top: $xx-large;
     }
+    &__top-xtra-large {
+        padding-top: $xtra-large;
+    }
     // Top / Bottom
     &__topbottom-x-regular {
         padding: $x-regular 0;
@@ -126,7 +135,7 @@
         padding: $large 0;
     }
     &__regular-large {
-        padding: $large $large $regular $regular;
+        padding: $large $regular $large $regular;
     }
     &__topbottom-x-large {
         padding: $x-large 0;
@@ -137,16 +146,11 @@
     &__regular-xx-large {
         padding: $xx-large $regular;
     }
-}
-h1 {
-    padding-bottom: $x-regular;
-    @include respond-to(large) {
-        padding-bottom: $large;
+    &__topbottom-xtra-large {
+        padding-top: $xtra-large;
+        padding-bottom: $xtra-large;
     }
-}
-h3{
-    padding-bottom: $x-regular;
-    @include respond-to(large) {
-        padding-bottom: $large;
+    &__regular-xtra-large {
+        padding: 0 $regular $xtra-large $regular;
     }
 }
