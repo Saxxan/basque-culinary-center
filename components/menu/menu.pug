@@ -10,32 +10,73 @@ mixin menu(displayNone= "display__none")
             .menu__item--logo
                 a(class="menu__menu" href="#")
                     img(class="menu__logo" src="../../src/images/logo-bcc.png", alt="") 
-            //- enlaces
-            ul.menu__menu
-                li.menu__item   
-                    a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                li.menu__item   
-                    a(class="menu__menu--link" href="#") Formación 
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                li.menu__item   
-                    a(class="menu__menu--link" href="#") Innovación 
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                li.menu__item   
-                    a(class="menu__menu--link" href="#") Empresas 
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                li.menu__item   
-                    a(class="menu__menu--link" href="#") Iniciativas 
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                li.menu__item   
-                    a(class="menu__menu--link" href="#") Restaurantes 
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                li.menu__item   
-                    a(class="menu__menu--link" href="#") Actualidad 
-                        img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                //- button desktop
-                li.menu__item.display__desktop
-                    a.btn__primary--medium-color-menu.display__desktop(href="asdsadsad") Encuentra tu formación
+            div
+                //- nivel uno
+                ul.menu__menu
+                    li.menu__item   
+                        a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item   
+                        a(class="menu__menu--link" href="#") Formación 
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                //- nivel 2
+                                ul.menu__menu
+                                    li.menu__item   
+                                        a(class="menu__menu--link primaryfont__bold" href="#") Grado
+                                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li.menu__item   
+                                        a(class="menu__menu--link" href="#") Másteres
+                                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                                //- nivel 3
+                                                ul.menu__menu
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link primaryfont__bold" href="#") Perfeccionamiento en cocina
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link" href="#") Técnica, producto yt creatividad
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link primaryfont__bold" href="#") Pastelería de restaurantes y cocina dulce
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link" href="#") Dirección de F6B
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link primaryfont__bold" href="#") Innovación y gestión de restaurantes
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link" href="#") Turismo gastronómico
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link primaryfont__bold" href="#") Sumellería y enomarketing
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link" href="#") Comunicación y periodismo gastronómico
+                                                    li.menu__item   
+                                                        a(class="menu__menu--link" href="#") Formación del profesorado en gastronomía
+                                    li.menu__item   
+                                        a(class="menu__menu--link primaryfont__bold" href="#") Cursos para profesionales
+                                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li.menu__item   
+                                        a(class="menu__menu--link" href="#") Cursos para entusiastas
+                                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li.menu__item   
+                                        a(class="menu__menu--link" href="#") Formación a medida
+                                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li.menu__item   
+                                        a(class="menu__menu--link" href="#") Doctorado
+                                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item   
+                        a(class="menu__menu--link" href="#") Innovación 
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item   
+                        a(class="menu__menu--link" href="#") Empresas 
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item   
+                        a(class="menu__menu--link" href="#") Iniciativas 
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item   
+                        a(class="menu__menu--link" href="#") Restaurantes 
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item   
+                        a(class="menu__menu--link" href="#") Actualidad 
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    //- button desktop
+                    li.menu__item.display__desktop
+                        a.btn__primary--medium-color-menu.display__desktop(href="asdsadsad") Encuentra tu formación
     //- button mobile
     div.padding.padding__top-regular.display__mobile(class= displayNone)
         a.btn__primary--small-color-menu(href="www")(displayNone= "display__none") Encuentra tu formación
