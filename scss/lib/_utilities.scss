@@ -67,25 +67,24 @@
         justify-content: center;
     }
 }
-hr {
+.hr{
     height: 1px;
     border: 0;
     width: 100%;
     margin: 0;
     background-color: $c-monocromo-900;
-}
-.hr__margin {
-    height: 1px;
-    border: 0;
-    width: 100%;
-    background-color: $c-monocromo-900;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    &-top {
+    &__margin {
+        @extend .hr;
         margin-top: 10px;
-    }
-    &-bottom {
         margin-bottom: 10px;
+        &-top {
+            @extend .hr;
+            margin-top: 10px;
+        }
+        &-bottom {
+            @extend .hr;
+            margin-bottom: 10px;
+        }
     }
 }
 .color {

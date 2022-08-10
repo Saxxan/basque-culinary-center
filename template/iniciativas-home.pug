@@ -1,0 +1,73 @@
+include ../components/layout/filter.pug
+include ../components/column/component-target-info-event.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            //- cabecera
+            section.padding__bottom-x-large.content__center.content__max
+                div
+                    h1.padding__regular.primaryfont__bold Iniciativas
+                    p.padding.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            //- noticias principal
+            section
+                div.content__center.content__max 
+                    h3.padding__regular.primaryfont__bold Próximamente
+                .padding__mobile.padding__top-regular.padding__bottom-regular.box__background 
+                    +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+            //- filtros
+            section.padding__top-xx-large
+                div.content__center.content__max 
+                    h3.padding.primaryfont__bold Conoce nuestras iniciativas
+                +filter("tag__innovation", "tag__innovation-dark")
+            //- eventos
+            section.padding__mobile.content__max.content__center.display__flex
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+            //- espacio fila
+            div.padding__bottom-xx-large.display__desktop
+            //- eventos
+            section.padding__mobile.content__max.content__center.display__flex
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+            //- espacio fila
+            div.padding__bottom-xx-large.display__desktop
+            //- eventos
+            section.padding__mobile.content__max.content__center.display__flex
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+            //- espacio fila
+            div.padding__bottom-xx-large.display__desktop
+            //- eventos
+            section.padding__mobile.padding__bottom-x-large.content__max.content__center.display__flex
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr.margin__topbottom-regular.display__mobile
+                +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+    //- footer
+    +footer("box__background--white")

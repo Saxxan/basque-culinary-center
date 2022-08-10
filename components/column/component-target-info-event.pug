@@ -1,7 +1,7 @@
 mixin component-target-info-event(tagCardColor= "tag__card--grey", displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", classButtonMobile="btn__primary--small-color", classButton="btn__primary--medium-color", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
     div.padding__desktop.content__max.content__center(class= displayGrid)
         div(class= displayOne)
-            span.box__tag Etiqueta 01
+            span.box__tag.tag__card--grey Etiqueta
         div    
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
         div 
@@ -10,7 +10,7 @@ mixin component-target-info-event(tagCardColor= "tag__card--grey", displayGrid= 
                     img(class="svg__icon--margin-top" src="../src/iconos/compartir.svg#compartir" type="img/svg")
                     span.box__tag--space(class= tagCardColor)  Presencial
                     span.box__tag--space(class= tagCardColor)  Incripción abierta
-            div(class= displayOne)
+            div(class= displayOne)(class= displayNone)
                 p.text-small.padding__top-small Restaurante BCC
             div
                 h4.box__title.primaryfont__bold Cita GO-ON

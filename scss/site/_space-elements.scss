@@ -17,11 +17,23 @@
     }
 }
 .margin {
-    &__bottom-large{
+    &__top-x-large {
+        margin-top: $x-large;
+    }
+    &__topbottom-regular {
+        margin: $regular 0;
+    }
+    &__bottom-large {
         margin-bottom: $large;
     }
-    &__bottom-xx-large{
+    &__bottom-x-large {
+        margin-bottom: $x-large;
+    }
+    &__bottom-xx-large {
         margin-bottom: $xx-large;
+    }
+    &__bottom-xtra-large {
+        margin-bottom: $xtra-large;
     }
     &__left {
         @include respond-to(large) {

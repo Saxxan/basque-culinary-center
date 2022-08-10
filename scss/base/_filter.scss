@@ -2,7 +2,7 @@
     FILTER
 \*------------------------------------*/
 .filter {
-    padding: calc(24px - 8px);
+    padding: 0 16px 16px 16px;
     &__text {
         padding: $small $x-small;
     }

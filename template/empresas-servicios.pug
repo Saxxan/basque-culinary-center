@@ -1,0 +1,295 @@
+include ../components/column/component-vertical-line.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/layout/filter.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            //- cabecera
+            section.padding__bottom-x-large.content__center.content__max
+                div
+                    h1.padding__regular.primaryfont__bold Servicios
+                    p.padding.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            //- área innovación
+            section.padding.content__center.content__max 
+                h3.padding__bottom-regular.primaryfont__bold Área de innovación
+                img(class="box__img padding__bottom-regular" src="../../src/images/img-noticias.jpg", alt="")
+                p.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+            //-  --------------------------------------
+            //- DISPLAY__DESKTOP
+            //- Tipo de servicio 01 .display__desktop
+            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 01
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //- Tipo de servicio 02 .display__desktop
+            section.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 02
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //- Tipo de servicio 03 .display__desktop
+            section.margin__bottom-xx-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 03
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //-  --------------------------------------
+            
+            //-  --------------------------------------
+            //- DISPLAY__MOBILE
+            //- Tipo servicio 01
+            section.padding.padding__top-regular.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 01
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //- Tipo servicio 02
+            section.padding.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 02
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //- Tipo servicio 03
+            section.padding.padding__bottom-x-large.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 03
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //-  --------------------------------------
+
+            //- área promoción
+            section.padding.content__center.content__max 
+                h3.padding__bottom-regular.primaryfont__bold Área de promoción
+                img(class="box__img padding__bottom-regular" src="../../src/images/img-noticias.jpg", alt="")
+                p.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            
+            //-  --------------------------------------
+            //- DISPLAY__DESKTOP --------------------------------------
+            //- Tipo de servicio 01 .display__desktop
+            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 01
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //- Tipo de servicio 02 .display__desktop
+            section.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 02
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //- Tipo de servicio 03 .display__desktop
+            section.margin__bottom-xx-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 03
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //-  --------------------------------------
+
+            //-  --------------------------------------
+            //- DISPLAY__MOBILE
+            //- Tipo servicio 01
+            section.padding.padding__top-regular.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 01
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //- Tipo servicio 02
+            section.padding.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 02
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //- Tipo servicio 03
+            section.padding.padding__bottom-x-large.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 03
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //-  --------------------------------------
+            //- área información
+            section.padding.content__center.content__max 
+                h3.padding__bottom-regular.primaryfont__bold Área de información
+                img(class="box__img padding__bottom-regular" src="../../src/images/img-noticias.jpg", alt="")
+                p.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            
+            //-  --------------------------------------
+            //- DISPLAY__DESKTOP
+            //- Tipo de servicio 01 .display__desktop
+            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 01
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //- Tipo de servicio 02 .display__desktop
+            section.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 02
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //- Tipo de servicio 03 .display__desktop
+            section.margin__bottom-xtra-large.padding__topbottom-large.box__background.display__desktop
+                div.padding.padding__bottom-large.content__center.content__max
+                    h4.primaryfont__bold Tipo de servicio 03
+                +component-noticia-principal("box__content--justify", "link__color-home", "", "btn__primary--medium-nocolor", "", "", "", "display__innovation", "", "", "display__one")
+                //- vertical lines .display__desktop
+                div.padding.padding__top-large.content__center.content__max.display__flex
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+                    +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "display__none", "display__one")
+            //-  --------------------------------------
+            
+            //-  --------------------------------------
+            //- DISPLAY__MOBILE
+            //- Tipo servicio 01
+            section.padding.padding__top-regular.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 01
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //- Tipo servicio 02
+            section.padding.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 02
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //- Tipo servicio 03
+            section.padding.padding__bottom-x-large.accordion__section.display__mobile
+                div.accordion__item
+                    button.accordion.accordion__background Tipo servicio 03
+                    .panel.panel__background
+                        div.padding__bottom-small
+                            img(class="box__img" src="../../src/images/foto.jpg", alt="")
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 01
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 02
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            p.padding__bottom-xx-small.text-small.primaryfont__bold Tipología 03
+                            p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            a.btn__primary--small-nocolor(href="www") Saber más
+            //-  --------------------------------------
+        
+        
+        //- footer
+        +footer("box__background--white")
+    script(src="../js/migas.js")  
+    script(src="../js/accordion.js")  

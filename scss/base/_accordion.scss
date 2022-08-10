@@ -1,7 +1,6 @@
 .accordion {
     width: 100%;
     border: none;
-    background-color: rgba($c-marcas-bcc-innovation, 0.1);
     color: #444;
     padding: $small;
     cursor: pointer;
@@ -18,6 +17,13 @@
     &__item {
         margin-bottom: $regular;
     }
+    &__background {
+        background-color: $c-monocromo-200;
+        &-innovation {
+            background-color: rgba($c-marcas-bcc-innovation, 0.1);
+        }
+    }
+
 
 }
 .order {
@@ -36,11 +42,16 @@
     padding: 0 $small;
     display: none;
     height: auto;
-    background-color: rgba($c-marcas-bcc-innovation, 0.1);
     color: $c-monocromo-700;
     overflow: hidden;
     transition: all 0.2s ease-out;
     border-radius: 0 0 $btnprimary-radius $btnprimary-radius;
+    &__background {
+        background-color: $c-monocromo-200;
+        &-innovation {
+            background-color: rgba($c-marcas-bcc-innovation, 0.1);
+        }
+    }
 }
 
 .visible {
