@@ -359,6 +359,16 @@ strong {
   display: block;
 }
 
+.banner__fixed {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.25));
+}
+
 /*------------------------------------*\
     BOX
 \*------------------------------------*/
@@ -1703,7 +1713,7 @@ em.error {
   height: 70px;
   border-bottom: 1px solid grey;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1719,7 +1729,7 @@ em.error {
   right: 0;
   padding-top: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .menu__toggle {
     top: 30%;
     display: none;
@@ -1734,6 +1744,7 @@ em.error {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 0;
+  position: sticky;
 }
 .menu__menu--link {
   color: #26201B;
@@ -1747,7 +1758,7 @@ em.error {
   background-color: #DFDAD3;
   color: #B36206;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .menu__menu--link:hover {
     color: #26201B;
     background-color: transparent;
@@ -1760,7 +1771,7 @@ em.error {
   letter-spacing: 0.4px;
   font-weight: 500;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .menu__menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1777,7 +1788,7 @@ em.error {
   margin-left: 5px;
   max-width: 80px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .menu__logo {
     max-width: 137px;
     padding: 0;
@@ -1791,7 +1802,7 @@ em.error {
 .menu__item:nth-child(1) {
   margin-top: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
   .menu__item {
     display: block;
     background-color: transparent;

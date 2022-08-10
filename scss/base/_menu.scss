@@ -4,7 +4,7 @@
 .menu {
     height: 70px;
     border-bottom: 1px solid grey;
-    @include respond-to(large) {
+    @include respond-to(1250px) {
         display: flex;
         padding: $regular $small;
         height: 146px;
@@ -15,7 +15,7 @@
         margin: 0rem 1rem;
         right: 0;
         padding-top: $x-regular;
-        @include respond-to(large) {
+        @include respond-to(1250px) {
             top: 30%;
             display: none;
         }
@@ -24,6 +24,7 @@
         display: flex;
         flex-direction: column;     
         padding-left: 0;
+        position: sticky;
         &--link {
             color: $c-monocromo-900;
             text-transform: uppercase;
@@ -32,7 +33,7 @@
             &:hover {
                 background-color: $c-monocromo-200;
                 color: $c-primary-default;
-                @include respond-to(large) {
+                @include respond-to(1250px) {
                     color: $c-monocromo-900;
                     background-color: transparent;
                     font-weight: 600;
@@ -45,7 +46,7 @@
             letter-spacing: 0.4px;
             font-weight: 500;
         }
-        @include respond-to(large) {
+        @include respond-to(1250px) {
             flex-direction: row;
             align-items: center;
             margin-left: auto;   
@@ -55,7 +56,7 @@
         margin-top: 10px;
         margin-left: 5px;
         max-width: 80px;
-        @include respond-to(large) {
+        @include respond-to(1250px) {
             max-width: 137px;
             padding: 0;
         }
@@ -67,7 +68,7 @@
         list-style: none;
         display: none;
         background-color: $c-monocromo-100;
-        @include respond-to(large) {
+        @include respond-to(1250px) {
             display: block;
             background-color: transparent;
             &:nth-child(1) {
