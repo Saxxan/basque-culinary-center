@@ -1,0 +1,93 @@
+include ../components/column/component-noticia-target.pug
+include ../components/column/component-subtitle-link.pug
+include ../components/layout/innovation-form.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            //- cabecera
+            section.padding__bottom-xtra-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Únete
+                    img(class="padding padding__bottom-regular box__img" src="../src/images/img-noticias.jpg", alt="")
+                    p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            //- noticias principal
+            section.padding__topbottom-x-large.box__background
+                +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "box__background", "", "display__innovation", "display__button", "", "")
+            //- área de innnovación
+            section.padding.padding__top-xx-large.padding__bottom-x-large.content__center.content__max
+                div.padding__bottom-regular
+                    h3.padding__bottom-large.primaryfont__bold Qué ofrecemos
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-large 
+                    h4.padding__bottom-regular.primaryfont__bold Área de innovación
+                    p.padding__bottom-large.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                    img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
+                //- bullets
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 01
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 02
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 03
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de innovación
+            //- área de promoción
+            section.padding.padding__bottom-large.content__center.content__max
+                div.padding__bottom-regular 
+                    h4.padding__bottom-regular.primaryfont__bold Área de innovación
+                    p.padding__bottom-regular.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                    img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
+                //- bullets
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 01
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 02
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 03
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de promoción
+            //- área de información
+            section.padding.padding__bottom-large.content__center.content__max
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Área de innovación
+                    p.padding__bottom-regular.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                    img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
+                //- bullets
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 01
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 02
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                div.padding__bottom-regular
+                    h4.primaryfont__bold Servicio 03
+                    p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de información
+            //- últimas noticias, dos columnas
+            section.padding__bottom-xtra-large
+                +component-subtitle-link("", "")
+                div.padding.display__flex.gap.content__max.content__center
+                    +component-noticia-target("link__color-home", "tag__card--grey", "box__tag", "", "", "", "display__none")
+                    +component-noticia-target("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
+            //- form innovation
+            +innovation-form()
+        //- footer
+        +footer("box__background--white")    

@@ -85,6 +85,9 @@
             @extend .hr;
             margin-bottom: 10px;
         }
+        &-none {
+            margin: 0;
+        }
     }
 }
 .color {

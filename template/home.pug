@@ -24,16 +24,16 @@ include ../components/layout/head.pug
                     +menu("")
                     
             //- slide cabecera
-            //- div.swiper__fullwidth.swiper2
-            //-     div.swiper-wrapper
-            //-         .swiper-slide.swiper-slide-board.swiper-slide-background
-            //-             h1 1/02
-            //-             h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
-            //-             h4 Inscripción abierta para el nuevo curso 2022-2023
-            //-             a.btn__primary--large-nocolor-width(href="#") más información
+            div.swiper__fullwidth.swiper2
+                div.swiper-wrapper
+                    .swiper-slide.swiper-slide-board.swiper-slide-background
+                        h1 1/02
+                        h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+                        h4 Inscripción abierta para el nuevo curso 2022-2023
+                        a.btn__primary--large-nocolor-width(href="#") más información
                 
-            //-     .swiper-button-next
-            //-     .swiper-button-prev
+                .swiper-button-next
+                .swiper-button-prev
             //- column icon
             section.padding__bottom-xtra-large.content__center.content__max
                 +component-title("", "", "")
@@ -78,8 +78,8 @@ include ../components/layout/head.pug
             section.padding__bottom-xtra-large.box__background
                 +component-subtitle-link("", "")
                 div.padding.display__flex.gap.content__max.content__center
-                    +component-noticia-target("link__color-home", "box__tag", "", "", "", "", "display__none")
-                    +component-noticia-target("link__color-home", "", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
+                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "", "", "", "display__none")
+                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
                     div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- tabs .display__desktop
@@ -174,19 +174,19 @@ include ../components/layout/head.pug
             //- noticias target desktop
             section.box__background.display__desktop
                 div.padding__regular-xtra-large.content__center.content__max.display__flex.gap
-                    +component-noticia-target("link__color-home", "box__tag", "", "box__img--border", "", "", "display__none")
-                    +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
-                    +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "box__img--border", "", "", "display__none")
+                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
             //- noticias target mobile
             section.padding.padding__bottom-xtra-large.box__background.display__mobile
                     div.swiper.mySwiper.box__swiper
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                                +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
-                                +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                                +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
-                                +component-noticia-target("link__color-home", "", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
+                                +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             
                         div.swiper-pagination
                     div.padding__top-small.display__mobile

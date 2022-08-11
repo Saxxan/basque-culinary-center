@@ -204,6 +204,9 @@ h1, h2, h3 {
 .hr__margin-bottom {
   margin-bottom: 10px;
 }
+.hr__margin-none {
+  margin: 0;
+}
 
 .color__text-innovation {
   color: #59718c;
@@ -1647,7 +1650,7 @@ em.error {
   color: #B36206;
 }
 .link__color-home:link, .link__color-home:active {
-  color: #83390B;
+  color: #B36206;
 }
 .link__color-home:hover {
   color: #B36206;
