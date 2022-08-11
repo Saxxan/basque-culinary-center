@@ -126,14 +126,16 @@
         object-fit: cover;
         object-position: center;
         &--bloq2 {
-            border-radius: $small $small 0 0;
+            // border-radius: $small $small 0 0;
+            border-radius: $small;
             width: 100%;
             object-fit: cover;
             object-position: center;
         }
         &--border {
             @extend .box__img;
-            border-radius: $small $small 0 0;
+            // border-radius: $small $small 0 0;
+            border-radius: $small;
             padding-bottom: 0;
             border-bottom: 5px solid $c-primary-darkmode;
         }
