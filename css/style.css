@@ -181,10 +181,26 @@ h1, h2, h3 {
   gap: 24px;
 }
 .gap__logos {
-  gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (min-width: 700px) {
+  .gap__logos {
+    display: block;
+    text-align: left;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 700px) {
+  .gap__logos-desktop {
+    padding: 0 24px;
+  }
 }
 
 .hr, .hr__margin-bottom, .hr__margin-top, .hr__margin {
@@ -2091,7 +2107,7 @@ input:checked + .slider::before {
 /*------------------------------------*\
     CARD
 \*------------------------------------*/
-.tag, .tag__card--border, .tag__card--grey, .tag__salud, .tag__primary, .tag__innovation, .tag__innovation-dark, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
+.tag, .tag__card--border, .tag__card--grey, .tag__empresas-dark, .tag__empresas, .tag__primary, .tag__innovation, .tag__innovation-dark, .tag__entusiastas, .tag__profesionales, .tag__doctorado, .tag__master, .tag__grado {
   padding: 5px 8px;
   text-align: center;
   color: #F4F3EF;
@@ -2150,12 +2166,17 @@ input:checked + .slider::before {
   border: 2px solid #D5903C;
   color: #83390B;
 }
-.tag__salud {
+.tag__empresas {
   color: #26201B;
   background-color: #DFDAD3;
   border: 2px solid #DFDAD3;
 }
-.tag__salud:hover, .tag__salud:active {
+.tag__empresas:hover, .tag__empresas:active {
+  background-color: #b9ac99;
+  border: 2px solid #b9ac99;
+}
+.tag__empresas-dark {
+  color: #26201B;
   background-color: #b9ac99;
   border: 2px solid #b9ac99;
 }

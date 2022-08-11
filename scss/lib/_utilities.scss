@@ -63,8 +63,20 @@
         gap: $regular;
     }
     &__logos {
-        gap: 50px;
-        justify-content: center;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include respond-to(medium) {
+            display: block;
+            text-align: left;
+            padding: 0 $regular;            
+        }
+        &-desktop {
+            @include respond-to(medium) {
+                padding: 0 $regular;
+            }
+        }
     }
 }
 .hr{

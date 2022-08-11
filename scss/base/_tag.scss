@@ -66,7 +66,7 @@
             border: 2px solid $c-primary-darkmode;
             color: $c-primary-dark;
         }
-        &__salud {
+        &__empresas {
             @extend .tag;
             color: $c-monocromo-900;
             background-color: $c-monocromo-200;
@@ -76,6 +76,12 @@
                 background-color: $c-marcas-bcc-corporate;
                 border: 2px solid $c-marcas-bcc-corporate;
             }
+        }
+        &__empresas-dark {
+            @extend .tag;
+            color: $c-monocromo-900;
+            background-color: $c-marcas-bcc-corporate;
+            border: 2px solid $c-marcas-bcc-corporate;
         }
         // Tag grey
         &__card--grey{
