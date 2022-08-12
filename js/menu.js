@@ -1,24 +1,24 @@
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
-const items = document.querySelectorAll(".item");
+// const toggle = document.querySelector(".toggle");
+// const menu = document.querySelector(".menu");
+// const items = document.querySelectorAll(".item");
 
-const burger = document.querySelector(".burger");
-const closed = document.querySelector(".closed");
+// const burger = document.querySelector(".burger");
+// const closed = document.querySelector(".closed");
 
-menu.addEventListener('click', hide);
+// menu.addEventListener('click', hide);
 
-burger.addEventListener('mouseover', alert("hola"));
+// burger.addEventListener('mouseover', alert("hola"));
 
-/* Toggle mobile menu */
-function toggleMenu() {
-  if (menu.classList.contains("active")) {
-    menu.classList.remove("active");
-    toggle.querySelector("a").className.add = ".burger";
-  } else {
-    menu.classList.add("active");
-    toggle.querySelector("a").className.add = ".closed";
-  }
-}
+// /* Toggle mobile menu */
+// function toggleMenu() {
+//   if (menu.classList.contains("active")) {
+//     menu.classList.remove("active");
+//     toggle.querySelector("a").className.add = ".burger";
+//   } else {
+//     menu.classList.add("active");
+//     toggle.querySelector("a").className.add = ".closed";
+//   }
+// }
 
 /* Activate Submenu */
 // function toggleItem() {

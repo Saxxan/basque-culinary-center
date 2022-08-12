@@ -379,6 +379,7 @@ strong {
 }
 
 .banner__fixed {
+  z-index: 2;
   background-color: #ffffff;
   padding: 20px 24px;
   bottom: 0;
