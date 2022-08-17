@@ -22,7 +22,7 @@ include ../components/layout/head.pug
             div.banner__fixed.display__mobile 
                 a.btn__primary--small-color(href="www") Contactar
             //- cabecera
-            section.padding__bottom-xtra-large.content__center.content__max
+            section.media__margin.padding__bottom-xtra-large.content__center.content__max
                 div
                     h2.padding__regular.primaryfont__bold Únete
                     img(class="padding padding__bottom-regular box__img" src="../src/images/img-noticias.jpg", alt="")
@@ -31,9 +31,9 @@ include ../components/layout/head.pug
             section.padding__topbottom-x-large.box__background
                 +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "box__background", "", "display__innovation", "display__button", "", "")
             //- área de innnovación
-            section.padding.padding__top-xx-large.padding__bottom-x-large.content__center.content__max
+            section.media__margin.padding.padding__top-xx-large.padding__bottom-x-large.content__center.content__max
                 div.padding__bottom-regular
-                    h3.padding__bottom-large.primaryfont__bold Qué ofrecemos
+                    h3.padding__bottom-large.primaryfont__bold Área de innovación
                     p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                 div.padding__bottom-large 
                     h4.padding__bottom-regular.primaryfont__bold Área de innovación
@@ -51,7 +51,7 @@ include ../components/layout/head.pug
                     p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                 a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de innovación
             //- área de promoción
-            section.padding.padding__bottom-large.content__center.content__max
+            section.media__margin.padding.padding__bottom-large.content__center.content__max
                 div.padding__bottom-regular 
                     h4.padding__bottom-regular.primaryfont__bold Área de innovación
                     p.padding__bottom-regular.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
@@ -68,7 +68,7 @@ include ../components/layout/head.pug
                     p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                 a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de promoción
             //- área de información
-            section.padding.padding__bottom-large.content__center.content__max
+            section.media__margin.padding.padding__bottom-large.content__center.content__max
                 div.padding__bottom-regular
                     h4.padding__bottom-regular.primaryfont__bold Área de información
                     p.padding__bottom-regular.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
@@ -87,7 +87,7 @@ include ../components/layout/head.pug
             //- últimas noticias, dos columnas
             section.padding__bottom-xtra-large
                 +component-subtitle-link("", "")
-                div.padding.display__flex.gap.content__max.content__center
+                div.media__margin.padding.display__flex.gap.content__max.content__center
                     +component-noticia-target("link__color-home", "tag__card--grey", "box__tag", "", "", "", "display__none")
                     +component-noticia-target("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
             //- form innovation

@@ -18,7 +18,7 @@ include ../components/layout/head.pug
                     +menu-section("migas__innovation", "migas__text-innovation")
                     //- +menu-index()
             //- cabecera
-            section.padding__regular.padding__bottom-xx-large.content__center.content__max
+            section.media__margin.padding__regular.padding__bottom-xx-large.content__center.content__max
                 div 
                     h1.primaryfont__bold Líneas de investigación
                     p.text-medium.padding__bottom-regular Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -33,11 +33,11 @@ include ../components/layout/head.pug
             
             //- salud .display__desktop
             section.margin__bottom-xx-large.padding__topbottom-large.box__background--innovation.display__desktop
-                div.padding.padding__bottom-large.content__center.content__max
+                div.media__margin.padding.padding__bottom-large.content__center.content__max
                     h3.primaryfont__bold Salud
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
                 //- vertical lines .display__desktop
-                div.padding.padding__top-large.content__center.content__max.display__flex
+                div.media__margin.padding.padding__top-large.content__center.content__max.display__flex
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
@@ -45,28 +45,28 @@ include ../components/layout/head.pug
                     +component-vertical-line("link__color-home", "card__details--margin", "card__line--innovation", "display__mobile", "", "display__none", "display__one")
             //- análisis sensorial .display__desktop
             section.margin__bottom-xx-large.padding__topbottom-large.box__background--innovation.display__desktop
-                div.padding__bottom-large.content__center.content__max
-                    h3.padding.primaryfont__bold Análisis sensorial
+                div.media__margin.padding.padding__bottom-large.content__center.content__max
+                    h3.primaryfont__bold Análisis sensorial
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             //- asostenibilidad .display__desktop
             section.margin__bottom-xx-large.padding__topbottom-large.box__background--innovation.display__desktop
-                div.padding__bottom-large.content__center.content__max
-                    h3.padding.primaryfont__bold Sostenibilidad
+                div.media__margin.padding.padding__bottom-large.content__center.content__max
+                    h3.primaryfont__bold Sostenibilidad
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             //- desarrollo de producto .display__desktop
             section.margin__bottom-xx-large.padding__topbottom-large.box__background--innovation.display__desktop
-                div.padding__bottom-large.content__center.content__max
-                    h3.padding.primaryfont__bold Desarrollo de producto
+                div.media__margin.padding.padding__bottom-large.content__center.content__max
+                    h3.primaryfont__bold Desarrollo de producto
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             //- digitalización .display__desktop
             section.margin__bottom-xx-large.padding__topbottom-large.box__background--innovation.display__desktop
-                div.padding__bottom-large.content__center.content__max
-                    h3.padding.primaryfont__bold Digitalización
+                div.media__margin.padding.padding__bottom-large.content__center.content__max
+                    h3.primaryfont__bold Digitalización
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "", "btn__primary--medium-nocolor-innovation", "", "", "", "display__innovation", "", "", "display__one")
             
             //- DISPLAY__MOBILE ACCORDION
             //- salud
-            section.padding.accordion__section.display__mobile
+            section.media__margin.content__center.padding.accordion__section.display__mobile
                 div.accordion__item
                     button.accordion.accordion__background-innovation Salud
                     .panel.panel__background-innovation
@@ -84,7 +84,7 @@ include ../components/layout/head.pug
                             p.padding__bottom-small.x-small El estudio de la interacción entre características sensoriales de los <strong>alimentos y la persona:</strong> su influencia en la aceptación del producto, las emociones generadas y los hábitos de la población.
                             a.btn__primary--small-nocolor-innovation(href="www") Proyectos salud
             //- análisis sensorial            
-            section.padding.accordion__section.display__mobile
+            section.media__margin.content__center.padding.accordion__section.display__mobile
                 div.accordion__item
                     button.accordion.accordion__background-innovation Análisis sensorial
                     .panel.panel__background-innovation
@@ -93,7 +93,7 @@ include ../components/layout/head.pug
                             p.padding__bottom-small.x-small Estudiamos la <strong>percepción del consumidor a través del análisis de la interacción entre la persona y el alimento en base a 3 ejes:</strong> aspectos organolépticos del producto, aspectos que afectan a la persona y aspectos incluidos en el contexto de consumo.
                             a.btn__primary--small-nocolor-innovation(href="www") Proyectos análisis sensorial
             //- sostenibilidad
-            section.padding.accordion__section.display__mobile
+            section.media__margin.content__center.padding.accordion__section.display__mobile
                 div.accordion__item
                     button.accordion.accordion__background-innovation Sostenibilidad
                     .panel.panel__background-innovation
@@ -102,7 +102,7 @@ include ../components/layout/head.pug
                             p.padding__bottom-small.x-small <strong> Desarrollo de proyectos para el impulso de una gastronomía más sostenible</strong> que promueve la economía circular, el ecodiseño, el fomento de la biodiversidad, el desperdicio cero, sin olvidar la sostenibilidad económica y social.
                             a.btn__primary--small-nocolor-innovation(href="www") Proyectos sostenibilidad
             //- desarrollo de producto
-            section.padding.accordion__section.display__mobile
+            section.media__margin.content__center.padding.accordion__section.display__mobile
                 div.accordion__item
                     button.accordion.accordion__background-innovation Desarrollo de producto
                     .panel.panel__background-innovation
@@ -119,7 +119,7 @@ include ../components/layout/head.pug
                             p.padding__bottom-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                             a.btn__primary--small-nocolor-innovation(href="www") Proyectos desarrollo producto
             //- digitalización
-            section.padding.accordion__section.display__mobile
+            section.media__margin.content__center.padding.accordion__section.display__mobile
                 div.accordion__item
                     button.accordion.accordion__background-innovation Digitalización
                     .panel.panel__background-innovation

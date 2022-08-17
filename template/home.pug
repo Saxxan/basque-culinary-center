@@ -15,69 +15,68 @@ include ../components/column/component-title.pug
 include ../components/menu/menu-gradient.pug
 include ../components/layout/head.pug
     block content
-        main
-            header
-                //- menu
-                div
-                    +menu-gradient("gradient__innovation")
-                    include ../components/menu/topbar.pug
-                    +menu("")
-                    
+        header
+            //- menu
+            div
+                +menu-gradient("gradient__innovation")
+                include ../components/menu/topbar.pug
+                +menu("")
+        main            
             //- slide cabecera
-            div.swiper__fullwidth.swiper2
-                div.swiper-wrapper
-                    .swiper-slide.swiper-slide-board.swiper-slide-background
-                        h1 1/02
-                        h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
-                        h4 Inscripción abierta para el nuevo curso 2022-2023
-                        a.btn__primary--large-nocolor-width(href="#") más información
+            //- div.swiper__fullwidth.swiper2
+            //-     div.swiper-wrapper
+            //-         .swiper-slide.swiper-slide-board.swiper-slide-background
+            //-             h1 1/02
+            //-             h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+            //-             h4 Inscripción abierta para el nuevo curso 2022-2023
+            //-             a.btn__primary--large-nocolor-width(href="#") más información
                 
-                .swiper-button-next
-                .swiper-button-prev
+            //-     .swiper-button-next
+            //-     .swiper-button-prev
             //- column icon
-            section.padding__bottom-xtra-large.content__center.content__max
+            section.padding__bottom-xtra-large
                 +component-title("", "", "")
-                div.padding.display__flex.gap
+                div.padding.media__margin.content__center.content__max.display__flex.gap
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
             //- nuestra agenda slider desktop
             section.padding__bottom-xx-large.box__background.display__desktop
-                    +component-title-link("", "")
-                    div.padding
-                        div.swiper.mySwiper.display__flex.content__max
-                            div.swiper-wrapper
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                                div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                            div.swiper-pagination
+                +component-title-link("", "")
+                div.media__margin.padding.content__center
+                    div.swiper.mySwiper.display__flex.content__max
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                            div.swiper-slide
+                                +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-pagination
             
             //- nuestra agenda mobile
             section.padding__bottom-xx-large.box__background.display__mobile
                 +component-title-link("", "")
-                div.padding.gap.display__flex.content__center.content__max
+                div.media__margin.padding.gap.display__flex.content__center.content__max
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
             //- últimas noticias, dos columnas
             section.padding__bottom-xtra-large.box__background
                 +component-subtitle-link("", "")
-                div.padding.display__flex.gap.content__max.content__center
+                div.media__margin.padding.display__flex.gap.content__max.content__center
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "", "", "", "display__none")
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
                     div.padding__top-x-large.display__mobile
@@ -85,8 +84,8 @@ include ../components/layout/head.pug
             //- tabs .display__desktop
             div.display__desktop
                 +component-title("", "", "")
-            .padding.padding__bottom-xx-large.content__max.display__desktop
-                include ../components/tabs/tabs.pug
+                .padding__bottom-xx-large.display__desktop
+                    include ../components/tabs/tabs.pug
             //- tabs .display__mobile
             +component-title("", "display__mobile", "")
             div.padding.padding__bottom-xx-large.display__mobile
@@ -98,7 +97,7 @@ include ../components/layout/head.pug
                 +component-mobile-card-img("card__img--border-formacion")
             //- vertical line
             +component-subtitle("")
-            section.padding.padding__bottom-xtra-large.content__center.content__max.display__flex
+            section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
@@ -113,8 +112,8 @@ include ../components/layout/head.pug
             //- un motor de cambio - slider areas de trabajo
             section.padding__top-x-large.padding__bottom-xtra-large.box__background
                     +component-subtitle("")
-                    div.padding
-                        div.swiper.mySwiper.box__swiper.content__max
+                    div.media__margin.padding.content__center.content__max
+                        div.swiper.mySwiper.box__swiper
                             div.swiper-wrapper
                                 div.swiper-slide
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
@@ -139,11 +138,11 @@ include ../components/layout/head.pug
                             a.btn__primary--small-color(href="que tal") Acceder a innovación
             //- colabora con BCC
             +component-title("", "", "")
-            section.padding.padding__bottom-xx-large
+            section.padding__bottom-xx-large
                 +component-img-left("box__content", "display__none", "")
             section.padding__bottom-xtra-large
                     +component-subtitle("")
-                    div.padding
+                    div.media__margin.padding.content__center.content__max
                         div.swiper.mySwiper.box__swiper.content__max
                             div.swiper-wrapper
                                 div.swiper-slide
@@ -173,13 +172,13 @@ include ../components/layout/head.pug
                 +component-noticia-principal("box__content--justify", "link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border-rightangle", "", "display__button", "display__none", "")
             //- noticias target desktop
             section.box__background.display__desktop
-                div.padding__regular-xtra-large.content__center.content__max.display__flex.gap
+                div.media__margin.padding__regular-xtra-large.content__center.content__max.display__flex.gap
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "box__img--border-rightangle", "", "", "display__none")
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
             //- noticias target mobile
             section.padding.padding__bottom-xtra-large.box__background.display__mobile
-                    div.swiper.mySwiper.box__swiper
+                    div.media__margin.swiper.mySwiper.box__swiper
                         div.swiper-wrapper
                             div.swiper-slide
                                 +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
@@ -187,13 +186,12 @@ include ../components/layout/head.pug
                                 +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
                                 +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
-                            
                         div.swiper-pagination
-                    div.padding__top-small.display__mobile
+                    div.media__margin.content__center.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             //- dos conceptos distintos
             +component-title("", "", "")
-            div.padding__mobile.padding__bottom-xtra-large.content__max.content__center.display__flex
+            div.media__margin.padding.padding__bottom-xtra-large.content__max.content__center.display__flex.gap
                 +component-target-info-event("", "", "padding__bottom-large", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                 +component-target-info-event("", "", "", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
         //- footer

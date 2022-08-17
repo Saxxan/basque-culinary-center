@@ -25,12 +25,12 @@ include ../components/layout/head.pug
             div.banner__fixed.display__mobile 
                 a.btn__primary--small-color(href="www") Contactar
             //- noticias principal
-            section.padding.padding__top-xx-large 
+            section.media__margin.padding.padding__top-xx-large.content__center.content__max 
                 h2.padding__bottom-large.primaryfont__bold Actualidad
             div.padding__bottom-x-large
                 +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
             //- cabecera
-            section.padding.padding__bottom-xtra-large.content__center.content__max
+            section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
                 div.padding__bottom-large.display__flex.gap
                     +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "")
                     +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "")
