@@ -1744,6 +1744,12 @@ em.error {
   list-style: none;
   display: inline;
 }
+.migas ul:not(:last-child):after,
+.migas li:not(:last-child):after {
+  content: "/";
+  margin-left: 8px;
+  margin-right: 8px;
+}
 .migas__innovation {
   background-color: #59718c;
 }
