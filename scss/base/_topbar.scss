@@ -17,12 +17,7 @@
                 float:left;
                 color: white;
                 padding: $x-small $large;
-                &:hover {
-                    > ul {
-                        display:block;
-                    }
-                }
-                &-selected {
+                &.selected {
                     > ul {
                         display: block;
                         z-index: 10;
