@@ -24,6 +24,11 @@
             grid-template-columns: 8fr 4fr;
             grid-gap: $large;
         }
+        &__c5-c7 {
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            grid-gap: $large;
+        }
         
     }
 }

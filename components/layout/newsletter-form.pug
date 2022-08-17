@@ -1,0 +1,52 @@
+mixin newsletter-form()
+    section.padding.padding__top-large.padding__bottom-xtra-large.box__background
+        div.padding__bottom-regular
+            h3.padding__bottom-large.primaryfont__bold Suscríbete a nuestra newsletter
+            div.content__center.content__max.grid__c5-c7
+                div.padding__bottom-large 
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    h4.primaryfont__bold Vanguardia culinaria
+                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                //- form
+                form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                    section
+                        p.text-medium.padding__bottom-regular <strong>Déjanos tus datos y tus preferencias.</strong> Nosotros hacemos el resto.
+                        .form__inputs.gap__form
+                            .form-floating
+                                input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                                label(for="nombre") * Nombre
+                            .form-floating
+                                input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                                label(for="apellidos") * Apellidos
+                        .form__inputs.gap__form
+                            .form-floating
+                                input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
+                                label(for="pais") *País
+                            .form-floating
+                                label(for="opciones")
+                                select(name="opciones" class="form-control") 
+                                    option(selected disabled) Intereses
+                                    option(value="opcion 1") Opción 1
+                                    option(value="opcion 2") Opción 2
+                        p.text-small.padding__bottom-regular <strong>¿Qué información te interesa recibir?</strong> Puedes marcar varias opciones
+                        .form-floating
+                            label(for="opciones")
+                            select(name="opciones" class="form-control") 
+                                option(selected disabled) Intereses
+                                option(value="opcion 1") Opción 1
+                                option(value="opcion 2") Opción 2
+                            
+                        
+                            //- checkmarck
+                        div.form__policity.text-small
+                            label.container
+                                input(type='checkbox')
+                                span.checkmark__radio
+                            p.padding__top-tiny.x-small.form__policity-text.primaryfont__bold He leído y acepto la 
+                                a.primaryfont__bold(href="www") política de privacidad 
+                            
+                            .submit.padding__top-regular
+                                button.btn__primary--medium-color-width Enviar datos       

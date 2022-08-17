@@ -25,7 +25,7 @@
         
         &--tag {
             @extend .box__icon;
-            margin-top: $regular;
+            margin-top: $small;
         }
         &--date {
             @extend .box__icon;
@@ -80,7 +80,10 @@
         }
     }
     &__description {
-        margin: 0 0 $regular 0;
+        margin: $x-small 0 $small 0;
+        @include respond-to(large) {
+            margin: 0 0 $small 0;
+        }
         &--date {
             margin: $x-small 0;
         }
@@ -119,25 +122,42 @@
     &__img {
         width: 100%;
         padding-bottom: $x-small;
-        @include respond-to(large) {
-            padding-bottom: 0;
-        }
-        border-radius: $small;
+        border-radius: 8px;
         object-fit: cover;
         object-position: center;
-        &--bloq2 {
-            // border-radius: $small $small 0 0;
+        @include respond-to(large) {
+            padding-bottom: 0;
             border-radius: $small;
+        }
+        &--bloq2 {
+            border-radius: 8px;
             width: 100%;
             object-fit: cover;
             object-position: center;
+            @include respond-to(large) {
+                border-radius: $small;
+            }
+            &-rightangle {
+                border-radius: 8px 8px 0 0;
+                @extend .box__img--bloq2;
+                @include respond-to(large) {
+                    border-radius: $small $small 0 0;
+                }
+            }
         }
         &--border {
             @extend .box__img;
-            // border-radius: $small $small 0 0;
             border-radius: $small;
             padding-bottom: 0;
             border-bottom: 5px solid $c-primary-darkmode;
+            &-rightangle {
+                @extend .box__img--border;
+                border-radius: 18px 18px 0 0;
+                @include respond-to(large) {
+                    border-radius: $small $small 0 0;
+                }
+
+            }
         }
     }
     &__content {

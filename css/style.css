@@ -424,7 +424,7 @@ strong {
           align-items: flex-start;
 }
 .box__icon--tag {
-  margin-top: 24px;
+  margin-top: 16px;
 }
 .box__icon--date {
   padding-right: 16px;
@@ -489,7 +489,12 @@ strong {
   width: 100%;
 }
 .box__description {
-  margin: 0 0 24px 0;
+  margin: 8px 0 16px 0;
+}
+@media (min-width: 1024px) {
+  .box__description {
+    margin: 0 0 16px 0;
+  }
 }
 .box__description--date {
   margin: 8px 0;
@@ -532,32 +537,54 @@ strong {
   margin-right: 10px;
   margin-bottom: 8px;
 }
-.box__img, .box__img--border {
+.box__img, .box__img--border, .box__img--border-rightangle {
   width: 100%;
   padding-bottom: 8px;
-  border-radius: 16px;
+  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
 @media (min-width: 1024px) {
-  .box__img, .box__img--border {
+  .box__img, .box__img--border, .box__img--border-rightangle {
     padding-bottom: 0;
+    border-radius: 16px;
   }
 }
-.box__img--bloq2 {
-  border-radius: 16px;
+.box__img--bloq2, .box__img--bloq2-rightangle {
+  border-radius: 8px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
-.box__img--border {
+@media (min-width: 1024px) {
+  .box__img--bloq2, .box__img--bloq2-rightangle {
+    border-radius: 16px;
+  }
+}
+.box__img--bloq2-rightangle {
+  border-radius: 8px 8px 0 0;
+}
+@media (min-width: 1024px) {
+  .box__img--bloq2-rightangle {
+    border-radius: 16px 16px 0 0;
+  }
+}
+.box__img--border, .box__img--border-rightangle {
   border-radius: 16px;
   padding-bottom: 0;
   border-bottom: 5px solid #D5903C;
+}
+.box__img--border-rightangle {
+  border-radius: 18px 18px 0 0;
+}
+@media (min-width: 1024px) {
+  .box__img--border-rightangle {
+    border-radius: 16px 16px 0 0;
+  }
 }
 @media (min-width: 1024px) {
   .box__content, .box__content--right {
@@ -2382,6 +2409,13 @@ p, h4 {
     display: grid;
     -ms-grid-columns: 8fr 32px 4fr;
     grid-template-columns: 8fr 4fr;
+    grid-gap: 32px;
+  }
+  .grid__c5-c7 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5fr 32px 7fr;
+    grid-template-columns: 5fr 7fr;
     grid-gap: 32px;
   }
 }
