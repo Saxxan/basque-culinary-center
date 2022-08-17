@@ -1828,7 +1828,7 @@ em.error {
 }
 .menu__menu a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: clamp(15px, -6.175rem + 8.333vw, 17px);
   letter-spacing: 0.4px;
   font-weight: 500;
 }
