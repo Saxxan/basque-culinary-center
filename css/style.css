@@ -274,11 +274,19 @@ strong {
           animation: gradient 5s ease infinite;
   background-size: 400% 400%;
 }
+.gradient__home-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 .gradient__innovation {
   background: linear-gradient(274.9deg, #47596F 3.95%, #9CB5BC 96.05%);
   -webkit-animation: gradient 5s ease infinite;
           animation: gradient 5s ease infinite;
   background-size: 400% 400%;
+}
+.gradient__innovation-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 @media (min-width: 1024px) {
   .gradient, .gradient__innovation, .gradient__home {
@@ -2250,6 +2258,10 @@ input:checked + .slider::before {
 .topbar__list--item:hover > ul, .topbar__list--item--link:hover > ul {
   display: block;
 }
+.topbar__list--item-selected > ul {
+  display: block;
+  z-index: 10;
+}
 .topbar__list--item--link {
   display: block;
   color: #52483B;
@@ -2441,6 +2453,13 @@ body {
   overflow-x: hidden;
   height: 100%;
   position: relative;
+}
+body.overlay::after {
+  background: rgba(0, 0, 0, 0.25);
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
 }
 
 img {

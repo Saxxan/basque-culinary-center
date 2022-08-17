@@ -8,12 +8,18 @@
         background: linear-gradient(274.9deg, #EAAC30 3.95%, #83390B 96.05%);
         animation: gradient 5s ease infinite;
         background-size: 400% 400%;
+        &-paused {
+            animation-play-state: paused;
+        }
     }
     &__innovation {
         @extend .gradient;
         background: linear-gradient(274.9deg, #47596F 3.95%, #9CB5BC 96.05%);
         animation: gradient 5s ease infinite;
         background-size: 400% 400%;
+        &-paused {
+            animation-play-state: paused;
+        }
     }
     @include respond-to(large) {
         padding: 13.5px 24px;
