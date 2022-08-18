@@ -134,6 +134,9 @@
         padding-top: $xtra-large;
     }
     // Top / Bottom
+    &__topbottom-x-small {
+        padding: $x-small 0;
+    }
     &__topbottom-x-regular {
         padding: $x-regular 0;
     }

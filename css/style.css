@@ -2684,6 +2684,9 @@ img {
 .padding__top-xtra-large {
   padding-top: 96px;
 }
+.padding__topbottom-x-small {
+  padding: 8px 0;
+}
 .padding__topbottom-x-regular {
   padding: 20px 0;
 }
