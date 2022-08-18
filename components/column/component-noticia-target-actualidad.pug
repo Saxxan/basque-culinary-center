@@ -1,5 +1,5 @@
 mixin component-noticia-target-actualidad(linkColor= "link__color-home", tagColor="tag__master", tagBloq2="box__tag--bloq2", borderBottom="box__img--border", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
-    div.media__margin.padding.gap
+    div
         div
             span(class= tagColor)(class= tagBloq2) Etiqueta 01
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)(class= borderBottom)
@@ -11,7 +11,7 @@ mixin component-noticia-target-actualidad(linkColor= "link__color-home", tagColo
         a(class="x-small" href="#")(class= linkColor)(class= displayDesktop) Leer más
             img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
         hr.hr__margin-top.display__mobile(class= displayOne)
-    div.media__margin.padding
+    div.media__margin.padding.display__mobile
         img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayMobile)(class= displayNone)
     div.media__margin.padding.padding__top-xx-large(class= displayMobile)(class= displayNone)
         a.btn__primary--small-color(href="www") Ver más

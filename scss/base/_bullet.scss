@@ -1,54 +1,67 @@
 /* Experiences */
-ul.bullet {
-    padding-inline-start: 0px;
-}
-ul.bullet li {
-    margin-bottom: 2.5em;
-    list-style: none;
-    background: url('../img/misc/list-bullet-darkgray.png') no-repeat;
-}
-
-.bullet__title {
-    display: inline;
-    padding-left: $small;
-}
-
-.bullet__description {
-    display: block;
-    padding-left: $small;
-}
-
-
-/* BORDERS AND BULLETS */
-
-ul.bullet li {
-    position:relative; 
-    margin-bottom: 0;
-    padding-bottom: 2.5em;
-}
-
-ul.bullet li:after {
-    margin-left: -10px;
-    content: url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
-    position: absolute;
-    top: 0px;
-}
-
-ul.bullet li:before {
-    /* lines */
-    content:"";
-    position: absolute;
-    border-left: 1px solid black;
-    height: 100%;
-    width: 1px;
-}
-
-ul.bullet li:first-child:before {
-   /* first li's line */
-   top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
-}
-
-ul.bullet li:last-child:before {
-    /* last li's line */
-   height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+.bullet {
+    margin: 0;
+    &__line {
+        list-style: none;
+        position:relative; 
+        margin-bottom: 0;
+        padding-bottom: $large;
+        &:before {
+            content:"";
+            position: absolute;
+            border-left: 1px solid red;
+            height: 100%;
+            width: 1px;
+        }
+        &-home {
+            @extend .bullet__line;
+            &:before {
+                content:"";
+                position: absolute;
+                border-left: 1px solid $c-primary-dark;
+                height: 100%;
+                width: 1px;
+            }
+        }
+        &-innovation {
+            @extend .bullet__line;
+            &:before {
+                content:"";
+                position: absolute;
+                border-left: 1px solid $c-marcas-bcc-innovation;
+                height: 100%;
+                width: 1px;
+            }
+        }
+        &-action {
+            @extend .bullet__line;
+            &:before {
+                content:"";
+                position: absolute;
+                border-left: 1px solid $c-marcas-culinary-action;
+                height: 100%;
+                width: 1px;
+            }
+        }
+        &:first-child:before {
+            top: 20px;
+        }
+        &:last-child:before {
+            height: 6px;
+        }
+        &:after {
+            margin-left: -8px;
+            content: url('../src/iconos/bullet.svg');
+            position: absolute;
+            top: 5px;
+            color: red;
+        }
+    }
+    &__title {
+        padding-left: $small;
+    }
+    &__description {
+        display: block;
+        padding-left: $small;
+    }
 }

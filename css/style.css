@@ -193,7 +193,8 @@ h1, h2, h3 {
 @media (min-width: 700px) {
   .gap__logos {
     display: block;
-    text-align: left;
+    gap: 24px;
+    text-align: center;
     padding: 0 24px;
   }
 }
@@ -637,60 +638,62 @@ strong {
 }
 
 /* Experiences */
-ul.bullet {
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+.bullet {
+  margin: 0;
 }
-
-ul.bullet li {
-  margin-bottom: 2.5em;
+.bullet__line, .bullet__line-action, .bullet__line-innovation, .bullet__line-home {
   list-style: none;
-  background: url("../img/misc/list-bullet-darkgray.png") no-repeat;
-}
-
-.bullet__title {
-  display: inline;
-  padding-left: 16px;
-}
-
-.bullet__description {
-  display: block;
-  padding-left: 16px;
-}
-
-/* BORDERS AND BULLETS */
-ul.bullet li {
   position: relative;
   margin-bottom: 0;
-  padding-bottom: 2.5em;
+  padding-bottom: 32px;
 }
-
-ul.bullet li:after {
-  margin-left: -10px;
-  content: url("http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png");
-  position: absolute;
-  top: 0px;
-}
-
-ul.bullet li:before {
-  /* lines */
+.bullet__line:before, .bullet__line-action:before, .bullet__line-innovation:before, .bullet__line-home:before {
   content: "";
   position: absolute;
-  border-left: 1px solid black;
+  border-left: 1px solid red;
   height: 100%;
   width: 1px;
 }
-
-ul.bullet li:first-child:before {
-  /* first li's line */
-  top: 6px;
-  /* moves the line down so that it disappears under the bullet. Adjust manually */
+.bullet__line-home:before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #83390B;
+  height: 100%;
+  width: 1px;
 }
-
-ul.bullet li:last-child:before {
-  /* last li's line */
+.bullet__line-innovation:before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #59718c;
+  height: 100%;
+  width: 1px;
+}
+.bullet__line-action:before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #a1232f;
+  height: 100%;
+  width: 1px;
+}
+.bullet__line:first-child:before, .bullet__line-home:first-child:before, .bullet__line-innovation:first-child:before, .bullet__line-action:first-child:before {
+  top: 20px;
+}
+.bullet__line:last-child:before, .bullet__line-home:last-child:before, .bullet__line-innovation:last-child:before, .bullet__line-action:last-child:before {
   height: 6px;
-  /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+.bullet__line:after, .bullet__line-home:after, .bullet__line-innovation:after, .bullet__line-action:after {
+  margin-left: -8px;
+  content: url("../src/iconos/bullet.svg");
+  position: absolute;
+  top: 5px;
+  color: red;
+}
+.bullet__title {
+  padding-left: 16px;
+}
+.bullet__description {
+  display: block;
+  padding-left: 16px;
 }
 
 /*------------------------------------*\

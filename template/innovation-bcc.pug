@@ -1,3 +1,4 @@
+include ../components/layout/bullet.pug
 include ../components/layout/innovation-form.pug
 include ../components/layout/footer.pug
 include ../components/column/component-noticia-principal.pug
@@ -35,19 +36,11 @@ include ../components/layout/head.pug
             section.padding__topbottom-large.box__background--innovation
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "color__text-innovation", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
             //- sección texto
-            section.media__margin.padding__regular-xx-large.content__center.content__max
+            section.media__margin.padding__regular-large.content__center.content__max
                 div
                     h3.padding__bottom-large.primaryfont__bold Qué hacemos
-                div.padding__bottom-large 
-                    h4.primaryfont__bold Vanguardia culinaria
-                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                div.padding__bottom-large 
-                    h4.primaryfont__bold Vanguardia culinaria
-                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                 div 
-                    h4.primaryfont__bold Vanguardia culinaria
-                    p.text-medium Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-
+                    +bullet("bullet__line-innovation")
             section.media__margin.padding__p-bottom-xx-large.content__center.content__max
                 div.padding__bottom-regular
                     h3.primaryfont__bold Quienes somos
@@ -56,11 +49,11 @@ include ../components/layout/head.pug
                 div 
                     ul 
                         li.padding__bottom-large
-                            p.text-medium Doctor@s en Ciencia y Tecnología de Alimentos, Alimentación, Fisiología y Salud, Análisis Sensorial y Economía
+                            p.text-medium <strong>Doctor@s</strong> en Ciencia y Tecnología de Alimentos, Alimentación, Fisiología y Salud, Análisis Sensorial y Economía
                         li.padding__bottom-large 
-                            p.text-medium Chefs con una vasta experiencia internacional, tanto en restaurantes informales como en restaurantes de calidad Michelin
+                            p.text-medium <strong>Chefs</strong> con una vasta experiencia internacional, tanto en restaurantes informales como en restaurantes de calidad Michelin
                         li 
-                            p.text-medium Expertos en procesos y metodologías de innovación para la generación de nuevos negocios disruptivos
+                            p.text-medium <strong>Expertos en procesos y metodologías</strong> de innovación para la generación de nuevos negocios disruptivos
             
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
                 div.padding__bottom-regular
