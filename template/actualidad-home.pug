@@ -1,9 +1,9 @@
-include ../components/layout/bullets.pug
+include ../components/layout/bullet.pug
 include ../components/layout/newsletter-form.pug
-include ../components/column/component-target-garamond-complete.pug
+include ../components/column/component-target-garamond-complete-actualidad.pug
 include ../components/column/component-noticia-target.pug
 include ../components/column/component-noticia-target-actualidad.pug
-include ../components/column/component-noticia-principal.pug
+include ../components/column/component-noticia-principal-actualidad.pug
 include ../components/layout/footer.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu-section.pug
@@ -25,13 +25,13 @@ include ../components/layout/head.pug
                 a.btn__primary--small-color(href="www") Contactar
             //- noticias principal
             section.media__margin.padding.padding__top-xx-large.content__center.content__max 
-                h2.padding__bottom-large.primaryfont__bold BCC Actualidad
-            div.padding__bottom-x-large
-                +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
-            div.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex.gap
-                +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "")
+                h3.padding__bottom-large.primaryfont__bold BCC Actualidad
+            div.padding__bottom-large
+                +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text-home", "tag__card--grey", "", "", "display__none", "")
+            section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex.gap
                 +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "display__one")
-                div.padding__top-large.display__mobile
+                +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "display__one")
+                div.display__mobile
                     a.btn__primary--small-color(href="www") Ver más
             //- agenda display__desktop
             section.padding__bottom-xtra-large.box__background.display__desktop
@@ -41,23 +41,23 @@ include ../components/layout/head.pug
                         div.swiper.mySwiper.display__flex.content__max
                             div.swiper-wrapper
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
-                                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-pagination
             
             //- agenda display__mobile
@@ -65,26 +65,26 @@ include ../components/layout/head.pug
                 div.media__margin.padding__regular.content__center.content__max
                     h3.primaryfont__bold Agenda
                 div.media__margin.padding.gap.display__flex.content__center.content__max
-                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
-                    +component-target-garamond-complete("tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
-                    +component-target-garamond-complete("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "display__none")
+                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "display__none")
+                    +component-target-garamond-complete-actualidad("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "display__none")
                 div.media__margin.content__center.padding.padding__top-x-large.display__mobile
                     a.btn__primary--small-color(href="www") Ver todos
 
             //- gastronomía 360º
-            section.padding__top-xx-large.padding__bottom-xx-large
+            section.padding__top-xx-large.padding__bottom-large
                 div.media__margin.padding__regular.content__center.content__max
                     h3.primaryfont__bold Gastronomía 360º
-                +component-noticia-principal("box__content--justify", "link__color-home", "", "", "tag__card--grey", "", "box__img--border-rightangle", "", "display__button", "display__none", "")
+                +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
             //- noticias target desktop
             section.display__desktop
                 div.media__margin.padding__regular-xtra-large.content__center.content__max.display__flex.gap
-                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "box__img--border-rightangle", "", "", "display__none")
-                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
-                    +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
+                    +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag", "box__img--border-rightangle", "", "", "display__none")
+                    +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
             //- noticias target mobile
             section.media__margin.content__center.padding.padding__bottom-xtra-large.display__mobile
-                +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "display__one")
+                +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "", "display__one")
                 div.media__margin.padding__top-large
                     a.btn__primary--small-color(href="www") Ver más
             //- form innovation

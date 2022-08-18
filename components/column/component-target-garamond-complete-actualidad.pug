@@ -1,0 +1,45 @@
+mixin component-target-garamond-complete-actualidad(colorTag= "tag__primary", colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
+    div.box
+        div
+            div(class= displayDesktop) 
+                span.box__tag(class= colorTag) Etiqueta 01
+            img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
+        div.box__icon--tag
+            img(class="svg__icon--margin-top" src="../src/iconos/compartir.svg#compartir" type="img/svg")(class= displayDesktop)
+            span.tag__card--grey.box__tag--space  Evento
+            span.tag__card--border-actualidad.box__tag--space  Etiqueta 01
+            span.tag__card--border-actualidad.box__tag--space  Etiqueta 02
+        h4.box__title.primaryfont__bold Titular del evento que ocupe dos líneas como máximo
+        div.box__date
+            div.box__date--space
+                p.text-large__garamond 23
+                p.text-medium__garamond FEB    
+            div.box__date--width 
+                hr.hr__margin-bottom
+                div.box__icon--date
+                    img(class="svg__icon--margin" src="../src/iconos/calendar.svg#calen" type="img/svg")
+                    span.box__icon--date(class= colorDate) 
+                        p.x-small Fechas: 
+                    p.x-small 3 de febrero de 2022
+
+                div.box__icon--date
+                    img(class="svg__icon--margin" src="../src/iconos/cash-money.svg#cash-money" type="img/svg")
+                    span.box__icon--date(class= colorDate) 
+                        p.x-small Precio:
+                    p.x-small 100€ por persona
+
+                div.box__icon--date
+                    img(class="svg__icon--margin" src="../src/iconos/location.svg#location" type="img/svg")
+                    span.box__icon--date(class= colorDate) 
+                        p.x-small Lugar: 
+                    p.x-small  Edificio BCC
+                hr.hr__margin-top
+        div.box__description.padding__bottom-regular.padding__top-x-small                 
+            p.text-medium(class= displayDesktop) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
+
+        div.display__mobile(class= displayNone)
+            a.btn__primary--small-nocolor(href="www") Quiero inscribirme
+        div.display__desktop
+            a.btn__primary--medium-nocolor(href="www") Quiero inscribirme
+    div.padding__top-regular(class= displayMobile)(class= displayNone)
+        a.btn__primary--small-color(href="www") Ver todos los eventos

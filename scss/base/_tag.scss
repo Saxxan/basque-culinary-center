@@ -84,17 +84,25 @@
             border: 2px solid $c-marcas-bcc-corporate;
         }
         // Tag grey
-        &__card--grey{
-            @extend .tag;
-            color: $c-monocromo-900;
-            border: 2px solid $c-monocromo-200;
-            background-color: $c-monocromo-200;
+        &__card{
+            &--grey {
+                @extend .tag;
+                color: $c-monocromo-900;
+                border: 2px solid $c-monocromo-200;
+                background-color: $c-monocromo-200;
+            }
+            // Tag card-producto
+            &--border {
+                @extend .tag;
+                color: $c-suceso-default;
+                border: 2px solid $c-suceso-default;
+                background-color: $c-white;
+                &-actualidad {
+                    @extend .tag__card--border;
+                    color: $c-monocromo-800;
+                    border: 2px solid $c-monocromo-800;
+                }
+            }
         }
-        // Tag card-producto
-        &__card--border {
-            @extend .tag;
-            color: $c-suceso-default;
-            border: 2px solid $c-suceso-default;
-            background-color: $c-white;
-        }
+        
 }

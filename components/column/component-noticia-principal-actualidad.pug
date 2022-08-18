@@ -1,0 +1,15 @@
+mixin component-noticia-principal-actualidad(justifyContent="box__content--justify", linkColor= "link__color-innovation", textColor= "color__text-innovation", tagColor= "tag__grado", colorBackground="box__background--innovation", borderBottom= "box__img--border", displayNone="display__none", displayOne="display__one")
+    section(class= colorBackground)
+        div.media__margin.padding.content__center.content__max.grid__c8-c4.gap
+            div
+                div
+                    span.box__tag(class= tagColor) Etiqueta 01
+                img(class="box__img" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
+            div(class= justifyContent)
+                h3.box__title.primaryfont__bold Toni Segarra: «No es momento para el marketing».
+                p.x-small(class= displayOne)(class= textColor) Redacción BCC
+                p.x-small(class= displayNone)(class= textColor)  Nombre y apellidos
+                p.box__description.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada.
+                a(class="text-small display__desktop" href="www")(class= displayDesktop)(class= linkColor) Leer más 
+                    img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+            

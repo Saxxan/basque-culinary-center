@@ -80,7 +80,7 @@
         }
     }
     &__description {
-        margin: $x-small 0 $small 0;
+        margin: 0 0 $small 0;
         @include respond-to(large) {
             margin: 0 0 $small 0;
         }
