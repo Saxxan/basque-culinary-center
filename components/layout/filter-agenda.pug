@@ -1,0 +1,40 @@
+mixin filter-agenda(colorTag= "tag__innovation", colorTagActive= "tag__innovation-dark")
+    div.media__margin.padding.content__center.content__max
+        div.padding__top-small.padding__bottom-small
+            h4.filter__text.primaryfont__bold Filtrar por:
+            a.filter__tag--item(class= colorTagActive)(href="www") Todos
+            a.filter__tag--item(class= colorTag)(href="www") Hoy
+            a.filter__tag--item(class= colorTag)(href="www") Esta semana
+            a.filter__tag--item(class= colorTag)(href="www") Este mes
+            a.filter__tag--item(class= colorTag)(href="www") Próximo mes
+        //- form
+        form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+            section.padding__bottom-small
+                .form__inputs.gap__form
+                    .form-floating
+                        label(for="opciones")
+                        select(name="opciones" class="form-control") 
+                            option(selected disabled) Tipología
+                            option(value="opcion 1") Todos
+                            option(value="opcion 2") Evento
+                            option(value="opcion 3") Webinar 
+                            option(value="opcion 2") Curso
+                    .form-floating
+                        label(for="opciones")
+                        select(name="opciones" class="form-control") 
+                            option(selected disabled) Temática
+                            option(value="opcion 1") Opción 1
+                            option(value="opcion 2") Opción 2
+                    .form-floating
+                        label(for="opciones")
+                        select(name="opciones" class="form-control") 
+                            option(selected disabled) Inicio
+                            option(value="opcion 1") En 1 mes
+                            option(value="opcion 2") En 3 meses
+                            option(value="opcion 3") En 6 meses 
+                            option(value="opcion 4") En 9 meses
+                            option(value="opcion 5") Más de 9 meses
+                    .submit.padding__bottom-regular
+                        button.btn__primary--medium-nocolor Limpiar
+                    .submit
+                        button.btn__primary--medium-color Buscar    

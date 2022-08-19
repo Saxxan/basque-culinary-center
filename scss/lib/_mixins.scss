@@ -7,7 +7,8 @@
     //Background
     @if $background == color {
         color: $c-white;
-        
+        background-color: $c-button-primary;
+        border: 2px solid $c-button-primary;
             &:link {
                 background-color: $c-button-primary;
                 border: 2px solid $c-button-primary;

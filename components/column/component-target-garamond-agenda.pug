@@ -1,12 +1,13 @@
-mixin component-target-garamond-complete-actualidad(classButton= "btn__primary--medium-nocolor", displayGrid= "grid__c7-c5", colorTag= "tag__primary", colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
-    div.box(class= displayGrid)
+mixin component-target-garamond-agenda(classButton= "btn__primary--medium-nocolor", displayGrid= "grid__c7-c5", colorTag= "tag__primary", colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
+    div(class= displayGrid)(class= backgroundColor)
         div
-            div(class= displayDesktop) 
-                span.box__tag(class= colorTag) Etiqueta 01
+            //- div(class= displayDesktop) 
+            //-     span.box__tag(class= colorTag) Etiqueta 01
             img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
         div
-            div.box__icon--tag
-                img(class="svg__icon--margin-top" src="../src/iconos/compartir.svg#compartir" type="img/svg")(class= displayDesktop)
+            hr.hr.display__mobile
+            div.box__icon--tag.padding__top-x-small
+                img(class="svg__icon--margin-top" src="../src/iconos/compartir.svg#compartir" type="img/svg")
                 span.tag__card--grey.box__tag--space  Evento
                 span.tag__card--border-actualidad.box__tag--space  Etiqueta 01
                 span.tag__card--border-actualidad.box__tag--space  Etiqueta 02
@@ -35,12 +36,10 @@ mixin component-target-garamond-complete-actualidad(classButton= "btn__primary--
                             p.x-small Lugar: 
                         p.x-small  Edificio BCC
                     hr.hr__margin-top
-            div.box__description.padding__bottom-mobile-regular.padding__top-x-small                 
-                p.text-medium(class= displayDesktop) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
-
-            div.display__mobile(class= displayNone)
+            div.box__description.padding__top-x-small                 
+                p.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
+            div.padding__bottom-regular.display__mobile
                 a.btn__primary--small-nocolor(href="www") Quiero inscribirme
             div.display__desktop
-                a(class= classButton)(href="www") Quiero inscribirme
-    div.padding__top-regular(class= displayMobile)(class= displayNone)
-        a.btn__primary--small-color(href="www") Ver todos los eventos
+                    a(class="link__color-home text-small display__desktop primaryfont__medium" href="#") Quiero inscribirme
+                        img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")

@@ -16,3 +16,20 @@
         }
     }
 }
+.submit {
+    &__desktop {
+        @include respond-to(medium) {
+            text-align: right;
+        }
+    }
+}
+@media all and (max-width: 700px) {
+    .submit__desktop {
+        display: none;
+    }
+}
+@media all and (min-width: 701px) {
+    .submit__mobile {
+        display: none;
+    }
+}

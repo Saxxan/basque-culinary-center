@@ -1,4 +1,4 @@
-mixin newsletter-form()
+mixin newsletter-form
     section.padding__top-large.padding__bottom-xtra-large.box__background
         div.media__margin.padding.content__center.content__max.padding__bottom-regular
             h3.padding__bottom-large.primaryfont__bold Suscríbete a nuestra newsletter
@@ -49,5 +49,7 @@ mixin newsletter-form()
                             p.padding__top-tiny.x-small.form__policity-text.primaryfont__bold He leído y acepto la 
                                 a.primaryfont__bold(href="www") política de privacidad 
                             
-                            .submit.padding__top-regular
-                                button.btn__primary--medium-color-width Enviar datos       
+                            .submit__desktop.padding__top-regular
+                                button.btn__primary--medium-color-width Enviar datos
+                            .submit__mobile.padding__top-regular
+                                button.btn__primary--small-color Enviar datos       

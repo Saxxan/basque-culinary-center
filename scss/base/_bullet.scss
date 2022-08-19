@@ -1,6 +1,9 @@
 /* Experiences */
 .bullet {
     margin: 0;
+    &__none-margin {
+        padding-left: 0;
+    }
     &__line {
         list-style: none;
         position:relative; 

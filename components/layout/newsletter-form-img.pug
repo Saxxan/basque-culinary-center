@@ -1,0 +1,60 @@
+mixin newsletter-form-img()
+    section.padding__top-large.padding__bottom-xtra-large.box__background
+        div.media__margin.padding.content__center.content__max.padding__bottom-regular
+            h3.padding__bottom-large.primaryfont__bold Suscríbete a nuestra newsletter
+            div.content__center.content__max.grid__c6-c6     
+                //- form
+                section 
+                    div 
+                        ul.bullet__none-margin
+                            li.bullet__line-home
+                                h4.bullet__title.primaryfont__bold Contenidos exclusivos
+                                p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis.
+                            li.bullet__line-home
+                                h4.bullet__title.primaryfont__bold Infórmate de lo que está pasando en el BCC
+                                p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis.
+                
+                    form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                        div
+                            p.text-medium.padding__bottom-regular <strong>Déjanos tus datos y tus preferencias.</strong> Nosotros hacemos el resto.
+                            .form__inputs.gap__form
+                                .form-floating
+                                    input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                                    label(for="nombre") * Nombre
+                                .form-floating
+                                    input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                                    label(for="apellidos") * Apellidos
+                            .form__inputs.gap__form
+                                .form-floating
+                                    input(type="text" name="pais" class="form-control" id="pais" placeholder="País" required)
+                                    label(for="pais") *País
+                                .form-floating
+                                    label(for="opciones")
+                                    select(name="opciones" class="form-control") 
+                                        option(selected disabled) Intereses
+                                        option(value="opcion 1") Opción 1
+                                        option(value="opcion 2") Opción 2
+                            p.text-small.padding__bottom-regular <strong>¿Qué información te interesa recibir?</strong> Puedes marcar varias opciones
+                            .form-floating
+                                label(for="opciones")
+                                select(name="opciones" class="form-control") 
+                                    option(selected disabled) Intereses
+                                    option(value="opcion 1") Opción 1
+                                    option(value="opcion 2") Opción 2
+                                
+                            
+                                //- checkmarck
+                            div.form__policity.text-small
+                                label.container
+                                    input(type='checkbox')
+                                    span.checkmark__radio
+                                p.padding__top-tiny.x-small.form__policity-text.primaryfont__bold He leído y acepto la 
+                                    a.primaryfont__bold(href="www") política de privacidad 
+                                
+                                .submit__desktop.padding__top-regular
+                                    button.btn__primary--medium-color-width Enviar datos
+                                .submit__mobile.padding__top-regular
+                                    button.btn__primary--small-color Enviar datos 
+                    
+                div 
+                    img(class="box__img--bloq2" src="../src/images/img-cabecera.jpg", alt="")

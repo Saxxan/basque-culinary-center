@@ -1,5 +1,6 @@
-include ../components/layout/filter.pug
+include ../components/layout/filter-agenda.pug
 include ../components/layout/bullet.pug
+include ../components/column/component-target-garamond-agenda.pug
 include ../components/column/component-target-garamond-complete-actualidad.pug
 include ../components/layout/footer.pug
 include ../components/menu/menu-gradient.pug
@@ -20,16 +21,53 @@ include ../components/layout/head.pug
             //- noticias principal
             section.media__margin.padding.padding__top-xx-large.content__center.content__max 
                 h3.padding__bottom-large.primaryfont__bold Evento destacado
-            section.padding__topbottom-large.box__background
+            section.padding__topbottom-x-large.box__background
                 div.media__margin.padding.content__center.content__max
                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor-width", "grid__c7-c5", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
             //- filtros
-            section.media__margin.padding__regular.padding__top-large.content__center.content__max
+            section.media__margin.padding__regular.padding__top-x-large.content__center.content__max
                 h2.primaryfont__bold Agenda
             section.box__background
-                +filter("tag__empresas", "tag__empresas-dark")
+                +filter-agenda("tag__empresas", "tag__empresas-dark")
             //- eventos
-            section.media__margin.padding.padding__top-large.content__center.content__max 
+            section.media__margin.padding.padding__top-x-large.content__center.content__max 
                 h3.primaryfont__bold Todos los eventos
                 p.padding__bottom-large.text-small 70 eventos
-
+            //- target 01
+            section.padding__bottom-desktop-small
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 02
+            section.box__background
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 01
+            section.padding__bottom-desktop-small
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 02
+            section.box__background
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 01
+            section.padding__bottom-desktop-small
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 02
+            section.box__background
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 01
+            section.padding__bottom-desktop-small
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+            //- target 02
+            section.box__background
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
+                hr.hr
+            //- componente paginación
+            section.padding__topbottom-xtra-large 
+                h3 Falta componente paginación
+    //- footer
+    +footer("box__background--white")

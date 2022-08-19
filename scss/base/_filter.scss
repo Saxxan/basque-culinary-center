@@ -2,14 +2,14 @@
     FILTER
 \*------------------------------------*/
 .filter {
-    padding: 0 16px 16px 16px;
+    padding: 0 $small $small $small;
     &__text {
-        padding: $small $x-small;
+        padding: $small 0;
     }
     &__tag {
         gap: 30px;
         &--item {
-            margin: $x-small;
+            margin: $x-small $x-small $x-small 0;
             text-decoration: none;
             a {
                 line-height: 0;

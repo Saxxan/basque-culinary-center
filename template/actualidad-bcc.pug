@@ -19,12 +19,9 @@ include ../components/layout/head.pug
                     +menu("display__none")
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- botón banner
-            div.banner__fixed.display__mobile 
-                a.btn__primary--small-color(href="www") Contactar
             //- title
             section.media__margin.padding.padding__top-xx-large.content__center.content__max 
-                h3.padding__bottom-large.primaryfont__bold BCC Actualidad
+                h2.padding__bottom-large.primaryfont__bold BCC Actualidad
             //- noticia principal
             div.padding__bottom-x-large
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text-home", "tag__card--grey", "", "", "display__none", "")
@@ -38,7 +35,7 @@ include ../components/layout/head.pug
             //- línea
             section.padding__bottom-xx-large.media__margin.padding.content__center.content__max.display__desktop     
                 hr.hr
-            //- noticias 4 columnas display__desktop
+            //- noticias 3 columnas display__desktop
             section.media__margin.padding.padding.padding__bottom-large.content__center.content__max.display__flex.display__desktop.gap
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
@@ -70,7 +67,7 @@ include ../components/layout/head.pug
             //- línea
             section.padding__bottom-xx-large.media__margin.padding.content__center.content__max.display__desktop     
                 hr.hr
-            //- noticias 4 columnas
+            //- noticias 3 columnas
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex.gap
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
@@ -99,8 +96,9 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-                    div.display__mobile
-                            a.btn__primary--small-color(href="www") Ver más
+            //- componente paginación
+            section.padding__topbottom-xtra-large 
+                h3 Falta componente paginación
             
         //- footer
         +footer("box__background--white")

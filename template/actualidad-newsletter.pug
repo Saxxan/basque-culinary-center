@@ -1,0 +1,23 @@
+include ../components/layout/newsletter-form-img.pug
+include ../components/layout/bullet.pug
+include ../components/layout/newsletter-form.pug
+include ../components/layout/footer.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            //- form innovation
+            +newsletter-form-img()
+    //- footer
+    +footer("box__background--white")

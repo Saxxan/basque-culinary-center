@@ -168,4 +168,26 @@
     &__regular-xtra-large {
         padding: 0 $regular $xtra-large $regular;
     }
+
+    // Mobile/desktop
+    &__bottom-mobile-regular {
+        padding-bottom: $regular;
+        @include respond-to(large) {
+            padding-bottom: 0; 
+        }
+    }
+    &__topbottom-desktop {
+        padding-top: 0;
+        padding-bottom: 0;
+        @include respond-to(large) {
+            padding-top: $regular;
+            padding-bottom: $regular;
+        }
+    }
+    &__bottom-desktop-small {
+        padding-bottom:  0;
+        @include respond-to(large) {
+            padding-bottom: $small;
+        }
+    }
 }
