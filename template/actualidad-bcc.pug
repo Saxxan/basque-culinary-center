@@ -12,31 +12,39 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- title
+            // title
             section.media__margin.padding.padding__top-xx-large.content__center.content__max 
                 h2.padding__bottom-large.primaryfont__bold BCC Actualidad
-            //- noticia principal
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA PRINCIPAL 1ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             div.padding__bottom-x-large
+                 // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text-home", "tag__card--grey", "", "", "display__none", "")
-            //- línea
+            // líne separadora
             section.padding__bottom-xx-large.media__margin.padding.content__center.content__max.display__desktop     
                 hr.hr
-            //- noticia 2 columnas
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA 2 COLUMNAS 2ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding__bottom-large.content__center.content__max.display__flex.gap
+                // component-noticia-target-actualidad
                 +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "")
+                // component-noticia-target-actualidad
                 +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "")
-            //- línea
+            // líne separadora
             section.padding__bottom-xx-large.media__margin.padding.content__center.content__max.display__desktop     
                 hr.hr
-            //- noticias 3 columnas display__desktop
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA 3 COLUMNAS 3ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding.padding__bottom-large.content__center.content__max.display__flex.display__desktop.gap
+                    // target
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__primary.box__tag--space Etiqueta 01
@@ -46,6 +54,7 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    // target
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__primary.box__tag--space Etiqueta 01
@@ -55,6 +64,7 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    // target
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__primary.box__tag--space Etiqueta 01
@@ -64,11 +74,12 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-            //- línea
+            // líne separadora
             section.padding__bottom-xx-large.media__margin.padding.content__center.content__max.display__desktop     
                 hr.hr
-            //- noticias 3 columnas
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA 3 COLUMNAS 3ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex.gap
+                    // target
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__primary.box__tag--space Etiqueta 01
@@ -78,6 +89,7 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    // target
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__primary.box__tag--space Etiqueta 01
@@ -87,6 +99,7 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    // target
                     div.padding__bottom-large
                         hr.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__primary.box__tag--space Etiqueta 01
@@ -96,11 +109,12 @@ include ../components/layout/head.pug
                         div.box__link.display__desktop
                             a(class="x-small link__color-home display__desktop" href="#") Leer más
                                 img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-            //- componente paginación
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PAGINACIÓN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.padding__topbottom-xtra-large 
                 h3 Falta componente paginación
             
-        //- footer
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // componente footer
         +footer("box__background--white")
 
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")

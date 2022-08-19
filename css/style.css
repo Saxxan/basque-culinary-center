@@ -96,7 +96,6 @@ h1, h2, h3, h4, p, label {
 a {
   line-height: 1;
   font-family: "League Spartan", sans-serif;
-  font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -1806,7 +1805,7 @@ em.error {
   color: #B36206;
 }
 .link__color-home:hover {
-  color: #B36206;
+  color: #83390B;
 }
 .link__color-home:focus {
   color: #83390B;
@@ -2057,6 +2056,9 @@ input[type=checkbox] {
 }
 .svg__icon--margin-top {
   margin-top: -0.2rem;
+}
+.svg__icon--margin-bottom {
+  margin: 0 8px -8px 0;
 }
 .svg__icon--menu {
   margin-left: auto;
@@ -2779,6 +2781,14 @@ img {
 @media (min-width: 1024px) {
   .padding__bottom-mobile-regular {
     padding-bottom: 0;
+  }
+}
+.padding__top-mobile-large {
+  padding-top: 32px;
+}
+@media (min-width: 1024px) {
+  .padding__top-mobile-large {
+    padding-top: 0;
   }
 }
 .padding__topbottom-desktop {

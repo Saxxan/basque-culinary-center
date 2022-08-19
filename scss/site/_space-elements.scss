@@ -176,6 +176,12 @@
             padding-bottom: 0; 
         }
     }
+    &__top-mobile-large {
+        padding-top: $large;
+        @include respond-to(large) {
+            padding-top: 0; 
+        }
+    }
     &__topbottom-desktop {
         padding-top: 0;
         padding-bottom: 0;

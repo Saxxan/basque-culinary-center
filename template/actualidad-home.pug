@@ -13,82 +13,112 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
-                    //- +menu-index()
-            //- noticias principal
+                    // menú índice
+                    // +menu-index()
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA PRINCIPAL 1ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding__top-xx-large.content__center.content__max 
                 h2.padding__bottom-large.primaryfont__bold BCC Actualidad
             div.padding__bottom-large
+                // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text-home", "tag__card--grey", "", "", "display__none", "")
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA 2 COLUMNAS 2ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex.gap
+                // component-noticia-target-actualidad
                 +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "display__one")
+                // component-noticia-target-actualidad
                 +component-noticia-target-actualidad("link__color-home", "tag__primary", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none", "display__one")
+                // button display__mobile
                 div.display__mobile
                     a.btn__primary--small-color(href="www") Ver más
-            //- agenda display__desktop
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> AGENDA display__desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.padding__bottom-xtra-large.box__background.display__desktop
                     div.media__margin.padding__regular.content__center.content__max 
                         h3.primaryfont__bold Agenda
                     div.media__margin.padding.content__center.content__max 
+                        // swiper
                         div.swiper.mySwiper.display__flex.content__max
                             div.swiper-wrapper
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                                 div.swiper-slide
+                                    // component-target-garamond-complete-actualidad
                                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-pagination
             
-            //- agenda display__mobile
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> AGENDA display__mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.padding__bottom-regular.box__background.display__mobile
                 div.media__margin.padding__regular.content__center.content__max
                     h3.primaryfont__bold Agenda
                 div.media__margin.padding.gap.display__flex.content__center.content__max
+                    // component-target-garamond-complete-actualidad
                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                    // component-target-garamond-complete-actualidad
                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                    // component-target-garamond-complete-actualidad
                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "display__none")
+                    // component-target-garamond-complete-actualidad
                     +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "display__none")
                 div.media__margin.content__center.padding.padding__top-x-large.display__mobile
                     a.btn__primary--small-color(href="www") Ver todos
 
-            //- gastronomía 360º
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GASTRGONOMÍA 360º >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.padding__top-xx-large.padding__bottom-large
                 div.media__margin.padding__regular.content__center.content__max
                     h3.primaryfont__bold Gastronomía 360º
+                // noticia principal
+                // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
-            //- noticias target desktop
+            // noticias 2 columnas display__desktop
             section.display__desktop
                 div.media__margin.padding__regular-xtra-large.content__center.content__max.display__flex.gap
+                    // component-noticia-target-actualidad
                     +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag", "box__img--border-rightangle", "", "", "display__none")
+                    // component-noticia-target-actualidad
                     +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
-            //- noticias target mobile
+            // noticias display__mobile
             section.media__margin.content__center.padding.padding__bottom-xtra-large.display__mobile
                 +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "", "display__one")
                 div.media__margin.padding__top-large
                     a.btn__primary--small-color(href="www") Ver más
-            //- form innovation
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NEWSLETTER FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // componente newsletter-form
             +newsletter-form()  
-        //- footer
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        // componente footer
         +footer("box__background--white")
-
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SCRIPTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/menu.js")

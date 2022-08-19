@@ -10,14 +10,20 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- form innovation
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM NEWSLETTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // componente newsletter-form-img
             +newsletter-form-img()
-    //- footer
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    // componente footer
     +footer("box__background--white")

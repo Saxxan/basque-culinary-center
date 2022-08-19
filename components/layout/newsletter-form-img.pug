@@ -16,7 +16,7 @@ mixin newsletter-form-img()
                 
                     form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
                         div
-                            p.text-medium.padding__bottom-regular <strong>Déjanos tus datos y tus preferencias.</strong> Nosotros hacemos el resto.
+                            p.text-medium.padding__bottom-small <strong>Déjanos tus datos y tus preferencias.</strong> Nosotros hacemos el resto.
                             .form__inputs.gap__form
                                 .form-floating
                                     input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
@@ -34,7 +34,7 @@ mixin newsletter-form-img()
                                         option(selected disabled) Intereses
                                         option(value="opcion 1") Opción 1
                                         option(value="opcion 2") Opción 2
-                            p.text-small.padding__bottom-regular <strong>¿Qué información te interesa recibir?</strong> Puedes marcar varias opciones
+                            p.text-small.padding__top-small.padding__bottom-small <strong>¿Qué información te interesa recibir?</strong> Puedes marcar varias opciones
                             .form-floating
                                 label(for="opciones")
                                 select(name="opciones" class="form-control") 
