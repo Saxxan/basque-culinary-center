@@ -324,11 +324,12 @@ strong {
     background-position: 0% 50%;
   }
 }
-.accordion {
+.accordion, .accordion__index {
   width: 100%;
   border: none;
   color: #444;
-  padding: 16px;
+  height: 61px;
+  padding: 0 16px;
   cursor: pointer;
   outline: none;
   text-align: left;
@@ -336,19 +337,45 @@ strong {
   font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
   border-radius: 4px;
   font-family: "League Spartan", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
 }
-.accordion::after {
+.accordion::after, .accordion__index::after {
   content: url("../../src/iconos/accordion-open.svg");
-  float: right;
-}
-.accordion__item {
-  margin-bottom: 24px;
 }
 .accordion__background {
   background-color: #DFDAD3;
 }
 .accordion__background-innovation {
   background-color: rgba(89, 113, 140, 0.1);
+}
+.accordion__index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 16px;
+}
+.accordion__index::after {
+  content: url("../../src/iconos/accordion-open.svg");
 }
 
 .order {
@@ -357,12 +384,14 @@ strong {
           order: 1;
 }
 
-.active.accordion {
+.active.accordion, .active.accordion__index {
   border-radius: 4px 4px 0 0;
 }
 .active::after {
   content: url("../../src/iconos/accordion-closed.svg");
-  float: right;
+}
+.active__index::after {
+  content: url("../../src/iconos/accordion-closed.svg");
 }
 
 .panel {
@@ -1863,8 +1892,14 @@ em.error {
 .migas__text-innovation {
   color: #ffffff;
 }
+.migas__text-innovation:after {
+  color: inherit;
+}
 .migas__text-neutral {
   color: #26201B;
+}
+.migas__text-neutral:after {
+  color: inherit;
 }
 
 /*------------------------------------*\

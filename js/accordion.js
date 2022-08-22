@@ -1,7 +1,8 @@
 // Accordion
 const acc = document.querySelectorAll(".accordion");
+const acci = document.querySelectorAll(".accordion__index");
 const panel = document.querySelectorAll(".panel");
-
+// accordion
 acc.forEach((item, key) => {
     item.addEventListener("click", function () {
         item.classList.toggle("active");
@@ -12,16 +13,14 @@ acc.forEach((item, key) => {
         }
     });
 })
-
-
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function () {
-//         this.classList.toggle("active");
-//         var panel = this.nextElementSibling;
-//         if (panel.style.minHeight) {
-//             panel.style.minHeight = null;
-//         } else {
-//             panel.style.minHeight = panel.scrollHeight + "px";
-//         }
-//     });
-// }
+// accordion menu index
+acci.forEach((item, key) => {
+    item.addEventListener("click", function () {
+        item.classList.toggle("active__index");
+        if(panel[key].classList.contains("visible")) {
+            panel[key].classList.remove("visible");
+        } else {
+            panel[key].classList.add("visible");
+        }
+    });
+})

@@ -2,7 +2,8 @@
     width: 100%;
     border: none;
     color: #444;
-    padding: $small;
+    height: 61px;
+    padding: 0 $small;
     cursor: pointer;
     outline: none;
     text-align: left;
@@ -10,12 +11,12 @@
     font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.2rem);
     border-radius: $btnprimary-radius;
     font-family: $primary-font;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $small;
     &::after {
         content: url("../../src/iconos/accordion-open.svg");
-        float: right;
-    }
-    &__item {
-        margin-bottom: $regular;
     }
     &__background {
         background-color: $c-monocromo-200;
@@ -23,8 +24,18 @@
             background-color: rgba($c-marcas-bcc-innovation, 0.1);
         }
     }
-
-
+    &__index {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: $small;
+        @extend .accordion;
+        &::after {
+            content: url("../../src/iconos/accordion-open.svg");
+        }
+    }
 }
 .order {
     order: 1;
@@ -35,7 +46,11 @@
     }
     &::after{
         content: url("../../src/iconos/accordion-closed.svg");
-        float: right;
+    }
+    &__index {
+        &::after{
+            content: url("../../src/iconos/accordion-closed.svg");
+        } 
     }
 }
 .panel {

@@ -18,7 +18,6 @@
                 margin-right: 8px;
             }
         }
-
     }
     &__innovation {
         background-color: $c-marcas-bcc-innovation;
@@ -33,12 +32,17 @@
         &-innovation {
             @extend .migas__text;
             color: $c-white;
+            &:after {
+                color: inherit;
+        } 
         }
         &-neutral {
             @extend .migas__text;
             color: $c-monocromo-900;
+            &:after {
+                color: inherit;
+        } 
         }
     }
 }
-    
     
