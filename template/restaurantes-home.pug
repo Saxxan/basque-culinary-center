@@ -8,14 +8,18 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            // cabecera
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-xx-large.content__center.content__max
                 div
                     h2.padding__regular.primaryfont__bold Lorem ipsum
@@ -86,13 +90,14 @@ include ../components/layout/head.pug
                                 a.btn__primary--small-nocolor(href="www") Conocer más
                             div
                                 a.btn__primary--small-color(href="www") Reservar mesa
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SLIDER EXPERIENCIAS BCC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // section "Experiencias BCC"
             section.media__margin.padding__bottom-regular.content__center.content__max
                 div.padding.padding__bottom-large
                     h3.primaryfont__bold Experiencias BCC
                 .padding
                     p.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            // section "Experiencias destacadas"
+            // slider "Experiencias destacadas"
             section.media__margin.padding__regular.title__link.content__center.content__max
                 div
                     h4.primaryfont__bold  Experiencias destacadas
@@ -121,8 +126,9 @@ include ../components/layout/head.pug
                         div.swiper-slide
                             +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                     div.swiper-pagination
-        //- footer
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")                              
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/swiper3.js")
+    script(src="../js/menu.js")

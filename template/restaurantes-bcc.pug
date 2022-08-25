@@ -8,19 +8,23 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            // cabecera
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-xx-large.content__center.content__max
                 div
                     h2.padding__regular.primaryfont__bold Restaurante BCC
                     p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            // section "Restaurante BCC"
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECCIÓN MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.padding__topbottom-large.box__background
                 .media__margin.padding.content__center.content__max.grid__c7-c5
                     div.swiper3.mySwiper.swiper3-nonepagination
@@ -56,7 +60,7 @@ include ../components/layout/head.pug
                                     | Basque Culinary Center.</br>Paseo Juan Avelino Barriola, 101.</br>Donostia - San Sebastian (Gipuzkoa).            
                             div 
                                 p.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
-            //- menu diario
+            // menu diario
             section.media__margin.padding.padding__topbottom-xx-large.content__center.content__max
                 div
                     h4.primaryfont__bold Menú diario     
@@ -85,7 +89,7 @@ include ../components/layout/head.pug
                             a.btn__primary--medium-color-width(href="www") Reservar mesa
                         div.display__mobile
                             a.btn__primary--small-color(href="www") Reservar mesa
-            //- menu degustación
+            // menu degustación
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
                 div
                     h4.primaryfont__bold Menú degustación     
@@ -114,7 +118,8 @@ include ../components/layout/head.pug
                             a.btn__primary--medium-color-width(href="www") Reservar mesa
                         div.display__mobile
                             a.btn__primary--small-color(href="www") Reservar mesa
-            // cafeteria"
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECCIÓN CAFETERÍA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // cafeteria
             section.margin__bottom-xtra-large.padding__topbottom-large.box__background
                 div.media__margin.padding.padding__bottom-regular.content__center.content__max             
                     h3.primaryfont__bold Cafetería
@@ -147,7 +152,8 @@ include ../components/layout/head.pug
                                 p.text-small
                                     span.text-small.box__icon--date-home Lugar:
                                     | Basque Culinary Center.</br>Paseo Juan Avelino Barriola, 101.</br>Donostia - San Sebastian (Gipuzkoa).            
-        //- footer
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper3.js")
+    script(src="../js/menu.js")

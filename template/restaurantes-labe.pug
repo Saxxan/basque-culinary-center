@@ -7,14 +7,18 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            // cabecera
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-large.content__center.content__max
                 div.padding__bottom-small
                     h2.padding__regular.primaryfont__bold Delicioso y sostenible
@@ -22,7 +26,7 @@ include ../components/layout/head.pug
                 div 
                     h4.padding__regular.primaryfont__bold Gastronomía actual, producto local y de temporada
                     p.padding.text-medium Lorem Ipsum is simply dummy <strong>text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-            // section "Restaurante BCC"
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECCIÓN EVENTO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.margin__bottom-xx-large.padding__topbottom-large.box__background
                 .media__margin.padding.content__center.content__max.grid__c7-c5
                     div.swiper3.mySwiper.swiper3-nonepagination
@@ -62,6 +66,7 @@ include ../components/layout/head.pug
                                     a.btn__primary--small-nocolor(href="www") Conocer más
                                 div
                                     a.btn__primary--small-color(href="www") Reservar mesa
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORMULARIO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         section.padding__top-large.padding__bottom-xtra-large.box__background
             div.media__margin.padding.content__center.content__max.grid__c5-c7.gap
                 div.padding__bottom-regular
@@ -79,7 +84,7 @@ include ../components/layout/head.pug
                     div
                         p.text-small Ver en 
                             a.primaryfont__bold(href="www") Google Maps  
-                //- form
+                // form
                 form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
                     section
                         h4.primaryfont__bold.padding__bottom-regular Formulario
@@ -120,7 +125,8 @@ include ../components/layout/head.pug
                                 button.btn__primary--medium-color-width Enviar datos
                             .submit.padding__top-regular.display__mobile
                                 button.btn__primary--small-color Enviar datos  
-        //- footer
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")     
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
-    script(src="../js/swiper3.js")       
+    script(src="../js/swiper3.js")
+    script(src="../js/menu.js")       
