@@ -19,6 +19,12 @@
     @include respond-to(large) {
         padding: 0 0 40px 0;
     }
+    &-nonepagination {
+        @extend .swiper3;
+        @include respond-to(large) {
+            padding: 0;
+        }
+    }
 }
 
 .swiper-slide {

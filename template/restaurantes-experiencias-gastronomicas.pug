@@ -1,0 +1,116 @@
+include ../components/column/component-target-garamond-agenda.pug
+include ../components/column/component-target-garamond-complete-actualidad.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // cabecera
+            section.media__margin.padding__bottom-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Lorem ipsum
+                    p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            // bullets
+            section.media__margin.padding__bottom-x-large.content__center.content__max.padding.grid__c2 
+                img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
+                ul.bullet.bullet__none-margin
+                    li.bullet__line-home
+                        h4.bullet__title.primaryfont__bold Experiencia 01
+                        p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis, numquam harum quae debitis similique ducimus.
+                    li.bullet__line-home
+                        h4.bullet__title.primaryfont__bold Experiencia 02
+                        p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis, numquam harum quae debitis similique ducimus.
+                    li.bullet__line-home
+                        h4.bullet__title.primaryfont__bold Experiencia 03
+                        p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis, numquam harum quae debitis similique ducimus.
+            // section "destacadas"
+            section.media__margin.padding__regular.title__link.content__center.content__max
+                div
+                    h3.primaryfont__bold  Destacadas
+            section.media__margin.padding.padding__bottom-x-large.content__center
+                div.swiper.mySwiper.display__flex.content__max
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                    div.swiper-pagination
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FILTROS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.box__background
+                // componente filter-agenda
+                div.media__margin.padding.content__center.content__max
+                    div.padding__top-small.padding__bottom-small
+                        h4.filter__text.primaryfont__bold Filtrar por:
+                        a.filter__tag--item.tag__empresas-dark(href="www") Todos
+                        a.filter__tag--item.tag__empresas(href="www") Hoy
+                        a.filter__tag--item.tag__empresas(href="www") Esta semana
+                        a.filter__tag--item.tag__empresas(href="www") Este mes
+                        a.filter__tag--item.tag__empresas(href="www") Próximo mes
+                    //- form
+                    form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                        section.padding__bottom-small
+                            .form__inputs.gap__form
+                                .form-floating
+                                    label(for="opciones")
+                                    select(name="opciones" class="form-control") 
+                                        option(selected disabled) Selecciona un rango de fecha
+                                        option(value="opcion 1") Todos
+                                        option(value="opcion 2") Evento
+                                        option(value="opcion 3") Webinar 
+                                        option(value="opcion 2") Curso
+                                
+                                .submit.padding__bottom-regular
+                                    button.btn__primary--medium-nocolor Limpiar
+                                .submit
+                                    button.btn__primary--medium-color Buscar    
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> EVENTOS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            //target
+            section.padding__top-x-large.padding__bottom-desktop-small
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    // component-target-garamond-agenda
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+            //target
+            section.box__background
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    // component-target-garamond-agenda
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+            //target
+            section.padding__bottom-desktop-small
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    // component-target-garamond-agenda
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+            //target
+            section.box__background
+                div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
+                    // component-target-garamond-agenda
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+        //- footer
+        div.padding__top-xtra-large 
+            +footer("box__background--white")
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")

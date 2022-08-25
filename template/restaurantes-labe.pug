@@ -1,0 +1,126 @@
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // cabecera
+            section.media__margin.padding__bottom-large.content__center.content__max
+                div.padding__bottom-small
+                    h2.padding__regular.primaryfont__bold Delicioso y sostenible
+                    p.padding.text-medium Lorem Ipsum is simply dummy <strong>text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                div 
+                    h4.padding__regular.primaryfont__bold Gastronomía actual, producto local y de temporada
+                    p.padding.text-medium Lorem Ipsum is simply dummy <strong>text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            // section "Restaurante BCC"
+            section.margin__bottom-xx-large.padding__topbottom-large.box__background
+                .media__margin.padding.content__center.content__max.grid__c7-c5
+                    div.swiper3.mySwiper.swiper3-nonepagination
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content
+                        div
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Horario:
+                                    | De Lunes a viernes 13:15h -16:00h</br>Inicio de servicio: 13:15h a 14:30h. <strong>Se ruega puntualidad</strong>
+
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/location.svg#location" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Lugar:
+                                    | LABe.</br>Plaza de las Cigarreras, 1 Piso 5.</br>20012 Donostia - San Sebastián (Gipuzkoa).            
+                            // button display__desktop
+                            div.display__desktop
+                                div.padding__topbottom-small
+                                    a.btn__primary--medium-nocolor-width(href="www") Conocer más
+                                div
+                                    a.btn__primary--medium-color-width(href="www") Reservar mesa
+                            // button display__mobile
+                            div.display__mobile
+                                div.padding__topbottom-small
+                                    a.btn__primary--small-nocolor(href="www") Conocer más
+                                div
+                                    a.btn__primary--small-color(href="www") Reservar mesa
+        section.padding__top-large.padding__bottom-xtra-large.box__background
+            div.media__margin.padding.content__center.content__max.grid__c5-c7.gap
+                div.padding__bottom-regular
+                    h4.primaryfont__bold.padding__bottom-regular Contacto con LABe
+                    p.padding__bottom-regular.text-small Plaza de las Cigarreras 1, Piso 5</br>20012 Donostia · San Sebastián.
+                    div.padding__bottom-xx-small.box__icon
+                        img(class="svg__icon--margin" src="../src/iconos/telefono.svg#telefono" type="img/svg")
+                        span.box__icon--date
+                            p.text-small 943 574 500
+                    div.padding__bottom-regular.box__icon
+                        img(class="svg__icon--margin" src="../src/iconos/e-mail.svg#e-mail" type="img/svg")
+                        span.box__icon--date
+                            p.text-small 
+                                a(href="mailto:ndelafuente@bculibary.com") ndelafuente@bculibary.com
+                    div
+                        p.text-small Ver en 
+                            a.primaryfont__bold(href="www") Google Maps  
+                //- form
+                form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                    section
+                        h4.primaryfont__bold.padding__bottom-regular Formulario
+                        .form__inputs.gap__form
+                            .form-floating
+                                input(type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required)
+                                label(for="nombre") * Nombre
+                            .form-floating
+                                input(type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos" required)
+                                label(for="apellidos") * Apellidos
+                        .form__inputs.gap__form
+                            .form-floating
+                                input(type="tel" name="telefono" class="form-control" id="telefono" placeholder="Teléfono" required)
+                                label(for="tel") * Teléfono
+                            .form-floating
+                                input(type="text" name="email" class="form-control" id="email" placeholder="País" required)
+                                label(for="email") * Email
+                        form__inputs.gap__form
+                            .form-floating
+                                label(for="opciones")
+                                select(name="opciones" class="form-control") 
+                                    option(selected disabled) País
+                                    option(value="opcion 1") Opción 1
+                                    option(value="opcion 2") Opción 2
+                        div
+                            label(for="mensaje")
+                            textarea(name="mensaje" class="content__center form-control" id="mensaje" placeholder="Mensaje") Escribe el texto.
+                            //- checkmarck
+                        div.form__policity.text-small
+                            label.container
+                                input(type='checkbox')
+                                span.checkmark__radio
+                            p.padding__top-tiny.x-small.form__policity-text.primaryfont__bold He leído y acepto la 
+                                a.primaryfont__bold(href="www") política de privacidad
+                            p.padding__top-x-small.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            
+                            .submit__desktop.padding__top-regular.display__desktop
+                                button.btn__primary--medium-color-width Enviar datos
+                            .submit.padding__top-regular.display__mobile
+                                button.btn__primary--small-color Enviar datos  
+        //- footer
+        +footer("box__background--white")     
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper3.js")       

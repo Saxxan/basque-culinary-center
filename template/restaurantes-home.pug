@@ -1,0 +1,128 @@
+include ../components/column/component-target-garamond-complete-actualidad.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // cabecera
+            section.media__margin.padding__bottom-xx-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Lorem ipsum
+                    p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            // section "Restaurante BCC"
+            section.media__margin.padding__bottom-xx-large.content__center.content__max
+                div.padding.padding__bottom-large
+                    h3.primaryfont__bold Restaurante BCC
+                div.padding
+                    p.display__mobile.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                .padding.grid__c8-c4
+                    div.swiper3.mySwiper.swiper3-nonepagination
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content--justify 
+                        p.display__desktop.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        // button display__desktop
+                        div.display__desktop
+                            div.padding__topbottom-small
+                                a.btn__primary--medium-nocolor-width(href="www") Conocer más
+                            div
+                                a.btn__primary--medium-color-width(href="www") Reservar mesa
+                        // button display__mobile
+                        div.display__mobile
+                            div.padding__topbottom-small
+                                a.btn__primary-small-nocolor(href="www") Conocer más
+                            div
+                                a.btn__primary-small-color(href="www") Reservar mesa
+            // section "Restaurante LABe"
+            section.media__margin.padding__bottom-xx-large.content__center.content__max
+                div.padding.padding__bottom-large
+                    h3.primaryfont__bold Restaurante LABe
+                div.padding
+                    p.display__mobile.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                .padding.grid__c8-c4
+                    div.swiper3.mySwiper.swiper3-nonepagination
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content--justify 
+                        p.display__desktop.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        // button display__desktop
+                        div.display__desktop
+                            div.padding__topbottom-small
+                                a.btn__primary--medium-nocolor-width(href="www") Conocer más
+                            div
+                                a.btn__primary--medium-color-width(href="www") Reservar mesa
+                        // button display__mobile
+                        div.display__mobile
+                            div.padding__topbottom-small
+                                a.btn__primary--small-nocolor(href="www") Conocer más
+                            div
+                                a.btn__primary--small-color(href="www") Reservar mesa
+            // section "Experiencias BCC"
+            section.media__margin.padding__bottom-regular.content__center.content__max
+                div.padding.padding__bottom-large
+                    h3.primaryfont__bold Experiencias BCC
+                .padding
+                    p.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            // section "Experiencias destacadas"
+            section.media__margin.padding__regular.title__link.content__center.content__max
+                div
+                    h4.primaryfont__bold  Experiencias destacadas
+                div
+                    a(class="link__color-home text-small display__desktop primaryfont__medium" href="#") Ver todas las experiencias
+                        img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+            section.media__margin.padding.padding__bottom-xtra-large.content__center
+                div.swiper.mySwiper.display__flex.content__max
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                        div.swiper-slide
+                            +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                    div.swiper-pagination
+        //- footer
+        +footer("box__background--white")                              
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")
+    script(src="../js/swiper3.js")

@@ -137,6 +137,9 @@
     &__topbottom-x-small {
         padding: $x-small 0;
     }
+    &__topbottom-small {
+        padding: $small 0;
+    }
     &__topbottom-x-regular {
         padding: $x-regular 0;
     }
@@ -170,6 +173,12 @@
     }
 
     // Mobile/desktop
+    &__bottom-mobile-small {
+        padding-bottom: $small;
+        @include respond-to(large) {
+            padding-bottom: 0; 
+        }
+    }
     &__bottom-mobile-regular {
         padding-bottom: $regular;
         @include respond-to(large) {

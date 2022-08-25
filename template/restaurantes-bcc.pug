@@ -1,0 +1,153 @@
+include ../components/column/component-target-garamond-complete-actualidad.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("display__none")
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // cabecera
+            section.media__margin.padding__bottom-xx-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Restaurante BCC
+                    p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            // section "Restaurante BCC"
+            section.padding__topbottom-large.box__background
+                .media__margin.padding.content__center.content__max.grid__c7-c5
+                    div.swiper3.mySwiper.swiper3-nonepagination
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content
+                        div
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Horario:
+                                    | De Lunes a viernes 13:15h -16:00h</br>Inicio de servicio: 13:15h a 14:30h. <strong>Se ruega puntualidad</strong>
+
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/reservas.svg#reservas" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Reservas:
+                                    | <strong>Se realizan exclusivamente por esta web.</strong>
+
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/location.svg#location" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Lugar:
+                                    | Basque Culinary Center.</br>Paseo Juan Avelino Barriola, 101.</br>Donostia - San Sebastian (Gipuzkoa).            
+                            div 
+                                p.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
+            //- menu diario
+            section.media__margin.padding.padding__topbottom-xx-large.content__center.content__max
+                div
+                    h4.primaryfont__bold Menú diario     
+                div.grid__c2
+                    div.swiper3.mySwiper
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                        div.swiper-pagination.swiper-pagination__two-column.display__desktop
+                    div.box__content
+                        p.text-medium <strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                        div.padding__bottom-mobile-small
+                            a(class="link__color-home display__flex-mobile" href="#") 
+                                img(class="svg__icon--margin svg__icon--link" src="../src/iconos/descargar.svg#descargar" type="img/svg")
+                                p.text-small.primaryfont__medium Descargar menú
+                                
+                        div.display__desktop
+                            a.btn__primary--medium-color-width(href="www") Reservar mesa
+                        div.display__mobile
+                            a.btn__primary--small-color(href="www") Reservar mesa
+            //- menu degustación
+            section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
+                div
+                    h4.primaryfont__bold Menú degustación     
+                div.grid__c2
+                    div.swiper3.mySwiper
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                        div.swiper-pagination.swiper-pagination__two-column.display__desktop
+                    div.box__content
+                        p.text-medium <strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                        div.padding__bottom-mobile-small
+                            a(class="link__color-home display__flex-mobile" href="#") 
+                                img(class="svg__icon--margin svg__icon--link" src="../src/iconos/descargar.svg#descargar" type="img/svg")
+                                p.text-small.primaryfont__medium Descargar menú
+                                
+                        div.display__desktop
+                            a.btn__primary--medium-color-width(href="www") Reservar mesa
+                        div.display__mobile
+                            a.btn__primary--small-color(href="www") Reservar mesa
+            // cafeteria"
+            section.margin__bottom-xtra-large.padding__topbottom-large.box__background
+                div.media__margin.padding.padding__bottom-regular.content__center.content__max             
+                    h3.primaryfont__bold Cafetería
+                .media__margin.padding.content__center.content__max.grid__c7-c5
+                    div.swiper3.mySwiper.swiper3-nonepagination
+                        div.margin__left.swiper-wrapper
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                            div.swiper-slide
+                                img(src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content--justify
+                        div
+                            div.padding__bottom-small 
+                                p.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
+
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/watch.svg#watch" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Horario:
+                                    | De Lunes a viernes 13:15h -16:00h
+
+                            div.box__icon.padding__bottom-small
+                                img(class="svg__icon--margin" src="../src/iconos/location.svg#location" type="img/svg")
+                                p.text-small
+                                    span.text-small.box__icon--date-home Lugar:
+                                    | Basque Culinary Center.</br>Paseo Juan Avelino Barriola, 101.</br>Donostia - San Sebastian (Gipuzkoa).            
+        //- footer
+        +footer("box__background--white")
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper3.js")

@@ -1,8 +1,8 @@
 mixin component-target-garamond-agenda(classButton= "btn__primary--medium-nocolor", displayGrid= "grid__c7-c5", colorTag= "tag__primary", colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
     div(class= displayGrid)(class= backgroundColor)
         div
-            //- div(class= displayDesktop) 
-            //-     span.box__tag(class= colorTag) Etiqueta 01
+            div(class= displayNone) 
+                span.box__tag(class= colorTag) Etiqueta 01
             img(class="box__img--bloq2-agenda" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
         div
             hr.hr.display__mobile
