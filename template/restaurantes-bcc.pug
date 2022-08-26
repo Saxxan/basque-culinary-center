@@ -61,10 +61,10 @@ include ../components/layout/head.pug
                             div 
                                 p.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat.
             // menu diario
-            section.media__margin.padding.padding__topbottom-xx-large.content__center.content__max
-                div
+            section.media__margin.padding__topbottom-xx-large.content__center.content__max
+                div.padding
                     h4.primaryfont__bold Menú diario     
-                div.grid__c2
+                div.padding.grid__c2
                     div.swiper3.mySwiper
                         div.margin__left.swiper-wrapper
                             div.swiper-slide
@@ -80,7 +80,7 @@ include ../components/layout/head.pug
                         div.swiper-pagination.swiper-pagination__two-column.display__desktop
                     div.box__content
                         p.text-medium <strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-                        div.padding__bottom-mobile-small
+                        div.padding__topbottom-mobile-small
                             a(class="link__color-home display__flex-mobile" href="#") 
                                 img(class="svg__icon--margin svg__icon--link" src="../src/iconos/descargar.svg#descargar" type="img/svg")
                                 p.text-small.primaryfont__medium Descargar menú
@@ -109,7 +109,7 @@ include ../components/layout/head.pug
                         div.swiper-pagination.swiper-pagination__two-column.display__desktop
                     div.box__content
                         p.text-medium <strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-                        div.padding__bottom-mobile-small
+                        div.padding__topbottom-mobile-small
                             a(class="link__color-home display__flex-mobile" href="#") 
                                 img(class="svg__icon--margin svg__icon--link" src="../src/iconos/descargar.svg#descargar" type="img/svg")
                                 p.text-small.primaryfont__medium Descargar menú
@@ -155,5 +155,5 @@ include ../components/layout/head.pug
         // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
-    script(src="../js/swiper3.js")
+    script(src="../js/swiper.js")
     script(src="../js/menu.js")

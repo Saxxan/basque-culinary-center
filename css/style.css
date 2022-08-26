@@ -2839,6 +2839,14 @@ img {
     padding-bottom: 0;
   }
 }
+.padding__top-mobile-small {
+  padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  .padding__top-mobile-small {
+    padding-top: 0;
+  }
+}
 .padding__top-mobile-large {
   padding-top: 32px;
 }
@@ -2862,6 +2870,16 @@ img {
 }
 @media (min-width: 1024px) {
   .padding__bottom-desktop-small {
+    padding-bottom: 16px;
+  }
+}
+.padding__topbottom-mobile-small {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .padding__topbottom-mobile-small {
+    padding-top: 0;
     padding-bottom: 16px;
   }
 }

@@ -23,16 +23,16 @@ include ../components/layout/head.pug
                 +menu("")
         main            
             //- slide cabecera
-            //- div.swiper__fullwidth.swiper2
-            //-     div.swiper-wrapper
-            //-         .swiper-slide.swiper-slide-board.swiper-slide-background
-            //-             h1 1/02
-            //-             h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
-            //-             h4 Inscripción abierta para el nuevo curso 2022-2023
-            //-             a.btn__primary--large-nocolor-width(href="#") más información
+            div.swiper__fullwidth.swiper2.swiper-slide-current
+            div.swiper-wrapper
+                .swiper-slide.swiper-slide-board.swiper-slide-background
+                    h1 1/02
+                    h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+                    h4 Inscripción abierta para el nuevo curso 2022-2023
+                    a.btn__primary--large-nocolor-width(href="#") más información
                 
-            //-     .swiper-button-next
-            //-     .swiper-button-prev
+                .swiper-button-next
+                .swiper-button-prev
             //- column icon
             section.padding__bottom-xtra-large
                 +component-title("", "", "")
@@ -199,7 +199,6 @@ include ../components/layout/head.pug
     
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
-    script(src="../js/swiper2.js")
     script(src="../js/menu.js")
     script(src="../js/function.js") 
 

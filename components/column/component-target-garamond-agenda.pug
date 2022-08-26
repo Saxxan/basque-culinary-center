@@ -1,16 +1,15 @@
 mixin component-target-garamond-agenda(classButton= "btn__primary--medium-nocolor", displayGrid= "grid__c7-c5", colorTag= "tag__primary", colorDate="box__icon--date-home", displayDesktop="display__desktop", displayMobile="display__mobile", displayNone="display__none", displayOne="display__one")
     div(class= displayGrid)(class= backgroundColor)
         div
-            div(class= displayNone) 
-                span.box__tag(class= colorTag) Etiqueta 01
+            hr.hr.display__mobile
+            div.padding__top-mobile-small.padding__bottom-x-small(class= displayNone) 
+                span.box__tag(class= colorTag) Experiencia gastronómica
             img(class="box__img--bloq2-agenda" src="../../src/images/img-noticias.jpg", alt="")(class= displayDesktop)
         div
-            hr.hr.display__mobile
             div.padding__top-mobile-large
                 img(class="svg__icon--margin-bottom" src="../src/iconos/compartir.svg#compartir" type="img/svg")
                 span.tag__card--grey.box__tag--space  Evento
                 span.tag__card--border-actualidad.box__tag--space  Etiqueta 01
-                span.tag__card--border-actualidad.box__tag--space  Etiqueta 02
             h4.box__title.primaryfont__bold Titular del evento que ocupe dos líneas como máximo
             div.box__date
                 div.box__date--space

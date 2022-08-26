@@ -97,13 +97,24 @@ include ../components/layout/head.pug
                     h3.primaryfont__bold Experiencias BCC
                 .padding
                     p.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            // slider "Experiencias destacadas"
-            section.media__margin.padding__regular.title__link.content__center.content__max
-                div
-                    h4.primaryfont__bold  Experiencias destacadas
-                div
-                    a(class="link__color-home text-small display__desktop primaryfont__medium" href="#") Ver todas las experiencias
+            // title slider .display__mobile
+            section.media__margin.padding.content__center.content__max
+                // link "ver todas las experiencias" display__desktop
+                div.padding__bottom-regular.display__mobile
+                    a(class="link__color-home text-small primaryfont__medium" href="#") Ver todas las experiencias
                         img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                div.display__mobile
+                    h4.primaryfont__bold  Experiencias destacadas
+                
+            // title slider .display__desktop
+            section.media__margin.padding__regular.title__link.content__center.content__max
+                div.display__desktop
+                    h4.primaryfont__bold  Experiencias destacadas
+                // link "ver todas las experiencias" display__desktop
+                div.display__desktop
+                    a(class="link__color-home text-small primaryfont__medium" href="#") Ver todas las experiencias
+                        img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+            // slider "Experiencias destacadas"
             section.media__margin.padding.padding__bottom-xtra-large.content__center
                 div.swiper.mySwiper.display__flex.content__max
                     div.swiper-wrapper
@@ -130,5 +141,4 @@ include ../components/layout/head.pug
         +footer("box__background--white")                              
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
-    script(src="../js/swiper3.js")
     script(src="../js/menu.js")

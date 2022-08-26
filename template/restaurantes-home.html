@@ -58,7 +58,7 @@
               </ul>
             </nav>
           </div>
-          <div class="padding padding__top-regular display__mobile"><a class="btn__primary--small-color-menu" href="www" displayNone="display__none">Encuentra tu formación</a></div>
+          <div class="padding padding__top-regular display__mobile display__none"><a class="btn__primary--small-color-menu" href="www" displayNone="display__none">Encuentra tu formación</a></div>
           <!-- migas de pan componente  "menu-section"-->
           <div class="display__desktop migas migas__neutral">
             <ul> 
@@ -152,13 +152,23 @@
           <p class="text-medium"><strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
       </section>
-      <!-- slider "Experiencias destacadas"-->
-      <section class="media__margin padding__regular title__link content__center content__max">
-        <div>
+      <!-- title slider .display__mobile-->
+      <section class="media__margin padding content__center content__max">
+        <!-- link "ver todas las experiencias" display__desktop-->
+        <div class="padding__bottom-regular display__mobile"><a class="link__color-home text-small primaryfont__medium" href="#">Ver todas las experiencias<img class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></div>
+        <div class="display__mobile">
           <h4 class="primaryfont__bold"> Experiencias destacadas</h4>
         </div>
-        <div><a class="link__color-home text-small display__desktop primaryfont__medium" href="#">Ver todas las experiencias<img class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></div>
       </section>
+      <!-- title slider .display__desktop-->
+      <section class="media__margin padding__regular title__link content__center content__max">
+        <div class="display__desktop">
+          <h4 class="primaryfont__bold"> Experiencias destacadas</h4>
+        </div>
+        <!-- link "ver todas las experiencias" display__desktop-->
+        <div class="display__desktop"><a class="link__color-home text-small primaryfont__medium" href="#">Ver todas las experiencias<img class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></div>
+      </section>
+      <!-- slider "Experiencias destacadas"-->
       <section class="media__margin padding padding__bottom-xtra-large content__center">
         <div class="swiper mySwiper display__flex content__max">
           <div class="swiper-wrapper">
@@ -552,7 +562,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
-    <script src="../js/swiper3.js"></script>
     <script src="../js/menu.js"></script>
     <link link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

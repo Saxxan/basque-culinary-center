@@ -76,7 +76,7 @@ include ../components/layout/head.pug
                         a.filter__tag--item.tag__empresas(href="www") Esta semana
                         a.filter__tag--item.tag__empresas(href="www") Este mes
                         a.filter__tag--item.tag__empresas(href="www") Próximo mes
-                    //- form
+                    // form
                     form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
                         section.padding__bottom-small
                             .form__inputs.gap__form
@@ -88,32 +88,38 @@ include ../components/layout/head.pug
                                         option(value="opcion 2") Evento
                                         option(value="opcion 3") Webinar 
                                         option(value="opcion 2") Curso
-                                
-                                .submit.padding__bottom-regular
+                                // botton display__desktop
+                                .submit.padding__bottom-regular.display__desktop
                                     button.btn__primary--medium-nocolor Limpiar
-                                .submit
+                                .submit.display__desktop
                                     button.btn__primary--medium-color Buscar    
+                                // botton display__mobile
+                                .submit.padding__bottom-regular.display__mobile
+                                    button.btn__primary--small-nocolor Limpiar
+                                .submit.display__mobile
+                                    button.btn__primary--small-color Buscar    
+                                
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> EVENTOS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             //target
             section.padding__top-x-large.padding__bottom-desktop-small
                 div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
                     // component-target-garamond-agenda
-                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__card--grey", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
             //target
             section.box__background
                 div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
                     // component-target-garamond-agenda
-                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__card--grey", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
             //target
             section.padding__bottom-desktop-small
                 div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
                     // component-target-garamond-agenda
-                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__card--grey", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
             //target
             section.box__background
                 div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
                     // component-target-garamond-agenda
-                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__empresas", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+                    +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__card--grey", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
         // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         div.padding__top-xtra-large 
             +footer("box__background--white")

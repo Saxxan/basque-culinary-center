@@ -185,6 +185,12 @@
             padding-bottom: 0; 
         }
     }
+    &__top-mobile-small {
+        padding-top: $small;
+        @include respond-to(large) {
+            padding-top: 0; 
+        }
+    }
     &__top-mobile-large {
         padding-top: $large;
         @include respond-to(large) {
@@ -202,6 +208,15 @@
     &__bottom-desktop-small {
         padding-bottom:  0;
         @include respond-to(large) {
+            padding-bottom: $small;
+        }
+    }
+    // TopBottom/Mobile-Desktop
+    &__topbottom-mobile-small {
+        padding-top: $small;
+        padding-bottom: $small;
+        @include respond-to(large) {
+            padding-top: 0; 
             padding-bottom: $small;
         }
     }
