@@ -24,6 +24,9 @@
     }
     &__flex-mobile {
         display: flex;
+        @include respond-to(large) {
+            flex-direction: column;
+        }
     }
     &__one {
         display: none;
@@ -62,6 +65,9 @@
 }
 .gap {
     gap: $large;
+    &__regular {
+        gap: $regular;
+    }
     &__form {
         gap: $regular;
     }
@@ -139,6 +145,14 @@ strong {
             @include respond-to(large) {
                 width: 200px;
         }
+        }
+    }
+}
+.border {
+    &__radius {
+        border-radius: $x-small;
+        &-top {
+            border-radius: $x-small $x-small 0 0;
         }
     }
 }

@@ -1,0 +1,130 @@
+include ../components/column/component-card.pug
+include ../components/column/component-title.pug
+include ../components/column/component-miembros.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                div
+                    // menu gradient componente "menu-gradient"
+                    +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
+                    include ../components/menu/topbar.pug
+                    // menu main componente "menu"
+                    +menu("display__none")
+                    // migas de pan componente  "menu-section"
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.media__margin.padding__bottom-xx-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Consejo internacional
+                    p.padding.text-medium Queremos conectar las realidades del sector a lo largo y ancho del planeta y catalizándolas en este proyecto único y global, el BCC. El compromiso y la labor de asesoría realizada por los miembros del Consejo Internacional de Basque Culinary Center aporta una perspectiva internacional, con la experiencia como pilar.
+            // title
+            section.media__margin.content__center.content__max
+                div.padding
+                    h3.primaryfont__bold Integrantes del Consejo
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SLIDER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // title slider 01
+            section.media__margin.padding__regular.title__link.content__center.content__max
+                div
+                    h4.primaryfont__bold Miembros fundadores
+            // slider 01
+            section.media__margin.padding.padding__bottom-x-large.content__center.content__max
+                    div.swiper.mySwiper.display__flex.content__max
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                        div.swiper-pagination
+            // title slider 02
+            section.media__margin.padding__regular.title__link.content__center.content__max
+                div
+                    h4.primaryfont__bold Miembros activos
+            // slider 02
+            section.media__margin.padding.padding__bottom-large.content__center.content__max
+                    div.swiper.mySwiper.display__flex.content__max
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                            div.swiper-slide
+                                +component-miembros()
+                        div.swiper-pagination
+            // Sección "Espíritu innovador"
+            section.media__margin.padding__bottom-large.content__center.content__max
+                div
+                    h3.padding__regular.primaryfont__bold Espíritu innovador
+                    p.padding.padding__bottom-regular.text-medium Nuestro Consejo Internacional es, en ese sentido, la instancia responsable de asesorar las labores estratégicas de Basque Culinary Center, de orientar nuestros esfuerzos, <strong>ayudarnos a identificar oportunidades y abrir escenarios tanto de discusión</strong> como de acción que contribuyan con el avance de la gastronomía.
+                    p.padding.text-medium Conscientes de la suerte que significa contar con la implicación de personalidades de semejante nivel entre nuestros aliados, y de la responsabilidad que nuestro gremio exige y espera de nosotros, abogamos por consolidar vínculos que se traduzcan en alianzas recíprocas y multiplicadoras.
+            // Sección "Summits anuales"
+            section.media__margin.content__center.content__max
+                div
+                    h3.padding__regular.primaryfont__bold Summits anuales
+                    p.padding.padding__bottom-regular.text-medium Con carácter anual, esta red internacional de chefs comprometidos con las realidades que afectan al sector y a la sociedad en general, se une en un foro para debatir e intercambiar conocimientos <strong>sobre temas tan diversos como la Sostenibilidad, Biodiversidad, la Transformación a través de la Gastronomía o las Semillas.</strong>
+
+            section.padding__bottom-desktop-x-large
+                div.media__margin.padding.content__center.content__max.grid__c2.gap
+                    div
+                        img(class="padding__bottom-mobile-regular box__img" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
+                    div.box__content--justify
+                        h4.padding__bottom-mobile-small.primaryfont__bold 2019 </br> San Francisco
+                        p.padding__bottom-mobile-small.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <strong>It has survived not only five centuries, but also the leap into electronic typesetting.</strong>
+                        // button display__desktop
+                        div.display__desktop
+                            a.btn__primary--medium-nocolor-width(href="www") Quiero saber más
+                        // button display__mobile
+                        div.display__mobile
+                            a.btn__primary--small-nocolor(href="www") Quiero saber más
+            // Ediciones anteriores
+            section.padding.media__margin.content__center
+                div.padding__topbottom-small.display__mobile
+                    h4.primaryfont__bold Ediciones anteriores
+                div.padding__bottom-desktop-regular.display__flex.gap__regular.grid__c3 
+                        +component-card()
+                        +component-card()
+                        +component-card()
+                div.padding__bottom-desktop-regular.display__flex.gap__regular.grid__c3
+                        +component-card() 
+                        +component-card()
+                        +component-card()
+                div.display__flex.gap__regular.grid__c3
+                        +component-card()
+                        +component-card()
+
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")          

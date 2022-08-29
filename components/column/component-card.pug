@@ -1,0 +1,17 @@
+mixin component-card()
+    div.margin__mobile-bottom-small 
+        div.padding__regular.card__color-border.display__desktop
+            img(class="display__desktop border__radius-top padding__bottom-regular" src="../src/images/foto-miembro.jpg", alt="")
+            div.padding__bottom-regular
+                h4.primaryfont__bold Año
+                p.text-large Ubicación
+            div
+                a.link__color-home(class="x-small" href="#") Saber más
+                    img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+        
+        .display__mobile.card__border-radius
+            .card.card__color 
+                img(class="card__img" src="../src/images/foto-miembro.jpg", alt="")
+                div.card__details-formacion
+                    p.padding__bottom-x-small.x-small.primaryfont__bold Año
+                    p.x-small Ubicación

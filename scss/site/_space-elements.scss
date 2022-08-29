@@ -23,6 +23,9 @@
     &__topbottom-regular {
         margin: $regular 0;
     }
+    &__bottom-regular {
+        margin-bottom: $regular;
+    }
     &__bottom-large {
         margin-bottom: $large;
     }
@@ -40,6 +43,15 @@
             margin-left: $regular;
         }
     }
+    // Mobile/desktop
+    &__mobile-bottom-small {
+        margin-bottom: $small;
+        @include respond-to(large) {
+            margin-bottom: 0;
+        }
+
+    }
+
 }
 .padding {
     padding: 0 $regular;
@@ -63,6 +75,9 @@
     }
     &__bottom-xx-small {
         padding-bottom: $xx-small;
+    }
+    &__bottom-x-small {
+        padding-bottom: $x-small;
     }
     &__bottom-small {
         padding-bottom: $small;
@@ -173,6 +188,12 @@
     }
 
     // Mobile/desktop
+    &__mobile-desktop--x-small-regular {
+        padding: $x-small;
+        @include respond-to(large) {
+            padding: $regular; 
+        }
+    }
     &__bottom-mobile-small {
         padding-bottom: $small;
         @include respond-to(large) {
@@ -209,6 +230,18 @@
         padding-bottom:  0;
         @include respond-to(large) {
             padding-bottom: $small;
+        }
+    }
+    &__bottom-desktop-regular {
+        padding-bottom:  0;
+        @include respond-to(large) {
+            padding-bottom: $regular;
+        }
+    }
+    &__bottom-desktop-x-large {
+        padding-bottom:  0;
+        @include respond-to(large) {
+            padding-bottom: $x-large;
         }
     }
     // TopBottom/Mobile-Desktop

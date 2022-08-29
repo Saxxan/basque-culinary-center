@@ -8,6 +8,10 @@
             grid-template-columns: 2fr 2fr;
             grid-gap: $large;
         }
+        &__c3 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+        }
         &__c5 {
             display: grid;
             grid-template-columns: 5fr;

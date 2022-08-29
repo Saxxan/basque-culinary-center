@@ -3,14 +3,14 @@
 \*------------------------------------*/
 .card {
     display: flex;
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
-    margin-bottom: $x-regular;
+    
     @include respond-to(large) {
         flex-direction: column;        
     }
     &__img {
-        max-width: 25%;
+        max-width: 30%;
         height: auto;
         object-fit: cover; 
         object-position: center;
@@ -48,11 +48,22 @@
     }
     &__color {
         background-color: $c-monocromo-100;
+        &-border {
+            @extend .card__color;
+            border-radius: $x-small;
+        }
+    }
+    &__center {
+        text-align: center;
     }
     &__border {
         border: 1px solid $c-monocromo-600;
         @include respond-to(large) {
             border: none;
+        }
+        &-radius {
+            @extend .card__border;
+            border-radius: $x-small;
         }
     }
     &__line {
