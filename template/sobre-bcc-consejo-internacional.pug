@@ -111,7 +111,7 @@ include ../components/layout/head.pug
                         div.display__mobile
                             a.btn__primary--small-nocolor(href="www") Quiero saber más
             // Ediciones anteriores
-            section.padding.media__margin.content__center
+            section.padding.padding__bottom-large.media__margin.content__center
                 div.padding__topbottom-small.display__mobile
                     h4.primaryfont__bold Ediciones anteriores
                 div.padding__bottom-desktop-regular.display__flex.gap__regular.grid__c3 
@@ -125,6 +125,28 @@ include ../components/layout/head.pug
                 div.display__flex.gap__regular.grid__c3
                         +component-card()
                         +component-card()
-
+            // Sección "Debates"
+            section.media__margin.padding__bottom-xtra-large.content__center.content__max
+                div.grid__c8-c4
+                    div
+                        h3.padding__regular.primaryfont__bold Debates
+                        p.padding.text-medium El Consejo Internacional sienta sus bases en su reunión anual, en la que cocineros de renombre y expertos en distintas disciplinas se juntan en una ciudad distinta para identificar retos, estimular debates y ahondar en maneras de impulsar a nuestro gremio.
+                    div
+                        h4.padding__regular.primaryfont__bold Conoce las temáticas
+                        div.padding
+                                a(class="padding__bottom-small x-small link__color-home display__flex-mobile" href="#")
+                                    img(class="svg__icon--margin" src="../src/iconos/descargar.svg#descargar" type="img/svg")
+                                    p.primaryfont__medium Sostenibilidad
+                                a(class="padding__topbottom-small x-small link__color-home display__flex-mobile" href="#")
+                                    img(class="svg__icon--margin" src="../src/iconos/descargar.svg#descargar" type="img/svg")
+                                    p.primaryfont__medium Biodiversidad
+                                a(class="padding__topbottom-small x-small link__color-home display__flex-mobile" href="#")
+                                    img(class="svg__icon--margin" src="../src/iconos/descargar.svg#descargar" type="img/svg")
+                                    p.primaryfont__medium Transformación
+                                a(class="padding__topbottom-small x-small link__color-home display__flex-mobile" href="#")
+                                    img(class="svg__icon--margin" src="../src/iconos/descargar.svg#descargar" type="img/svg")
+                                    p.primaryfont__medium Semillas
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            +footer("box__background--white")     
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")          

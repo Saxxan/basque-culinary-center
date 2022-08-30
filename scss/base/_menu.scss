@@ -25,6 +25,9 @@
         flex-direction: column;     
         padding-left: 0;
         position: sticky;
+        //prueba
+        z-index: 10;
+        //prueba
         &--link {
             color: $c-monocromo-900;
             text-transform: uppercase;
@@ -100,6 +103,19 @@
             text-decoration-line: underline;
         }
     }
+}
+.submenu {
+    background: red;
+    top: 230px;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 100px;
+
 }
 .close,
     input[type="checkbox"] {

@@ -3,16 +3,15 @@
 \*------------------------------------*/
 .svg__icon {
     position: relative;
-    top: .1rem;
     flex-shrink: 0;
     fill: currentColor;
     &--right {
         @extend .svg__icon;
-        margin-left:$small;
+        margin-left: $x-small;
     }
     &--left {
         @extend .svg__icon;
-        margin-right: $small;
+        margin-right: $x-small;
         float: left;
     }
     &--link {

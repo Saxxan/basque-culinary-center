@@ -24,9 +24,6 @@
     }
     &__flex-mobile {
         display: flex;
-        @include respond-to(large) {
-            flex-direction: column;
-        }
     }
     &__one {
         display: none;

@@ -1,0 +1,113 @@
+include ../components/column/component-noticia-target-actualidad.pug
+include ../components/column/component-noticia-principal-actualidad.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                div
+                    // menu gradient componente "menu-gradient"
+                    +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
+                    include ../components/menu/topbar.pug
+                    // menu main componente "menu"
+                    +menu("display__none")
+                    // migas de pan componente  "menu-section"
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.media__margin.padding__bottom-regular.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Consejo internacional
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FILTROS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section
+                // componente filter-agenda
+                div.media__margin.padding.content__center.content__max
+                    div.padding__bottom-small
+                        h4.filter__text.primaryfont__bold Filtrar por:
+                        a.filter__tag--item.tag__empresas-dark(href="www") Todos
+                        a.filter__tag--item.tag__empresas(href="www") Entrevistas
+                        a.filter__tag--item.tag__empresas(href="www") Sobremesas
+                        a.filter__tag--item.tag__empresas(href="www") Opinión
+                        a.filter__tag--item.tag__empresas(href="www") Publicaciones
+                    // form
+                    form(class="form" name="registration-form" id="registrationForm" method="POST" action="" role="form")
+                        section.padding__bottom-x-small
+                            .form__inputs.gap__form
+                                .form-floating.gap__regular.grid__c3
+                                    label(for="opciones")
+                                    select(name="opciones" class="form-control") 
+                                        option(selected disabled) Áreas
+                                        option(value="opcion 1") Área 01
+                                        option(value="opcion 2") Área 02
+                                        option(value="opcion 3") Área 03
+                                        option(value="opcion 2") Área 04
+                                // botton display__desktop
+                                .submit.padding__bottom-regular.display__desktop
+                                    button.btn__primary--medium-nocolor Limpiar
+                                .submit.display__desktop
+                                    button.btn__primary--medium-color Buscar    
+                                // botton display__mobile
+                                .submit.padding__bottom-regular.display__mobile
+                                    button.btn__primary--small-nocolor Limpiar
+                                .submit.display__mobile
+                                    button.btn__primary--small-color Buscar    
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GASTRGONOMÍA 360º >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.padding__top-large.padding__bottom-large
+                div.media__margin.padding__regular.content__center.content__max
+                    h3.primaryfont__bold Gastronomía 360º
+                // noticia principal
+                // component-noticia-principal-actualidad
+                +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA 3 COLUMNAS 3ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.box__background
+                hr.hr
+                div.media__margin.padding.padding__topbottom-large.content__center.content__max.display__flex.gap 
+                    // target
+                    div
+                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                    // target
+                    div
+                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                    // target
+                    div
+                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                    // target
+                    div
+                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                hr.hr
+                    
+            
+            
+            
+            
+            // noticias 2 columnas display__desktop
+            section.display__desktop
+                div.media__margin.padding__regular-xtra-large.content__center.content__max.display__flex.gap
+                    // component-noticia-target-actualidad
+                    +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag", "box__img--border-rightangle", "", "", "display__none")
+                    // component-noticia-target-actualidad
+                    +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
+            // noticias display__mobile
+            section.media__margin.content__center.padding.padding__bottom-xtra-large.display__mobile
+                +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "", "display__one")
+                div.media__margin.padding__top-large
+                    a.btn__primary--small-color(href="www") Ver más
+            
+                
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            +footer("box__background--white")     
+    

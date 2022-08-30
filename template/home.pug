@@ -23,13 +23,13 @@ include ../components/layout/head.pug
                 +menu("")
         main            
             //- slide cabecera
-            div.swiper__fullwidth.swiper2.swiper-slide-current
-            div.swiper-wrapper
-                .swiper-slide.swiper-slide-board.swiper-slide-background
-                    h1 1/02
-                    h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
-                    h4 Inscripción abierta para el nuevo curso 2022-2023
-                    a.btn__primary--large-nocolor-width(href="#") más información
+            div.swiper__fullwidth.swiper2
+                div.swiper-wrapper
+                    .swiper-slide.swiper-slide-board.swiper-slide-background
+                        h1 1/02
+                        h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+                        h4 Inscripción abierta para el nuevo curso 2022-2023
+                        a.btn__primary--large-nocolor-width(href="#") más información
                 
                 .swiper-button-next
                 .swiper-button-prev
@@ -65,6 +65,7 @@ include ../components/layout/head.pug
                             div.swiper-slide
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                         div.swiper-pagination
+                        
             
             //- nuestra agenda mobile
             section.padding__bottom-xx-large.box__background.display__mobile
