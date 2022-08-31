@@ -92,6 +92,10 @@
     width: 100%;
     margin: 0;
     background-color: $c-monocromo-900;
+    &__primary {
+        @extend .hr;
+        background-color: $c-primary-darkmode;
+    }
     &__margin {
         @extend .hr;
         margin-top: 10px;

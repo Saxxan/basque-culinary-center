@@ -211,12 +211,15 @@ h1, h2, h3 {
   }
 }
 
-.hr, .hr__margin-bottom, .hr__margin-top, .hr__margin {
+.hr, .hr__margin-bottom, .hr__margin-top, .hr__margin, .hr__primary {
   height: 1px;
   border: 0;
   width: 100%;
   margin: 0;
   background-color: #26201B;
+}
+.hr__primary {
+  background-color: #D5903C;
 }
 .hr__margin {
   margin-top: 10px;
@@ -2711,6 +2714,9 @@ img {
   padding-bottom: 16px;
 }
 
+.margin__top-regular {
+  margin-top: 24px;
+}
 .margin__top-x-large {
   margin-top: 48px;
 }
@@ -2842,31 +2848,38 @@ img {
   padding-top: 96px;
 }
 .padding__topbottom-x-small {
-  padding: 8px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .padding__topbottom-small {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .padding__topbottom-x-regular {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .padding__topbottom-regular {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .padding__regular-regular {
-  padding: 24px;
+  padding: 24px 0;
 }
 .padding__topbottom-large {
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .padding__regular-large {
-  padding: 32px 24px 32px 24px;
+  padding-top: 32px 24px 32px 24px;
 }
 .padding__topbottom-x-large {
-  padding: 48px 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .padding__topbottom-xx-large {
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .padding__regular-xx-large {
   padding: 64px 24px;
@@ -2926,6 +2939,32 @@ img {
   .padding__topbottom-desktop {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+}
+.padding__topbottom-desktop-large {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .padding__topbottom-desktop-large {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.padding__top-desktop-x-large {
+  padding-top: 0;
+}
+@media (min-width: 1024px) {
+  .padding__top-desktop-x-large {
+    padding-top: 48px;
+  }
+}
+.padding__top-desktop-xx-large {
+  padding-top: 0;
+}
+@media (min-width: 1024px) {
+  .padding__top-desktop-xx-large {
+    padding-top: 64px;
   }
 }
 .padding__bottom-desktop-small {

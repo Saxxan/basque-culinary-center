@@ -58,56 +58,112 @@ include ../components/layout/head.pug
                                 .submit.display__mobile
                                     button.btn__primary--small-color Buscar    
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GASTRGONOMÍA 360º >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            section.padding__top-large.padding__bottom-large
+            // noticias principal
+            section.padding__top-regular.padding__bottom-x-large
                 div.media__margin.padding__regular.content__center.content__max
                     h3.primaryfont__bold Gastronomía 360º
                 // noticia principal
                 // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NOTICIA 3 COLUMNAS 3ºNIVEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 4 COLUMNAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.box__background
-                hr.hr
-                div.media__margin.padding.padding__topbottom-large.content__center.content__max.display__flex.gap 
+                hr.hr__primary.display__desktop
+                div.media__margin.padding.padding__topbottom-desktop-large.content__center.content__max.display__flex.gap 
                     // target
                     div
-                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__card--grey.box__tag--space Etiqueta 01
                         p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
                     // target
                     div
-                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__card--grey.box__tag--space Etiqueta 01
                         p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
                     // target
                     div
-                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__card--grey.box__tag--space Etiqueta 01
                         p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                        p.padding__bottom-x-small.text-small.display__mobile Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
                     // target
-                    div
-                        hr.hr__margin-top.hr__margin-bottom.display__mobile
+                    div.display__desktop
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
                         span.tag__card--grey.box__tag--space Etiqueta 01
-                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
-                hr.hr
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar      
+                hr.hr__primary.display__desktop
                     
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 2 COLUMNAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>          
+            section.padding__top-desktop-xx-large
+                div.media__margin.padding.padding__bottom-x-large.content__center.content__max.display__flex.gap
+                    div.padding__bottom-mobile-small
+                        div
+                            div
+                                span.tag__card--grey.box__tag--bloq2 Etiqueta 01
+                                img(class="box__img--bloq2 display__desktop box__img--border-rightangle" src="../../src/images/img-noticias.jpg", alt="")
+                            div
+                                h4.box__title.primaryfont__bold Julen Baz: “A nuestra generación le toca reparar algunas cosas que no se hicieron bien”
+                                p.x-small.padding__bottom-xx-small Nombre y apellidos
+                                p.box__description.text-small La cocinera mexicana, nueva integrante del Consejo Internacional de Basque Culinary Center, sigue apostando por lo cercano y lo pequeño y por la gran biodiversidad de su país desde Rosetta, Lardo y Café NIn. Lardo y Café NIn.
+                                div.box__link.display__desktop
+                                    a.link__color-home.display__desktop(class="x-small" href="#") Leer más
+                                        img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    div
+                        div
+                            div
+                                hr.hr__primary.hr__margin-top.display__mobile
+                                span.tag__card--grey.box__tag--bloq2 Etiqueta 01
+                                img(class="box__img--bloq2 display__desktop box__img--border-rightangle" src="../../src/images/img-noticias.jpg", alt="")
+                            div
+                                h4.box__title.primaryfont__bold Julen Baz: “A nuestra generación le toca reparar algunas cosas que no se hicieron bien”
+                                p.x-small.padding__bottom-xx-small Nombre y apellidos
+                                p.box__description.text-small La cocinera mexicana, nueva integrante del Consejo Internacional de Basque Culinary Center, sigue apostando por lo cercano y lo pequeño y por la gran biodiversidad de su país desde Rosetta, Lardo y Café NIn. Lardo y Café NIn.
+                                div.box__link.display__desktop
+                                    a.link__color-home.display__desktop(class="x-small" href="#") Leer más
+                                        img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                        div.display__mobile
+                            img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")
             
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 4 COLUMNAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.padding__bottom-large
+                hr.hr__primary.display__desktop
+                div.media__margin.padding.padding__topbottom-desktop-large.content__center.content__max.display__flex.gap 
+                    // target
+                    div
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                        p.padding__bottom-x-small.text-small.display__desktop Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    // target
+                    div
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                        p.padding__bottom-x-small.text-small.display__desktop Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    // target
+                    div
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                        p.padding__bottom-x-small.text-small.display__desktop Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    // target
+                    div.display__desktop
+                        hr.hr__primary.hr__margin-top.hr__margin-bottom.display__mobile
+                        span.tag__card--grey.box__tag--space Etiqueta 01
+                        p.padding__topbottom-x-small.text-medium.primaryfont__bold Titular de la noticia que puede ocupar hasta tres líneas como máximo para destacar
+                        p.padding__bottom-x-small.text-small Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                hr.hr__primary.display__desktop
             
-            
-            
-            // noticias 2 columnas display__desktop
-            section.display__desktop
-                div.media__margin.padding__regular-xtra-large.content__center.content__max.display__flex.gap
-                    // component-noticia-target-actualidad
-                    +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag", "box__img--border-rightangle", "", "", "display__none")
-                    // component-noticia-target-actualidad
-                    +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
-            // noticias display__mobile
-            section.media__margin.content__center.padding.padding__bottom-xtra-large.display__mobile
-                +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "", "display__one")
-                div.media__margin.padding__top-large
-                    a.btn__primary--small-color(href="www") Ver más
-            
-                
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GASTRGONOMÍA 360º >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // noticias principal
+            section.padding__bottom-xx-large
+                div.media__margin.padding__regular.content__center.content__max
+                    h3.primaryfont__bold Gastronomía 360º
+                // noticia principal
+                // component-noticia-principal-actualidad
+                +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PÁGINACIÓN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            h2.padding__topbottom-xtra-large Componente paginación
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             +footer("box__background--white")     
     
