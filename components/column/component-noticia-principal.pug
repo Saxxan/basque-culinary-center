@@ -5,13 +5,15 @@ mixin component-noticia-principal(justifyContent="box__content--justify", linkCo
                 div(class= displayOne)
                     span.box__tag(class= tagColor) Etiqueta 01
                 img(class="box__img" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
-            div.box__principal(class= justifyContent)
+            div(class= justifyContent)
                 h3.box__title.primaryfont__bold(class= displayOne) Toni Segarra: «No es momento para el marketing».
                 p.display__desktop.x-small(class= displayOne)(class= displayInnovation) 01/01/2022
                 p.x-small(class= displayNone)(class= displayOne)(class= textColor) Redacción BCC
-                p.box__description.text-medium Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada.
+                p.box__description.text-medium.display__desktop Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. 
+                p.box__description.text-medium.display__mobile Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. Nullam augue lacus, auctor et placerat non, pretium id nulla. Curabitur posuere, lacus eget semper consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas blandit malesuada. 
+                    span.text-medium(class= textColor) Leer más
                 a(class="text-small display__desktop" href="www")(class= displayOne)(class= linkColor) Leer más 
                     img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                hr.hr__primary.display__mobile
                 div.display__desktop(class= displayButton)
                     a(href="www")(class= classButton) Acceder a la sección
-            

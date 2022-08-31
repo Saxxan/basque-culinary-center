@@ -1,0 +1,51 @@
+include ../components/layout/bullet.pug
+include ../components/column/component-noticia-principal-sobre-bcc.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                div
+                    // menu gradient componente "menu-gradient"
+                    +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
+                    include ../components/menu/topbar.pug
+                    // menu main componente "menu"
+                    +menu("display__none")
+                    // migas de pan componente  "menu-section"
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.media__margin.padding__bottom-x-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Quienes somos
+                div.padding.grid__c2
+                    div
+                        img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+                    div.padding__bottom-regular
+                        p.text-medium Basque Culinary Center conforma un ecosistema único donde formación, innovación, investigación y emprendimiento coexisten con el objetivo de desarrollar e impulsar la gastronomía, asumida esta como el conocimiento razonado sobre lo que comemos y cómo lo hacemos. Situada desde 2011 en Donostia - San Sebastián, es una institución pionera conformada por la Facultad de Ciencias Gastronómicas y por BCC Innovation, el Centro Tecnológico en Gastronomía.
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // misión, visión, valores
+            section.media__margin.padding__bottom-large.content__center.content__max     
+                div.padding__bottom-regular
+                    h3.padding__regular.primaryfont__bold Misión, visión y valores
+                    p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quae ratione perferendis, error quisquam hic eveniet, numquam quod corporis id repellat consequatur inventore quaerat sit totam exercitationem. Natus, explicabo porro?
+                div.padding.grid__c2
+                    div
+                        img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+                    div.padding__bottom-regular.box__content--justify
+                        div
+                            h4.primaryfont__bold Titular de misión
+                            p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        div
+                            h4.primaryfont__bold Titular de misión
+                            p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            // bullet
+            section.media__margin.padding.padding__bottom-large.content__center.content__max
+                +bullet("bullet__line-home")

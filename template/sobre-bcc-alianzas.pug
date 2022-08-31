@@ -1,0 +1,89 @@
+include ../components/layout/bullet.pug
+include ../components/column/component-noticia-principal-sobre-bcc.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                div
+                    // menu gradient componente "menu-gradient"
+                    +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
+                    include ../components/menu/topbar.pug
+                    // menu main componente "menu"
+                    +menu("display__none")
+                    // migas de pan componente  "menu-section"
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.media__margin.padding__bottom-x-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Red de alianzas
+                    div.padding
+                        p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ALIANZAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // section 01
+            section.media__margin.padding.padding__bottom-desktop-x-large.content__center.content__max
+                div.grid__c2
+                    div.padding__bottom-small
+                        h4.padding__bottom-small.primaryfont__bold Tipo alianza 01
+                        p.padding__bottom-small.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
+                        div.display__desktop.padding__top-small
+                            a.btn__primary--medium-nocolor-width(href="www") Quiero saber más
+                        div.display__mobile.padding__top-small
+                            a.btn__primary--small-nocolor(href="www") Quiero saber más
+                    div.padding__bottom-small
+                        h4.padding__bottom-small.primaryfont__bold Tipo alianza 02
+                        p.padding__bottom-small.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
+                        div.display__desktop.padding__top-small
+                            a.btn__primary--medium-nocolor-width(href="www") Quiero saber más
+                        div.display__mobile.padding__top-small
+                            a.btn__primary--small-nocolor(href="www") Quiero saber más
+            // section 02
+            section.media__margin.padding.padding__bottom-large.content__center.content__max
+                div.grid__c2
+                    div.padding__bottom-small
+                        h4.padding__bottom-small.primaryfont__bold Tipo alianza 03
+                        p.padding__bottom-small.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
+                        div.display__desktop.padding__top-small
+                            a.btn__primary--medium-nocolor-width(href="www") Quiero saber más
+                        div.display__mobile.padding__top-small
+                            a.btn__primary--small-nocolor(href="www") Quiero saber más
+                    div.padding__bottom-small
+                        h4.padding__bottom-small.primaryfont__bold Tipo alianza 04
+                        p.padding__bottom-small.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
+                        div.display__desktop.padding__top-small
+                            a.btn__primary--medium-nocolor-width(href="www") Quiero saber más
+                        div.display__mobile.padding__top-small
+                            a.btn__primary--small-nocolor(href="www") Quiero saber más
+            // ¿Quieres colabora con nosotros?
+            section.media__margin.padding__bottom-xtra-large.content__center.content__max     
+                div.padding__bottom-regular
+                    h3.padding__regular.primaryfont__bold ¿Quieres colabora con nosotros?
+                    p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quae ratione perferendis, error quisquam hic eveniet, numquam quod corporis id repellat consequatur inventore quaerat sit totam exercitationem. Natus, explicabo porro?
+                div.padding.grid__c2
+                    div.padding__bottom-mobile-small
+                        img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content--justify
+                        div.padding__bottom-mobile-small
+                            h4.primaryfont__bold Participa en el proyecto
+                        div.padding__bottom-mobile-small
+                            p.padding__bottom-small.text-small Basque Culinary Center es una fundación sin ánimo de lucro y ofrece la posibilidad de colaborar con ella a Empresas e Instituciones que deseen participar activamente en el proyecto BCC.
+                            p.text-small Si te interesa que tu empresa forme parte de este colectivo, estaremos encantados de analizar tus necesidades y diseñar junto a tu empresa el convenio de colaboración más conveniente para ambas partes.
+                        div.display__desktop
+                            a.btn__primary--medium-nocolor-width(href="www") Contacta con nosotros
+                        div.display__mobile
+                            a.btn__primary--small-nocolor(href="www") Contacta con nosotros
+        //- footer
+        +footer("box__background--white")
+    script(src="../js/menu.js")

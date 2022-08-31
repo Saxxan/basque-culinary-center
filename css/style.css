@@ -241,6 +241,9 @@ h1, h2, h3 {
 .color__text-home {
   color: #B36206;
 }
+.color__text-home-dark {
+  color: #83390B;
+}
 .color__text-action {
   color: #a1232f;
 }
@@ -2871,7 +2874,7 @@ img {
   padding-bottom: 32px;
 }
 .padding__regular-large {
-  padding-top: 32px 24px 32px 24px;
+  padding: 32px 24px 32px 24px;
 }
 .padding__topbottom-x-large {
   padding-top: 48px;

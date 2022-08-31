@@ -1,0 +1,121 @@
+include ../components/layout/bullet.pug
+include ../components/column/component-noticia-principal-sobre-bcc.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu-section.pug
+include ../components/menu/menu.pug
+include ../components/menu/menu-index.pug
+include ../components/layout/footer.pug
+include ../components/layout/head.pug
+    block content
+        main 
+            header
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                div
+                    // menu gradient componente "menu-gradient"
+                    +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
+                    include ../components/menu/topbar.pug
+                    // menu main componente "menu"
+                    +menu("display__none")
+                    // migas de pan componente  "menu-section"
+                    +menu-section("migas__neutral", "migas__text-neutral")
+                    //- +menu-index()
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            section.media__margin.padding__bottom-xx-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Conoce BCC
+                div.grid__c2
+                    div.padding.padding__bottom-regular
+                        p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
+                    div.padding 
+                        img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // noticia principal
+            section.padding__topbottom-x-large.box__background
+                +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "box__background--home", "box__img--border-rightangle", "display__innovation", "display__button", "", "")
+            // bullet
+            section.media__margin.padding.padding__top-large.padding__bottom-large.content__center.content__max
+                +bullet("bullet__line-home")
+            // consejo internacional
+            section.padding__bottom-x-large.box__background
+                div.media__margin.content__center.content__max
+                    div
+                        h2.padding__regular.primaryfont__bold Consejo internacional
+                    div.padding.grid__c2
+                        div.box__content--justify
+                            p.padding__bottom-mobile-regular.text-medium Queremos conectar las realidades del sector a lo largo y ancho del planeta y catalizándolas en este proyecto único y global, el BCC. El compromiso y la labor de asesoría realizada por los miembros del Consejo Internacional de Basque Culinary Center aporta una perspectiva internacional, con la experiencia como pilar.
+                            div.display__desktop
+                                a.btn__primary--medium-color-width(href="www") Consejo internacional
+                            div.display__mobile
+                                a.btn__primary--small-color(href="www") Consejo internacional
+                        div.padding__bottom-mobile-regular.display__desktop
+                            img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+            // gastronomía 360º
+            section.media__margin.padding__bottom-x-large.content__center.content__max
+                h2.padding__regular.primaryfont__bold Gastronomía 360º
+                +component-noticia-principal-sobre-bcc("box__content--justify", "color__text-home", "tag__card--grey", "box__background--home", "box__img--border-rightangle", "", "display__one")
+            // nuestras alianzas
+            section.media__margin.padding__bottom-x-large.content__center.content__max
+                div
+                    h2.padding__regular.primaryfont__bold Nuestras alianzas
+                div.padding.grid__c2
+                    div.padding__bottom-mobile-regular
+                        p.padding__bottom-mobile-regular.text-medium.display__mobile Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                        img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+                    div.box__content--justify
+                        p.padding__bottom-mobile-regular.text-medium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                        div.display__desktop
+                            a.btn__primary--medium-color-width(href="www") Red alianzas
+                        div.display__mobile
+                            a.btn__primary--small-color(href="www") Red alianzas
+            // desarrollo sostenible
+            section.media__margin.padding__bottom-large.content__center.content__max
+                div.padding__bottom-regular
+                    h2.padding__regular.primaryfont__bold Desarrollo sostenible
+                    p.text-medium.padding Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Ab facere fuga cupiditate. A similique suscipit provident! Nemo praesentium blanditiis, voluptas dicta enim vitae ut neque aliquid nobis harum</strong> aspernatur tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fuga, numquam vitae dolorum recusandae aut incidunt quidem quod corrupti nobis cumque quasi nemo expedita? Distinctio sint aperiam dignissimos maxime perferendis.
+                div.padding.grid__c2
+                    div.padding__bottom-regular
+                        hr.hr.display__mobile
+                        p.padding__top-mobile-small.padding__bottom-small.text-medium.primaryfont__bold.color__text-home-dark Proyecto 01
+                        p.padding__bottom-small.text-small Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                        img(class="border__radius display__desktop" src="../src/images/img-noticias.jpg", alt="")
+                        div.display__desktop.padding__top-small
+                            a.btn__primary--medium-nocolor-width(href="www") Proyecto 01
+                        div.display__mobile.padding__top-small
+                            a.btn__primary--small-nocolor(href="www") Proyecto 01
+                    
+                    div.padding__bottom-regular
+                        hr.hr.display__mobile
+                        p.padding__top-mobile-small.padding__bottom-small.text-medium.primaryfont__bold.color__text-home-dark La Huerta
+                        p.padding__bottom-small.text-small Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                        img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
+                        div.display__desktop.padding__top-small
+                            a.btn__primary--medium-nocolor-width(href="www") La huerta
+                        div.display__mobile.padding__top-small
+                            a.btn__primary--small-nocolor(href="www") La huerta
+            // nuestros espacios
+            section.media__margin.padding__bottom-large.content__center.content__max
+                div.padding__bottom-regular
+                    h2.padding__regular.primaryfont__bold Nuestros espacios
+                    p.text-medium.padding Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Ab facere fuga cupiditate. A similique suscipit provident! Nemo praesentium blanditiis, voluptas dicta enim vitae ut neque aliquid nobis harum</strong> aspernatur tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fuga, numquam vitae dolorum recusandae aut incidunt quidem quod corrupti nobis cumque quasi nemo expedita? Distinctio sint aperiam dignissimos maxime perferendis.
+                div.padding.padding__bottom-large.display__desktop
+                        a.btn__primary--medium-nocolor-width(href="www") Nuestros espacios
+                div.padding.grid__c3.gap
+                    div.padding__bottom-regular
+                        img(src="../src/images/img-noticias.jpg", alt="")
+                        p.padding__topbottom-small.text-medium.primaryfont__bold BCC
+                        p.padding__bottom-small.text-small Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                    div.padding__bottom-regular
+                        img(src="../src/images/img-noticias.jpg", alt="")
+                        p.padding__topbottom-small.text-medium.primaryfont__bold LABe
+                        p.padding__bottom-small.text-small Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                    div
+                        img(src="../src/images/img-noticias.jpg", alt="")
+                        p.padding__topbottom-small.text-medium.primaryfont__bold La Huerta
+                        p.padding__bottom-small.text-small Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
+                div.padding.display__mobile.padding__top-small
+                    a.btn__primary--small-nocolor(href="www") Nuestros espacios
+        //- footer
+        +footer("box__background--white")
+    script(src="../js/menu.js")   
