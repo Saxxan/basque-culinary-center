@@ -1,5 +1,5 @@
-mixin bullet(lineColor= "bullet__line-home")
-    ul.bullet
+mixin bullet(bulletMargin="bullet", lineColor= "bullet__line-home")
+    ul(class= bulletMargin)
         li(class= lineColor)
             h4.bullet__title.primaryfont__bold Bullet título
             p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis, numquam harum quae debitis similique ducimus. Pariatur cum similique error deleniti voluptatem voluptate quia corrupti?

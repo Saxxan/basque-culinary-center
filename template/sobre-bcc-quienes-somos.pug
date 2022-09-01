@@ -1,4 +1,5 @@
 include ../components/layout/bullet.pug
+include ../components/column/component-target-personal.pug
 include ../components/column/component-noticia-principal-sobre-bcc.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/menu/menu-gradient.pug
@@ -47,5 +48,65 @@ include ../components/layout/head.pug
                             h4.primaryfont__bold Titular de misión
                             p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             // bullet
-            section.media__margin.padding.padding__bottom-large.content__center.content__max
-                +bullet("bullet__line-home")
+            section.media__margin.padding.padding__bottom-regular.content__center.content__max
+                +bullet("bullet__none-margin", "bullet__line-home")
+            // patronato
+            section.media__margin.content__center.content__max     
+                div.padding__bottom-regular
+                    h3.padding__regular.primaryfont__bold Patronato
+                    p.padding.padding__bottom-regular.text-medium El patronato de Basque Culinary Center está formado por chefs, instituciones, empresas y conforma el órgano de gestión de la entidad. Asimismo en el Consejo Internacional de Basque Culinary Center, participan los y las chefs más relevantes a nivel internacional.
+                    p.padding.text-medium Basque Culinary Center, con sede en Donostia-San Sebastián, nació en 2009 como un ambicioso proyecto de formación, investigación e innovación, destinado al desarrollo del sector gastronómico, con una clara vocación internacional y bajo la idea de relacionar la cocina con la gestión, la ciencia y otras disciplinas.
+            // slider 01
+            section.media__margin.padding.padding__bottom-x-large.content__center.content__max
+                    div.swiper.mySwiper.display__flex.content__max
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                            div.swiper-slide
+                                +component-target-personal("")
+                        div.swiper-pagination
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LOGOTIPOS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // instituto conocimiento
+            section.media__margin.padding.padding__bottom-regular.content__center.content__max
+                hr.hr__margin-none
+                h4.padding__top-regular.primaryfont__bold Instituto de conocimiento
+                div.gap__logos
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+            // Empresas patronas
+            section.media__margin.padding.padding__bottom-regular.content__center.content__max
+                hr.hr__margin-none
+                h4.padding__top-regular.primaryfont__bold Empresas patronas
+                div.gap__logos
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+            // Instituciones
+            section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
+                hr.hr__margin-none
+                h4.padding__top-regular.primaryfont__bold Instituciones
+                div.gap__logos
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+                    img(src="../src/images/logo-hotel-melia.jpg", alt="")
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        +footer("box__background--white")
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")
+    script(src="../js/menu.js") 

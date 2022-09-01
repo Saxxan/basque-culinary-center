@@ -1,6 +1,6 @@
 include ../components/column/component-card.pug
 include ../components/column/component-title.pug
-include ../components/column/component-miembros.pug
+include ../components/column/component-target-personal.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu-section.pug
 include ../components/menu/menu.pug
@@ -40,23 +40,23 @@ include ../components/layout/head.pug
                     div.swiper.mySwiper.display__flex.content__max
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                         div.swiper-pagination
             // title slider 02
             section.media__margin.padding__regular.title__link.content__center.content__max
@@ -67,23 +67,23 @@ include ../components/layout/head.pug
                     div.swiper.mySwiper.display__flex.content__max
                         div.swiper-wrapper
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                             div.swiper-slide
-                                +component-miembros()
+                                +component-target-personal("display__none")
                         div.swiper-pagination
             // Sección "Espíritu innovador"
             section.media__margin.padding__bottom-large.content__center.content__max
@@ -111,7 +111,7 @@ include ../components/layout/head.pug
                         div.display__mobile
                             a.btn__primary--small-nocolor(href="www") Quiero saber más
             // Ediciones anteriores
-            section.padding.padding__bottom-large.media__margin.content__center
+            section.padding.padding__bottom-large.media__margin.content__center.content__max
                 div.padding__topbottom-small.display__mobile
                     h4.primaryfont__bold Ediciones anteriores
                 div.padding__bottom-desktop-regular.display__flex.gap__regular.grid__c3 
@@ -149,4 +149,5 @@ include ../components/layout/head.pug
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             +footer("box__background--white")     
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
-    script(src="../js/swiper.js")          
+    script(src="../js/swiper.js")
+    script(src="../js/menu.js")         
