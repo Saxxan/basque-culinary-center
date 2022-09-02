@@ -25,6 +25,9 @@
                 height: 100%;
                 width: 1px;
             }
+            &:after {
+                color: $c-primary-dark;
+            }
         }
         &-innovation {
             @extend .bullet__line;
@@ -34,6 +37,9 @@
                 border-left: 1px solid $c-marcas-bcc-innovation;
                 height: 100%;
                 width: 1px;
+            }
+            &:after {
+                color: $c-marcas-bcc-innovation;
             }
         }
         &-action {
@@ -45,6 +51,9 @@
                 height: 100%;
                 width: 1px;
             }
+            &:after {
+                color: $c-marcas-culinary-action;
+            }
         }
         &:first-child:before {
             top: 20px;
@@ -52,13 +61,13 @@
         &:last-child:before {
             height: 6px;
         }
-        &:after {
-            margin-left: -8px;
-            content: url('../src/iconos/bullet.svg');
-            position: absolute;
-            top: 5px;
-            color: red;
-        }
+        // &:after {
+        //     margin-left: -8px;
+        //     content: url('../src/iconos/bullet.svg');
+        //     position: absolute;
+        //     top: 5px;
+        //     color: red;
+        // }
     }
     &__title {
         padding-left: $small;
@@ -67,4 +76,16 @@
         display: block;
         padding-left: $small;
     }
+}
+.bullet__line::after, 
+.bullet__line-home::after, 
+.bullet__line-innovation::after, 
+.bullet__line-action::after {
+    content: '\29BF';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 30px; /* controlas el tamaño */
+    line-height: 1;
+    left: -8px;
 }
