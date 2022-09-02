@@ -89,13 +89,19 @@ include ../components/layout/head.pug
                     include ../components/tabs/tabs.pug
             //- tabs .display__mobile
             +component-title("", "display__mobile", "")
-            div.padding.padding__bottom-xx-large.display__mobile
-                +component-mobile-card-img("card__img--border-grado")
-                +component-mobile-card-img("card__img--border-master")
-                +component-mobile-card-img("card__img--border-doctorado")
-                +component-mobile-card-img("card__img--border-cursos")
-                +component-mobile-card-img("card__img--border-entusiastas")
-                +component-mobile-card-img("card__img--border-formacion")
+            div.padding.media__margin.content__center.padding__bottom-xx-large.display__mobile
+                div.margin__bottom-regular
+                    +component-mobile-card-img("card__img--border-grado")
+                div.margin__bottom-regular
+                    +component-mobile-card-img("card__img--border-master")
+                div.margin__bottom-regular
+                    +component-mobile-card-img("card__img--border-doctorado")
+                div.margin__bottom-regular
+                    +component-mobile-card-img("card__img--border-cursos")
+                div.margin__bottom-regular
+                    +component-mobile-card-img("card__img--border-entusiastas")
+                div.margin__bottom-regular
+                    +component-mobile-card-img("card__img--border-formacion")
             //- vertical line
             +component-subtitle("")
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex

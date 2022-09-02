@@ -24,7 +24,7 @@ include ../components/layout/head.pug
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-xx-large.content__center.content__max
                 div
-                    h2.padding__regular.primaryfont__bold Conoce BCC
+                    h1.padding__regular.primaryfont__bold Conoce BCC
                 div.grid__c2
                     div.padding.padding__bottom-regular
                         p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
@@ -32,13 +32,14 @@ include ../components/layout/head.pug
                         img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // noticia principal
-            section.padding__topbottom-x-large.box__background
-                +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "box__background--home", "box__img--border-rightangle", "display__innovation", "display__button", "", "")
+            section.padding
+                div.padding__topbottom-x-large.box__background
+                    +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "box__background--home", "box__img--border-rightangle", "display__innovation", "display__button", "", "")
             // bullet
             section.media__margin.padding.padding__top-large.padding__bottom-large.content__center.content__max
                 +bullet("bullet__none-margin", "bullet__line-home")
             // consejo internacional
-            section.padding__bottom-x-large.box__background
+            section.padding__bottom-x-large
                 div.media__margin.content__center.content__max
                     div
                         h2.padding__regular.primaryfont__bold Consejo internacional
@@ -101,7 +102,7 @@ include ../components/layout/head.pug
                     h2.padding__regular.primaryfont__bold Nuestros espacios
                     p.text-medium.padding Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Ab facere fuga cupiditate. A similique suscipit provident! Nemo praesentium blanditiis, voluptas dicta enim vitae ut neque aliquid nobis harum</strong> aspernatur tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fuga, numquam vitae dolorum recusandae aut incidunt quidem quod corrupti nobis cumque quasi nemo expedita? Distinctio sint aperiam dignissimos maxime perferendis.
                 div.padding.padding__bottom-large.display__desktop
-                        a.btn__primary--medium-nocolor-width(href="www") Nuestros espacios
+                        a.btn__primary--medium-color-width(href="www") Nuestros espacios
                 div.padding.grid__c3.gap
                     div.padding__bottom-regular
                         img(src="../src/images/img-noticias.jpg", alt="")
@@ -116,7 +117,7 @@ include ../components/layout/head.pug
                         p.padding__topbottom-small.text-medium.primaryfont__bold La Huerta
                         p.padding__bottom-small.text-small Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ex repudiandae earum sed voluptatem veritatis deserunt cupiditate, doloribus perferendis ab sequi temporibus necessitatibus dolor aut magni nostrum nihil reiciendis beatae.
                 div.padding.display__mobile.padding__top-small
-                    a.btn__primary--small-nocolor(href="www") Nuestros espacios
+                    a.btn__primary--small-color(href="www") Nuestros espacios
         //- footer
         +footer("box__background--white")
     script(src="../js/menu.js")   

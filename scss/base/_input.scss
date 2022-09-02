@@ -2,6 +2,10 @@
 // >> Floating Labels
 // --------------------------------------------------------
 .form-floating {
+    &-one {
+        @extend .form-floating;
+        min-width: 320px;
+    }
     width: 100%;
     position: relative;
     margin-bottom: $regular;

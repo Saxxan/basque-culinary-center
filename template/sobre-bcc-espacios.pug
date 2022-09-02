@@ -1,3 +1,4 @@
+include ../components/column/component-mobile-card-img.pug
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/layout/filter.pug
@@ -23,17 +24,23 @@ include ../components/layout/head.pug
                     //- +menu-index()
             
             
-            // section "Restaurante LABe"
+            //enlaces ancla
             section.media__margin.padding__bottom-x-large.content__center.content__max
                 div
-                    h2.padding__regular.primaryfont__bold Nuestros espacios
-                div.padding
+                    h1.padding__regular.primaryfont__bold Nuestros espacios
+                div.padding.padding__bottom-regular
                     p.display__mobile.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                div 
-                    h2 enlaces ancla
-            section.media__margin.padding__bottom-x-large.content__center.content__max 
+                div.media__margin.content__center.padding.display__flex-tablet.gap
+                    a(class="textdecoration__none card__horizontal shadow" href="#basqueculinarycenter") 
+                        +component-mobile-card-img("card__img--border-corporate")
+                    a(class="textdecoration__none card__horizontal shadow" href="#lahuerta") 
+                        +component-mobile-card-img("card__img--border-huerta")
+                    a(class="textdecoration__none card__horizontal shadow" href="#labe") 
+                        +component-mobile-card-img("card__img--border-labe")
+            // section "Basque Culinary Center"
+            section(class="media__margin content__center content__max" id="basqueculinarycenter")
                 div
-                    h4.padding__regular.primaryfont__bold Basque Culinary Center
+                    h3.padding__regular.primaryfont__bold Basque Culinary Center
                 .padding.grid__c8-c4
                     div.swiper3.mySwiper.swiper3-nonepagination
                         div.margin__left.swiper-wrapper
@@ -52,143 +59,69 @@ include ../components/layout/head.pug
                         p.text-medium Basque Culinary Center está situado en una zona elevada al sur de Donostia-San Sebastián llamada Miramón, dentro del Parque Tecnológico del mismo nombre.
             
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ACCORDION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            // ACCORDION DISPLAY__DESKTOP
-            // Aulas
-            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
-                div.media__margin.padding.padding__bottom-large.content__center.content__max
-                    h4.padding__bottom-regular.primaryfont__bold Aulas
-                    .grid__c8-c4
-                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
-                        div.box__content--justify
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-            // Talleres creativos
-            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
-                div.media__margin.padding.padding__bottom-large.content__center.content__max
-                    h4.padding__bottom-regular.primaryfont__bold Talleres creativos
-                    .grid__c8-c4
-                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
-                        div.box__content--justify
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-            // Laboratorios
-            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
-                div.media__margin.padding.padding__bottom-large.content__center.content__max
-                    h4.padding__bottom-regular.primaryfont__bold Laboratorios
-                    .grid__c8-c4
-                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
-                        div.box__content--justify
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-            // Restaurante
-            section.margin__top-x-large.margin__bottom-xx-large.padding__topbottom-large.box__background.display__desktop
-                div.media__margin.padding.padding__bottom-large.content__center.content__max
-                    h4.padding__bottom-regular.primaryfont__bold Restaurante
-                    .grid__c8-c4
-                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
-                        div.box__content--justify
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-            //  --------------------------------------
-            
             // --------------------------------------
-            // ACCORDION DISPLAY__MOBILE
+            // ACCORDION
             // Aulas
-            section.media__margin.content__center.padding.padding__bottom-regular.padding__top-regular.accordion__section.display__mobile
+            section.media__margin.content__center.padding.padding__bottom-regular.padding__top-regular.accordion__section
                 div.accordion__item
-                    button.accordion.accordion__background Aulas
-                    .panel.panel__background
-                        div.padding__bottom-small
-                            img(class="padding__bottom-small border__radius" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                    button.accordion.accordion__background.active Aulas
+                    .panel.panel__background.visible
+                        div.padding__bottom-small.grid__c2
+                            img(class="padding__bottom-mobile-small border__radius" src="../../src/images/img-cabecera.jpg", alt="")
+                            div.box__content--justify
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
             // Talleres creativos
-            section.media__margin.content__center.padding.padding__bottom-regular.accordion__section.display__mobile
+            section.media__margin.content__center.padding.padding__bottom-regular.accordion__section
                 div.accordion__item
                     button.accordion.accordion__background Talleres creativos
                     .panel.panel__background
-                        div.padding__bottom-small
-                            img(class="padding__bottom-small border__radius" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        div.padding__bottom-small.grid__c2
+                            img(class="padding__bottom-mobile-small border__radius" src="../../src/images/img-cabecera.jpg", alt="")
+                            div.box__content--justify
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
             // Laboratorios
-            section.media__margin.content__center.padding.padding__bottom-regular.accordion__section.display__mobile
+            section.media__margin.content__center.padding.padding__bottom-regular.accordion__section
                 div.accordion__item
                     button.accordion.accordion__background Laboratorios
                     .panel.panel__background
-                        div.padding__bottom-small
-                            img(class="padding__bottom-small border__radius" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        div.padding__bottom-small.grid__c2
+                            img(class="padding__bottom-mobile-small border__radius" src="../../src/images/img-cabecera.jpg", alt="")
+                            div.box__content--justify
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
             // Restaurante
-            section.media__margin.content__center.padding.padding__bottom-x-large.accordion__section.display__mobile
+            section.media__margin.content__center.padding.accordion__section
                 div.accordion__item
                     button.accordion.accordion__background Restaurante
                     .panel.panel__background
-                        div.padding__bottom-small
-                            img(class="padding__bottom-small border__radius" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        div.padding__bottom-small.grid__c2
+                            img(class="padding__bottom-mobile-small border__radius" src="../../src/images/img-cabecera.jpg", alt="")
+                            div.box__content--justify
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+            // espacio ID "La Huerta"
+            section(class="padding__bottom-xx-large" id="lahuerta")
             
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            // La Huerta
-            section.padding.padding__bottom-xx-large.media__margin.content__center.content__max
+            // Sección La Huerta
+            section(class="padding media__margin content__center content__max")
                 div
                     h3.padding__bottom-regular.primaryfont__bold La Huerta
                 div.grid__c2.gap
@@ -202,8 +135,10 @@ include ../components/layout/head.pug
                         // button display__mobile
                         div.display__mobile
                             a.btn__primary--small-nocolor(href="www") Quiero saber más
-            // LABe
-            section.padding.media__margin.content__center.content__max
+            // espacio ID "LABe"
+            section(class="padding__bottom-xx-large" id="labe")
+            // Sección LABe
+            section(class="padding padding__bottom-regular media__margin content__center content__max")
                 div
                     h3.padding__bottom-regular.primaryfont__bold LABe
                 div.grid__c2.gap
@@ -214,76 +149,36 @@ include ../components/layout/head.pug
                             a.btn__primary--medium-nocolor-width(href="www") Quiero saber más
                     div
                         img(class="border__radius" src="../../src/images/img-noticias.jpg", alt="")
-            
-            // ACCORDION DISPLAY__DESKTOP
-            // Espacio 01
-            section.margin__top-x-large.margin__bottom-x-large.padding__topbottom-large.box__background.display__desktop
-                div.media__margin.padding.padding__bottom-large.content__center.content__max
-                    h4.padding__bottom-regular.primaryfont__bold Espacio 01
-                    .grid__c8-c4
-                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
-                        div.box__content--justify
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-            // Espacio 02
-            section.margin__top-x-large.margin__bottom-xtra-large.padding__topbottom-large.box__background.display__desktop
-                div.media__margin.padding.padding__bottom-large.content__center.content__max
-                    h4.padding__bottom-regular.primaryfont__bold Espacio 02
-                    .grid__c8-c4
-                        img(class="border__radius" src="../src/images/img-cabecera.jpg", alt="")
-                        div.box__content--justify
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div.padding__bottom-small 
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-                            div
-                                p.text-small.primaryfont__bold.padding__bottom-x-small Titular del bloque 
-                                p.x-small Molestias corporis eligendi quae illo! Totam vero necessitatibus dignissimo.
-            //  --------------------------------------
-            
-            // --------------------------------------
             // ACCORDION DISPLAY__MOBILE
             // Espacio 01
-            section.media__margin.content__center.padding.padding__bottom-regular.padding__top-regular.accordion__section.display__mobile
+            section.media__margin.content__center.padding.padding__bottom-regular.accordion__section
                 div.accordion__item
-                    button.accordion.accordion__background Espacio 01
-                    .panel.panel__background
-                        div.padding__bottom-small
-                            img(class="padding__bottom-small border__radius" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                    button.accordion.accordion__background.active Espacio 01
+                    .panel.panel__background.visible
+                        div.padding__bottom-small.grid__c2
+                            img(class="padding__bottom-mobile-small border__radius" src="../../src/images/img-cabecera.jpg", alt="")
+                            div.box__content--justify
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
             // Espacio 02
-            section.media__margin.content__center.padding.padding__bottom-regular.accordion__section.display__mobile
+            section.media__margin.content__center.padding.padding__bottom-x-large.accordion__section
                 div.accordion__item
                     button.accordion.accordion__background Espacio 02
                     .panel.panel__background
-                        div.padding__bottom-small
-                            img(class="padding__bottom-small border__radius" src="../../src/images/foto.jpg", alt="")
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                            p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
-                            p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        div.padding__bottom-small.grid__c2
+                            img(class="padding__bottom-mobile-small border__radius" src="../../src/images/img-cabecera.jpg", alt="")
+                            div.box__content--justify
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.padding__bottom-regular.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                p.padding__bottom-xx-small.text-small.primaryfont__bold Titular del bloque
+                                p.x-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+            
             // button display__mobile
             div.padding.padding__bottom-xtra-large.media__margin.content__center.content__max.display__mobile
                 a.btn__primary--small-nocolor(href="www") Quiero saber más
