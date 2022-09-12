@@ -1,3 +1,4 @@
+include ../components/layout/bullet.pug
 include ../components/column/component-info-event.pug
 include ../components/menu/menu-gradient.pug
 include ../components/menu/menu-section.pug
@@ -8,39 +9,38 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- botón banner
+
+            // botón banner
             div.banner__fixed.display__mobile 
                 a.btn__primary--small-color(href="www") Contactar
-            //- link
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // link
             section.media__margin.padding.padding__top-xx-large.padding__bottom-xx-large.content__center.content__max
                 div 
                     a(class="text-small link__color-home" href="www") Volver a servicios
                         img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
-            //- texto
+            // texto
             section.media__margin.padding__bottom-xx-large.content__center.content__max
                 div.padding
                     h2.padding__bottom-regular.primaryfont__bold Servicio 01
                     p.padding__bottom-regular.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     img(class="box__img padding__bottom-regular" src="../../src/images/img-noticias.jpg", alt="")
-                    //- bullets
+                    // bullets
                     div.padding__bottom-regular
-                        h4.primaryfont__bold Servicio 01
-                        p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                    div.padding__bottom-regular
-                        h4.primaryfont__bold Servicio 02
-                        p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                    div.padding__bottom-regular
-                        h4.primaryfont__bold Servicio 03
-                        p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                    a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de innovación
-            //- otros servicios
+                        +bullet("bullet__none-margin", "bullet__line-home")
+            // otros servicios
             section.media__margin.padding.content__center.content__max
                 h3.padding__bottom-large.primaryfont__bold Otros servicios
                 .padding__bottom-xtra-large.display__flex.gap
@@ -60,6 +60,8 @@ include ../components/layout/head.pug
                             h4.box__title.primaryfont__bold Servicio 02
                         p.text-small Este proyecto, desarrollado en colaboración con el Profesor Jose María Ordovás de la Universidad de Tufts, tiene como finalidad evaluar las consecuencias a nivel metabólico del consumo de productos de origen vegetal de temporada, en comparación al efecto que produce su consumo fuera de temporada.  
                             a.text-small.color__text-home(href="www") Ver más
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js")

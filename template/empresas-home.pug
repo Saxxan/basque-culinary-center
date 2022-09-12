@@ -12,26 +12,33 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- botón banner
+
+            // botón banner
             div.banner__fixed.display__mobile 
                 a.btn__primary--small-color(href="www") Contactar
-            //- cabecera
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-xtra-large.content__center.content__max
                 div
                     h2.padding__regular.primaryfont__bold Únete
                     img(class="padding padding__bottom-regular box__img" src="../src/images/img-noticias.jpg", alt="")
                     p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            //- noticias principal
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // noticias principal
             section.padding__topbottom-x-large.box__background
+                // component-noticia-principal
                 +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "box__background", "", "display__innovation", "display__button", "", "")
-            //- área de innnovación
+            // área de innnovación
             section.media__margin.padding.padding__top-xx-large.padding__bottom-large.content__center.content__max
                 div.padding__bottom-regular
                     h2.padding__bottom-large.primaryfont__bold Qué ofrecemos
@@ -40,41 +47,48 @@ include ../components/layout/head.pug
                     h3.padding__bottom-regular.primaryfont__bold Área de innovación
                     p.padding__bottom-large.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                     img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
-                //- bullets
+                // bullets
                 div.media__margin.padding
-                    +bullet("", "bullet__line-home")
+                    // bullet
+                    +bullet("bullet__none-margin", "bullet__line-home")
                 div.padding__bottom-regular
                     a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de innovación
-            //- área de promoción
+            // área de promoción
             section.media__margin.padding.padding__bottom-large.content__center.content__max
                 div.padding__bottom-regular 
                     h3.padding__bottom-regular.primaryfont__bold Área de promoción
                     p.padding__bottom-regular.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                     img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
-                //- bullets
                 div.media__margin.padding
-                    +bullet("", "bullet__line-home")
+                    // bullet
+                    +bullet("bullet__none-margin", "bullet__line-home")
                 div.padding__bottom-regular
                     a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de promoción
-            //- área de información
+            // área de información
             section.media__margin.padding.padding-bottom-large.content__center.content__max
                 div.padding__bottom-regular
                     h4.padding__bottom-regular.primaryfont__bold Área de información
                     p.padding__bottom-regular.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                     img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
-                //- bullets
                 div.media__margin.padding
-                    +bullet("", "bullet__line-home")
+                    // bullet
+                    +bullet("bullet__none-margin", "bullet__line-home")
                 div.padding__bottom-regular
                     a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de información
-            //- últimas noticias, dos columnas
+            // últimas noticias, dos columnas
             section.padding__bottom-xtra-large
+                // component-subtitle-link
                 +component-subtitle-link("", "")
                 div.media__margin.padding.display__flex.gap.content__max.content__center
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__card--grey", "box__tag", "", "", "", "display__none")
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
-            //- form innovation
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM INNOVATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             +innovation-form()
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js") 

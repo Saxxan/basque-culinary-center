@@ -16,13 +16,18 @@ include ../components/menu/menu-gradient.pug
 include ../components/layout/head.pug
     block content
         header
-            //- menu
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             div
+                // menu gradient componente "menu-gradient"
                 +menu-gradient("gradient__home")
+                // menu topbar componente "topbar"
                 include ../components/menu/topbar.pug
-                +menu("")
+                // menu main componente "menu"
+                +menu("display__none")
+                //- +menu-index()
         main            
-            //- slide cabecera
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // slider
             div.swiper__fullwidth.swiper2
                 div.swiper-wrapper
                     .swiper-slide.swiper-slide-board.swiper-slide-background
@@ -33,119 +38,165 @@ include ../components/layout/head.pug
                 
                 .swiper-button-next
                 .swiper-button-prev
-            //- column icon
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // column icon
             section.padding__bottom-xtra-large
                 +component-title("", "", "")
                 div.padding.media__margin.content__center.content__max.display__flex.gap
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
-            //- nuestra agenda slider desktop
+            // nuestra agenda slider display__desktop
             section.padding__bottom-xx-large.box__background.display__desktop
+                // component-title-link
                 +component-title-link("", "")
                 div.media__margin.padding.content__center
                     div.swiper.mySwiper.display__flex.content__max
                         div.swiper-wrapper
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                             div.swiper-slide
+                                // component-target-garamond-complete
                                 +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                         div.swiper-pagination
                         
-            
-            //- nuestra agenda mobile
+            // nuestra agenda display__mobile
             section.padding__bottom-xx-large.box__background.display__mobile
+                // component-title-link
                 +component-title-link("", "")
                 div.media__margin.padding.gap.display__flex.content__center.content__max
+                    // component-target-garamond-complete
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
+                    // component-target-garamond-complete
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                    // component-target-garamond-complete
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
-            //- últimas noticias, dos columnas
+            // últimas noticias, dos columnas
             section.padding__bottom-xtra-large.box__background
+                // component-subtitle-link
                 +component-subtitle-link("", "")
                 div.media__margin.padding.display__flex.gap.content__max.content__center
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "", "", "", "display__none")
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "", "display__desktop", "display__mobile", "display__none")
                     div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
-            //- tabs .display__desktop
+            // tabs .display__desktop
             div.display__desktop
+                // component-title
                 +component-title("", "", "")
                 .padding__bottom-xx-large.display__desktop
                     include ../components/tabs/tabs.pug
-            //- tabs .display__mobile
+            //tabs .display__mobile
+            // component-title
             +component-title("", "display__mobile", "")
             div.padding.media__margin.content__center.padding__bottom-xx-large.display__mobile
                 div.margin__bottom-regular
+                    // component-mobile-card-img
                     +component-mobile-card-img("card__img--border-grado")
                 div.margin__bottom-regular
+                    // component-mobile-card-img
                     +component-mobile-card-img("card__img--border-master")
                 div.margin__bottom-regular
+                    // component-mobile-card-img
                     +component-mobile-card-img("card__img--border-doctorado")
                 div.margin__bottom-regular
+                    // component-mobile-card-img
                     +component-mobile-card-img("card__img--border-cursos")
                 div.margin__bottom-regular
+                    // component-mobile-card-img
                     +component-mobile-card-img("card__img--border-entusiastas")
                 div.margin__bottom-regular
+                    // component-mobile-card-img
                     +component-mobile-card-img("card__img--border-formacion")
-            //- vertical line
+            // vertical line
+            // component-subtitle
             +component-subtitle("")
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex
+                // component-vertical-line
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                // component-vertical-line
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                // component-vertical-line
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                // component-vertical-line
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
+                // component-vertical-line
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
                     hr.padding.display__mobile
                 div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
-            //- un motor de cambio
+            // un motor de cambio
+            // component-title
             +component-title("box__background", "", "")
+            // component-noticia-principal
             +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
-            //- un motor de cambio - slider areas de trabajo
+            // un motor de cambio - slider areas de trabajo
             section.padding__top-x-large.padding__bottom-xtra-large.box__background
+                    // component-subtitle
                     +component-subtitle("")
                     div.media__margin.padding.content__center.content__max
                         div.swiper.mySwiper.box__swiper
                             div.swiper-wrapper
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-pagination
                         div.padding__top-small.display__mobile
                             a.btn__primary--small-color(href="que tal") Acceder a innovación
-            //- colabora con BCC
+            // colabora con BCC
+            // component-title
             +component-title("", "", "")
             section.padding__bottom-xx-large
+                // component-img-left
                 +component-img-left("box__content", "display__none", "")
             section.padding__bottom-xtra-large
                     +component-subtitle("")
@@ -153,55 +204,76 @@ include ../components/layout/head.pug
                         div.swiper.mySwiper.box__swiper.content__max
                             div.swiper-wrapper
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                                 div.swiper-slide
+                                    // component-vertical-line
                                     +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
                             div.swiper-pagination
                         div.padding__top-small.display__mobile
                             a.btn__primary--small-color(href="que tal") Acceder a innovación
-            //- una visión integral
+            // una visión integral
             section.padding__bottom-xx-large.box__background
+                // component-title-link
                 +component-title-link("", "")
+                // component-noticia-principal
                 +component-noticia-principal("box__content--justify", "link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border-rightangle", "", "display__button", "display__none", "")
-            //- noticias target desktop
+            // noticias target display__desktop
             section.box__background.display__desktop
                 div.media__margin.padding__regular-xtra-large.content__center.content__max.display__flex.gap
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "box__img--border-rightangle", "", "", "display__none")
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
+                    // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
-            //- noticias target mobile
+            // noticias target display__mobile
             section.padding.padding__bottom-xtra-large.box__background.display__mobile
                     div.media__margin.swiper.mySwiper.box__swiper
                         div.swiper-wrapper
                             div.swiper-slide
+                                // component-noticia-target
                                 +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
+                                // component-noticia-target
                                 +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                             div.swiper-slide
+                                // component-noticia-target
                                 +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag--bloq2", "box__img--border", "display__desktop", "", "display__none")
                         div.swiper-pagination
                     div.media__margin.content__center.padding__top-small.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
-            //- dos conceptos distintos
+            // dos conceptos distintos
+            // component-title
             +component-title("", "", "")
             div.media__margin.padding.padding__bottom-xtra-large.content__max.content__center.display__flex.gap
+                // component-target-info-event
                 +component-target-info-event("", "", "padding__bottom-large", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background")
     
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")

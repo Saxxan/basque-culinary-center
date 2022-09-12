@@ -21,12 +21,14 @@ include ../components/layout/head.pug
                     // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-x-large.content__center.content__max
                 div
                     h2.padding__regular.primaryfont__bold Red de alianzas
                     div.padding
                         p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ALIANZAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // section 01
             section.media__margin.padding.content__center.content__max
@@ -84,6 +86,8 @@ include ../components/layout/head.pug
                             a.btn__primary--medium-nocolor-width(href="www") Contacta con nosotros
                         div.display__mobile
                             a.btn__primary--small-nocolor(href="www") Contacta con nosotros
-        // footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js")

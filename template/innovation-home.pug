@@ -10,48 +10,60 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
-                    +menu-section("migas__neutral", "migas__text-neutral")
-                    //- +menu-index()
-            //- cabecera
+                    // migas de pan componente  "menu-section"
+                    +menu-section("migas__innovation", "migas__text-innovation")
+                    //- +menu-index() 
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-xtra-large.content__center.content__max
                 div
                     h2.padding__regular.primaryfont__bold Lorem ipsum
                     p.padding.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            //- noticias principal
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // noticias principal
             section.padding__topbottom-x-large.box__background
+                // component-noticia-principal
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "color__text-innovation", "", "tag__card--grey", "box__background", "", "display__innovation", "display__button", "", "")
-            //- section bcc innovation
+            // section bcc innovation
             section.padding__topbottom-xtra-large.content__center.content__max
                 div.media__margin.padding.padding__bottom-large.content__center
                     img(class="logo__size-home" src="../src/images/cabecera-innovation.svg", type="img/svg", alt="")
+                // component-img-left
                 +component-img-left("box__content--justify", "display__none", "display__one")
                 div.media__margin.padding.content__center.display__mobile.padding__top-large
                     a.btn__primary--small-nocolor(href="www") Ir a la página
-            //- section bcc action - order 2
+            // section bcc action - order 2
             section.padding__bottom-xtra-large.content__center.content__max
                 div.media__margin.padding.padding__bottom-large.content__center
                     img(class="logo__size-home" src="../src/images/cabecera-action.svg", type="img/svg", alt="")
+                // component-img-left
                 +component-img-left("box__content--right box__content--justify", "display__none", "display__one")
                 div.media__margin.padding.content__center.display__mobile.padding__top-large
                     a.btn__primary--small-nocolor(href="www") Ir a la página
-            //- section lab
+            // section lab
             section.padding__bottom-xtra-large.content__center.content__max
                 div.media__margin.padding.padding__bottom-large.content__center
                     img(class="logo__size-home" src="../src/images/cabecera-labe.svg", type="img/svg", alt="")
+                // component-img-left
                 +component-img-left("box__content--justify", "display__none", "display__one")
                 div.media__margin.padding.content__center.display__mobile.padding__top-large
                     a.btn__primary--small-nocolor(href="www") Ir a la página
-            //- form innovation
-            +innovation-form()
-        //- footer
-        +footer("box__background--white")    
             
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM INNOVATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // innovation-form
+            +innovation-form()
         
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        +footer("box__background--white")    
             
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/menu.js")

@@ -20,6 +20,7 @@ include ../components/layout/head.pug
                     // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-large.content__center.content__max
                 div
@@ -38,6 +39,7 @@ include ../components/layout/head.pug
                     li.bullet__line-home
                         h4.bullet__title.primaryfont__bold Experiencia 03
                         p.bullet__description.text-small Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aliquam rerum beatae odit vitae perspiciatis, numquam harum quae debitis similique ducimus.
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SLIDER DESTACADAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // section "destacadas"
             section.media__margin.padding__regular.title__link.content__center.content__max
@@ -65,6 +67,7 @@ include ../components/layout/head.pug
                         div.swiper-slide
                             +component-target-garamond-complete-actualidad("btn__primary--medium-nocolor", "", "tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
                     div.swiper-pagination
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FILTROS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.box__background
                 // componente filter-agenda
@@ -120,9 +123,11 @@ include ../components/layout/head.pug
                 div.media__margin.padding__topbottom-desktop.padding.content__center.content__max
                     // component-target-garamond-agenda
                     +component-target-garamond-agenda("btn__primary--medium-nocolor-width", "grid__c4-c8", "tag__card--grey", "box__icon--date-home", "display__desktop", "display__mobile", "", "")
+        
         // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         div.padding__top-xtra-large 
             +footer("box__background--white")
+    
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/menu.js")

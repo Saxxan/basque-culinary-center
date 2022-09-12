@@ -20,10 +20,12 @@ include ../components/layout/head.pug
                     // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-regular.content__center.content__max
                 div
                     h1.padding__regular.primaryfont__bold Gastronomia 360º
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FILTROS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section
                 // componente filter-agenda
@@ -57,6 +59,7 @@ include ../components/layout/head.pug
                                     button.btn__primary--small-nocolor Limpiar
                                 .submit.display__mobile
                                     button.btn__primary--small-color Buscar    
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> GASTRGONOMÍA 360º >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // noticias principal
             section.padding__top-regular.padding__bottom-x-large
@@ -65,6 +68,7 @@ include ../components/layout/head.pug
                 // noticia principal
                 // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 4 COLUMNAS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.box__background
                 hr.hr__primary.display__desktop
@@ -162,9 +166,12 @@ include ../components/layout/head.pug
                 // noticia principal
                 // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PÁGINACIÓN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             h2.padding__topbottom-xtra-large Componente paginación
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            +footer("box__background--white")     
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        +footer("box__background--white")     
+    
     script(src="../js/menu.js") 
     

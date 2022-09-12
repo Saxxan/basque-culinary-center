@@ -9,30 +9,36 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- botón banner
+        
+            // botón banner
             div.banner__fixed.display__mobile 
                 a.btn__primary--small-color(href="www") Contactar
-            //- texto
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding__bottom-x-large.content__center.content__max
                 h2.padding__topbottom-regular.primaryfont__bold Formas de colaboración y beneficios
                 h3.padding__bottom-small.primaryfont__bold Participa en el proyecto
                 p.padding__bottom-small.text-small <strong>Basque Culinary Center es una fundación sin ánimo de lucro y ofrece la posibilidad de colaborar con ella a Empresas e Instituciones que deseen participar activamente en el proyecto BCC.</strong>
                 p.padding__bottom-large.text-small La posibilidad de colaborar con BCC está abierta a empresas de diversos perfiles, tamaño, actividad o ámbito de actuación y ofrecemos distintas fórmulas de colaboración y patrocinio empresarial, para satisfacer las necesidades y expectativas de las empresas que quieren unirse a la familia BCC.
                 img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
-            //- como colaborar
+            // como colaborar
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
                 div
                     h3.padding__topbottom-regular.primaryfont__bold Cómo colaborar
                     h4.padding__bottom-small.primaryfont__bold Empresas patronas
                     p.text-small <strong>Lorem Ipsum is simply dummy text of the printing</strong> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                //- sección logos
+                // sección logos
                 div.gap__logos
                         img(src="../src/images/logo-hotel-melia.jpg", alt="")
                         img(src="../src/images/logo-hotel-resort-marriot.jpg", alt="")
@@ -42,7 +48,7 @@ include ../components/layout/head.pug
                     p.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     p.padding__bottom-regular.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     img(class="box__img" src="../src/images/img-noticias.jpg", alt="")
-                //- sección logos
+                // sección logos
                 div.gap__logos
                         img(src="../src/images/logo-hotel-melia.jpg", alt="")
                         img(src="../src/images/logo-hotel-resort-marriot.jpg", alt="")
@@ -51,11 +57,13 @@ include ../components/layout/head.pug
                     h4.padding__bottom-small.primaryfont__bold Empresas patrocinadoras
                     p.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     p.padding__bottom-regular.text-small Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                //- sección logos
+                // sección logos
                 div.gap__logos
                         img(src="../src/images/logo-hotel-melia.jpg", alt="")
                         img(src="../src/images/logo-hotel-resort-marriot.jpg", alt="")
                         img(src="../src/images/logo-nh-hoteles.jpg", alt="")
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js")  

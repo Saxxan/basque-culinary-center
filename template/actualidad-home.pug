@@ -97,7 +97,6 @@ include ../components/layout/head.pug
             section.padding__top-xx-large.padding__bottom-large
                 div.media__margin.padding__regular.content__center.content__max
                     h3.primaryfont__bold Gastronomía 360º
-                // noticia principal
                 // component-noticia-principal-actualidad
                 +component-noticia-principal-actualidad("box__content--justify", "link__color-home", "color__text", "tag__card--grey", "", "box__img--border-rightangle", "", "display__one")
             // noticias 2 columnas display__desktop
@@ -109,16 +108,18 @@ include ../components/layout/head.pug
                     +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "box__img--border-rightangle", "display__desktop", "", "display__none")
             // noticias display__mobile
             section.media__margin.content__center.padding.padding__bottom-xtra-large.display__mobile
+                // component-noticia-target-actualidad
                 +component-noticia-target-actualidad("link__color-home", "tag__card--grey", "box__tag--bloq2", "", "display__desktop", "display__mobile", "", "display__one")
                 div.media__margin.padding__top-large
                     a.btn__primary--small-color(href="www") Ver más
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NEWSLETTER FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // componente newsletter-form
             +newsletter-form()  
+        
         // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        // componente footer
         +footer("box__background--white")
-    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SCRIPTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/menu.js")

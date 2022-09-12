@@ -22,6 +22,7 @@ include ../components/layout/head.pug
                     // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-x-large.content__center.content__max
                 div
@@ -31,6 +32,7 @@ include ../components/layout/head.pug
                         img(class="border__radius" src="../src/images/img-noticias.jpg", alt="")
                     div.padding__bottom-regular
                         p.text-medium Basque Culinary Center conforma un ecosistema único donde formación, innovación, investigación y emprendimiento coexisten con el objetivo de desarrollar e impulsar la gastronomía, asumida esta como el conocimiento razonado sobre lo que comemos y cómo lo hacemos. Situada desde 2011 en Donostia - San Sebastián, es una institución pionera conformada por la Facultad de Ciencias Gastronómicas y por BCC Innovation, el Centro Tecnológico en Gastronomía.
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // misión, visión, valores
             section.media__margin.padding__bottom-large.content__center.content__max     
@@ -47,7 +49,7 @@ include ../components/layout/head.pug
                         div
                             h4.primaryfont__bold Titular de misión
                             p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            // bullet
+            // component bullet
             section.media__margin.padding.padding__bottom-regular.content__center.content__max
                 +bullet("bullet__none-margin", "bullet__line-home")
             // patronato
@@ -88,6 +90,7 @@ include ../components/layout/head.pug
                                 // component-target-personal
                                 +component-target-personal("")
                         div.swiper-pagination
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LOGOTIPOS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // instituto conocimiento
             section.media__margin.padding.padding__bottom-regular.content__center.content__max
@@ -114,8 +117,10 @@ include ../components/layout/head.pug
                     img(src="../src/images/instituciones2.png", alt="")
                     img(src="../src/images/instituciones3.png", alt="")
                     img(src="../src/images/instituciones4.png", alt="")
+        
         // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/menu.js") 

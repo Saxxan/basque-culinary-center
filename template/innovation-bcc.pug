@@ -9,16 +9,21 @@ include ../components/menu/menu-index.pug
 include ../components/layout/footer.pug
 include ../components/layout/head.pug
     block content
-        main 
+        main
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__innovation", "migas__text-innovation")
-                    +menu-index()
-            //- cabecera
+                    //- +menu-index() 
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding.padding__top-xtra-largeg.padding__bottom-xx-large.content__center.content__max
                 div.padding__topbottom-large
                     img(class="logo__size" src="../src/images/cabecera-innovation.svg", type="img/svg", alt="")
@@ -32,15 +37,18 @@ include ../components/layout/head.pug
                     a.btn__primary--small-nocolor-innovation(href="www") Proyectos
                 div.display__mobile
                     a.btn__primary--small-color-innovation(href="www") Líneas de investigación
-            //- noticias principal
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.padding__topbottom-x-large.box__background--innovation
                 +component-noticia-principal("box__content--justify", "link__color-innovation", "color__text-innovation", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
-            //- sección texto
+            // sección "Qué hacemos"
             section.media__margin.padding__regular-large.content__center.content__max
                 div
                     h3.padding__bottom-large.primaryfont__bold Qué hacemos
                 div 
+                    // bullet
                     +bullet("", "bullet__line-innovation")
+            // sección "Quienes somos"
             section.media__margin.padding__p-bottom-xx-large.content__center.content__max
                 div.padding__bottom-regular
                     h3.primaryfont__bold Quienes somos
@@ -54,22 +62,25 @@ include ../components/layout/head.pug
                             p.text-medium <strong>Chefs</strong> con una vasta experiencia internacional, tanto en restaurantes informales como en restaurantes de calidad Michelin
                         li 
                             p.text-medium <strong>Expertos en procesos y metodologías</strong> de innovación para la generación de nuevos negocios disruptivos
-            
+            // sección "Empresas colaboradoras"
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max
                 div.padding__bottom-regular
                     h3.primaryfont__bold Empresas colaboradoras
                 div
                     p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            //- sección logos
+            // sección logos
             section.media__margin.padding__bottom-xtra-large.content__center.gap__logos.display__flex
                     img(src="../src/images/logo-hotel-melia.jpg", alt="")
                     img(src="../src/images/logo-hotel-resort-marriot.jpg", alt="")
                     img(src="../src/images/logo-nh-hoteles.jpg", alt="")
                     img(src="../src/images/logo-hoteles-restaurantes-paradores.jpg", alt="")
                     a.display__mobile.btn__primary--small-nocolor-innovation(href="www") Servicios para empresas
-            //- form innovation
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM INNOVATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             +innovation-form()  
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js")   
     script(src="../js/accordion.js") 

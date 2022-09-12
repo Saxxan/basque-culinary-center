@@ -11,37 +11,54 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__innovation", "migas__text-innovation")
-                    //- +menu-index()
-            //- cabecera
+                    //- +menu-index() 
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__regular.content__center.content__max
                 h1.primaryfont__bold Proyectos
                 p.text-medium Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            //- filtros
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // filtros
             section
+                // filter
                 +filter("tag__innovation", "tag__innovation-dark")
-            //- section target
+            / section target
             div.margin__bottom-xx-large.padding__regular.box__background--innovation
+                // component-target-info-event
                 +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "padding__bottom-large", "btn__primary--small-nocolor-innovation", "btn__primary--medium-nocolor-innovation-width", "box__icon--date-innovation", "display__desktop", "display__mobile", "", "display__one")
-            //- section target
+            // section target
             div.margin__bottom-xx-large.padding__regular.box__background--innovation
+                // component-target-info-event
                 +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "padding__bottom-large", "btn__primary--small-nocolor-innovation", "btn__primary--medium-nocolor-innovation-width", "box__icon--date-innovation", "display__desktop", "display__mobile", "", "display__one")
-            //- section target
+            // section target
             div.margin__bottom-xx-large.padding__regular.box__background--innovation
+                // component-target-info-event
                 +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "padding__bottom-large", "btn__primary--small-nocolor-innovation", "btn__primary--medium-nocolor-innovation-width", "box__icon--date-innovation", "display__desktop", "display__mobile", "", "display__one")
-            //- section target
+            // section target
             div.margin__bottom-xx-large.padding__regular.box__background--innovation
+                // component-target-info-event
                 +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "padding__bottom-large", "btn__primary--small-nocolor-innovation", "btn__primary--medium-nocolor-innovation-width", "box__icon--date-innovation", "display__desktop", "display__mobile", "", "display__one")
-            //- section target
+            // section target
             div.margin__bottom-xx-large.padding__regular.box__background--innovation
+                // component-target-info-event
                 +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "padding__bottom-large", "btn__primary--small-nocolor-innovation", "btn__primary--medium-nocolor-innovation-width", "box__icon--date-innovation", "display__desktop", "display__mobile", "", "display__one")
-            //- form innovation
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM INNOVATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // innovation-form
             +innovation-form()
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js")

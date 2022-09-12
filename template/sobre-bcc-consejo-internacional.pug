@@ -21,6 +21,7 @@ include ../components/layout/head.pug
                     // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-xx-large.content__center.content__max
                 div
@@ -30,6 +31,7 @@ include ../components/layout/head.pug
             section.media__margin.content__center.content__max
                 div.padding
                     h3.primaryfont__bold Integrantes del Consejo
+            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SLIDER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // title slider 01
             section.media__margin.padding__regular.title__link.content__center.content__max
@@ -164,8 +166,10 @@ include ../components/layout/head.pug
                                 a(class="padding__topbottom-small x-small link__color-home display__flex-mobile" href="#")
                                     img(class="svg__icon--margin" src="../src/iconos/descargar.svg#descargar" type="img/svg")
                                     p.primaryfont__medium Semillas
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            +footer("box__background--white")     
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        +footer("box__background--white")     
+    
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/menu.js")         

@@ -9,67 +9,90 @@ include ../components/layout/head.pug
     block content
         main 
             header
-                //- menu
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTES MENÚS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 div
+                    // menu gradient componente "menu-gradient"
                     +menu-gradient("gradient__innovation")
+                    // menu topbar componente "topbar"
                     include ../components/menu/topbar.pug
+                    // menu main componente "menu"
                     +menu("display__none")
+                    // migas de pan componente  "menu-section"
                     +menu-section("migas__neutral", "migas__text-neutral")
                     //- +menu-index()
-            //- cabecera
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-x-large.content__center.content__max
                 div
                     h1.padding__regular.primaryfont__bold Iniciativas
                     p.padding.text-medium <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            //- noticias principal
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // noticias principal
             section
                 div.content__center.content__max 
                     h3.media__margin.content__center.padding__regular.primaryfont__bold Próximamente
                 .padding__top-regular.padding__bottom-regular.box__background
                     div.media__margin.padding.content__center.content__max 
+                        // component-target-info-event
                         +component-target-info-event("tag__innovation-dark", "grid__c7-c5", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
-            //- filtros
+            // filtros
             section.padding__top-xx-large
                 div.media__margin.padding.content__center.content__max 
                     h3.primaryfont__bold Conoce nuestras iniciativas
+                // filter
                 +filter("tag__empresas", "tag__empresas-dark")
-            //- eventos
+            // eventos
             section.media__margin.padding.display__flex.content__max.content__center.gap 
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
-            //- espacio fila
+            // espacio fila
             div.padding__bottom-x-large.display__desktop
-            //- eventos
+            // eventos
             section.media__margin.padding.display__flex.content__max.content__center.gap
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
-            //- espacio fila
+            // espacio fila
             div.padding__bottom-xx-large.display__desktop
-            //- eventos
+            // eventos
             section.media__margin.padding.display__flex.content__max.content__center.gap 
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
-            //- espacio fila
+            // espacio fila
             div.padding__bottom-x-large.display__desktop
-            //- eventos
+            // eventos
             section.media__margin.padding.padding__bottom-xtra-large.display__flex.content__max.content__center.gap 
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
                 hr.hr.margin__topbottom-regular.display__mobile
+                // component-target-info-event
                 +component-target-info-event("", "", "", "btn__primary--small-nocolor", "btn__primary--medium-nocolor", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "")
-        //- footer
+        
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         +footer("box__background--white")
+    
     script(src="../js/menu.js") 
