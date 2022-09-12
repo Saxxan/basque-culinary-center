@@ -1,6 +1,6 @@
-/*------------------------------------*\
+/*-----------------------------------*\
     MENÚ MAIN
-\*------------------------------------*/
+\*-----------------------------------*/
 .menu {
     height: 70px;
     border-bottom: 1px solid grey;
@@ -108,10 +108,7 @@
 .hamburger {
     margin-top: 0.2rem;
 }
-// .menu__item:first-child {
-//     margin-right: auto;
-//     display: block;
-// }
+
 #menu__checkbox:checked ~ ul.menu__menu .menu__item {
     display: block;
 }

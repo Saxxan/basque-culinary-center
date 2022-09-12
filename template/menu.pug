@@ -1,8 +1,87 @@
-include ../components/menu/menu.pug
 include ../components/layout/head.pug
     block content
-        main
-            header
-                //- menu
-                div
-                    +menu("")
+        div
+            nav.menu
+                // icono burger/close
+                input(type="checkbox" id="menu__checkbox" class="menu__checkbox")
+                label(for="menu__checkbox" class="menu__toggle")
+                    img(src="../../src/images/burger.png" class="hamburger")
+                    img(src="../../src/images/closed.png" class="close")
+                // logo
+                .menu__item--logo
+                        a(class="menu__menu" href="#")
+                            img(class="menu__logo" src="../../src/images/logo-bcc.png", alt="")
+                // nivel uno
+                ul.menu__menu
+                    li.menu__item
+                        a(class="menu__menu--link primaryfont__bold" href="#") Sobre BCC
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item
+                        a(class="menu__menu--link" href="#") Formación
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                        // nivel 2 con submenu
+                        div(class="submenu")
+                            div(class="submenu__left-content")
+                                ul
+                                    li
+                                        a(href="#") Grado
+                                            img(class="" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li
+                                        a(class="menu__menu--link" href="#") Másteres
+                                            img(class="" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                            // nivel 3 submenu
+                                            div(class="submenu")
+                                                div(class="submenu__left-content")
+                                                    ul(class="menu__menu--list")
+                                                        li
+                                                            a(href="#") Perfeccionamiento en cocina
+                                                        li
+                                                            a( href="#") Técnica, producto yt creatividad
+                                                        li
+                                                            a(href="#") Pastelería de restaurantes y cocina dulce
+                                                        li
+                                                            a( href="#") Dirección de F6B
+                                                        li
+                                                            a(href="#") Innovación y gestión de restaurantes
+                                                        li
+                                                            a( href="#") Turismo gastronómico
+                                                        li
+                                                            a(href="#") Sumellería y enomarketing
+                                                        li
+                                                            a( href="#") Comunicación y periodismo gastronómico
+                                                        li
+                                                            a( href="#") Formación del profesorado en gastronomía
+                                    li
+                                        a(href="#") Cursos para profesionales
+                                            img(src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li
+                                        a(href="#") Cursos para entusiastas
+                                            img(src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                                    li
+                                        a(href="#") Formación a medida
+                                            img(src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                            div(class="submenu__right-content")
+                                div AQUI PONER LOS ELEMENTOS DE LA DERECHA ( IMAGENES / LINK / ETC... )
+                    li.menu__item
+                        a(class="menu__menu--link" href="#") Innovación
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item
+                        a(class="menu__menu--link" href="#") Empresas
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item
+                        a(class="menu__menu--link" href="#") Iniciativas
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item
+                        a(class="menu__menu--link" href="#") Restaurantes
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    li.menu__item
+                        a(class="menu__menu--link" href="#") Actualidad
+                            img(class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
+                    // button desktop
+                    li.menu__item.display__desktop
+                        a.btn__primary--medium-color-menu.display__desktop(href="asdsadsad") Encuentra tu formación
+        // button mobile
+        div.padding.padding__top-regular.display__mobile(class= displayNone)
+            a.btn__primary--small-color-menu(href="www")(displayNone= "display__none") Encuentra tu formación
+
+
