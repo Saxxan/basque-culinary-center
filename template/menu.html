@@ -4,64 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Title
+      <div>
+        <nav class="menu">
+          <!-- icono burger/close-->
+          <input class="menu__checkbox" type="checkbox" id="menu__checkbox">
+          <label class="menu__toggle" for="menu__checkbox"><img class="hamburger" src="../../src/images/burger.png"><img class="close" src="../../src/images/closed.png"></label>
+          <!-- logo-->
+          <div class="menu__item--logo"><a class="menu__menu" href="#"><img class="menu__logo" src="../../src/images/logo-bcc.png" alt=""></a></div>
+          <!-- nivel uno-->
+          <ul class="menu__menu">
+            <li class="menu__item"><a class="menu__menu--link primaryfont__bold" href="#">Sobre BCC<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+            <li class="menu__item"><a class="menu__menu--link" href="#">Formación<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a>
+              <!-- nivel 2 con submenu-->
+              <div class="submenu">
+                <div class="submenu__left-content">
+                  <ul>
+                    <li><a href="#">Grado<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+                    <li><a class="menu__menu--link" href="#">Másteres<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg">
+                        <!-- nivel 3 submenu-->
+                        <div class="submenu">
+                          <div class="submenu__left-content">
+                            <ul class="menu__menu--list">
+                              <li><a href="#">Perfeccionamiento en cocina</a></li>
+                              <li><a href="#">Técnica, producto yt creatividad</a></li>
+                              <li><a href="#">Pastelería de restaurantes y cocina dulce</a></li>
+                              <li><a href="#">Dirección de F6B</a></li>
+                              <li><a href="#">Innovación y gestión de restaurantes</a></li>
+                              <li><a href="#">Turismo gastronómico</a></li>
+                              <li><a href="#">Sumellería y enomarketing</a></li>
+                              <li><a href="#">Comunicación y periodismo gastronómico</a></li>
+                              <li><a href="#">Formación del profesorado en gastronomía</a></li>
+                            </ul>
+                          </div>
+                        </div></a></li>
+                    <li><a href="#">Cursos para profesionales<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+                    <li><a href="#">Cursos para entusiastas<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+                    <li><a href="#">Formación a medida<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+                  </ul>
+                </div>
+                <div class="submenu__right-content">
+                  <div>AQUI PONER LOS ELEMENTOS DE LA DERECHA ( IMAGENES / LINK / ETC... )</div>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item"><a class="menu__menu--link" href="#">Innovación<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+            <li class="menu__item"><a class="menu__menu--link" href="#">Empresas<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+            <li class="menu__item"><a class="menu__menu--link" href="#">Iniciativas<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+            <li class="menu__item"><a class="menu__menu--link" href="#">Restaurantes<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+            <li class="menu__item"><a class="menu__menu--link" href="#">Actualidad<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
+            <!-- button desktop-->
+            <li class="menu__item display__desktop"><a class="btn__primary--medium-color-menu display__desktop" href="asdsadsad">Encuentra tu formación</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- button mobile-->
+      <div class="padding padding__top-regular display__mobile"><a class="btn__primary--small-color-menu" href="www" displayNone="display__none">Encuentra tu formación</a></div>
+    </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <div>
-      <nav class="menu">
-        <!-- icono burger/close-->
-        <input class="menu__checkbox" type="checkbox" id="menu__checkbox">
-        <label class="menu__toggle" for="menu__checkbox"><img class="hamburger" src="../../src/images/burger.png"><img class="close" src="../../src/images/closed.png"></label>
-        <!-- logo-->
-        <div class="menu__item--logo"><a class="menu__menu" href="#"><img class="menu__logo" src="../../src/images/logo-bcc.png" alt=""></a></div>
-        <!-- nivel uno-->
-        <ul class="menu__menu">
-          <li class="menu__item"><a class="menu__menu--link primaryfont__bold" href="#">Sobre BCC<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-          <li class="menu__item"><a class="menu__menu--link" href="#">Formación<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a>
-            <!-- nivel 2 con submenu-->
-            <div class="submenu">
-              <div class="submenu__left-content">
-                <ul>
-                  <li><a href="#">Grado<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-                  <li><a class="menu__menu--link" href="#">Másteres<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg">
-                      <!-- nivel 3 submenu-->
-                      <div class="submenu">
-                        <div class="submenu__left-content">
-                          <ul class="menu__menu--list">
-                            <li><a href="#">Perfeccionamiento en cocina</a></li>
-                            <li><a href="#">Técnica, producto yt creatividad</a></li>
-                            <li><a href="#">Pastelería de restaurantes y cocina dulce</a></li>
-                            <li><a href="#">Dirección de F6B</a></li>
-                            <li><a href="#">Innovación y gestión de restaurantes</a></li>
-                            <li><a href="#">Turismo gastronómico</a></li>
-                            <li><a href="#">Sumellería y enomarketing</a></li>
-                            <li><a href="#">Comunicación y periodismo gastronómico</a></li>
-                            <li><a href="#">Formación del profesorado en gastronomía</a></li>
-                          </ul>
-                        </div>
-                      </div></a></li>
-                  <li><a href="#">Cursos para profesionales<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-                  <li><a href="#">Cursos para entusiastas<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-                  <li><a href="#">Formación a medida<img src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-                </ul>
-              </div>
-              <div class="submenu__right-content">
-                <div>AQUI PONER LOS ELEMENTOS DE LA DERECHA ( IMAGENES / LINK / ETC... )</div>
-              </div>
-            </div>
-          </li>
-          <li class="menu__item"><a class="menu__menu--link" href="#">Innovación<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-          <li class="menu__item"><a class="menu__menu--link" href="#">Empresas<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-          <li class="menu__item"><a class="menu__menu--link" href="#">Iniciativas<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-          <li class="menu__item"><a class="menu__menu--link" href="#">Restaurantes<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-          <li class="menu__item"><a class="menu__menu--link" href="#">Actualidad<img class="svg__icon--menu display__mobile" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg"></a></li>
-          <!-- button desktop-->
-          <li class="menu__item display__desktop"><a class="btn__primary--medium-color-menu display__desktop" href="asdsadsad">Encuentra tu formación</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- button mobile-->
-    <div class="padding padding__top-regular display__mobile"><a class="btn__primary--small-color-menu" href="www" displayNone="display__none">Encuentra tu formación</a></div>
     <link link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,600&amp;family=League+Spartan:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">

@@ -1,18 +1,15 @@
 doctype html
 html(lang="es")
-    block config
-        include ../../config/var/var.pug
+
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{page[0]}
+        title Title
         link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css")
-        each link in css
-            link(rel="stylesheet" href='../css/' + link)
+        link(rel="stylesheet", href="../css/style.css")
         link(link rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,600&family=League+Spartan:wght@300;400;500;700;800&display=swap" rel="stylesheet")
-
     body
         

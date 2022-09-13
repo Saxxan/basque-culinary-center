@@ -2032,7 +2032,6 @@ em.error {
           flex-direction: column;
   padding-left: 0;
   position: sticky;
-  z-index: 10;
 }
 .menu__menu--link {
   color: #26201B;
