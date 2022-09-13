@@ -1,10 +1,10 @@
-mixin menu-section(colorBackground= "migas__innovation", colorText="migas__text-innovation")
+mixin menu-section(colorColor="migas__innovation", colorBackground= "migas__innovation", colorText="migas__text-innovation")
     div.display__desktop.migas(class= colorBackground)
         ul  
-            li
+            li(class= colorColor)
                 a.text-small(class= colorText)(href="www") Home
-            li
+            li(class= colorColor)
                 a.text-small(class= colorText)(href="www") Innovación
-            li
+            li(class= colorColor)
                 a.text-small(class= colorText)(href="www") Líneas de investigación
 

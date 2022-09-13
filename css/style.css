@@ -1960,12 +1960,24 @@ em.error {
   padding: 0;
 }
 .migas ul,
-.migas li {
+.migas .migas__innovation {
   list-style: none;
   display: inline;
 }
 .migas ul:not(:last-child):after,
-.migas li:not(:last-child):after {
+.migas .migas__innovation:not(:last-child):after {
+  content: "/";
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #ffffff;
+}
+.migas ul,
+.migas .migas__neutral {
+  list-style: none;
+  display: inline;
+}
+.migas ul:not(:last-child):after,
+.migas .migas__neutral:not(:last-child):after {
   content: "/";
   margin-left: 8px;
   margin-right: 8px;

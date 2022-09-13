@@ -8,7 +8,20 @@
         padding: 0;
     }
     ul,
-    li {
+    .migas__innovation {
+        list-style: none;
+        display: inline;
+        &:not(:last-child) {
+            &:after {
+                content: '/';
+                margin-left: 8px;
+                margin-right: 8px;
+                color: $c-white;
+            }
+        }
+    }
+    ul,
+    .migas__neutral {
         list-style: none;
         display: inline;
         &:not(:last-child) {
@@ -19,6 +32,7 @@
             }
         }
     }
+
     &__innovation {
         background-color: $c-marcas-bcc-innovation;
         
