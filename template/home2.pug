@@ -1,0 +1,32 @@
+ include ../components/menu/menu.pug
+include ../components/layout/footer.pug
+include ../components/column/component-target-info-event.pug
+include ../components/column/component-img-left.pug
+include ../components/column/component-noticia-principal.pug
+include ../components/column/component-mobile-card-img.pug
+include ../components/column/component-vertical-line.pug
+include ../components/column/component-subtitle.pug
+include ../components/column/component-subtitle-link.pug
+include ../components/column/component-noticia-target.pug
+include ../components/column/component-title-link.pug
+include ../components/column/component-target-garamond-complete.pug
+include ../components/column/component-column-icon.pug
+include ../components/column/component-title.pug
+include ../components/menu/menu-gradient.pug
+include ../components/menu/menu.pug
+include ../components/layout/head.pug
+    block content
+        main
+            header
+                //- menu
+                div
+                    +menu-gradient("gradient__innovation")
+                    include ../components/menu/topbar.pug
+                    +menu("")
+
+            //- slide cabecera
+            
+
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="../js/swiper.js")
+    script(src="../js/function.js")

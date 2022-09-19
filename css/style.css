@@ -1550,7 +1550,6 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 16px;
 }
 @media (min-width: 1024px) {
   .card__details--margin {
@@ -2229,10 +2228,11 @@ input[type=checkbox] {
     padding: 0 0 40px 0px;
   }
 }
-@media (min-width: 1024px) {
-  .swiper__fullwidth {
-    width: 100%;
-  }
+.swiper__fullwidth {
+  aspect-ratio: 16/9;
+  /* Aplicar el aspect ratio que esté en el diseño para ajustar la altura */
+  position: relative;
+  /* Aplicar para poder ajustar la navegación del slider */
 }
 
 .swiper3, .swiper3-nonepagination {
@@ -2254,6 +2254,7 @@ input[type=checkbox] {
 
 .swiper-slide, .swiper-slide-board {
   /* Center slide text vertically */
+  margin-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2316,7 +2317,7 @@ span.swiper-pagination-bullet {
 
 .swiper-button-next,
 .swiper-button-prev {
-  position: relative;
+  position: absolute;
   top: 50%;
   width: var(--swiper-navigation-size);
   height: var(--swiper-navigation-size);

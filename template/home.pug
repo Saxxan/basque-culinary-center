@@ -27,15 +27,21 @@ include ../components/layout/head.pug
                 //- +menu-index()
         main            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            // slider
             div.swiper__fullwidth.swiper2
+                h1
+                    .swiper-slide-current
+                    div /
+                    .swiper-slide-total
                 div.swiper-wrapper
                     .swiper-slide.swiper-slide-board.swiper-slide-background
-                        h1 1/02
                         h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
                         h4 Inscripción abierta para el nuevo curso 2022-2023
                         a.btn__primary--large-nocolor-width(href="#") más información
-                
+                    .swiper-slide.swiper-slide-board.swiper-slide-background
+                        h3.primaryfont__bold Grado: Gastronomía y Artes culinarias.
+                        h4 Inscripción abierta para el nuevo curso 2022-2023
+                        a.btn__primary--large-nocolor-width(href="#") más información
+
                 .swiper-button-next
                 .swiper-button-prev
             

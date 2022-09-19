@@ -6,9 +6,11 @@
         padding: 0 0 40px 0px;
     }
     &__fullwidth {
-        @include respond-to(large) {
-            width: 100%;
-        }
+        // @include respond-to(large) {
+        //     width: 100%;
+        // }
+        aspect-ratio: 16/9; /* Aplicar el aspect ratio que esté en el diseño para ajustar la altura */
+	    position: relative; /* Aplicar para poder ajustar la navegación del slider */
     }
 }
 .swiper3 {
@@ -29,6 +31,7 @@
 
 .swiper-slide {
     /* Center slide text vertically */
+    margin-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -93,7 +96,7 @@ span.swiper-pagination-bullet {
 }
 .swiper-button-next, 
 .swiper-button-prev {
-    position: relative;
+    position: absolute;
     top:50%;
     width: var(--swiper-navigation-size);
     height: var(--swiper-navigation-size);
