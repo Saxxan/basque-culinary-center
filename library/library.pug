@@ -4,7 +4,6 @@ include ../components/column/component-target-garamond-complete.pug
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/column/component-noticia-target.pug
-include ../components/column/component-title-link.pug
 include ../components/column/component-title.pug
 include ../components/column/component-mobile-card-img.pug
 include ../components/column/component-column-icon.pug
@@ -75,9 +74,9 @@ include ../components/layout/head.pug
             //- innovation
             section.padding.box__background--innovation
                 div.content__max.content__center
-                    +component-title-link("", "")
-                    +component-title-link("", "")
-                    +component-title("", "")
+                    +component-title("", "", "")
+                    +component-title("", "", "")
+                    +component-title("", "", "")
                 div.display__flex.gap.content__max.content__center
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")
                         +component-target-info-event("box__icon--date-innovation", "", "display__one")

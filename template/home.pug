@@ -6,9 +6,7 @@ include ../components/column/component-noticia-principal.pug
 include ../components/column/component-mobile-card-img.pug
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-subtitle.pug
-include ../components/column/component-subtitle-link.pug
 include ../components/column/component-noticia-target.pug
-include ../components/column/component-title-link.pug
 include ../components/column/component-target-garamond-complete.pug
 include ../components/column/component-column-icon.pug
 include ../components/column/component-title.pug
@@ -48,15 +46,16 @@ include ../components/layout/head.pug
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // column icon
             section.padding__bottom-xtra-large
-                +component-title("", "", "")
+                // component-title
+                +component-title("link__color-home", "display__none", "display__one")
                 div.padding.media__margin.content__center.content__max.display__flex.gap
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
                     +component-column-icon("", "color__text-home", "display__none", "")
             // nuestra agenda slider display__desktop
             section.padding__bottom-xx-large.box__background.display__desktop
-                // component-title-link
-                +component-title-link("", "")
+                // component-title
+                +component-title("link__color-home", "", "")
                 div.media__margin.padding.content__center
                     div.swiper.mySwiper.display__flex.content__max
                         div.swiper-wrapper
@@ -91,8 +90,8 @@ include ../components/layout/head.pug
                         
             // nuestra agenda display__mobile
             section.padding__bottom-xx-large.box__background.display__mobile
-                // component-title-link
-                +component-title-link("", "")
+                // component-title
+                +component-title("link__color-home", "", "")
                 div.media__margin.padding.gap.display__flex.content__center.content__max
                     // component-target-garamond-complete
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home", "", "display__mobile", "display__none", "")
@@ -102,8 +101,8 @@ include ../components/layout/head.pug
                     +component-target-garamond-complete("tag__primary", "box__icon--date-home","display__desktop", "display__mobile", "", "display__one")
             // últimas noticias, dos columnas
             section.padding__bottom-xtra-large.box__background
-                // component-subtitle-link
-                +component-subtitle-link("", "")
+                // component-subtitle
+                +component-subtitle("", "")
                 div.media__margin.padding.display__flex.gap.content__max.content__center
                     // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__entusiastas", "box__tag", "", "", "", "display__none")
@@ -114,34 +113,35 @@ include ../components/layout/head.pug
             // tabs .display__desktop
             div.display__desktop
                 // component-title
-                +component-title("", "", "")
+                +component-title("", "display__none", "")
                 .padding__bottom-xx-large.display__desktop
                     include ../components/tabs/tabs.pug
             //tabs .display__mobile
             // component-title
-            +component-title("", "display__mobile", "")
-            div.padding.media__margin.content__center.padding__bottom-xx-large.display__mobile
-                div.margin__bottom-regular
-                    // component-mobile-card-img
-                    +component-mobile-card-img("card__img--border-grado")
-                div.margin__bottom-regular
-                    // component-mobile-card-img
-                    +component-mobile-card-img("card__img--border-master")
-                div.margin__bottom-regular
-                    // component-mobile-card-img
-                    +component-mobile-card-img("card__img--border-doctorado")
-                div.margin__bottom-regular
-                    // component-mobile-card-img
-                    +component-mobile-card-img("card__img--border-cursos")
-                div.margin__bottom-regular
-                    // component-mobile-card-img
-                    +component-mobile-card-img("card__img--border-entusiastas")
-                div.margin__bottom-regular
-                    // component-mobile-card-img
-                    +component-mobile-card-img("card__img--border-formacion")
+            section.display__mobile
+                +component-title("", "display__none", "")
+                div.padding.media__margin.content__center.padding__bottom-xx-large.display__mobile
+                    div.margin__bottom-regular
+                        // component-mobile-card-img
+                        +component-mobile-card-img("card__img--border-grado")
+                    div.margin__bottom-regular
+                        // component-mobile-card-img
+                        +component-mobile-card-img("card__img--border-master")
+                    div.margin__bottom-regular
+                        // component-mobile-card-img
+                        +component-mobile-card-img("card__img--border-doctorado")
+                    div.margin__bottom-regular
+                        // component-mobile-card-img
+                        +component-mobile-card-img("card__img--border-cursos")
+                    div.margin__bottom-regular
+                        // component-mobile-card-img
+                        +component-mobile-card-img("card__img--border-entusiastas")
+                    div.margin__bottom-regular
+                        // component-mobile-card-img
+                        +component-mobile-card-img("card__img--border-formacion")
             // vertical line
             // component-subtitle
-            +component-subtitle("")
+            +component-subtitle("", "display__none")
             section.media__margin.padding.padding__bottom-xtra-large.content__center.content__max.display__flex
                 // component-vertical-line
                 +component-vertical-line("link__color-home", "card__details--margin", "card__line", "display__mobile", "", "", "display__one")
@@ -157,8 +157,9 @@ include ../components/layout/head.pug
                 div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             // un motor de cambio
-            // component-title
-            +component-title("box__background", "", "")
+            section.box__background 
+                // component-title
+                +component-title("link__color-home", "dislay__none", "")
             // component-noticia-principal
             +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
             // un motor de cambio - slider areas de trabajo
@@ -200,7 +201,7 @@ include ../components/layout/head.pug
                             a.btn__primary--small-color(href="que tal") Acceder a innovación
             // colabora con BCC
             // component-title
-            +component-title("", "", "")
+            +component-title("link__color-home", "display__none", "")
             section.padding__bottom-xx-large
                 // component-img-left
                 +component-img-left("box__content", "display__none", "")
@@ -241,8 +242,8 @@ include ../components/layout/head.pug
                             a.btn__primary--small-color(href="que tal") Acceder a innovación
             // una visión integral
             section.padding__bottom-xx-large.box__background
-                // component-title-link
-                +component-title-link("", "")
+                // component-title
+                +component-title("link__color-home", "", "")
                 // component-noticia-principal
                 +component-noticia-principal("box__content--justify", "link__color-home", "", "", "tag__card--grey", "box__background", "box__img--border-rightangle", "", "display__button", "display__none", "")
             // noticias target display__desktop
@@ -272,7 +273,7 @@ include ../components/layout/head.pug
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             // dos conceptos distintos
             // component-title
-            +component-title("", "", "")
+            +component-title("", "display__none", "")
             div.media__margin.padding.padding__bottom-xtra-large.content__max.content__center.display__flex.gap
                 // component-target-info-event
                 +component-target-info-event("", "", "padding__bottom-large", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")

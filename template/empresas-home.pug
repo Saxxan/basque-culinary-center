@@ -1,6 +1,6 @@
 include ../components/layout/bullet.pug
+include ../components/column/component-subtitle.pug
 include ../components/column/component-noticia-target.pug
-include ../components/column/component-subtitle-link.pug
 include ../components/layout/innovation-form.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/menu/menu-gradient.pug
@@ -77,8 +77,8 @@ include ../components/layout/head.pug
                     a.display__mobile.btn__primary--small-nocolor(href="www") Servicios de información
             // últimas noticias, dos columnas
             section.padding__bottom-xtra-large
-                // component-subtitle-link
-                +component-subtitle-link("", "")
+                // component-subtitle
+                +component-subtitle("", "")
                 div.media__margin.padding.display__flex.gap.content__max.content__center
                     // component-noticia-target
                     +component-noticia-target("link__color-home", "tag__card--grey", "box__tag", "", "", "", "display__none")

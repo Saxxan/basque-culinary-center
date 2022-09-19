@@ -1,5 +1,8 @@
-mixin component-title(colorBackground="box__background--innovation", displayMobile="display__mobile", displayNone="display__none")
-    section(class= colorBackground)(class= displayMobile)
-        div.padding__regular.media__margin.content__max.content__center
-            p.text-large(class= displayNone) Sección
+mixin component-title(colorLink="link__color-home", displayNone="display__none", displayOne="display__one")
+    div.media__margin.padding__regular.title__link.content__center.content__max
+        div
+            p.text-large(class= displayOne) Sección
             h1.primaryfont__bold Título de la sección
+        div.display__desktop(class= displayNone)
+            a.text-small(class= colorLink)(href="#") LINK SECCIÓN
+                img(class="svg__icon--link" src="../src/iconos/arrow-link.svg#arrow-link" type="img/svg")
