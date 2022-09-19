@@ -1,3 +1,4 @@
+include ../components/layout/banner-fixed.pug
 include ../components/column/component-vertical-line.pug
 include ../components/column/component-noticia-principal.pug
 include ../components/layout/filter.pug
@@ -22,9 +23,9 @@ include ../components/layout/head.pug
                     +menu-section("migas__neutral", "migas__neutral", "migas__text-neutral")
                     //- +menu-index()
                     
-            // botón banner
-            div.banner__fixed.display__mobile 
-                a.btn__primary--small-color(href="www") Contactar
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTE FIJO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // componente banner-fixed
+            +banner-fixed()
             
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             section.media__margin.padding__bottom-x-large.content__center.content__max

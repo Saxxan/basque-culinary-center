@@ -25,7 +25,7 @@ include ../components/layout/head.pug
                 //- +menu-index()
         main            
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CABECERA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            div.swiper__fullwidth.swiper2
+            section.swiper__fullwidth.swiper2
                 h1
                     .swiper-slide-current
                     div /
@@ -111,7 +111,7 @@ include ../components/layout/head.pug
                     div.padding__top-x-large.display__mobile
                         a.btn__primary--small-color(href="que tal") Acceder a innovación
             // tabs .display__desktop
-            div.display__desktop
+            section.display__desktop
                 // component-title
                 +component-title("", "display__none", "")
                 .padding__bottom-xx-large.display__desktop
@@ -167,47 +167,49 @@ include ../components/layout/head.pug
                 // component-title
                 +component-title("link__color-home", "dislay__none", "")
             // component-noticia-principal
-            +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
+            section 
+                +component-noticia-principal("box__content", "link__color-home", "color__text-home", "btn__primary--medium-color", "", "box__background", "", "display__innovation", "", "", "display__one")
             // un motor de cambio - slider areas de trabajo
             section.padding__top-x-large.padding__bottom-xtra-large.box__background
-                    // component-subtitle
-                    +component-subtitle("")
-                    div.media__margin.padding.content__center.content__max
-                        div.swiper.mySwiper.box__swiper
-                            div.swiper-wrapper
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                                div.swiper-slide
-                                    // component-vertical-line
-                                    +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
-                            div.swiper-pagination
-                        div.padding__top-small.display__mobile
-                            a.btn__primary--small-color(href="que tal") Acceder a innovación
+                // component-subtitle
+                +component-subtitle("")
+                div.media__margin.padding.content__center.content__max
+                    div.swiper.mySwiper.box__swiper
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                            div.swiper-slide
+                                // component-vertical-line
+                                +component-vertical-line("link__color-home", "card__details", "card__line--none", "", "", "display__none", "")
+                        div.swiper-pagination
+                    div.padding__top-small.display__mobile
+                        a.btn__primary--small-color(href="que tal") Acceder a innovación
             // colabora con BCC
             // component-title
-            +component-title("link__color-home", "display__none", "")
+            section 
+                +component-title("link__color-home", "display__none", "")
             section.padding__bottom-xx-large
                 // component-img-left
                 +component-img-left("box__content", "display__none", "")
@@ -279,8 +281,9 @@ include ../components/layout/head.pug
                         a.btn__primary--small-color(href="que tal") Acceder a gastronomía 360º
             // dos conceptos distintos
             // component-title
-            +component-title("", "display__none", "")
-            div.media__margin.padding.padding__bottom-xtra-large.content__max.content__center.display__flex.gap
+            section     
+                +component-title("", "display__none", "")
+            section.media__margin.padding.padding__bottom-xtra-large.content__max.content__center.display__flex.gap
                 // component-target-info-event
                 +component-target-info-event("", "", "padding__bottom-large", "btn__primary--small-color", "btn__primary--medium-color-width", "box__icon--date-home", "display__desktop", "display__mobile", "display__none", "display__one")
                 // component-target-info-event

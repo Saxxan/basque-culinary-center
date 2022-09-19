@@ -26,15 +26,15 @@ include ../components/layout/head.pug
                     +menu-section("migas__neutral", "migas__neutral", "migas__text-neutral")
                     //- +menu-index()
             
-            // botón banner
-            div.banner__fixed.display__mobile 
-                a.btn__primary--small-color(href="www") Contactar
-            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COMPONENTE FIJO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // componente banner-fixed
+            +banner-fixed()
+
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             // noticias principal
             section.media__margin.padding.padding__top-xx-large.content__center.content__max 
                 h2.padding__bottom-large.primaryfont__bold Actualidad
-            div.padding__bottom-x-large
+            section.padding__bottom-x-large
                 // component-noticia-principal
                 +component-noticia-principal("box__content--justify", "link__color-home", "color__text-home", "", "tag__card--grey", "", "", "display__innovation", "display__button", "", "")
             
