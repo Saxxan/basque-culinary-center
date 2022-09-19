@@ -117,28 +117,34 @@ include ../components/layout/head.pug
                 .padding__bottom-xx-large.display__desktop
                     include ../components/tabs/tabs.pug
             //tabs .display__mobile
-            // component-title
             section.display__mobile
+                // component-title
                 +component-title("", "display__none", "")
                 div.padding.media__margin.content__center.padding__bottom-xx-large.display__mobile
                     div.margin__bottom-regular
-                        // component-mobile-card-img
-                        +component-mobile-card-img("card__img--border-grado")
+                        a(class="textdecoration__none card__horizontal shadow" href="www")
+                            // component-mobile-card-img
+                            +component-mobile-card-img("card__img--border-grado")
                     div.margin__bottom-regular
-                        // component-mobile-card-img
-                        +component-mobile-card-img("card__img--border-master")
+                        a(class="textdecoration__none card__horizontal shadow" href="www")
+                            // component-mobile-card-img
+                            +component-mobile-card-img("card__img--border-master")
                     div.margin__bottom-regular
-                        // component-mobile-card-img
-                        +component-mobile-card-img("card__img--border-doctorado")
+                        a(class="textdecoration__none card__horizontal shadow" href="www")
+                            // component-mobile-card-img
+                            +component-mobile-card-img("card__img--border-doctorado")
                     div.margin__bottom-regular
-                        // component-mobile-card-img
-                        +component-mobile-card-img("card__img--border-cursos")
+                        a(class="textdecoration__none card__horizontal shadow" href="www")
+                            // component-mobile-card-img
+                            +component-mobile-card-img("card__img--border-cursos")
                     div.margin__bottom-regular
-                        // component-mobile-card-img
-                        +component-mobile-card-img("card__img--border-entusiastas")
+                        a(class="textdecoration__none card__horizontal shadow" href="www")
+                            // component-mobile-card-img
+                            +component-mobile-card-img("card__img--border-entusiastas")
                     div.margin__bottom-regular
-                        // component-mobile-card-img
-                        +component-mobile-card-img("card__img--border-formacion")
+                        a(class="textdecoration__none card__horizontal shadow" href="www")
+                            // component-mobile-card-img
+                            +component-mobile-card-img("card__img--border-formacion")
             // vertical line
             // component-subtitle
             +component-subtitle("", "display__none")
@@ -286,6 +292,5 @@ include ../components/layout/head.pug
     script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
     script(src="../js/swiper.js")
     script(src="../js/menu.js")
-    script(src="../js/function.js") 
 
 
