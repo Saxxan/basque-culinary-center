@@ -110,9 +110,7 @@ class TopbarMenu {
 }
     
 // Init Menu
-const topbarMenu = new TopbarMenu();
-topbarMenu.init();
-// Init Menu
-// export const topbarMenu = new TopbarMenu();
+// const topbarMenu = new TopbarMenu();
 // topbarMenu.init();
-
+// Init Menu
+export const topbarMenu = new TopbarMenu();

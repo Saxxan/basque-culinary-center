@@ -3,7 +3,7 @@ const content = document.querySelectorAll('.tabs__content');
 const tab = document.querySelectorAll('.tabs__link');
 const slider = document.querySelector('.tabs__slider');
 
-function hideTabContent() {
+export function hideTabContent() {
     content.forEach(item => {
         item.style.display = 'none';
     });
@@ -33,9 +33,10 @@ function hideTabContent() {
                 })
     }
     })
-// export function test() {
-//     alert("hola");
-// }
+
+export function test() {
+    console.log("Carga función test desde onload.js");
+}
     
 // Checkbox
 // const disabledCheck = document.getElementById('disabled');
