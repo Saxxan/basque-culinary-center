@@ -153,9 +153,23 @@ strong {
 }
 .border {
     &__radius {
-        border-radius: $x-small;
-        &-top {
-            border-radius: $x-small $x-small 0 0;
+        &-small {
+            border-radius: $x-small;
+            @include respond-to(large) {
+                border-radius: $small;
+            }
+            &-top {
+                border-radius: $x-small $x-small 0 0;
+                @include respond-to(large) {
+                    border-radius: $small;
+                }
+            }
+        }
+        &-x-small {
+            border-radius: $x-small;
+            &-top {
+                border-radius: $x-small $x-small 0 0;
+            }
         }
     }
 }

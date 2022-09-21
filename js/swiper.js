@@ -26,7 +26,7 @@
 //     },
 // });
 
-export function initSwiper(selector, options) {
+function initSwiper(selector, options) {
     const defaultOptions = {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -39,7 +39,7 @@ export function initSwiper(selector, options) {
 }
 
 // Carousel
-export const carouselSlider = initSwiper('.mySwiper', {
+const carouselSlider = initSwiper('.mySwiper', {
     slidesPerView: 3,
     spaceBetween: 20,
     pagination: {
@@ -53,9 +53,9 @@ export const carouselSlider = initSwiper('.mySwiper', {
             slidesPerGroup: 1,
         },
         500: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
-            slidesPerGroup: 1,
+            slidesPerGroup: 2,
         },
         1081: {
             slidesPerView: 3,
@@ -66,7 +66,7 @@ export const carouselSlider = initSwiper('.mySwiper', {
 });
 
 // Homepage
-export const homepageSlider = initSwiper('.swiper2', {
+const homepageSlider = initSwiper('.swiper2', {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -96,7 +96,7 @@ export const homepageSlider = initSwiper('.swiper2', {
 });
 
 // Others
-export const othersSlider = initSwiper('.swiper3', {
+const othersSlider = initSwiper('.swiper3', {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

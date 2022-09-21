@@ -156,13 +156,11 @@
             }
         }
         &--border {
-            @extend .box__img;
-            border-radius: $small;
             padding-bottom: 0;
             border-bottom: 5px solid $c-primary-darkmode;
             &-rightangle {
                 @extend .box__img--border;
-                border-radius: 18px 18px 0 0;
+                border-radius: $x-small $x-small 0 0;
                 @include respond-to(large) {
                     border-radius: $small $small 0 0;
                 }

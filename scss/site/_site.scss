@@ -26,9 +26,30 @@ body {
 
     }
 }
+
+/*------------------------------------*\
+    IMG
+\*------------------------------------*/
 img {
     max-width: 100%;
 }
+.img {
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    &__66 {
+        width: 920px;
+        height: 100%;
+    }
+    &__50 {
+        width: 673px;
+        height: 100%;
+    }
+}
+
+/*------------------------------------*\
+    $MARGINS
+\*------------------------------------*/
 @media screen and (min-width: 1000px) and (max-width: 1480px) {
     .media__margin {
         max-width: calc(100% - 100px);
