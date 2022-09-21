@@ -26,7 +26,7 @@
 //     },
 // });
 
-function initSwiper(selector, options) {
+export function initSwiper(selector, options) {
     const defaultOptions = {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -39,7 +39,7 @@ function initSwiper(selector, options) {
 }
 
 // Carousel
-const carouselSlider = initSwiper('.mySwiper', {
+export const carouselSlider = initSwiper('.mySwiper', {
     slidesPerView: 3,
     spaceBetween: 20,
     pagination: {
@@ -66,7 +66,7 @@ const carouselSlider = initSwiper('.mySwiper', {
 });
 
 // Homepage
-const homepageSlider = initSwiper('.swiper2', {
+export const homepageSlider = initSwiper('.swiper2', {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -96,7 +96,7 @@ const homepageSlider = initSwiper('.swiper2', {
 });
 
 // Others
-const othersSlider = initSwiper('.swiper3', {
+export const othersSlider = initSwiper('.swiper3', {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
