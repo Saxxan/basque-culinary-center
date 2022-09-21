@@ -1,9 +1,9 @@
 mixin component-target-info-event(tagCardColor= "tag__card--grey", displayGrid= "grid__c7-c5", paddingBottom= "padding__bottom-large", classButtonMobile="btn__primary--small-color", classButton="btn__primary--medium-color", colorDate="box__icon--date", displayDesktop= "display__desktop", displayMobile= "display__mobile", displayNone="display__none", displayOne="display__one")
-    div.media__margin.content__center.content__max(class= displayGrid)
+    div(class= displayGrid)
         div(class= displayOne)
             span.box__tag.tag__card--grey Etiqueta
         div    
-            img(class="box__img--bloq2" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
+            img(class="border__radius-small img__big" src="../../src/images/img-noticias.jpg", alt="")(class= borderBottom)
         div 
             div(class= displayNone)
                 div.padding__top-small.box__icon

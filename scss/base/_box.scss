@@ -132,26 +132,11 @@
             border-radius: $small;
         }
         &--bloq2 {
-            border-radius: $small;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            @include respond-to(large) {
-                border-radius: $small;
-            }
             &-rightangle {
                 border-radius: $small $small 0 0;
                 @extend .box__img--bloq2;
                 @include respond-to(large) {
                     border-radius: $small $small 0 0;
-                }
-            }
-            &-agenda {
-                border-radius: $small;
-                @extend .box__img--bloq2;
-                @include respond-to(large) {
-                    border-radius: $small 0 0 $small;
                 }
             }
         }

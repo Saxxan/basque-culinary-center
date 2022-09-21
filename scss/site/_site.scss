@@ -37,13 +37,27 @@ img {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-    &__66 {
+    height: 100%;
+    &__big {
+        @extend .img;
         width: 920px;
-        height: 100%;
+    }
+    &__66 {
+        @extend .img;
+        width: 920px;
+    }
+    &__58 {
+        @extend .img;
+        width: 790px;
     }
     &__50 {
+        @extend .img;
         width: 673px;
-        height: 100%;
+    }
+    &__33 {
+        @extend .img;
+        width: 450px;
+        
     }
 }
 
