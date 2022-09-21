@@ -1,7 +1,7 @@
 import { hideTabContent } from "./function.js";
 import { test } from "./function.js";
 import { topbarMenu } from "./menu.js";
-// import { initSwiper } from "./swiper.js";
+import { initSwiper } from "./swiper.js";
 
 // onload
 const body = document.body;
@@ -11,6 +11,6 @@ function all() {
     hideTabContent();
     test();
     topbarMenu.init();
-    // initSwiper();
+    initSwiper();
 }
 

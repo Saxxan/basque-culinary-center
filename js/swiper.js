@@ -26,7 +26,7 @@
 //     },
 // });
 
-function initSwiper(selector, options) {
+export function initSwiper(selector, options) {
     const defaultOptions = {
         slidesPerView: 1,
         spaceBetween: 0,
