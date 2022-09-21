@@ -10,4 +10,10 @@
     color: $c-primary-default;
     font-weight: 600;
   }
+  &__content {
+    display: none;
+    &__active {
+      display: block;
+    }
+  }
 }

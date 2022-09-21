@@ -1,7 +1,7 @@
 section.tabs
     div.media__margin.padding.content__center.content__max.tabs__container 
         div.tabs__slider
-            a.tabs__link Grado 
+            a(class="tabs__link tabs__active") Grado 
             a.tabs__link Máster
             a.tabs__link Cursos
             a.tabs__link Doctorado
@@ -9,7 +9,7 @@ section.tabs
             a.tabs__link Formación a medida
 
             //- Grado
-        div.tabs__content
+        div.tabs__content.tabs__content__active
             div.padding__top-large.grid__c2
                 div
                     img(class="box__img display__desktop img__50" src="../../src/images/foto.jpg", alt="")

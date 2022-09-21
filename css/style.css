@@ -170,7 +170,7 @@ h1, h2, h3 {
 }
 
 .content__max {
-  max-width: calc(1450px - 24px);
+  max-width: 1426px;
 }
 .content__center {
   margin-left: auto;
@@ -2422,6 +2422,12 @@ input:checked + .slider::before {
   border-bottom: solid 2px #B36206;
   color: #B36206;
   font-weight: 600;
+}
+.tabs__content {
+  display: none;
+}
+.tabs__content__active {
+  display: block;
 }
 
 /*------------------------------------*\
