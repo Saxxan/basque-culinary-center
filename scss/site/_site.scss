@@ -37,13 +37,43 @@ img {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-    &__66 {
+    height: 100%;
+    // target bloque
+    &__x-big {
+        @extend .img;
+        width: 1300px;
+    }
+    &__big {
+        @extend .img;
         width: 920px;
-        height: 100%;
+    }
+    &__66 {
+        @extend .img;
+        width: 920px;
+    }
+    &__58 {
+        @extend .img;
+        width: 790px;
     }
     &__50 {
+        @extend .img;
         width: 673px;
-        height: 100%;
+    }
+    &__33 {
+        @extend .img;
+        width: 450px;
+        
+    }
+    // target vertical h/w
+    &__medium-big {
+        @extend .img;
+        width: 920px;
+        height: 360px;
+    }
+    &__small-big {
+        @extend .img;
+        width: 920px;
+        height: 180px;
     }
 }
 
